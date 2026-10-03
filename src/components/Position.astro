@@ -1,0 +1,22 @@
+---
+import { dateFr } from "../lib/data";
+
+interface Props {
+  position: { texte: string; statut: "verifie" | "a_verifier"; source?: { titre: string; url: string; date: Date } } | null | undefined;
+}
+const { position } = Astro.props;
+---
+{position ? (
+  <>
+    {position.texte}
+    <span class="mono src">
+      {position.source ? (
+        <a href={position.source.url} rel="noopener">{position.source.titre}</a>
+        <> · {dateFr(position.source.date)}</>
+      ) : null}
+      {position.statut === "a_verifier" && <span class="pill todo">À vérifier</span>}
+    </span>
+  </>
+) : (
+  <span class="none">Pas de position connue</span>
+)}

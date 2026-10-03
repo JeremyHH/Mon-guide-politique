@@ -1,0 +1,86 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+import { candidats, themes, nomComplet } from "../lib/data";
+
+const questions = await getCollection("quiz");
+const liste = await candidats();
+const nomsThemes = Object.fromEntries((await themes()).map((t) => [t.id, t.data.nom]));
+const echelle = [
+  [-2, "Pas du tout d'accord"],
+  [-1, "Plutôt pas"],
+  [0, "Neutre"],
+  [1, "Plutôt d'accord"],
+  [2, "Tout à fait"],
+] as const;
+
+// Chaque question doit positionner chaque candidat : sinon le build échoue.
+for (const q of questions) {
+  const manquants = liste.filter((c) => q.data.positions[c.id] === undefined).map((c) => c.id);
+  if (manquants.length) throw new Error(`Quiz ${q.id} : position manquante pour ${manquants.join(", ")}`);
+}
+const donnees = {
+  candidats: liste.map((c) => ({ id: c.id, nom: nomComplet(c), nomTri: c.data.nom })),
+  questions: questions.map((q) => q.data.positions),
+};
+---
+<Base titre="Quiz" page="quiz">
+  <div>
+    <h2 style="font-size:2rem">Qui me ressemble ?</h2>
+    <p class="lede">Répondez à ce qui vous parle et cochez « compte double » sur les sujets qui vous importent le plus. Le score se calcule dans votre navigateur ; rien n'est envoyé ni enregistré.</p>
+  </div>
+  <div class="quiz">
+    <form class="qlist" id="questions">
+      {questions.map((q, i) => (
+        <fieldset class="q" style="margin:0">
+          <span class="label theme">{nomsThemes[q.data.theme]}</span>
+          <legend style="display:contents"><p>{q.data.affirmation}</p></legend>
+          <div class="scale">
+            {echelle.map(([v, l]) => (
+              <label><input type="radio" name={`q${i}`} id={`q${i}_${v + 2}`} value={v} /><span>{l}</span></label>
+            ))}
+          </div>
+          <div class="qfoot"><label class="weight"><input type="checkbox" id={`w${i}`} name={`w${i}`} /> Compte double</label></div>
+        </fieldset>
+      ))}
+    </form>
+    <aside class="results" aria-live="polite">
+      <div class="qfoot"><span class="label" id="compte">0 réponse sur {questions.length}</span><button class="btn ghost" id="effacer" type="button">Effacer</button></div>
+      <div id="resultats"><p style="margin:0;color:var(--muted)">Répondez à au moins une affirmation pour voir vos proximités.</p></div>
+      <p class="mono" style="color:var(--muted);margin:0">Proximité = 100 % moins l'écart moyen entre vos réponses et les positions estimées de chaque candidat. Ce n'est pas une consigne de vote.</p>
+    </aside>
+  </div>
+  <script type="application/json" id="donnees" set:html={JSON.stringify(donnees)} />
+</Base>
+
+<script>
+  import { proximites } from "../lib/score";
+
+  const D: { candidats: { id: string; nom: string; nomTri: string }[]; questions: Record<string, number>[] } =
+    JSON.parse(document.getElementById("donnees")!.textContent!);
+  const form = document.getElementById("questions") as HTMLFormElement;
+  const esc = (s: string) => s.replace(/[&<>"]/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[m]!);
+
+  function maj() {
+    const reponses = D.questions.map((_, i) => {
+      const r = form.querySelector<HTMLInputElement>(`input[name="q${i}"]:checked`);
+      return r ? { valeur: Number(r.value), double: form.querySelector<HTMLInputElement>(`#w${i}`)!.checked } : null;
+    });
+    const n = reponses.filter(Boolean).length;
+    document.getElementById("compte")!.textContent = `${n} réponse${n > 1 ? "s" : ""} sur ${D.questions.length}`;
+    const zone = document.getElementById("resultats")!;
+    if (!n) {
+      zone.innerHTML = `<p style="margin:0;color:var(--muted)">Répondez à au moins une affirmation pour voir vos proximités.</p>`;
+      return;
+    }
+    zone.innerHTML =
+      `<div style="display:grid;gap:10px">` +
+      proximites(D.candidats, D.questions, reponses)
+        .map((s) => `<div class="res-row"><span>${esc(s.nom)}</span><span class="res-bar"><i style="width:${s.pct}%"></i></span><span class="pct">${s.pct} %</span></div>`)
+        .join("") +
+      `</div>`;
+  }
+  form.addEventListener("change", maj);
+  document.getElementById("effacer")!.addEventListener("click", () => { form.reset(); maj(); });
+  maj();
+</script>

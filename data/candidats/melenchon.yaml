@@ -1,0 +1,26 @@
+# Positions reprises de la maquette : à sourcer avant de passer « statut: verifie ».
+prenom: "Jean-Luc"
+nom: "Mélenchon"
+parti: "La France insoumise"
+statut: declare
+bio: "Fondateur de LFI, candidat en 2012, 2017 et 2022."
+positions:
+  retraites:
+    texte: "Retraite à 60 ans avec 40 annuités."
+    statut: a_verifier
+  immigration:
+    texte: "Régularisation des travailleurs sans papiers, accueil digne."
+    statut: a_verifier
+  energie:
+    texte: "Sortie du nucléaire, 100 % renouvelables, planification écologique."
+    statut: a_verifier
+  fiscalite:
+    texte: "Rétablissement de l'ISF, impôt sur le revenu à 14 tranches."
+    statut: a_verifier
+  europe:
+    texte: "Désobéissance aux traités budgétaires européens."
+    statut: a_verifier
+  securite:
+    texte: "Police de proximité, dissolution de la BRAV-M."
+    statut: a_verifier
+analyses: []

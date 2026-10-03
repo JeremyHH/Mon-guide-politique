@@ -1,0 +1,26 @@
+# Positions reprises de la maquette : à sourcer avant de passer « statut: verifie ».
+prenom: "Bruno"
+nom: "Retailleau"
+parti: "Les Républicains"
+statut: declare
+bio: "Ancien ministre de l'Intérieur, président des Républicains."
+positions:
+  retraites:
+    texte: "Maintien de la réforme de 2023, part de capitalisation."
+    statut: a_verifier
+  immigration:
+    texte: "Référendum, fin de l'aide médicale d'État, restriction du regroupement familial."
+    statut: a_verifier
+  energie:
+    texte: "Priorité au nucléaire, fin des subventions à l'éolien."
+    statut: a_verifier
+  fiscalite:
+    texte: "Baisse des dépenses sociales, baisse des charges."
+    statut: a_verifier
+  europe:
+    texte: "Bouclier constitutionnel face aux juridictions européennes."
+    statut: a_verifier
+  securite:
+    texte: "Peines planchers, fin des remises de peine automatiques."
+    statut: a_verifier
+analyses: []

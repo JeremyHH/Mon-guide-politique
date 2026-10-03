@@ -1,0 +1,27 @@
+# Positions reprises de la maquette : à sourcer avant de passer « statut: verifie ».
+prenom: "Éric"
+nom: "Zemmour"
+parti: "Reconquête"
+statut: declare
+declaration: 2026-09-17
+bio: "Président de Reconquête, candidat en 2022. Déclaré le 17 septembre 2026."
+positions:
+  retraites:
+    texte: "Retraite à 64 ans, prise en compte des enfants."
+    statut: a_verifier
+  immigration:
+    texte: "Objectif d'immigration zéro, remigration."
+    statut: a_verifier
+  energie:
+    texte: "Nucléaire, sortie de l'éolien."
+    statut: a_verifier
+  fiscalite:
+    texte: "Baisse des impôts de production et des dépenses sociales."
+    statut: a_verifier
+  europe:
+    texte: "Primauté du droit français, Europe des nations."
+    statut: a_verifier
+  securite:
+    texte: "Expulsion des délinquants étrangers, peines planchers."
+    statut: a_verifier
+analyses: []

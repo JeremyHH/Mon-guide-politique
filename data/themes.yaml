@@ -1,0 +1,6 @@
+- { id: retraites, nom: Retraites, ordre: 1 }
+- { id: immigration, nom: Immigration, ordre: 2 }
+- { id: energie, nom: Énergie et climat, ordre: 3 }
+- { id: fiscalite, nom: Fiscalité et dépenses, ordre: 4 }
+- { id: europe, nom: Europe, ordre: 5 }
+- { id: securite, nom: Sécurité et justice, ordre: 6 }

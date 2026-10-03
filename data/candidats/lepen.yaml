@@ -1,0 +1,26 @@
+# Positions reprises de la maquette : à sourcer avant de passer « statut: verifie ».
+prenom: "Marine"
+nom: "Le Pen"
+parti: "Rassemblement national"
+statut: declare
+bio: "Députée du Pas-de-Calais, candidate en 2012, 2017 et 2022. Condamnée en appel le 7 juillet 2026, reste éligible."
+positions:
+  retraites:
+    texte: "Retour à 62 ans, départ anticipé pour les carrières longues."
+    statut: a_verifier
+  immigration:
+    texte: "Référendum sur l'immigration, priorité nationale pour l'emploi et le logement."
+    statut: a_verifier
+  energie:
+    texte: "Moratoire sur l'éolien, nouveaux réacteurs nucléaires."
+    statut: a_verifier
+  fiscalite:
+    texte: "Baisse de la TVA sur l'énergie, impôt sur la fortune financière."
+    statut: a_verifier
+  europe:
+    texte: "Primauté du droit national, baisse de la contribution française."
+    statut: a_verifier
+  securite:
+    texte: "Peines planchers, présomption de légitime défense pour les policiers."
+    statut: a_verifier
+analyses: []

@@ -1,0 +1,26 @@
+# Positions reprises de la maquette : à sourcer avant de passer « statut: verifie ».
+prenom: "Édouard"
+nom: "Philippe"
+parti: "Horizons"
+statut: declare
+bio: "Maire du Havre, Premier ministre de 2017 à 2020."
+positions:
+  retraites:
+    texte: "Recul de l'âge au-delà de 64 ans, introduction d'une part de capitalisation."
+    statut: a_verifier
+  immigration:
+    texte: "Quotas annuels votés par le Parlement."
+    statut: a_verifier
+  energie:
+    texte: "Programme nucléaire ambitieux."
+    statut: a_verifier
+  fiscalite:
+    texte: "Forte réduction de la dépense publique, retour sous 3 % de déficit."
+    statut: a_verifier
+  europe:
+    texte: "Soutien à l'UE, renforcement du marché unique."
+    statut: a_verifier
+  securite:
+    texte: "Hausse des places de prison, autorité de l'État."
+    statut: a_verifier
+analyses: []

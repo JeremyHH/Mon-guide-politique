@@ -1,0 +1,47 @@
+---
+import Base from "../../layouts/Base.astro";
+import Position from "../../components/Position.astro";
+import { candidats, themes, nomComplet, STATUTS, dateFr, lien, type Candidat } from "../../lib/data";
+
+export async function getStaticPaths() {
+  return (await candidats()).map((c) => ({ params: { id: c.id }, props: { c } }));
+}
+const { c } = Astro.props as { c: Candidat };
+const listeThemes = await themes();
+---
+<Base titre={nomComplet(c)} page="candidats" description={`Positions de ${nomComplet(c)} (${c.data.parti}) pour la présidentielle 2027.`}>
+  <article class="sheet">
+    <a class="back" href={lien("/candidats")}>← Tous les candidats</a>
+    <div class="sheet-head">
+      <div style="display:grid;gap:6px">
+        <h2>{nomComplet(c)}</h2>
+        <span style="color:var(--muted)">{c.data.parti}</span>
+      </div>
+      <span class="pill ok">{STATUTS[c.data.statut]}{c.data.declaration && ` · ${dateFr(c.data.declaration)}`}</span>
+    </div>
+    <p style="margin:0;max-width:65ch">{c.data.bio}</p>
+    <div style="display:grid;gap:14px">
+      <span class="label">Positions par thème</span>
+      {listeThemes.map((t) => (
+        <div class="pos">
+          <h3>{t.data.nom}</h3>
+          <p><Position position={c.data.positions[t.id as keyof typeof c.data.positions]} /></p>
+        </div>
+      ))}
+    </div>
+    <div class="analysis">
+      <span class="label">Analyses · séparées des faits</span>
+      {c.data.analyses.length ? (
+        c.data.analyses.map((a) => (
+          <div>
+            <h3>{a.titre}</h3>
+            <p>{a.resume}</p>
+            <span class="mono src"><a href={a.source.url} rel="noopener">{a.source.titre}</a> · {dateFr(a.source.date)}</span>
+          </div>
+        ))
+      ) : (
+        <p>Aucune analyse publiée pour l'instant. Seules les évaluations d'organismes nommés (Cour des comptes, OFCE, Institut Montaigne, Fondation Jean-Jaurès…) figureront ici.</p>
+      )}
+    </div>
+  </article>
+</Base>

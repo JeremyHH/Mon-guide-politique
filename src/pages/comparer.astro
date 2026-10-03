@@ -1,0 +1,109 @@
+---
+import Base from "../layouts/Base.astro";
+import Position from "../components/Position.astro";
+import { candidats, themes, nomComplet, dateFr } from "../lib/data";
+
+const liste = await candidats();
+const listeThemes = await themes();
+type Cle = keyof (typeof liste)[number]["data"]["positions"];
+
+// Données pour la vue face à face, construite dans le navigateur.
+const donnees = {
+  themes: listeThemes.map((t) => ({ id: t.id, nom: t.data.nom })),
+  candidats: liste.map((c) => ({
+    id: c.id,
+    nom: nomComplet(c),
+    positions: Object.fromEntries(
+      listeThemes.map((t) => {
+        const p = c.data.positions[t.id as Cle];
+        return [t.id, p ? { texte: p.texte, aVerifier: p.statut === "a_verifier", source: p.source ? { titre: p.source.titre, url: p.source.url, date: dateFr(p.source.date) } : null } : null];
+      }),
+    ),
+  })),
+};
+---
+<Base titre="Comparer" page="comparer">
+  <div>
+    <h2 style="font-size:2rem">Comparateur</h2>
+    <p class="lede">Une phrase par case, avec sa source. Quand un candidat ne s'est pas exprimé, la case l'indique plutôt que de deviner.</p>
+  </div>
+  <div class="tools">
+    <span class="label">Vue</span>
+    <button class="chip" id="mode-theme" aria-pressed="true">Par thème</button>
+    <button class="chip" id="mode-duel" aria-pressed="false">Face à face</button>
+  </div>
+
+  <div id="vue-theme" style="display:grid;gap:16px">
+    <div class="tools">
+      {listeThemes.map((t, i) => <button class="chip" data-theme={t.id} aria-pressed={String(i === 0)}>{t.data.nom}</button>)}
+    </div>
+    {listeThemes.map((t, i) => (
+      <div class="cmp-wrap" data-table={t.id} hidden={i !== 0}>
+        <table class="cmp">
+          <thead><tr><th>Candidat</th><th>{t.data.nom}</th></tr></thead>
+          <tbody>
+            {liste.map((c) => (
+              <tr>
+                <th>{nomComplet(c)}<div class="mono" style="color:var(--muted);font-weight:400">{c.data.parti}</div></th>
+                <td><Position position={c.data.positions[t.id as Cle]} /></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    ))}
+  </div>
+
+  <div id="vue-duel" style="display:grid;gap:16px" hidden>
+    <div class="duel-pick">
+      <select id="duel-a" aria-label="Premier candidat">{liste.map((c, i) => <option value={c.id} selected={i === 1}>{nomComplet(c)}</option>)}</select>
+      <span class="label">face à</span>
+      <select id="duel-b" aria-label="Second candidat">{liste.map((c, i) => <option value={c.id} selected={i === 3}>{nomComplet(c)}</option>)}</select>
+    </div>
+    <div class="cmp-wrap"><table class="cmp" id="duel"></table></div>
+  </div>
+
+  <script type="application/json" id="donnees" set:html={JSON.stringify(donnees)} />
+</Base>
+
+<script>
+  type P = { texte: string; aVerifier: boolean; source: { titre: string; url: string; date: string } | null } | null;
+  const D: { themes: { id: string; nom: string }[]; candidats: { id: string; nom: string; positions: Record<string, P> }[] } =
+    JSON.parse(document.getElementById("donnees")!.textContent!);
+  const $ = <T extends HTMLElement>(s: string) => document.querySelector<T>(s)!;
+  const esc = (s: string) => s.replace(/[&<>"]/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[m]!);
+
+  const cellule = (p: P) => {
+    if (!p) return `<span class="none">Pas de position connue</span>`;
+    const src = p.source ? `<a href="${esc(p.source.url)}" rel="noopener">${esc(p.source.titre)}</a> · ${esc(p.source.date)}` : "";
+    return `${esc(p.texte)}<span class="mono src">${src}${p.aVerifier ? `<span class="pill todo">À vérifier</span>` : ""}</span>`;
+  };
+
+  document.querySelectorAll<HTMLButtonElement>("[data-theme]").forEach((b) =>
+    b.addEventListener("click", () => {
+      document.querySelectorAll("[data-theme]").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+      document.querySelectorAll<HTMLElement>("[data-table]").forEach((t) => (t.hidden = t.dataset.table !== b.dataset.theme));
+    }),
+  );
+
+  function duel() {
+    const a = D.candidats.find((c) => c.id === $<HTMLSelectElement>("#duel-a").value)!;
+    const b = D.candidats.find((c) => c.id === $<HTMLSelectElement>("#duel-b").value)!;
+    $("#duel").innerHTML =
+      `<thead><tr><th>Thème</th><th>${esc(a.nom)}</th><th>${esc(b.nom)}</th></tr></thead><tbody>` +
+      D.themes.map((t) => `<tr><th>${esc(t.nom)}</th><td>${cellule(a.positions[t.id])}</td><td>${cellule(b.positions[t.id])}</td></tr>`).join("") +
+      "</tbody>";
+  }
+  $("#duel-a").addEventListener("change", duel);
+  $("#duel-b").addEventListener("change", duel);
+
+  function mode(duelActif: boolean) {
+    $("#vue-theme").hidden = duelActif;
+    $("#vue-duel").hidden = !duelActif;
+    $("#mode-theme").setAttribute("aria-pressed", String(!duelActif));
+    $("#mode-duel").setAttribute("aria-pressed", String(duelActif));
+    if (duelActif) duel();
+  }
+  $("#mode-theme").addEventListener("click", () => mode(false));
+  $("#mode-duel").addEventListener("click", () => mode(true));
+</script>

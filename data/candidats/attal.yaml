@@ -1,0 +1,26 @@
+# Positions reprises de la maquette : à sourcer avant de passer « statut: verifie ».
+prenom: "Gabriel"
+nom: "Attal"
+parti: "Renaissance"
+statut: declare
+bio: "Ancien Premier ministre (2024), secrétaire général de Renaissance."
+positions:
+  retraites:
+    texte: "Propose de remplacer l'âge légal par une durée de cotisation."
+    statut: a_verifier
+  immigration:
+    texte: "Durcissement des conditions de séjour, maintien de l'accueil des métiers en tension."
+    statut: a_verifier
+  energie:
+    texte: "Relance du nucléaire et accélération des renouvelables."
+    statut: a_verifier
+  fiscalite:
+    texte: "Pas de hausse générale d'impôts, baisse ciblée de la dépense."
+    statut: a_verifier
+  europe:
+    texte: "Approfondissement de l'intégration, défense européenne."
+    statut: a_verifier
+  securite:
+    texte: "Renforcement de la justice des mineurs, comparution immédiate élargie."
+    statut: a_verifier
+analyses: []

@@ -1,0 +1,25 @@
+# Positions reprises de la maquette : à sourcer avant de passer « statut: verifie ».
+prenom: "Fabien"
+nom: "Roussel"
+parti: "Parti communiste français"
+statut: declare
+declaration: 2026-09-06
+bio: "Secrétaire national du PCF, candidat en 2022. Déclaré le 6 septembre 2026."
+positions:
+  retraites:
+    texte: "Retraite à 60 ans."
+    statut: a_verifier
+  immigration: null
+  energie:
+    texte: "Mix nucléaire et renouvelables, renationalisation d'EDF."
+    statut: a_verifier
+  fiscalite:
+    texte: "Taxation du capital, hausse des salaires."
+    statut: a_verifier
+  europe:
+    texte: "Renégociation des traités."
+    statut: a_verifier
+  securite:
+    texte: "Recrutement de policiers et de magistrats."
+    statut: a_verifier
+analyses: []

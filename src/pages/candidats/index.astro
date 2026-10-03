@@ -1,0 +1,53 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import { candidats, nomComplet, STATUTS, lien } from "../../lib/data";
+
+const liste = await candidats();
+const autres = await getCollection("autres");
+---
+<Base titre="Candidats" page="candidats">
+  <div>
+    <h2 style="font-size:2rem">Candidats déclarés</h2>
+    <p class="lede">Principales candidatures déclarées au 3 octobre 2026. Les parrainages (500 signatures d'élus) ne seront validés par le Conseil constitutionnel qu'au printemps 2027.</p>
+  </div>
+  <div class="tools">
+    <span class="label">Ordre</span>
+    <button class="chip" id="tri-alpha" aria-pressed="true">Alphabétique</button>
+    <button class="chip" id="tri-hasard" aria-pressed="false">Aléatoire</button>
+  </div>
+  <div class="ballots" id="bulletins">
+    {liste.map((c) => (
+      <a class="ballot" href={lien(`/candidats/${c.id}`)}>
+        <span class="name">{nomComplet(c)}</span>
+        <span class="party">{c.data.parti}</span>
+        <span class="status"><span class="pill ok">{STATUTS[c.data.statut]}</span></span>
+      </a>
+    ))}
+  </div>
+  <div class="others">
+    <span class="label">Autres candidatures déclarées (fiches à venir)</span>
+    <ul>{autres.map((a) => <li>{a.data.libelle}</li>)}</ul>
+  </div>
+</Base>
+
+<script>
+  const box = document.getElementById("bulletins")!;
+  const initial = [...box.children];
+  const alpha = document.getElementById("tri-alpha")!;
+  const hasard = document.getElementById("tri-hasard")!;
+  function tri(items: Element[], actif: HTMLElement) {
+    box.replaceChildren(...items);
+    alpha.setAttribute("aria-pressed", String(actif === alpha));
+    hasard.setAttribute("aria-pressed", String(actif === hasard));
+  }
+  alpha.onclick = () => tri(initial, alpha);
+  hasard.onclick = () => {
+    const melange = [...initial];
+    for (let i = melange.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [melange[i], melange[j]] = [melange[j], melange[i]];
+    }
+    tri(melange, hasard);
+  };
+</script>

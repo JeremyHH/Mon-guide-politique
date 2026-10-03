@@ -1,0 +1,25 @@
+# Positions reprises de la maquette : à sourcer avant de passer « statut: verifie ».
+prenom: "Marine"
+nom: "Tondelier"
+parti: "Les Écologistes"
+statut: declare
+declaration: 2025-10-22
+bio: "Secrétaire nationale des Écologistes, désignée candidate en décembre 2025."
+positions:
+  retraites:
+    texte: "Abrogation de la réforme de 2023."
+    statut: a_verifier
+  immigration:
+    texte: "Accueil et régularisation des travailleurs."
+    statut: a_verifier
+  energie:
+    texte: "Sortie progressive du nucléaire, sobriété, rénovation des logements."
+    statut: a_verifier
+  fiscalite:
+    texte: "Taxe sur les plus hauts patrimoines (type Zucman)."
+    statut: a_verifier
+  europe:
+    texte: "Europe fédérale et écologique."
+    statut: a_verifier
+  securite: null
+analyses: []
