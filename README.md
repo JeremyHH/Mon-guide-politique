@@ -1,4 +1,4 @@
-# Clair
+# Mon guide politique
 
 Guide neutre et sourcé de la vie démocratique française : comprendre les institutions, savoir voter, et comparer les candidats à chaque élection (fiches, comparateur par thème, quiz « qui me ressemble »).
 

@@ -21,7 +21,7 @@ const onglets = [
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{page === "accueil" ? "Clair" : `${titre} · Clair`}</title>
+    <title>{page === "accueil" ? "Mon guide politique" : `${titre} · Mon guide politique`}</title>
     <meta name="description" content={description} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
@@ -32,7 +32,7 @@ const onglets = [
   <body>
     <header class="top">
       <div class="wrap bar">
-        <a class="brand" href={lien("/")}><span>Clair<b>.</b></span></a>
+        <a class="brand" href={lien("/")}><span>Mon guide <b>politique</b></span></a>
         <nav class="tabs" aria-label="Sections">
           {onglets.map(([id, nom, href]) => (
             <a href={lien(href)} aria-current={id === page ? "page" : undefined}>{nom}</a>
@@ -48,7 +48,7 @@ const onglets = [
     </main>
     <footer class="foot">
       <div class="wrap">
-        <p>Clair · site indépendant, sans publicité ni collecte de données. <a href={lien("/methode")}>Méthode et corrections</a></p>
+        <p>Mon guide politique · site indépendant, sans publicité ni collecte de données. <a href={lien("/methode")}>Méthode et corrections</a></p>
       </div>
     </footer>
   </body>
