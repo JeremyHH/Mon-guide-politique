@@ -1,0 +1,20 @@
+---
+import Base from "../../layouts/Base.astro";
+import { fiches, lien } from "../../lib/data";
+
+const liste = await fiches("voter");
+---
+<Base titre="Voter" page="voter">
+  <div>
+    <h2 style="font-size:2rem">Voter</h2>
+    <p class="lede">S'inscrire, voter par procuration, comprendre ce qu'on élit et comment les voix sont comptées.</p>
+  </div>
+  <div class="cards">
+    {liste.map((f) => (
+      <a class="card" href={lien(`/voter/${f.id.split("/")[1]}`)}>
+        <h3>{f.data.titre}</h3>
+        <p>{f.data.resume}</p>
+      </a>
+    ))}
+  </div>
+</Base>

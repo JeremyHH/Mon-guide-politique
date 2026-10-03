@@ -5,14 +5,14 @@ import { lien } from "../lib/data";
 interface Props {
   titre: string;
   description?: string;
-  page: "accueil" | "candidats" | "comparer" | "quiz" | "methode";
+  page: "accueil" | "institutions" | "voter" | "elections" | "methode";
 }
-const { titre, description = "Synthèse neutre et sourcée de l'élection présidentielle 2027.", page } = Astro.props;
+const { titre, description = "Comprendre les institutions, savoir voter, comparer les candidats : un guide neutre et sourcé de la vie démocratique française.", page } = Astro.props;
 const onglets = [
   ["accueil", "Accueil", "/"],
-  ["candidats", "Candidats", "/candidats"],
-  ["comparer", "Comparer", "/comparer"],
-  ["quiz", "Quiz", "/quiz"],
+  ["institutions", "Institutions", "/institutions"],
+  ["voter", "Voter", "/voter"],
+  ["elections", "Élections", "/elections"],
   ["methode", "Méthode", "/methode"],
 ] as const;
 ---
@@ -21,7 +21,7 @@ const onglets = [
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{page === "accueil" ? "Clair 2027" : `${titre} · Clair 2027`}</title>
+    <title>{page === "accueil" ? "Clair" : `${titre} · Clair`}</title>
     <meta name="description" content={description} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
@@ -32,18 +32,14 @@ const onglets = [
   <body>
     <header class="top">
       <div class="wrap bar">
-        <a class="brand" href={lien("/")}>Clair<b>2027</b></a>
+        <a class="brand" href={lien("/")}><span>Clair<b>.</b></span></a>
         <nav class="tabs" aria-label="Sections">
           {onglets.map(([id, nom, href]) => (
             <a href={lien(href)} aria-current={id === page ? "page" : undefined}>{nom}</a>
           ))}
         </nav>
       </div>
-      <div class="mock">
-        <div class="wrap">
-          <p>Version de travail : les positions marquées « à vérifier » n'ont pas encore de source et ne doivent pas être citées.</p>
-        </div>
-      </div>
+      <slot name="bandeau" />
     </header>
     <main class="wrap">
       <section class="page">
@@ -52,7 +48,7 @@ const onglets = [
     </main>
     <footer class="foot">
       <div class="wrap">
-        <p>Clair 2027 · site indépendant, sans publicité ni collecte de données. <a href={lien("/methode")}>Méthode et corrections</a></p>
+        <p>Clair · site indépendant, sans publicité ni collecte de données. <a href={lien("/methode")}>Méthode et corrections</a></p>
       </div>
     </footer>
   </body>

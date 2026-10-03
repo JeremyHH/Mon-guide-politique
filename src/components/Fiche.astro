@@ -1,0 +1,27 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { fiches, dateFr, lien } from "../lib/data";
+
+interface Props {
+  fiche: CollectionEntry<"fiches">;
+}
+const { fiche } = Astro.props;
+const rubrique = fiche.data.rubrique;
+const soeurs = await fiches(rubrique);
+const i = soeurs.findIndex((f) => f.id === fiche.id);
+const suivante = soeurs[i + 1];
+const href = (f: CollectionEntry<"fiches">) => lien(`/${rubrique}/${f.id.split("/")[1]}`);
+---
+<article class="prose">
+  <a class="back" href={lien(`/${rubrique}`)}>← {rubrique === "institutions" ? "Les institutions" : "Voter"}</a>
+  <h1>{fiche.data.titre}</h1>
+  <p class="lede" style="margin-top:0">{fiche.data.resume}</p>
+  <slot />
+  <div class="sources">
+    <span class="label">Pour aller plus loin · mis à jour le {dateFr(fiche.data.miseAJour)}</span>
+    <ul>
+      {fiche.data.sources.map((s) => <li><a href={s.url} rel="noopener">{s.titre}</a></li>)}
+    </ul>
+  </div>
+  {suivante && <a class="back" href={href(suivante)}>Fiche suivante : {suivante.data.titre} →</a>}
+</article>

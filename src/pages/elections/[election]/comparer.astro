@@ -1,31 +1,37 @@
 ---
-import Base from "../layouts/Base.astro";
-import Position from "../components/Position.astro";
-import { candidats, themes, nomComplet, dateFr } from "../lib/data";
+import Base from "../../../layouts/Base.astro";
+import Position from "../../../components/Position.astro";
+import NavElection from "../../../components/NavElection.astro";
+import BandeauVerif from "../../../components/BandeauVerif.astro";
+import { elections, candidatsDe, nomComplet, dateFr, type Election } from "../../../lib/data";
 
-const liste = await candidats();
-const listeThemes = await themes();
-type Cle = keyof (typeof liste)[number]["data"]["positions"];
+export async function getStaticPaths() {
+  return (await elections()).map((e) => ({ params: { election: e.id }, props: { election: e } }));
+}
+const { election } = Astro.props as { election: Election };
+const liste = await candidatsDe(election);
+const listeThemes = election.data.themes;
 
 // Données pour la vue face à face, construite dans le navigateur.
 const donnees = {
-  themes: listeThemes.map((t) => ({ id: t.id, nom: t.data.nom })),
+  themes: listeThemes,
   candidats: liste.map((c) => ({
     id: c.id,
     nom: nomComplet(c),
     positions: Object.fromEntries(
       listeThemes.map((t) => {
-        const p = c.data.positions[t.id as Cle];
+        const p = c.data.positions[t.id];
         return [t.id, p ? { texte: p.texte, aVerifier: p.statut === "a_verifier", source: p.source ? { titre: p.source.titre, url: p.source.url, date: dateFr(p.source.date) } : null } : null];
       }),
     ),
   })),
 };
 ---
-<Base titre="Comparer" page="comparer">
+<Base titre={`Comparer · ${election.data.nom}`} page="elections">
+  <BandeauVerif slot="bandeau" />
+  <NavElection election={election} actif="comparer" />
   <div>
-    <h2 style="font-size:2rem">Comparateur</h2>
-    <p class="lede">Une phrase par case, avec sa source. Quand un candidat ne s'est pas exprimé, la case l'indique plutôt que de deviner.</p>
+    <p class="lede" style="margin:0">Une phrase par case, avec sa source. Quand un candidat ne s'est pas exprimé, la case l'indique plutôt que de deviner.</p>
   </div>
   <div class="tools">
     <span class="label">Vue</span>
@@ -35,17 +41,17 @@ const donnees = {
 
   <div id="vue-theme" style="display:grid;gap:16px">
     <div class="tools">
-      {listeThemes.map((t, i) => <button class="chip" data-theme={t.id} aria-pressed={String(i === 0)}>{t.data.nom}</button>)}
+      {listeThemes.map((t, i) => <button class="chip" data-theme={t.id} aria-pressed={String(i === 0)}>{t.nom}</button>)}
     </div>
     {listeThemes.map((t, i) => (
       <div class="cmp-wrap" data-table={t.id} hidden={i !== 0}>
         <table class="cmp">
-          <thead><tr><th>Candidat</th><th>{t.data.nom}</th></tr></thead>
+          <thead><tr><th>Candidat</th><th>{t.nom}</th></tr></thead>
           <tbody>
             {liste.map((c) => (
               <tr>
                 <th>{nomComplet(c)}<div class="mono" style="color:var(--muted);font-weight:400">{c.data.parti}</div></th>
-                <td><Position position={c.data.positions[t.id as Cle]} /></td>
+                <td><Position position={c.data.positions[t.id]} /></td>
               </tr>
             ))}
           </tbody>

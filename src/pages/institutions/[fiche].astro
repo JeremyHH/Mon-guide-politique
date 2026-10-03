@@ -1,0 +1,15 @@
+---
+import { render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import Fiche from "../../components/Fiche.astro";
+import { fiches } from "../../lib/data";
+
+export async function getStaticPaths() {
+  return (await fiches("institutions")).map((f) => ({ params: { fiche: f.id.split("/")[1] }, props: { f } }));
+}
+const { f } = Astro.props;
+const { Content } = await render(f);
+---
+<Base titre={f.data.titre} page="institutions" description={f.data.resume}>
+  <Fiche fiche={f}><Content /></Fiche>
+</Base>

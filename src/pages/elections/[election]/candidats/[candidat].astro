@@ -1,17 +1,24 @@
 ---
-import Base from "../../layouts/Base.astro";
-import Position from "../../components/Position.astro";
-import { candidats, themes, nomComplet, STATUTS, dateFr, lien, type Candidat } from "../../lib/data";
+import Base from "../../../../layouts/Base.astro";
+import Position from "../../../../components/Position.astro";
+import BandeauVerif from "../../../../components/BandeauVerif.astro";
+import { elections, candidatsDe, nomComplet, slugCandidat, STATUTS, dateFr, lien, type Candidat, type Election } from "../../../../lib/data";
 
 export async function getStaticPaths() {
-  return (await candidats()).map((c) => ({ params: { id: c.id }, props: { c } }));
+  const routes = [];
+  for (const election of await elections()) {
+    for (const c of await candidatsDe(election)) {
+      routes.push({ params: { election: election.id, candidat: slugCandidat(c) }, props: { c, election } });
+    }
+  }
+  return routes;
 }
-const { c } = Astro.props as { c: Candidat };
-const listeThemes = await themes();
+const { c, election } = Astro.props as { c: Candidat; election: Election };
 ---
-<Base titre={nomComplet(c)} page="candidats" description={`Positions de ${nomComplet(c)} (${c.data.parti}) pour la présidentielle 2027.`}>
+<Base titre={`${nomComplet(c)} · ${election.data.nom}`} page="elections" description={`Positions de ${nomComplet(c)} (${c.data.parti}) : ${election.data.nom}.`}>
+  <BandeauVerif slot="bandeau" />
   <article class="sheet">
-    <a class="back" href={lien("/candidats")}>← Tous les candidats</a>
+    <a class="back" href={lien(`/elections/${election.id}`)}>← {election.data.nom}</a>
     <div class="sheet-head">
       <div style="display:grid;gap:6px">
         <h2>{nomComplet(c)}</h2>
@@ -22,10 +29,10 @@ const listeThemes = await themes();
     <p style="margin:0;max-width:65ch">{c.data.bio}</p>
     <div style="display:grid;gap:14px">
       <span class="label">Positions par thème</span>
-      {listeThemes.map((t) => (
+      {election.data.themes.map((t) => (
         <div class="pos">
-          <h3>{t.data.nom}</h3>
-          <p><Position position={c.data.positions[t.id as keyof typeof c.data.positions]} /></p>
+          <h3>{t.nom}</h3>
+          <p><Position position={c.data.positions[t.id]} /></p>
         </div>
       ))}
     </div>

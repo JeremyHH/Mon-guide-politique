@@ -1,17 +1,44 @@
-import { getCollection, type CollectionEntry } from "astro:content";
+import { getCollection, getEntry, type CollectionEntry } from "astro:content";
 
 export type Candidat = CollectionEntry<"candidats">;
+export type Election = CollectionEntry<"elections">;
+export type Position = Candidat["data"]["positions"][string];
 
 export const nomComplet = (c: Candidat) => `${c.data.prenom} ${c.data.nom}`;
+export const slugCandidat = (c: Candidat) => c.id.split("/")[1];
 
 export const parNom = (a: Candidat, b: Candidat) => a.data.nom.localeCompare(b.data.nom, "fr");
 
-export async function candidats() {
-  return (await getCollection("candidats", (c) => c.data.statut !== "retire")).sort(parNom);
+export async function elections() {
+  return (await getCollection("elections")).sort((a, b) => +a.data.date - +b.data.date);
 }
 
-export async function themes() {
-  return (await getCollection("themes")).sort((a, b) => a.data.ordre - b.data.ordre);
+/** Candidats d'une élection, triés par nom. Vérifie que leurs positions portent sur des thèmes connus. */
+export async function candidatsDe(election: Election) {
+  const themes = new Set(election.data.themes.map((t) => t.id));
+  const liste = await getCollection("candidats", (c) => c.id.startsWith(election.id + "/") && c.data.statut !== "retire");
+  for (const c of liste) {
+    const inconnus = Object.keys(c.data.positions).filter((k) => !themes.has(k));
+    if (inconnus.length) throw new Error(`${c.id} : thème(s) inconnu(s) ${inconnus.join(", ")}`);
+  }
+  return liste.sort(parNom);
+}
+
+/** Questions du quiz d'une élection ; chaque question doit positionner chaque candidat. */
+export async function quizDe(election: Election, liste: Candidat[]) {
+  const entree = await getEntry("quiz", election.id);
+  const questions = entree?.data.questions ?? [];
+  const themes = new Set(election.data.themes.map((t) => t.id));
+  for (const q of questions) {
+    if (!themes.has(q.theme)) throw new Error(`Quiz ${election.id}/${q.id} : thème inconnu « ${q.theme} »`);
+    const manquants = liste.map(slugCandidat).filter((id) => q.positions[id] === undefined);
+    if (manquants.length) throw new Error(`Quiz ${election.id}/${q.id} : position manquante pour ${manquants.join(", ")}`);
+  }
+  return questions;
+}
+
+export async function fiches(rubrique: "institutions" | "voter") {
+  return (await getCollection("fiches", (f) => f.data.rubrique === rubrique)).sort((a, b) => a.data.ordre - b.data.ordre);
 }
 
 export const STATUTS: Record<Candidat["data"]["statut"], string> = {

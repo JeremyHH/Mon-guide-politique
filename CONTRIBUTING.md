@@ -1,6 +1,31 @@
 # Règles de rédaction
 
-## Une position
+## Une fiche institutions ou vote
+
+Fichier Markdown dans `src/fiches/institutions/` ou `src/fiches/voter/`, avec un en-tête :
+
+```yaml
+---
+titre: Le Sénat
+resume: Une phrase affichée dans les listes.
+rubrique: institutions      # ou voter
+ordre: 10                   # position dans la liste
+miseAJour: 2026-10-03
+sources:                    # au moins une, de préférence officielle
+  - { titre: "Sénat", url: "https://www.senat.fr" }
+---
+```
+
+Décrire les règles en vigueur, sans commenter les réformes souhaitables. Pour un lien vers une autre fiche, écrire le chemin absolu (`/voter/procuration`) : la base du site est ajoutée au build.
+
+## Ajouter une élection
+
+1. Créer `data/elections/<id>/election.yaml` (copier celui de `presidentielle-2027` et adapter les thèmes).
+2. Ajouter les fiches dans `data/elections/<id>/candidats/` et, si besoin, un `quiz.yaml`.
+3. Dans `data/scrutins.yaml`, renseigner `election: <id>` sur la ligne du scrutin correspondant.
+
+
+## Une position de candidat
 
 ```yaml
 positions:
@@ -24,10 +49,10 @@ Uniquement des évaluations d'organismes nommés, en variant les sensibilités (
 
 ## Le quiz
 
-Chaque affirmation de `data/quiz.yaml` doit donner une valeur de -2 à +2 pour **chaque** candidat ayant une fiche ; le build échoue sinon. La valeur doit découler des positions sourcées de la fiche.
+Chaque affirmation de `data/elections/<id>/quiz.yaml` doit donner une valeur de -2 à +2 pour **chaque** candidat ayant une fiche dans cette élection ; le build échoue sinon. Le `theme` doit être un des thèmes de l'élection. La valeur doit découler des positions sourcées de la fiche.
 
 ## Ajouter un candidat
 
-1. Créer `data/candidats/<id>.yaml` (copier une fiche existante).
-2. Ajouter `<id>: <valeur>` à chaque question de `data/quiz.yaml`.
-3. Le retirer de `data/autres.yaml` s'il y figurait.
+1. Créer `data/elections/<election>/candidats/<id>.yaml` (copier une fiche existante). Les clés de `positions` doivent être des thèmes de l'élection.
+2. Ajouter `<id>: <valeur>` à chaque question du `quiz.yaml` de l'élection.
+3. Le retirer de la liste `autres` de `election.yaml` s'il y figurait.

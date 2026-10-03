@@ -1,0 +1,27 @@
+---
+import { lien, type Election } from "../lib/data";
+
+interface Props {
+  election: Election;
+  actif: "apercu" | "comparer" | "quiz";
+}
+const { election, actif } = Astro.props;
+const base = `/elections/${election.id}`;
+const onglets = [
+  ["apercu", "Candidats et calendrier", base],
+  ["comparer", "Comparer", `${base}/comparer`],
+  ["quiz", "Quiz", `${base}/quiz`],
+] as const;
+---
+<div style="display:grid;gap:12px">
+  <a class="back" href={lien("/elections")}>← Toutes les élections</a>
+  <div>
+    <span class="label">{election.data.libelleDate}</span>
+    <h2 style="font-size:2rem">{election.data.nom}</h2>
+  </div>
+  <nav class="tools" aria-label="Sections de l'élection">
+    {onglets.map(([id, nom, href]) => (
+      <a class="chip" href={lien(href)} aria-current={id === actif ? "page" : undefined}>{nom}</a>
+    ))}
+  </nav>
+</div>

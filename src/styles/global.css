@@ -148,3 +148,28 @@ a.back{color:var(--accent)}
 .pill.todo{border-color:var(--warn);color:var(--warn)}
 footer.foot{border-top:1px solid var(--line);padding-block:20px;color:var(--muted);font-size:.9rem}
 footer.foot p{margin:0}
+a.chip{text-decoration:none;color:var(--ink)}
+a.chip[aria-current="page"]{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{background:var(--paper);border:1px solid var(--line);padding:18px 20px;display:grid;gap:6px;align-content:start;text-decoration:none;color:inherit}
+a.card:hover{border-color:var(--accent)}
+.card h3{font-size:1.15rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.prose{background:var(--paper);border:1px solid var(--line);padding:28px;max-width:780px;display:grid;gap:4px}
+.prose h1{font-size:2.1rem;margin-bottom:6px}
+.prose h2{font-size:1.3rem;margin-top:20px}
+.prose p,.prose ul,.prose ol,.prose table{max-width:65ch;margin:6px 0}
+.prose li{margin-bottom:4px}
+.prose blockquote{margin:10px 0;padding:10px 16px;background:var(--accent-soft);border-radius:4px}
+.prose blockquote p{margin:0}
+.prose table{border-collapse:collapse;width:100%;font-size:.95rem}
+.prose th,.prose td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.prose .sources{margin-top:20px;border-top:1px solid var(--line);padding-top:14px}
+.table-wrap{overflow-x:auto;background:var(--paper);border:1px solid var(--line)}
+table.data{border-collapse:collapse;width:100%;min-width:760px}
+table.data th,table.data td{text-align:left;vertical-align:top;padding:10px 14px;border-bottom:1px solid var(--line);font-size:.95rem}
+table.data thead th{font-family:var(--f-display);font-size:.8rem;text-transform:uppercase;letter-spacing:.04em}
+table.data tbody th{font-family:var(--f-display)}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.section-head h2{font-size:1.5rem}
+@media (max-width:620px){.prose table{display:block;overflow-x:auto}.prose{padding:20px}}

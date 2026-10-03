@@ -1,55 +1,56 @@
 ---
-import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
-import { lien } from "../lib/data";
+import { elections, fiches, lien } from "../lib/data";
 
-const etapes = (await getCollection("calendrier")).sort((a, b) => +a.data.date - +b.data.date);
-const tour1 = etapes.find((e) => e.id === "tour-1")!.data.date;
-const nbQuestions = (await getCollection("quiz")).length;
+const aVenir = (await elections()).filter((e) => +e.data.date >= Date.now() - 86400000 * 30);
+const prochaine = aVenir[0];
+const institutions = (await fiches("institutions")).slice(0, 4);
+const voter = await fiches("voter");
+const slug = (id: string) => id.split("/")[1];
 ---
 <Base titre="Accueil" page="accueil">
   <div class="hero">
     <div>
-      <span class="label">Élection présidentielle · France</span>
-      <h1>Qui propose quoi, thème par thème.</h1>
-      <p class="lede">Les mêmes questions posées à chaque candidat déclaré, les réponses tirées de leurs programmes et déclarations, avec la source et la date à chaque fois.</p>
+      <span class="label">Vie démocratique · France</span>
+      <h1>Comprendre, voter, choisir.</h1>
+      <p class="lede">Comment fonctionnent les institutions, comment s'inscrire et voter, et ce que proposent les candidats à chaque élection. Neutre, sourcé, sans publicité ni collecte de données.</p>
     </div>
-    <div class="countdown">
-      <span class="label">Premier tour · avril 2027</span>
-      <span class="n" id="jours" data-cible={tour1.toISOString()}>—</span>
-      <span class="mono">jours avant le 11 avril 2027 (date indicative)</span>
-    </div>
+    {prochaine && (
+      <a class="countdown" href={lien(`/elections/${prochaine.id}`)} style="text-decoration:none;color:inherit">
+        <span class="label">Prochaine élection · {prochaine.data.nom}</span>
+        <span class="n" id="jours" data-cible={prochaine.data.date.toISOString()}>—</span>
+        <span class="mono">jours avant le premier tour ({prochaine.data.libelleDate})</span>
+      </a>
+    )}
   </div>
+
   <div class="entries">
-    <a class="entry" href={lien("/candidats")}><span class="label">Fiches</span><h3>Voir les candidats</h3><p>Parcours, parti, statut de la candidature et positions par thème.</p></a>
-    <a class="entry" href={lien("/comparer")}><span class="label">Comparateur</span><h3>Comparer les positions</h3><p>Tous les candidats sur un thème, ou deux candidats face à face.</p></a>
-    <a class="entry" href={lien("/quiz")}><span class="label">Quiz</span><h3>Qui me ressemble ?</h3><p>Donnez votre avis sur {nbQuestions} affirmations. Rien n'est envoyé ni enregistré.</p></a>
+    <a class="entry" href={lien("/institutions")}><span class="label">Comprendre</span><h3>Les institutions</h3><p>Président, gouvernement, Parlement, Conseil constitutionnel, collectivités, Union européenne.</p></a>
+    <a class="entry" href={lien("/voter")}><span class="label">Agir</span><h3>Voter</h3><p>Inscription sur les listes, procuration, modes de scrutin, référendum.</p></a>
+    <a class="entry" href={lien("/elections")}><span class="label">Choisir</span><h3>Les élections</h3><p>Candidats, positions comparées thème par thème et quiz de proximité.</p></a>
   </div>
-  <div>
-    <h2 style="font-size:1.4rem;margin-bottom:14px">Calendrier</h2>
-    <ol class="timeline" id="calendrier">
-      {etapes.map((e) => (
-        <li data-date={e.data.date.toISOString()}>
-          <span class="d">{e.data.quand}</span>
-          <span>{e.data.quoi}</span>
-        </li>
+
+  <div style="display:grid;gap:14px">
+    <div class="section-head"><h2>Les institutions en bref</h2><a href={lien("/institutions")}>Toutes les fiches →</a></div>
+    <div class="cards">
+      {institutions.map((f) => (
+        <a class="card" href={lien(`/institutions/${slug(f.id)}`)}><h3>{f.data.titre}</h3><p>{f.data.resume}</p></a>
       ))}
-    </ol>
+    </div>
+  </div>
+
+  <div style="display:grid;gap:14px">
+    <div class="section-head"><h2>Avant d'aller voter</h2><a href={lien("/voter")}>Guide complet →</a></div>
+    <div class="cards">
+      {voter.map((f) => (
+        <a class="card" href={lien(`/voter/${slug(f.id)}`)}><h3>{f.data.titre}</h3><p>{f.data.resume}</p></a>
+      ))}
+    </div>
   </div>
 </Base>
 
 <script>
-  // Calculé dans le navigateur pour rester juste sans reconstruire le site chaque jour.
-  const now = Date.now();
-  const el = document.getElementById("jours")!;
-  el.textContent = String(Math.max(0, Math.ceil((Date.parse(el.dataset.cible!) - now) / 86400000)));
-  let suivante = false;
-  document.querySelectorAll<HTMLLIElement>("#calendrier li").forEach((li) => {
-    if (Date.parse(li.dataset.date!) + 86400000 < now) li.classList.add("past");
-    else if (!suivante) {
-      suivante = true;
-      li.classList.add("next");
-      li.lastElementChild!.insertAdjacentHTML("afterbegin", "<strong>Prochaine étape · </strong>");
-    }
-  });
+  import { compteARebours } from "../lib/temps";
+  const el = document.getElementById("jours");
+  if (el) compteARebours(el);
 </script>

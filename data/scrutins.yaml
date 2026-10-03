@@ -1,0 +1,8 @@
+# Les élections en France. « prochaine » : libellé de la prochaine échéance connue.
+- { id: presidentielle, nom: Présidentielle, elu: "Président de la République", duree: "5 ans", mode: "Suffrage universel direct, scrutin majoritaire à deux tours", prochaine: "18 avril et 2 mai 2027", election: presidentielle-2027 }
+- { id: legislatives, nom: Législatives, elu: "577 députés", duree: "5 ans, sauf dissolution", mode: "Scrutin majoritaire à deux tours par circonscription", prochaine: "2029 au plus tard (dernières : juin-juillet 2024, après dissolution)" }
+- { id: senatoriales, nom: Sénatoriales, elu: "348 sénateurs", duree: "6 ans, renouvelés par moitié tous les 3 ans", mode: "Suffrage universel indirect : environ 160 000 grands électeurs, surtout des élus locaux", prochaine: "Septembre 2029" }
+- { id: municipales, nom: Municipales, elu: "Conseillers municipaux, qui élisent le maire", duree: "6 ans", mode: "Scrutin de liste à deux tours", prochaine: "2032 (dernières : mars 2026)" }
+- { id: departementales, nom: Départementales, elu: "Conseillers départementaux, en binômes femme-homme par canton", duree: "6 ans", mode: "Scrutin binominal majoritaire à deux tours", prochaine: "Mars 2028" }
+- { id: regionales, nom: Régionales, elu: "Conseillers régionaux", duree: "6 ans", mode: "Scrutin de liste à deux tours, prime majoritaire", prochaine: "Mars 2028" }
+- { id: europeennes, nom: Européennes, elu: "81 députés européens pour la France", duree: "5 ans", mode: "Scrutin de liste proportionnel à un tour, circonscription nationale", prochaine: "2029" }

@@ -1,8 +1,0 @@
-# « date » sert au tri et à repérer la prochaine étape ; « quand » est le libellé affiché.
-- { id: appel-le-pen, date: 2026-07-07, quand: "7 juillet 2026", quoi: "Décision en appel dans le procès de Marine Le Pen : elle reste éligible." }
-- { id: primaire-ps-t1, date: 2026-10-10, quand: "9-10 octobre 2026", quoi: "Primaire PS – Place publique, 1er tour." }
-- { id: primaire-ps-t2, date: 2026-10-17, quand: "16-17 octobre 2026", quoi: "Primaire PS – Place publique, 2nd tour éventuel." }
-- { id: parrainages, date: 2027-03-01, quand: "Février-mars 2027", quoi: "Recueil des 500 parrainages d'élus." }
-- { id: liste-officielle, date: 2027-03-20, quand: "Mars 2027", quoi: "Publication de la liste officielle par le Conseil constitutionnel." }
-- { id: tour-1, date: 2027-04-11, quand: "Avril 2027", quoi: "Premier tour (date à confirmer par décret)." }
-- { id: tour-2, date: 2027-04-25, quand: "Avril-mai 2027", quoi: "Second tour, deux semaines plus tard." }

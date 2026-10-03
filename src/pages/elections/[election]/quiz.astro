@@ -1,11 +1,16 @@
 ---
-import { getCollection } from "astro:content";
-import Base from "../layouts/Base.astro";
-import { candidats, themes, nomComplet } from "../lib/data";
+import Base from "../../../layouts/Base.astro";
+import NavElection from "../../../components/NavElection.astro";
+import BandeauVerif from "../../../components/BandeauVerif.astro";
+import { elections, candidatsDe, quizDe, nomComplet, slugCandidat, type Election } from "../../../lib/data";
 
-const questions = await getCollection("quiz");
-const liste = await candidats();
-const nomsThemes = Object.fromEntries((await themes()).map((t) => [t.id, t.data.nom]));
+export async function getStaticPaths() {
+  return (await elections()).map((e) => ({ params: { election: e.id }, props: { election: e } }));
+}
+const { election } = Astro.props as { election: Election };
+const liste = await candidatsDe(election);
+const questions = await quizDe(election, liste);
+const nomsThemes = Object.fromEntries(election.data.themes.map((t) => [t.id, t.nom]));
 const echelle = [
   [-2, "Pas du tout d'accord"],
   [-1, "Plutôt pas"],
@@ -14,27 +19,25 @@ const echelle = [
   [2, "Tout à fait"],
 ] as const;
 
-// Chaque question doit positionner chaque candidat : sinon le build échoue.
-for (const q of questions) {
-  const manquants = liste.filter((c) => q.data.positions[c.id] === undefined).map((c) => c.id);
-  if (manquants.length) throw new Error(`Quiz ${q.id} : position manquante pour ${manquants.join(", ")}`);
-}
 const donnees = {
-  candidats: liste.map((c) => ({ id: c.id, nom: nomComplet(c), nomTri: c.data.nom })),
-  questions: questions.map((q) => q.data.positions),
+  candidats: liste.map((c) => ({ id: slugCandidat(c), nom: nomComplet(c), nomTri: c.data.nom })),
+  questions: questions.map((q) => q.positions),
 };
 ---
-<Base titre="Quiz" page="quiz">
+<Base titre={`Quiz · ${election.data.nom}`} page="elections">
+  <BandeauVerif slot="bandeau" />
+  <NavElection election={election} actif="quiz" />
   <div>
-    <h2 style="font-size:2rem">Qui me ressemble ?</h2>
+    <h3 style="font-size:1.4rem">Qui me ressemble ?</h3>
     <p class="lede">Répondez à ce qui vous parle et cochez « compte double » sur les sujets qui vous importent le plus. Le score se calcule dans votre navigateur ; rien n'est envoyé ni enregistré.</p>
   </div>
-  <div class="quiz">
+  {questions.length === 0 && <p class="lede">Le quiz de cette élection n'est pas encore disponible.</p>}
+  <div class="quiz" hidden={questions.length === 0}>
     <form class="qlist" id="questions">
       {questions.map((q, i) => (
         <fieldset class="q" style="margin:0">
-          <span class="label theme">{nomsThemes[q.data.theme]}</span>
-          <legend style="display:contents"><p>{q.data.affirmation}</p></legend>
+          <span class="label theme">{nomsThemes[q.theme]}</span>
+          <legend style="display:contents"><p>{q.affirmation}</p></legend>
           <div class="scale">
             {echelle.map(([v, l]) => (
               <label><input type="radio" name={`q${i}`} id={`q${i}_${v + 2}`} value={v} /><span>{l}</span></label>
@@ -54,7 +57,7 @@ const donnees = {
 </Base>
 
 <script>
-  import { proximites } from "../lib/score";
+  import { proximites } from "../../../lib/score";
 
   const D: { candidats: { id: string; nom: string; nomTri: string }[]; questions: Record<string, number>[] } =
     JSON.parse(document.getElementById("donnees")!.textContent!);

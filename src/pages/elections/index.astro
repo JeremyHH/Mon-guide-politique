@@ -1,0 +1,42 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import { elections, lien } from "../../lib/data";
+
+const suivies = await elections();
+const scrutins = await getCollection("scrutins");
+---
+<Base titre="Élections" page="elections">
+  <div>
+    <h2 style="font-size:2rem">Élections</h2>
+    <p class="lede">Pour chaque scrutin suivi : les candidats, leurs positions comparées thème par thème et un quiz de proximité.</p>
+  </div>
+  <div class="cards">
+    {suivies.map((e) => (
+      <a class="card" href={lien(`/elections/${e.id}`)}>
+        <span class="label">{e.data.libelleDate}</span>
+        <h3>{e.data.nom}</h3>
+        <p>{e.data.resume}</p>
+      </a>
+    ))}
+  </div>
+  <div style="display:grid;gap:14px">
+    <div class="section-head"><h2>Les élections en France</h2><a href={lien("/voter/les-scrutins")}>Comprendre les modes de scrutin →</a></div>
+    <div class="table-wrap">
+      <table class="data">
+        <thead><tr><th>Élection</th><th>Qui est élu</th><th>Mandat</th><th>Mode de scrutin</th><th>Prochaine échéance</th></tr></thead>
+        <tbody>
+          {scrutins.map((s) => (
+            <tr>
+              <th>{s.data.nom}</th>
+              <td>{s.data.elu}</td>
+              <td>{s.data.duree}</td>
+              <td>{s.data.mode}</td>
+              <td>{s.data.election ? <a href={lien(`/elections/${s.data.election}`)}>{s.data.prochaine}</a> : s.data.prochaine}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</Base>

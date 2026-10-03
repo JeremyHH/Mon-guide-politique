@@ -1,0 +1,91 @@
+---
+import Base from "../../../layouts/Base.astro";
+import NavElection from "../../../components/NavElection.astro";
+import BandeauVerif from "../../../components/BandeauVerif.astro";
+import { elections, candidatsDe, nomComplet, slugCandidat, STATUTS, lien, type Election } from "../../../lib/data";
+
+export async function getStaticPaths() {
+  return (await elections()).map((e) => ({ params: { election: e.id }, props: { election: e } }));
+}
+const { election } = Astro.props as { election: Election };
+const liste = await candidatsDe(election);
+const etapes = [...election.data.calendrier].sort((a, b) => +a.date - +b.date);
+---
+<Base titre={election.data.nom} page="elections" description={election.data.resume}>
+  <BandeauVerif slot="bandeau" />
+  <NavElection election={election} actif="apercu" />
+
+  <div class="hero" style="align-items:center">
+    <p class="lede" style="margin:0">{election.data.resume}</p>
+    <div class="countdown">
+      <span class="label">Premier tour</span>
+      <span class="n" id="jours" data-cible={election.data.date.toISOString()}>—</span>
+      <span class="mono">jours avant le {election.data.libelleDate.split(" et ")[0]}</span>
+    </div>
+  </div>
+
+  <div style="display:grid;gap:16px">
+    <div class="section-head"><h2>Candidats</h2>
+      <div class="tools">
+        <span class="label">Ordre</span>
+        <button class="chip" id="tri-alpha" aria-pressed="true">Alphabétique</button>
+        <button class="chip" id="tri-hasard" aria-pressed="false">Aléatoire</button>
+      </div>
+    </div>
+    <p class="lede" style="margin:0">{election.data.introCandidats}</p>
+    <div class="ballots" id="bulletins">
+      {liste.map((c) => (
+        <a class="ballot" href={lien(`/elections/${election.id}/candidats/${slugCandidat(c)}`)}>
+          <span class="name">{nomComplet(c)}</span>
+          <span class="party">{c.data.parti}</span>
+          <span class="status"><span class="pill ok">{STATUTS[c.data.statut]}</span></span>
+        </a>
+      ))}
+    </div>
+    {election.data.autres.length > 0 && (
+      <div class="others">
+        <span class="label">Autres candidatures déclarées (fiches à venir)</span>
+        <ul>{election.data.autres.map((a) => <li>{a}</li>)}</ul>
+      </div>
+    )}
+  </div>
+
+  {etapes.length > 0 && (
+    <div>
+      <h2 style="font-size:1.5rem;margin-bottom:14px">Calendrier</h2>
+      <ol class="timeline" id="calendrier">
+        {etapes.map((e) => (
+          <li data-date={e.date.toISOString()}>
+            <span class="d">{e.quand}</span>
+            <span>{e.quoi}</span>
+          </li>
+        ))}
+      </ol>
+    </div>
+  )}
+</Base>
+
+<script>
+  import { compteARebours, marquerEtapes } from "../../../lib/temps";
+  compteARebours(document.getElementById("jours")!);
+  marquerEtapes(document.getElementById("calendrier"));
+
+  const box = document.getElementById("bulletins")!;
+  const initial = [...box.children];
+  const alpha = document.getElementById("tri-alpha")!;
+  const hasard = document.getElementById("tri-hasard")!;
+  function tri(items: Element[], actif: HTMLElement) {
+    box.replaceChildren(...items);
+    alpha.setAttribute("aria-pressed", String(actif === alpha));
+    hasard.setAttribute("aria-pressed", String(actif === hasard));
+  }
+  alpha.onclick = () => tri(initial, alpha);
+  hasard.onclick = () => {
+    const melange = [...initial];
+    for (let i = melange.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [melange[i], melange[j]] = [melange[j], melange[i]];
+    }
+    tri(melange, hasard);
+  };
+</script>
