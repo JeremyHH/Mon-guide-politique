@@ -1,4 +1,4 @@
-# Positions reprises de la maquette : à sourcer avant de passer « statut: verifie ».
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
 prenom: "Marine"
 nom: "Tondelier"
 parti: "Les Écologistes"
@@ -7,13 +7,17 @@ declaration: 2025-10-22
 bio: "Secrétaire nationale des Écologistes, désignée candidate en décembre 2025."
 positions:
   retraites:
-    texte: "Abrogation de la réforme de 2023."
-    statut: a_verifier
+    texte: "Abrogation de la réforme de 2023 et retour immédiat à 62 ans ; objectif de 60 ans, en priorité pour les carrières longues et les métiers pénibles."
+    statut: verifie
+    source:
+      titre: "CNews, « Présidentielle 2027 : départ à 60 ans, hausse des petites pensions, pénibilité… Quelles sont les propositions des candidats de gauche sur les retraites ? »"
+      url: "https://www.cnews.fr/france/2026-10-02/presidentielle-2027-depart-60-ans-hausse-des-petites-pensions-penibilite-quelles"
+      date: 2026-10-02
   immigration:
-    texte: "Accueil et régularisation des travailleurs."
+    texte: "Abroger la loi immigration de janvier 2024 ; refuser les quotas ; développer les voies légales de migration."
     statut: a_verifier
   energie:
-    texte: "Sortie progressive du nucléaire, sobriété, rénovation des logements."
+    texte: "Sortie progressive du nucléaire : arrêt des programmes EPR2 et SMR, objectif 100 % renouvelables à terme."
     statut: a_verifier
   fiscalite:
     texte: "Taxe sur les plus hauts patrimoines (type Zucman)."

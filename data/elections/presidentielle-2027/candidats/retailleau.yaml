@@ -1,16 +1,25 @@
-# Positions reprises de la maquette : à sourcer avant de passer « statut: verifie ».
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
 prenom: "Bruno"
 nom: "Retailleau"
 parti: "Les Républicains"
 statut: declare
+declaration: 2026-02-12
 bio: "Ancien ministre de l'Intérieur, président des Républicains."
 positions:
   retraites:
-    texte: "Maintien de la réforme de 2023, part de capitalisation."
-    statut: a_verifier
+    texte: "Âge minimal de départ à 63 ans avec décote, taux plein à 65 ans indexé sur l'espérance de vie ; une part de capitalisation pour les jeunes actifs."
+    statut: verifie
+    source:
+      titre: "CNews, « Âge de départ, capitalisation, décote… Bruno Retailleau donne les grandes lignes de sa réforme des retraites »"
+      url: "https://www.cnews.fr/france/2026-09-22/age-de-depart-capitalisation-decote-bruno-retailleau-donne-les-grandes-lignes-de"
+      date: 2026-09-22
   immigration:
-    texte: "Référendum, fin de l'aide médicale d'État, restriction du regroupement familial."
-    statut: a_verifier
+    texte: "Organiser un référendum sur l'immigration ; réduire fortement l'immigration légale."
+    statut: verifie
+    source:
+      titre: "Euronews, « Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums »"
+      url: "https://fr.euronews.com/2026/02/12/presidentielle-de-2027-bruno-retailleau-annonce-sa-candidature-et-promet-des-referendums"
+      date: 2026-02-12
   energie:
     texte: "Priorité au nucléaire, fin des subventions à l'éolien."
     statut: a_verifier
@@ -18,7 +27,7 @@ positions:
     texte: "Baisse des dépenses sociales, baisse des charges."
     statut: a_verifier
   europe:
-    texte: "Bouclier constitutionnel face aux juridictions européennes."
+    texte: "Réforme constitutionnelle soumise à référendum pour réaffirmer la primauté du droit français."
     statut: a_verifier
   securite:
     texte: "Peines planchers, fin des remises de peine automatiques."

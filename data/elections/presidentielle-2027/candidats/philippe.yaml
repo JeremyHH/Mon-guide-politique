@@ -1,4 +1,4 @@
-# Positions reprises de la maquette : à sourcer avant de passer « statut: verifie ».
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
 prenom: "Édouard"
 nom: "Philippe"
 parti: "Horizons"
@@ -6,16 +6,20 @@ statut: declare
 bio: "Maire du Havre, Premier ministre de 2017 à 2020."
 positions:
   retraites:
-    texte: "Recul de l'âge au-delà de 64 ans, introduction d'une part de capitalisation."
-    statut: a_verifier
+    texte: "Reprendre la réforme de 2023, puis porter progressivement l'âge de départ à 65 ans et la durée de cotisation à 45 ans ; créer un pilier par capitalisation (10 à 15 % des pensions à terme)."
+    statut: verifie
+    source:
+      titre: "CNews, « Capitalisation, départ à 65 ans, durée de cotisation… Edouard Philippe dévoile sa réforme des retraites pour 2027 »"
+      url: "https://www.cnews.fr/france/2026-09-29/capitalisation-depart-65-ans-duree-de-cotisation-edouard-philippe-devoile-sa"
+      date: 2026-09-29
   immigration:
-    texte: "Quotas annuels votés par le Parlement."
+    texte: "Quotas migratoires pour choisir l'immigration économique, restriction du regroupement familial, liste de « pays sûrs » votée chaque année par le Parlement."
     statut: a_verifier
   energie:
-    texte: "Programme nucléaire ambitieux."
+    texte: "Construire 6 réacteurs EPR2 puis une seconde série de 8, tout en développant les renouvelables."
     statut: a_verifier
   fiscalite:
-    texte: "Forte réduction de la dépense publique, retour sous 3 % de déficit."
+    texte: "Ramener le déficit sous 3 % du PIB sans hausse d'impôts, par une revue générale des dépenses ; inscrire une règle d'or budgétaire dans la Constitution."
     statut: a_verifier
   europe:
     texte: "Soutien à l'UE, renforcement du marché unique."

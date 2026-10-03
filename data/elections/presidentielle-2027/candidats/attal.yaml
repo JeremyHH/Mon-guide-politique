@@ -1,15 +1,16 @@
-# Positions reprises de la maquette : à sourcer avant de passer « statut: verifie ».
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
 prenom: "Gabriel"
 nom: "Attal"
 parti: "Renaissance"
 statut: declare
 bio: "Ancien Premier ministre (2024), secrétaire général de Renaissance."
 positions:
+  # Source repérée : Meilleurtaux Placement, mai 2026 (jour non connu). À confirmer par une déclaration de G. Attal.
   retraites:
-    texte: "Propose de remplacer l'âge légal par une durée de cotisation."
+    texte: "Supprimer l'âge légal au profit de la seule durée de cotisation, avec décote ou surcote selon l'âge de départ ; ajouter une part de capitalisation."
     statut: a_verifier
   immigration:
-    texte: "Durcissement des conditions de séjour, maintien de l'accueil des métiers en tension."
+    texte: "Quotas d'immigration économique votés chaque année par le Parlement ; priorité à l'immigration de travail sur le regroupement familial."
     statut: a_verifier
   energie:
     texte: "Relance du nucléaire et accélération des renouvelables."
