@@ -3,6 +3,7 @@ prenom: "Éric"
 nom: "Zemmour"
 parti: "Reconquête"
 statut: declare
+representation: true
 declaration: 2026-09-17
 bio: "Président de Reconquête, candidat en 2022. A confirmé sa candidature le 17 septembre 2026 ; déclaration formelle annoncée pour l'automne."
 positions:

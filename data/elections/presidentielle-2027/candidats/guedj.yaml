@@ -3,6 +3,7 @@ prenom: "Jérôme"
 nom: "Guedj"
 parti: "Parti socialiste"
 statut: primaire
+representation: true
 declaration: 2026-02-05
 bio: "Député socialiste de l'Essonne. Candidat à la primaire PS – Place publique."
 positions:

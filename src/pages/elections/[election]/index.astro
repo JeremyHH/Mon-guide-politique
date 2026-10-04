@@ -11,6 +11,19 @@ export async function getStaticPaths() {
 const { election } = Astro.props as { election: Election };
 const liste = await candidatsDe(election);
 const compte = await compteCandidats(election);
+// Groupement sur un critère objectif (représentation au Parlement), jamais sur les sondages.
+const groupes = [
+  {
+    titre: "Candidats de partis représentés au Parlement",
+    critere: "Investis ou soutenus par un parti ayant un groupe à l'Assemblée nationale ou au Sénat, ou des élus au Parlement européen (y compris la primaire PS – Place publique).",
+    liste: liste.filter((c) => c.data.representation),
+  },
+  {
+    titre: "Autres candidatures",
+    critere: "Partis sans groupe parlementaire ni élus européens, mouvements et candidatures indépendantes.",
+    liste: liste.filter((c) => !c.data.representation),
+  },
+];
 ---
 <Base titre={election.data.nom} page="elections" description={election.data.resume}>
   <BandeauVerif slot="bandeau" />
@@ -38,16 +51,22 @@ const compte = await compteCandidats(election);
       </div>
     </div>
     <p class="lede" style="margin:0">{election.data.introCandidats}</p>
-    <div class="ballots" id="bulletins">
-      {liste.map((c) => (
-        <a class="ballot" href={lien(`/elections/${election.id}/candidats/${slugCandidat(c)}`)}>
-          {c.data.photo ? <img class="ballot-photo" src={lien(c.data.photo.fichier)} alt="" width="120" height="160" loading="lazy" /> : <span class="ballot-photo sans-photo" title="Pas de photo sous licence libre disponible">{c.data.prenom[0]}{c.data.nom[0]}</span>}
-          <span class="name">{nomComplet(c)}</span>
-          <span class="party">{c.data.parti}</span>
-          <span class="status"><span class="pill ok">{STATUTS[c.data.statut]}</span></span>
-        </a>
-      ))}
-    </div>
+    {groupes.map((g) => g.liste.length > 0 && (
+      <section class="groupe-candidats">
+        <h3>{g.titre} <span class="mono groupe-n">{g.liste.length}</span></h3>
+        <p class="mono groupe-critere">{g.critere}</p>
+        <div class="ballots bulletins">
+          {g.liste.map((c) => (
+            <a class="ballot" href={lien(`/elections/${election.id}/candidats/${slugCandidat(c)}`)}>
+              {c.data.photo ? <img class="ballot-photo" src={lien(c.data.photo.fichier)} alt="" width="120" height="160" loading="lazy" /> : <span class="ballot-photo sans-photo" title="Pas de photo sous licence libre disponible">{c.data.prenom[0]}{c.data.nom[0]}</span>}
+              <span class="name">{nomComplet(c)}</span>
+              <span class="party">{c.data.parti}</span>
+              <span class="status"><span class="pill ok">{STATUTS[c.data.statut]}</span></span>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
     {election.data.autres.length > 0 && (
       <div class="others">
         <span class="label">Autres intentions de candidature</span>
@@ -63,22 +82,23 @@ const compte = await compteCandidats(election);
   import { compteARebours } from "../../../lib/temps";
   compteARebours(document.getElementById("jours")!);
 
-  const box = document.getElementById("bulletins")!;
-  const initial = [...box.children];
+  // Le tri s'applique à l'intérieur de chaque groupe.
+  const boites = [...document.querySelectorAll<HTMLElement>(".bulletins")].map((box) => ({ box, initial: [...box.children] }));
   const alpha = document.getElementById("tri-alpha")!;
   const hasard = document.getElementById("tri-hasard")!;
-  function tri(items: Element[], actif: HTMLElement) {
-    box.replaceChildren(...items);
+  function melanger<T>(items: T[]) {
+    const m = [...items];
+    for (let i = m.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [m[i], m[j]] = [m[j], m[i]];
+    }
+    return m;
+  }
+  function tri(actif: HTMLElement) {
+    for (const { box, initial } of boites) box.replaceChildren(...(actif === hasard ? melanger(initial) : initial));
     alpha.setAttribute("aria-pressed", String(actif === alpha));
     hasard.setAttribute("aria-pressed", String(actif === hasard));
   }
-  alpha.onclick = () => tri(initial, alpha);
-  hasard.onclick = () => {
-    const melange = [...initial];
-    for (let i = melange.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [melange[i], melange[j]] = [melange[j], melange[i]];
-    }
-    tri(melange, hasard);
-  };
+  alpha.onclick = () => tri(alpha);
+  hasard.onclick = () => tri(hasard);
 </script>

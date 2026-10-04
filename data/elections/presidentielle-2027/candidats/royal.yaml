@@ -3,6 +3,7 @@ prenom: "Ségolène"
 nom: "Royal"
 parti: "Parti socialiste"
 statut: primaire
+representation: true
 declaration: 2026-07-10
 bio: "Ancienne ministre, candidate à la présidentielle de 2007. Candidate à la primaire PS – Place publique."
 positions:

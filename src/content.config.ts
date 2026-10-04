@@ -67,6 +67,9 @@ const candidats = defineCollection({
     statut: z.enum(["declare", "primaire", "pressenti", "parrainages_valides", "retire"]),
     declaration: z.coerce.date().optional(),
     bio: z.string(),
+    // Investi ou soutenu par un parti disposant d'un groupe à l'Assemblée nationale ou au Sénat,
+    // ou d'élus au Parlement européen (voir la page Méthode). Sert uniquement à grouper les cartes.
+    representation: z.boolean().default(false),
     // Clés = identifiants des thèmes de l'élection (vérifié dans src/lib/data.ts).
     positions: z.record(z.string(), position.nullable()),
     analyses: z.array(z.object({ titre: z.string(), resume: z.string(), source })).default([]),

@@ -3,6 +3,7 @@ prenom: "Olivier"
 nom: "Faure"
 parti: "Parti socialiste"
 statut: primaire
+representation: true
 declaration: 2026-08-30
 bio: "Premier secrétaire du Parti socialiste depuis 2018, député de Seine-et-Marne. Candidat à la primaire PS – Place publique."
 positions:

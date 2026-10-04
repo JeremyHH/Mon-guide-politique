@@ -3,6 +3,7 @@ prenom: "Édouard"
 nom: "Philippe"
 parti: "Horizons"
 statut: declare
+representation: true
 bio: "Maire du Havre, fondateur d'Horizons, Premier ministre de 2017 à 2020. Candidat depuis septembre 2024."
 positions:
   retraites:

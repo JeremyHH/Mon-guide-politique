@@ -3,6 +3,7 @@ prenom: "Jean-Luc"
 nom: "Mélenchon"
 parti: "La France insoumise"
 statut: declare
+representation: true
 declaration: 2026-05-03
 bio: "Fondateur de La France insoumise, candidat en 2012, 2017 et 2022. Quatrième candidature annoncée le 3 mai 2026."
 positions:

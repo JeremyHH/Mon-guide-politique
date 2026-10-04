@@ -3,6 +3,7 @@ prenom: "Bruno"
 nom: "Retailleau"
 parti: "Les Républicains"
 statut: declare
+representation: true
 declaration: 2026-02-12
 bio: "Ancien ministre de l'Intérieur, président des Républicains. Candidat depuis le 12 février 2026, désigné par les adhérents LR le 19 avril 2026."
 positions:

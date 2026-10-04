@@ -404,3 +404,9 @@ table.resultats{min-width:520px}
 .compte-candidats strong{font-size:1.5rem;font-weight:800;color:var(--rouge);margin-right:4px;font-variant-numeric:tabular-nums}
 .compte-ligne{display:flex;align-items:baseline;gap:2px}
 .compte-detail{font-family:var(--f-mono);font-size:.75rem;color:var(--muted)}
+
+/* ---------- Groupes de candidats ---------- */
+.groupe-candidats{display:grid;gap:8px}
+.groupe-candidats h3{font-size:1.15rem;color:var(--titre);display:flex;align-items:baseline;gap:8px}
+.groupe-n{font-size:.75rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:1px 8px}
+.groupe-critere{margin:0 0 4px;color:var(--muted)}

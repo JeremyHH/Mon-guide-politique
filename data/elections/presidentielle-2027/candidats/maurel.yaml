@@ -3,6 +3,7 @@ prenom: "Emmanuel"
 nom: "Maurel"
 parti: "Gauche républicaine et socialiste"
 statut: primaire
+representation: true
 declaration: 2026-09-04
 bio: "Député du Val-d'Oise, animateur national de la Gauche républicaine et socialiste. Candidat à la primaire PS – Place publique."
 positions:
