@@ -1,0 +1,126 @@
+---
+import { elections, fiches, lien } from "../lib/data";
+
+interface Props {
+  page: "accueil" | "institutions" | "voter" | "elections" | "methode";
+}
+const { page } = Astro.props;
+const ici = Astro.url.pathname.replace(/\/$/, "");
+const slug = (id: string) => id.split("/")[1];
+
+type Lien = { nom: string; href: string };
+type Groupe = { titre?: string; liens: Lien[] };
+type Entree = { id: Props["page"]; nom: string; href: string; groupes?: Groupe[] };
+
+const versFiches = async (rubrique: "institutions" | "voter") =>
+  (await fiches(rubrique)).map((f) => ({ nom: f.data.titre, href: `/${rubrique}/${slug(f.id)}` }));
+
+const menu: Entree[] = [
+  { id: "accueil", nom: "Accueil", href: "/" },
+  {
+    id: "institutions",
+    nom: "Institutions",
+    href: "/institutions",
+    groupes: [{ liens: [{ nom: "Toutes les fiches", href: "/institutions" }, ...(await versFiches("institutions"))] }],
+  },
+  {
+    id: "voter",
+    nom: "Voter",
+    href: "/voter",
+    groupes: [{ liens: [{ nom: "Le guide du vote", href: "/voter" }, ...(await versFiches("voter"))] }],
+  },
+  {
+    id: "elections",
+    nom: "Élections",
+    href: "/elections",
+    groupes: [
+      { liens: [{ nom: "Toutes les élections", href: "/elections" }] },
+      ...(await elections()).map((e) => ({
+        titre: e.data.nom,
+        liens: [
+          { nom: "Candidats et calendrier", href: `/elections/${e.id}` },
+          { nom: "Comparer les positions", href: `/elections/${e.id}/comparer` },
+          { nom: "Quiz « qui me ressemble »", href: `/elections/${e.id}/quiz` },
+        ],
+      })),
+    ],
+  },
+  { id: "methode", nom: "Méthode", href: "/methode" },
+];
+const actuel = (href: string) => (lien(href).replace(/\/$/, "") === ici ? "page" : undefined);
+---
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-principale">
+  <span class="nav-toggle-barres" aria-hidden="true"></span>
+  Menu
+</button>
+<nav class="nav" id="nav-principale" aria-label="Navigation principale">
+  <ul class="nav-liste">
+    {menu.map((e) => (
+      <li class={e.groupes ? "nav-item a-sous-menu" : "nav-item"}>
+        {e.groupes ? (
+          <>
+            <button
+              class="nav-lien"
+              type="button"
+              aria-expanded="false"
+              aria-controls={`sm-${e.id}`}
+              data-actif={e.id === page ? "" : undefined}
+            >
+              {e.nom}
+              <svg class="chevron" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            </button>
+            <div class="sous-menu" id={`sm-${e.id}`}>
+              {e.groupes.map((g) => (
+                <div class="sm-groupe">
+                  {g.titre && <p class="label sm-titre">{g.titre}</p>}
+                  <ul>
+                    {g.liens.map((l) => (
+                      <li><a href={lien(l.href)} aria-current={actuel(l.href)}>{l.nom}</a></li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </>
+        ) : (
+          <a class="nav-lien" href={lien(e.href)} aria-current={e.id === page ? "page" : undefined}>{e.nom}</a>
+        )}
+      </li>
+    ))}
+  </ul>
+</nav>
+
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>(".nav-toggle")!;
+  const nav = document.getElementById("nav-principale")!;
+  const boutons = [...document.querySelectorAll<HTMLButtonElement>(".a-sous-menu > .nav-lien")];
+
+  const fermerTout = (sauf?: HTMLButtonElement) =>
+    boutons.forEach((b) => b !== sauf && b.setAttribute("aria-expanded", "false"));
+
+  boutons.forEach((b) =>
+    b.addEventListener("click", () => {
+      const ouvert = b.getAttribute("aria-expanded") === "true";
+      fermerTout(b);
+      b.setAttribute("aria-expanded", String(!ouvert));
+    }),
+  );
+
+  toggle.addEventListener("click", () => {
+    const ouvert = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", String(!ouvert));
+    nav.classList.toggle("ouverte", !ouvert);
+    if (ouvert) fermerTout();
+  });
+
+  // Fermer avec Échap ou en cliquant ailleurs.
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape") return;
+    const ouvert = boutons.find((b) => b.getAttribute("aria-expanded") === "true");
+    fermerTout();
+    ouvert?.focus();
+  });
+  document.addEventListener("click", (e) => {
+    if (!(e.target as Element).closest(".nav, .nav-toggle")) fermerTout();
+  });
+</script>

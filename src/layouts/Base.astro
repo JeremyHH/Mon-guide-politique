@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Nav from "../components/Nav.astro";
 import { lien } from "../lib/data";
 
 interface Props {
@@ -8,13 +9,6 @@ interface Props {
   page: "accueil" | "institutions" | "voter" | "elections" | "methode";
 }
 const { titre, description = "Comprendre les institutions, savoir voter, comparer les candidats : un guide neutre et sourcé de la vie démocratique française.", page } = Astro.props;
-const onglets = [
-  ["accueil", "Accueil", "/"],
-  ["institutions", "Institutions", "/institutions"],
-  ["voter", "Voter", "/voter"],
-  ["elections", "Élections", "/elections"],
-  ["methode", "Méthode", "/methode"],
-] as const;
 ---
 <!doctype html>
 <html lang="fr">
@@ -33,11 +27,7 @@ const onglets = [
     <header class="top">
       <div class="wrap bar">
         <a class="brand" href={lien("/")}><span>Mon guide <b>politique</b></span></a>
-        <nav class="tabs" aria-label="Sections">
-          {onglets.map(([id, nom, href]) => (
-            <a href={lien(href)} aria-current={id === page ? "page" : undefined}>{nom}</a>
-          ))}
-        </nav>
+        <Nav page={page} />
       </div>
       <slot name="bandeau" />
     </header>
