@@ -1,0 +1,31 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+# Programme volontairement limité à une mesure institutionnelle (démocratie directe) : aucun des six thèmes n'est couvert.
+prenom: "Clara"
+nom: "Egger"
+parti: "Solution démocratique"
+statut: declare
+declaration: 2026-04-19
+bio: "Politologue, enseignante-chercheuse en relations internationales aux Pays-Bas. Candidate de Solution démocratique, elle fait de l'instauration du référendum d'initiative citoyenne sa mesure unique."
+positions:
+  retraites: null
+  immigration: null
+  energie: null
+  fiscalite: null
+  europe: null
+  securite: null
+analyses: []
+# Profil (sources : voir sourcesProfil)
+biographie: "Originaire de l'Ardèche, diplômée de Sciences Po Grenoble et docteure en science politique (2016), elle a travaillé pour des ONG humanitaires avant de rejoindre l'université de Groningue, aux Pays-Bas, en 2018. Engagée en faveur du référendum d'initiative citoyenne, elle a été en 2022 la candidate du collectif Espoir RIC, devenu le parti Solution démocratique, sans obtenir les 500 parrainages requis. Son programme pour 2027 prévoit qu'une révision de la Constitution réclamée par 700 000 signataires puisse être soumise à référendum."
+fonctions: []
+resultats:
+  - { annee: 2022, scrutin: "Présidentielle", resultat: "Candidature non validée (36 parrainages sur 500 requis)" }
+condamnations: []
+procedures: []
+# Campagne : dates clés propres à la candidate
+campagne:
+  - { date: 2026-04-19, quand: "19 avril 2026", type: annonce, quoi: "Annonce sa candidature par un communiqué de Solution démocratique.", source: { titre: "Solution démocratique, « Présidentielle 2027 : Clara Egger annonce sa candidature » (page consultée le 4 octobre 2026)", url: "https://solutiondemocratique.fr/presidentielle2027-annonce-candidature-clara-egger/" } }
+sourcesProfil:
+  - { titre: "Wikipédia, article « Clara Egger » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Clara_Egger" }
+  - { titre: "Solution démocratique, « Qui est Clara Egger, candidate à l'élection présidentielle 2027 » (page consultée le 4 octobre 2026)", url: "https://solutiondemocratique.fr/clara-egger/" }
+  - { titre: "Solution démocratique, « Présidentielle 2027 : Clara Egger annonce sa candidature » (page consultée le 4 octobre 2026)", url: "https://solutiondemocratique.fr/presidentielle2027-annonce-candidature-clara-egger/" }
+  - { titre: "Public Sénat (18 septembre 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart" }

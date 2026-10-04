@@ -1,0 +1,73 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "Francis"
+nom: "Lalanne"
+parti: "France Libre"
+statut: declare
+declaration: 2026-08-18
+bio: "Auteur-compositeur-interprète, acteur et écrivain, candidat à plusieurs élections depuis 2007. Candidat soutenu par le mouvement citoyen France Libre et par l'humoriste Dieudonné ; son programme défend notamment la sortie de l'Union européenne et de l'OTAN."
+positions:
+  retraites: null
+  immigration: null
+  energie: null
+  fiscalite:
+    texte: "Une « baisse radicale des impôts », en particulier des taxes sur les carburants, et la gratuité des transports publics."
+    statut: verifie
+    source:
+      titre: "Site de campagne de Francis Lalanne, « Meeting Dieudo / Lalanne du 22 août : ce qu'il faut retenir »"
+      url: "https://dieudolalanne2027.com/meeting-dieudo-lalanne-du-22-aout-ce-quil-faut-retenir/"
+      date: 2026-08-27
+  europe:
+    texte: "Sortir de l'Union européenne (« Frexit ») et créer une nouvelle monnaie nationale ; sortir également de l'OTAN."
+    statut: verifie
+    source:
+      titre: "Site de campagne de Francis Lalanne, « Meeting Dieudo / Lalanne du 22 août : ce qu'il faut retenir »"
+      url: "https://dieudolalanne2027.com/meeting-dieudo-lalanne-du-22-aout-ce-quil-faut-retenir/"
+      date: 2026-08-27
+  securite:
+    texte: "Refondre la justice sur le principe de l'indépendance et de la séparation des pouvoirs ; augmenter les effectifs dédiés à la lutte contre la pédocriminalité et les trafics ; installer des caméras dans les salles d'audience et sur les policiers en intervention."
+    statut: verifie
+    source:
+      titre: "Site de campagne de Francis Lalanne, « Meeting Dieudo / Lalanne du 22 août : ce qu'il faut retenir »"
+      url: "https://dieudolalanne2027.com/meeting-dieudo-lalanne-du-22-aout-ce-quil-faut-retenir/"
+      date: 2026-08-27
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1958-08-08, lieu: "Bayonne (Pyrénées-Atlantiques)" }
+biographie: "Connu depuis 1986 pour la chanson « On se retrouvera », il s'engage d'abord dans l'écologie politique (MEI, Alliance écologiste indépendante), puis rejoint les Gilets jaunes en 2018. Tête de liste France libre avec Dieudonné aux européennes de 2024, il est déclaré inéligible pour 18 mois en 2025 faute d'avoir déposé ses comptes de campagne ; sa liste aux municipales de 2026 à Lyon n'est pas enregistrée."
+fonctions: []
+resultats:
+  - { annee: 2024, scrutin: "Législatives, Guadeloupe (1re), suppléant de Dieudonné", resultat: "1,03 %" }
+  - { annee: 2024, scrutin: "Européennes, tête de liste France libre", resultat: "0,02 %" }
+  - { annee: 2022, scrutin: "Législatives, Charente (3e)", resultat: "2,12 %" }
+  - { annee: 2019, scrutin: "Européennes, tête de liste Alliance jaune", resultat: "0,53 %" }
+  - { annee: 2017, scrutin: "Législatives, Essonne (1re), suppléant", resultat: "1,1 %" }
+  - { annee: 2009, scrutin: "Européennes, Sud-Est, tête de liste AEI", resultat: "3,7 %" }
+  - { annee: 2007, scrutin: "Législatives, Bas-Rhin (2e)", resultat: "3,5 %" }
+condamnations:
+  - date: "6 mars 2025"
+    juridiction: "Tribunal correctionnel d'Aix-en-Provence"
+    motif: "Vol et dégradation au préjudice de son ancienne compagne (faits de 2023)"
+    peine: "120 jours-amende de 10 euros (1 200 euros)"
+    statut: non_precise
+    detail: "Jugé en son absence ; aucune décision d'appel documentée dans les sources consultées. Source : La Provence (7 mars 2025), citée par candidats2027.org."
+procedures: []
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/lalanne.jpg"
+  auteur: "Thomas Bresson"
+  licence: "CC BY 4.0"
+  licenceUrl: "https://creativecommons.org/licenses/by/4.0"
+  source: "https://commons.wikimedia.org/wiki/File:Lalanne_2021_(cropped).jpg"
+  annee: 2021
+# Campagne : dates clés propres au candidat
+campagne:
+  - { date: 2026-02-27, quand: "27 février 2026", type: justice, quoi: "Le tribunal administratif de Lyon confirme le refus d'enregistrer sa liste aux municipales, en raison de son inéligibilité (jusqu'en octobre 2026).", source: { titre: "Wikipédia, « Francis Lalanne »", url: "https://fr.wikipedia.org/wiki/Francis_Lalanne" } }
+  - { date: 2026-08-18, quand: "18 août 2026", type: annonce, quoi: "Annonce sa candidature par communiqué, avec le soutien du mouvement France Libre et de Dieudonné.", source: { titre: "franceinfo (19 août 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-chanteur-francis-lalanne-officiellement-candidat-premier-meeting-vendredi-a-paris_8153588.html" } }
+  - { date: 2026-08-22, quand: "22 août 2026", type: meeting, quoi: "Premier meeting de campagne au théâtre Galabru (Paris) ; présente un programme en « 9 étoiles ».", source: { titre: "Site de campagne de Francis Lalanne (27 août 2026)", url: "https://dieudolalanne2027.com/meeting-dieudo-lalanne-du-22-aout-ce-quil-faut-retenir/" } }
+tournee:
+  - { date: 2026-08-22, quand: "22 août 2026", lieu: "Paris (18e), théâtre Galabru", type: meeting, quoi: "Premier meeting de campagne.", source: { titre: "ICI Paris Île-de-France (19 août 2026)", url: "https://www.ici.fr/ile-de-france/paris-75/paris/presidentielle-francis-lalanne-se-declare-candidat-aux-cotes-de-dieudonne-5740360" } }
+sourcesProfil:
+  - { titre: "Wikipédia, article « Francis Lalanne » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Francis_Lalanne" }
+  - { titre: "ICI, « Présidentielle 2027 : Francis Lalanne se déclare candidat, aux côtés de Dieudonné » (19 août 2026)", url: "https://www.ici.fr/ile-de-france/paris-75/paris/presidentielle-francis-lalanne-se-declare-candidat-aux-cotes-de-dieudonne-5740360" }
+  - { titre: "Candidats 2027, fiche « Francis Lalanne » (citant La Provence, 7 mars 2025)", url: "https://candidats2027.org/candidats/francis-lalanne" }
+  - { titre: "Public Sénat, « Présidentielle 2027 : quel est le dernier décompte des candidats déjà sur la ligne de départ ? » (18 septembre 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart" }

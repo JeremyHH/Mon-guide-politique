@@ -1,0 +1,34 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+# Programme 2027 non encore publié (priorités : démocratie, relocalisation, santé) ; aucun des six thèmes n'est couvert à ce jour.
+prenom: "Antoine"
+nom: "Mikolajczak"
+parti: "Équinoxe"
+statut: declare
+declaration: 2026-06-27
+bio: "Ingénieur, il a travaillé sur des projets locaux d'énergies renouvelables. Candidat d'Équinoxe, désigné par un vote des adhérents au jugement majoritaire."
+positions:
+  retraites: null
+  immigration: null
+  energie: null
+  fiscalite: null
+  europe: null
+  securite: null
+analyses: []
+# Profil : pas d'article Wikipédia ; sources = site du parti et presse régionale
+biographie: "Ingénieur diplômé de l'Icam de Lille, il a grandi à Paillart (Oise) et a monté pendant cinq ans des projets d'énergies renouvelables avec des collectivités. Membre d'Équinoxe depuis les élections européennes de 2024, il a conduit la liste du parti dans le 5e arrondissement de Paris aux municipales de 2026. Il n'a jamais exercé de mandat électif."
+fonctions: []
+resultats:
+  - { annee: 2026, scrutin: "Municipales, Paris 5e arrondissement", resultat: "3,01 % au premier tour (tête de liste)" }
+condamnations: []
+procedures: []
+# Campagne : dates clés propres au candidat
+campagne:
+  - { date: 2026-06-27, quand: "27 juin 2026", type: annonce, quoi: "Lancement de sa campagne à Saint-Père-sur-Loire (Loiret), avec la première promesse de parrainage, celle du maire de la commune.", source: { titre: "Équinoxe, « Retour sur le lancement de campagne d'Équinoxe » (page consultée le 4 octobre 2026)", url: "https://parti-equinoxe.fr/retour-sur-le-lancement-de-campagne-dequinoxe/" } }
+tournee:
+  - { date: 2026-06-27, quand: "27 juin 2026", lieu: "Saint-Père-sur-Loire (Loiret)", type: meeting, quoi: "Réunion de lancement de campagne.", source: { titre: "Équinoxe, « Retour sur le lancement de campagne d'Équinoxe » (page consultée le 4 octobre 2026)", url: "https://parti-equinoxe.fr/retour-sur-le-lancement-de-campagne-dequinoxe/" } }
+  - { date: 2026-07-09, quand: "9 et 10 juillet 2026", lieu: "Haute-Marne", type: deplacement, quoi: "Deux jours de rencontres avec des élus locaux à la recherche de parrainages.", source: { titre: "Le Journal de la Haute-Marne (11 juillet 2026)", url: "https://jhm.fr/sous-la-banniere-dequinoxe-antoine-mikolajczak-brigue-la-presidence-de-la-republique/" } }
+sourcesProfil:
+  - { titre: "Équinoxe, « Présidentielle 2027 » (page consultée le 4 octobre 2026)", url: "https://parti-equinoxe.fr/presidentielle-2027/" }
+  - { titre: "Le Journal de la Haute-Marne (11 juillet 2026)", url: "https://jhm.fr/sous-la-banniere-dequinoxe-antoine-mikolajczak-brigue-la-presidence-de-la-republique/" }
+  - { titre: "Mairie du 5e arrondissement de Paris, résultats des élections municipales 2026", url: "https://mairie05.paris.fr/pages/resultats-du-premier-tour-des-elections-municipales-dans-le-5e-arrondissement-34207" }
+  - { titre: "Public Sénat (18 septembre 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart" }

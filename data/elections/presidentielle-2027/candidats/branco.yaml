@@ -1,0 +1,50 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "Juan"
+nom: "Branco"
+parti: "Les Ruches"
+statut: declare
+declaration: 2025-12-19
+bio: "Avocat, essayiste et réalisateur franco-espagnol, auteur du pamphlet « Crépuscule » (2019) et ancien conseiller juridique de WikiLeaks. Candidat soutenu par le mouvement citoyen Les Ruches, il défend notamment le référendum d'initiative citoyenne et les mandats révocatoires."
+positions:
+  retraites: null
+  immigration: null
+  energie: null
+  fiscalite: null
+  europe:
+    texte: "Estime qu'il faut « se préparer à la sortie de l'Union européenne », et éventuellement de l'euro, pour redonner au peuple la possibilité de décider."
+    statut: verifie
+    source:
+      titre: "Sud Radio, « L'avocat Juan Branco, candidat à la présidentielle »"
+      url: "https://www.sudradio.fr/sud-radio/lavocat-juan-branco-candidat-a-la-presidentielle"
+      date: 2025-12-19
+  securite: null
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1989-08-26, lieu: "Estepona (Andalousie, Espagne)" }
+biographie: "Diplômé de l'École normale supérieure (2013) et docteur en droit (2014), il conseille WikiLeaks et Julian Assange avant de devenir avocat en 2017 ; il défend notamment des figures du mouvement des Gilets jaunes. Candidat de La France insoumise aux législatives de 2017 en Seine-Saint-Denis, il publie en 2019 « Crépuscule », critique de l'accession au pouvoir d'Emmanuel Macron. Le barreau de Paris l'a suspendu neuf mois pour avoir publié des éléments couverts par le secret de l'instruction d'une enquête le visant (sanction disciplinaire confirmée en appel en octobre 2025)."
+fonctions:
+  - { intitule: "Avocat au barreau de Paris", periode: "depuis avril 2017" }
+resultats:
+  - { annee: 2017, scrutin: "Législatives, Seine-Saint-Denis (12e)", resultat: "13,9 % au premier tour (4e, éliminé)" }
+condamnations: []
+procedures:
+  - "Mis en examen pour viol en novembre 2021, puis dans deux autres affaires (agression sexuelle et viol) en juin 2023. Le 6 août 2026, le parquet de Paris a requis son renvoi devant la cour criminelle départementale pour le viol présumé de 2021 et un non-lieu pour les deux autres affaires ; le juge d'instruction doit encore se prononcer. Il conteste les faits. Il est présumé innocent."
+  - "Arrêté en août 2023 au Sénégal, où la justice avait émis un mandat d'arrêt international contre lui, il y a été inculpé notamment pour complot et diffusion de fausses nouvelles, puis libéré le 7 août 2023 et rentré en France ; les suites de cette procédure ne sont pas précisées dans les sources consultées. Il est présumé innocent."
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/branco.jpg"
+  auteur: "Vaughn Ridley / Web Summit (Sportsfile)"
+  licence: "CC BY 2.0"
+  licenceUrl: "https://creativecommons.org/licenses/by/2.0"
+  source: "https://commons.wikimedia.org/wiki/File:2019_-_Centre_Stage_-_Day_2_VJR21625_(49024215596).jpg"
+  annee: 2019
+# Campagne : dates clés propres au candidat
+campagne:
+  - { date: 2025-12-19, quand: "19 décembre 2025", type: annonce, quoi: "Annonce sa candidature à l'élection présidentielle sur Sud Radio, avec un projet de plus de 300 propositions.", source: { titre: "Sud Radio (19 décembre 2025)", url: "https://www.sudradio.fr/sud-radio/lavocat-juan-branco-candidat-a-la-presidentielle" } }
+  - { date: 2026-08-06, quand: "6 août 2026", type: justice, quoi: "Le parquet de Paris requiert son renvoi en procès pour viol ; il conteste les faits.", source: { titre: "Le Figaro (1er septembre 2026)", url: "https://www.lefigaro.fr/faits-divers/le-parquet-de-paris-requiert-le-renvoi-en-proces-pour-viol-de-l-avocat-juan-branco-20260901" } }
+sourcesProfil:
+  - { titre: "Wikipédia, article « Juan Branco » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Juan_Branco" }
+  - { titre: "Les Ruches, « Juan Branco » (page consultée le 4 octobre 2026)", url: "https://ruches.org/juan-branco" }
+  - { titre: "Sud Radio (19 décembre 2025)", url: "https://www.sudradio.fr/sud-radio/lavocat-juan-branco-candidat-a-la-presidentielle" }
+  - { titre: "Le Figaro (1er septembre 2026)", url: "https://www.lefigaro.fr/faits-divers/le-parquet-de-paris-requiert-le-renvoi-en-proces-pour-viol-de-l-avocat-juan-branco-20260901" }
+  - { titre: "Public Sénat (18 septembre 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart" }

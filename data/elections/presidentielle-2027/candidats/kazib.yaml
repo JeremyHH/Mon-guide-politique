@@ -1,0 +1,62 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "Anasse"
+nom: "Kazib"
+parti: "Révolution permanente"
+statut: declare
+declaration: 2026-06-01
+bio: "Cheminot aiguilleur et syndicaliste SUD Rail, porte-parole de Révolution permanente, organisation trotskiste. Il avait tenté de se présenter en 2022 sans obtenir les parrainages nécessaires."
+positions:
+  retraites:
+    texte: "Retraite à 60 ans, et à 55 ans pour les métiers pénibles, sans condition de durée de cotisation."
+    statut: verifie
+    source:
+      titre: "Anasse Kazib 2027, « Programme » (page consultée le 4 octobre 2026)"
+      url: "https://anasse2027.fr/programme"
+      date: 2026-10-04
+  immigration:
+    texte: "Régulariser tous les sans-papiers et instaurer la liberté de circulation et d'installation."
+    statut: verifie
+    source:
+      titre: "Anasse Kazib 2027, « Programme » (page consultée le 4 octobre 2026)"
+      url: "https://anasse2027.fr/programme"
+      date: 2026-10-04
+  energie: null
+  fiscalite: null
+  europe: null
+  securite:
+    texte: "Abroger les lois sécuritaires et dissoudre les corps spéciaux de police."
+    statut: verifie
+    source:
+      titre: "Anasse Kazib 2027, « Programme » (page consultée le 4 octobre 2026)"
+      url: "https://anasse2027.fr/programme"
+      date: 2026-10-04
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1987-01-02, lieu: "Sarcelles (Val-d'Oise)" }
+biographie: "Cheminot depuis 2012, aiguilleur à la gare de triage du Bourget, il y fonde en 2014 une section SUD Rail dont il devient délégué syndical. Figure de la grève des cheminots de 2018, il est alors chroniqueur dans l'émission « Les Grandes Gueules » sur RMC. Membre du courant qui a quitté le NPA en 2021 pour former Révolution permanente, il a tenté une première candidature à la présidentielle de 2022."
+fonctions:
+  - { intitule: "Porte-parole de Révolution permanente", periode: "en fonction (date de début non précisée)" }
+  - { intitule: "Délégué syndical SUD Rail au Bourget", periode: "depuis 2015" }
+resultats:
+  - { annee: 2024, scrutin: "Législatives, Seine-Saint-Denis (2e)", resultat: "3,67 % au premier tour" }
+  - { annee: 2022, scrutin: "Présidentielle", resultat: "Candidature non validée (160 parrainages)" }
+condamnations: []
+procedures:
+  - "Poursuivi pour « apologie du terrorisme » à la suite de messages publiés le 7 octobre 2023 après l'attaque du Hamas contre Israël ; son procès, tenu le 25 juin 2026 devant le tribunal judiciaire de Paris, a été renvoyé après la transmission d'une question prioritaire de constitutionnalité à la Cour de cassation. Il dénonce une « cabale judiciaire ». Il est présumé innocent."
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/kazib.jpg"
+  auteur: "PabloMorao27"
+  licence: "CC BY-SA 4.0"
+  licenceUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+  source: "https://commons.wikimedia.org/wiki/File:Anasse_Kazib,_d%C3%A9cembre_2021.jpg"
+  annee: 2021
+# Campagne : dates clés propres au candidat
+campagne:
+  - { date: 2026-06-01, quand: "1er juin 2026", type: annonce, quoi: "Annonce sa candidature pour Révolution permanente dans un clip de campagne.", source: { titre: "franceinfo (1er juin 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-cheminot-anasse-kazib-annonce-sa-candidature_8040020.html" } }
+  - { date: 2026-06-25, quand: "25 juin 2026", type: justice, quoi: "Son procès pour « apologie du terrorisme » est renvoyé après la transmission d'une question prioritaire de constitutionnalité.", source: { titre: "Le Courrier de l'Atlas (26 juin 2026)", url: "https://www.lecourrierdelatlas.com/proces-anasse-kazib-apologie-terrorisme-renvoye/" } }
+sourcesProfil:
+  - { titre: "Wikipédia, article « Anasse Kazib » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Anasse_Kazib" }
+  - { titre: "franceinfo (1er juin 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-cheminot-anasse-kazib-annonce-sa-candidature_8040020.html" }
+  - { titre: "Anasse Kazib 2027, « Programme » (page consultée le 4 octobre 2026)", url: "https://anasse2027.fr/programme" }
+  - { titre: "Le Courrier de l'Atlas (26 juin 2026)", url: "https://www.lecourrierdelatlas.com/proces-anasse-kazib-apologie-terrorisme-renvoye/" }

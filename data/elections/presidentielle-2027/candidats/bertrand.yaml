@@ -1,0 +1,69 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "Xavier"
+nom: "Bertrand"
+parti: "Nous France"
+statut: pressenti
+bio: "Président de la région Hauts-de-France depuis 2016, ancien ministre de la Santé puis du Travail. A affirmé le 27 août 2026 qu'il serait candidat, sans se déclarer officiellement ; dit vouloir se présenter en candidat indépendant et refuse une primaire de la droite et du centre."
+positions:
+  retraites:
+    texte: "Défend le recours à la retraite par capitalisation."
+    statut: verifie
+    source:
+      titre: "LCP, « Présidentielle : Xavier Bertrand indique \"tester ses idées\" et envisager de concourir en tant que \"candidat indépendant\" »"
+      url: "https://lcp.fr/actualites/presidentielle-xavier-bertrand-indique-tester-ses-idees-et-envisager-de-concourir-en"
+      date: 2026-08-03
+  immigration:
+    texte: "Dénoncer les accords du Touquet avec le Royaume-Uni, afin de contraindre les Britanniques à mettre fin à l'attractivité qu'ils exercent sur les migrants, notamment en matière d'emploi."
+    statut: verifie
+    source:
+      titre: "LCP, « Accords du Touquet : \"La Manche est en train de devenir un cimetière marin à ciel ouvert\", dénonce Xavier Bertrand »"
+      url: "https://lcp.fr/actualites/accords-du-touquet-la-manche-est-en-train-de-devenir-un-cimetiere-marin-a-ciel-ouvert"
+      date: 2026-05-07
+  energie: null
+  fiscalite: null
+  europe: null
+  securite: null
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1965-03-21, lieu: "Châlons-sur-Marne (Marne)" }
+biographie: "Agent général d'assurance avant d'entrer en politique, il est député de l'Aisne à partir de 2002, puis ministre de la Santé (2005-2007) et ministre du Travail sous Nicolas Sarkozy (2007-2009 et 2010-2012), et secrétaire général de l'UMP de 2009 à 2010. Président des Hauts-de-France depuis 2016, il quitte LR en 2017, y revient en 2021 pour le congrès désignant le candidat à la présidentielle de 2022, puis fonde le mouvement Nous France, associé à LR, en 2022."
+fonctions:
+  - { intitule: "Président du conseil régional des Hauts-de-France", periode: "depuis janvier 2016" }
+  - { intitule: "Fondateur du mouvement Nous France", periode: "depuis 2022" }
+  - { intitule: "Ministre du Travail, de l'Emploi et de la Santé", periode: "novembre 2010 – mai 2012" }
+  - { intitule: "Secrétaire général de l'UMP", periode: "janvier 2009 – novembre 2010" }
+  - { intitule: "Ministre du Travail, des Relations sociales et de la Solidarité", periode: "mai 2007 – janvier 2009" }
+  - { intitule: "Ministre de la Santé et des Solidarités", periode: "juin 2005 – mars 2007" }
+  - { intitule: "Secrétaire d'État chargé de l'Assurance maladie", periode: "mars 2004 – juin 2005" }
+  - { intitule: "Maire de Saint-Quentin", periode: "2010 – 2016" }
+  - { intitule: "Député de l'Aisne (2e circonscription)", periode: "2002 – 2016 (hors périodes au gouvernement)" }
+resultats:
+  - { annee: 2021, scrutin: "Congrès des Républicains (désignation pour la présidentielle 2022)", resultat: "4e avec 22,36 %, éliminé" }
+  - { annee: 2021, scrutin: "Régionales, Hauts-de-France", resultat: "Réélu au second tour avec 52,37 %" }
+  - { annee: 2015, scrutin: "Régionales, Nord-Pas-de-Calais-Picardie", resultat: "Élu au second tour avec 57,8 % (25 % au premier tour)" }
+  - { annee: 2012, scrutin: "Législatives, Aisne (2e)", resultat: "Réélu au second tour avec 50,3 %" }
+  - { annee: 2007, scrutin: "Législatives, Aisne (2e)", resultat: "Réélu dès le premier tour avec 53,3 %" }
+condamnations: []
+procedures: []
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/bertrand.jpg"
+  auteur: "Claudio Centonze / Union européenne"
+  licence: "CC BY 4.0"
+  licenceUrl: "https://creativecommons.org/licenses/by/4.0"
+  source: "https://commons.wikimedia.org/wiki/File:Xavier_Bertrand_-_2025_(cropped).jpg"
+  annee: 2025
+# Campagne : dates clés propres au candidat
+campagne:
+  - { date: 2024-02-03, quand: "3 février 2024", type: annonce, quoi: "Annonce avoir « bien l'intention d'être candidat » à l'élection présidentielle de 2027.", source: { titre: "Wikipédia, « Xavier Bertrand »", url: "https://fr.wikipedia.org/wiki/Xavier_Bertrand" } }
+  - { date: 2026-08-03, quand: "3 août 2026", type: annonce, quoi: "Dit « tester ses idées » avant une éventuelle déclaration à la fin de l'année, en candidat indépendant.", source: { titre: "LCP (3 août 2026)", url: "https://lcp.fr/actualites/presidentielle-xavier-bertrand-indique-tester-ses-idees-et-envisager-de-concourir-en" } }
+  - { date: 2026-08-27, quand: "27 août 2026", type: annonce, quoi: "À l'université de rentrée du Medef, répond « Je le serai » à la question de sa candidature, tout en précisant que « le moment n'est pas venu » de se déclarer ; refuse une primaire de la droite et du centre.", source: { titre: "franceinfo (27 août 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/xavier-bertrand-figure-de-la-droite-et-president-de-la-region-hauts-de-france-annonce-sa-candidature-a-l-election-presidentielle_8164871.html" } }
+tournee:
+  - { date: 2026-08-05, quand: "5 août 2026", lieu: "Bastia (Haute-Corse)", type: deplacement, quoi: "Séance de dédicaces de son livre « Rien n'est jamais écrit » ; soutien au projet d'autonomie de la Corse.", source: { titre: "ICI Corse (5 août 2026)", url: "https://www.ici.fr/corse/je-veux-faire-sauter-le-verrou-parisien-en-corse-xavier-bertrand-defend-sa-candidature-a-l-elysee-1086499" } }
+  - { date: 2026-08-27, quand: "27 août 2026", lieu: "Paris, université de rentrée du Medef", type: debat, quoi: "Participe à un débat et confirme qu'il sera candidat.", source: { titre: "ICI (27 août 2026)", url: "https://www.ici.fr/infos/politique/presidentielle-2027-xavier-bertrand-annonce-officiellement-sa-candidature-1274056" } }
+  - { date: 2026-09-05, quand: "5 septembre 2026", lieu: "Lille (Nord)", type: salon, quoi: "Braderie de Lille.", source: { titre: "franceinfo (5 septembre 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/immigration-jordan-bardella-a-propose-de-devenir-un-sous-traitant-de-la-grande-bretagne-tacle-xavier-bertrand_8178881.html" } }
+sourcesProfil:
+  - { titre: "Wikipédia, article « Xavier Bertrand » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Xavier_Bertrand" }
+  - { titre: "LCP, « 2027 : figure de la droite, Xavier Bertrand confirme qu'il sera candidat à l'élection présidentielle » (27 août 2026)", url: "https://lcp.fr/actualites/2027-figure-de-la-droite-xavier-bertrand-confirme-qu-il-sera-candidat-a-l-election" }
+  - { titre: "France 3 Corse ViaStella, « \"L'État regarde la Corse avec suffisance\" : les propositions de Xavier Bertrand à l'aube de l'élection présidentielle » (12 août 2026)", url: "https://france3-regions.franceinfo.fr/corse/corse-du-sud/ajaccio/l-etat-regarde-la-corse-avec-suffisance-les-propositions-de-xavier-bertrand-a-l-aube-de-l-election-presidentielle-3399214.html" }
+  - { titre: "Public Sénat, « Présidentielle 2027 : quel est le dernier décompte des candidats déjà sur la ligne de départ ? » (18 septembre 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart" }

@@ -1,0 +1,48 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+# Statut « retire » : retrait de la primaire de la gauche annoncé au Télégramme (9 septembre 2026).
+prenom: "Lydie"
+nom: "Massard"
+parti: "Union démocratique bretonne"
+statut: retire
+bio: "Cuisinière en lycée à Pontivy et ancienne députée européenne (2023-2024), porte-parole de l'Union démocratique bretonne. Candidate à la primaire de la gauche en avril 2026 pour défendre une « République fédérale », elle retire sa candidature en septembre 2026."
+positions:
+  retraites: null
+  immigration: null
+  energie: null
+  fiscalite: null
+  europe: null
+  securite: null
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1978-08-24, lieu: "Saint-Brieuc (Côtes-d'Armor)" }
+biographie: "Diplômée de l'université Rennes-II, ancienne bibliothécaire, elle se reconvertit en 2007 comme cuisinière dans un lycée professionnel de Pontivy. Membre de l'Union démocratique bretonne depuis 2015, elle siège au Parlement européen dans le groupe Verts/ALE de septembre 2023 à juillet 2024, en remplacement de Yannick Jadot. Elle est élue conseillère municipale de Pontivy en 2026."
+fonctions:
+  - { intitule: "Conseillère municipale de Pontivy", periode: "depuis 2026" }
+  - { intitule: "Porte-parole de l'Union démocratique bretonne", periode: "2019 – 2023, puis depuis 2025" }
+  - { intitule: "Députée européenne (groupe Verts/ALE)", periode: "septembre 2023 – juillet 2024" }
+  - { intitule: "Co-porte-parole de Régions et peuples solidaires", periode: "août 2022 – 2024" }
+resultats:
+  - { annee: 2026, scrutin: "Municipales, Pontivy", resultat: "Élue conseillère municipale (liste conduite par Jean-Jacques Merceur)" }
+  - { annee: 2022, scrutin: "Législatives, Morbihan (3e)", resultat: "1,92 % au premier tour" }
+  - { annee: 2021, scrutin: "Départementales, canton de Pontivy", resultat: "12,54 % (binôme avec Gabriel Auffret)" }
+  - { annee: 2020, scrutin: "Municipales, Pontivy", resultat: "Non élue" }
+  - { annee: 2019, scrutin: "Européennes", resultat: "14e sur la liste Europe Écologie ; devient députée en septembre 2023" }
+condamnations: []
+procedures: []
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/massard.jpg"
+  auteur: "Philippe Stirnweiss / Parlement européen (via EuropeEcologie)"
+  licence: "CC BY-SA 2.0"
+  licenceUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+  source: "https://commons.wikimedia.org/wiki/File:Lydie_Massard_02-2024.jpg"
+  annee: 2024
+# Campagne : dates clés propres à la candidate
+campagne:
+  - { date: 2026-04-02, quand: "2 avril 2026", type: annonce, quoi: "Se déclare candidate à la primaire de la gauche, autour d'un projet de République fédérale.", source: { titre: "actu.fr / Pontivy Journal (2 avril 2026)", url: "https://actu.fr/bretagne/pontivy_56178/election-presidentielle-2027-une-elue-de-pontivy-candidate-a-la-primaire-de-la-gauche_64094861.html" } }
+  - { date: 2026-09-09, quand: "9 septembre 2026", type: annonce, quoi: "Retire sa candidature, la primaire de la gauche ayant été recentrée sur le PS et Place publique.", source: { titre: "Le Télégramme (9 septembre 2026)", url: "https://www.letelegramme.fr/morbihan/pontivy-56300/le-ps-et-place-publique-lont-enterree-la-cantiniere-pontivyenne-lydie-massard-se-retire-de-la-primaire-de-la-gauche-pour-la-presidentielle-2027-7114497.php" } }
+sourcesProfil:
+  - { titre: "Wikipédia, article « Lydie Massard » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Lydie_Massard" }
+  - { titre: "actu.fr / Pontivy Journal (2 avril 2026)", url: "https://actu.fr/bretagne/pontivy_56178/election-presidentielle-2027-une-elue-de-pontivy-candidate-a-la-primaire-de-la-gauche_64094861.html" }
+  - { titre: "Le Télégramme (9 septembre 2026)", url: "https://www.letelegramme.fr/morbihan/pontivy-56300/le-ps-et-place-publique-lont-enterree-la-cantiniere-pontivyenne-lydie-massard-se-retire-de-la-primaire-de-la-gauche-pour-la-presidentielle-2027-7114497.php" }
+  - { titre: "Public Sénat (18 septembre 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart" }

@@ -7,7 +7,7 @@ date: 2027-04-18
 libelleDate: "18 avril et 2 mai 2027"
 resume: "Élection du président de la République pour cinq ans, au suffrage universel direct, en deux tours."
 miseAJour: 2026-10-04
-introCandidats: "Principales candidatures déclarées au 4 octobre 2026, y compris les cinq candidats à la primaire PS – Place publique (vote les 9-10 et 16-17 octobre). Les parrainages (500 signatures d'élus) ne seront validés par le Conseil constitutionnel qu'au printemps 2027."
+introCandidats: "Candidatures déclarées au 4 octobre 2026 (d'après le recensement de Public Sénat du 18 septembre, complété), y compris les cinq candidats à la primaire PS – Place publique (vote les 9-10 et 16-17 octobre). Les parrainages (500 signatures d'élus) ne seront validés par le Conseil constitutionnel qu'au printemps 2027. Xavier Bertrand, qui a annoncé son intention sans se déclarer officiellement, figure comme « pressenti »."
 
 themes:
   - { id: retraites, nom: Retraites }
@@ -38,5 +38,4 @@ sourcesCalendrier:
   - { titre: "LCP, « Pourquoi la présidentielle 2027 se jouera entre le 11 avril et le 2 mai » (fin du mandat le 14 mai 2027)", url: "https://lcp.fr/actualites/pourquoi-la-presidentielle-2027-se-jouera-entre-le-11-avril-et-le-2-mai-434190" }
 
 # Candidatures déclarées sans fiche détaillée pour l'instant.
-autres:
-  - "Xavier Bertrand a annoncé le 27 août son intention d'être candidat, sans déclaration officielle"
+autres: []

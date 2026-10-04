@@ -1,0 +1,68 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "Karim"
+nom: "Bouamrane"
+parti: "La France humaine et forte"
+statut: declare
+declaration: 2026-06-09
+bio: "Maire socialiste de Saint-Ouen-sur-Seine depuis 2020, fondateur du mouvement La France humaine et forte. Candidat déclaré hors de la primaire du PS, à laquelle il est opposé ; veut éviter un second tour entre le RN et LFI."
+positions:
+  retraites: null
+  immigration:
+    texte: "Une politique migratoire fondée sur trois exigences : accueillir dignement ceux qui ont le droit de rester, agir à la source des migrations par le développement et la coopération, reconduire ceux qui se maintiennent irrégulièrement sur le territoire."
+    statut: verifie
+    source:
+      titre: "Site de campagne de Karim Bouamrane, « Le manifeste » (page consultée le 4 octobre 2026)"
+      url: "https://www.karimbouamrane2027.org/manifeste.html"
+      date: 2026-10-04
+  energie: null
+  fiscalite:
+    texte: "Créer un fonds souverain de 100 milliards d'euros, financé en grande partie par l'impôt sur la fortune immobilière, pour combler le manque de 500 000 logements par an."
+    statut: verifie
+    source:
+      titre: "franceinfo, « Canicule : \"La climatisation, c'est un sujet des années 1980\", estime le maire PS de Saint-Ouen, Karim Bouamrane »"
+      url: "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/l-invite-politique-du-mercredi-24-juin-2026_8043938.html"
+      date: 2026-06-24
+  europe: null
+  securite:
+    texte: "Combattre le narcotrafic « avec détermination » et faire de la protection des enfants et des femmes contre les violences la « grande cause nationale »."
+    statut: verifie
+    source:
+      titre: "Site de campagne de Karim Bouamrane, « Le manifeste » (page consultée le 4 octobre 2026)"
+      url: "https://www.karimbouamrane2027.org/manifeste.html"
+      date: 2026-10-04
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1973-02-21, lieu: "Clichy (Hauts-de-Seine)" }
+biographie: "Ancien cadre commercial dans la sécurité informatique, il est conseiller municipal communiste de Saint-Ouen de 1995 à 2014, puis rejoint le Parti socialiste, dont il devient porte-parole en 2016. Élu maire de Saint-Ouen-sur-Seine en 2020 et réélu en 2026, il lance en octobre 2024 le mouvement social-démocrate La France humaine et forte."
+fonctions:
+  - { intitule: "Maire de Saint-Ouen-sur-Seine", periode: "depuis juillet 2020" }
+  - { intitule: "Conseiller départemental de la Seine-Saint-Denis et vice-président du conseil départemental", periode: "depuis juillet 2021" }
+  - { intitule: "Fondateur du mouvement La France humaine et forte", periode: "depuis octobre 2024" }
+  - { intitule: "Président du conseil de surveillance de la Société du Grand Paris (Société des grands projets)", periode: "à partir de novembre 2022" }
+  - { intitule: "Porte-parole du Parti socialiste", periode: "2016" }
+  - { intitule: "Conseiller municipal (PCF) de Saint-Ouen", periode: "1995 – 2014" }
+resultats:
+  - { annee: 2026, scrutin: "Municipales, Saint-Ouen-sur-Seine", resultat: "Réélu au second tour avec 56,4 % (46,63 % au premier tour)" }
+  - { annee: 2020, scrutin: "Municipales, Saint-Ouen-sur-Seine", resultat: "Élu au second tour (triangulaire) avec 38,1 %" }
+  - { annee: 2014, scrutin: "Municipales, Saint-Ouen", resultat: "3e au premier tour avec 26,99 %, liste retirée" }
+condamnations: []
+procedures: []
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/bouamrane.jpg"
+  auteur: "Oumma"
+  licence: "CC BY 4.0"
+  licenceUrl: "https://creativecommons.org/licenses/by/4.0"
+  source: "https://commons.wikimedia.org/wiki/File:Karim_Bouamrane_en_2026_(cropped).jpg"
+  annee: 2026
+# Campagne : dates clés propres au candidat
+campagne:
+  - { date: 2026-05-17, quand: "17 mai 2026", type: parti, quoi: "Juge que le projet de primaire de la gauche « prend du plomb dans l'aile » et se dit opposé à toute primaire.", source: { titre: "franceinfo (17 mai 2026)", url: "https://www.franceinfo.fr/politique/ps/presidentielle-2027-tout-le-projet-primaire-de-la-gauche-prend-du-plomb-dans-l-aile-estime-karim-bouamrane-maire-socialiste-de-saint-ouen_8009609.html" } }
+  - { date: 2026-06-09, quand: "9 juin 2026", type: annonce, quoi: "Annonce sa candidature sur France Inter : « Moi, Karim Bouamrane, je suis candidat pour la prochaine élection présidentielle ».", source: { titre: "franceinfo (9 juin 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/karim-bouamrane-maire-ps-de-saint-ouen-annonce-sa-candidature-a-la-presidentielle_8051630.html" } }
+  - { date: 2026-06-30, quand: "30 juin 2026", type: parti, quoi: "Dénonce les « barons socialistes » et maintient son refus d'une primaire : « Ce sont les sondages qui vont nous départager ».", source: { titre: "franceinfo (30 juin 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/le-maire-de-saint-ouen-karim-bouamrane-fustige-les-barons-socialistes-qui-le-meprisent-et-que-sa-candidature-a-la-presidentielle-2027-bouscule_8086388.html" } }
+tournee: []
+sourcesProfil:
+  - { titre: "Wikipédia, article « Karim Bouamrane » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Karim_Bouamrane" }
+  - { titre: "LCP, « Présidentielle 2027 : qui est Karim Bouamrane, le maire socialiste de Saint-Ouen et nouveau candidat à l'élection ? » (9 juin 2026)", url: "https://lcp.fr/actualites/presidentielle-2027-qui-est-karim-bouamrane-le-maire-socialiste-de-saint-ouen-et-nouveau" }
+  - { titre: "France 3 Paris Île-de-France (9 juin 2026)", url: "https://france3-regions.franceinfo.fr/paris-ile-de-france/seine-saint-denis/je-ferai-tout-pour-qu-il-y-ait-un-bulletin-karim-bouamrane-le-maire-socialiste-de-saint-ouen-annonce-sa-candidature-a-la-presidentielle-2027-3364996.html" }
+  - { titre: "Public Sénat, « Présidentielle 2027 : quel est le dernier décompte des candidats déjà sur la ligne de départ ? » (18 septembre 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart" }
