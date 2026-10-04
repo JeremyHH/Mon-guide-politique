@@ -447,3 +447,11 @@ table.resultats{min-width:520px}
 .fiche-entete .sommaire{border-bottom:0;padding-bottom:0}
 .fiche-candidat > .src{padding:0 6px}
 @media (max-width:620px){.fiche-candidat > .fiche-section{padding:16px}}
+
+/* ---------- CV ---------- */
+.cv-grille{display:grid;grid-template-columns:1fr 1fr;gap:20px 28px}
+.cv-liste{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:8px}
+.cv-liste li{display:grid;grid-template-columns:96px 1fr;gap:10px;align-items:baseline}
+.cv-quand{font-family:var(--f-mono);font-size:.78rem;color:var(--muted)}
+.cv-lieu{color:var(--muted)}
+@media (max-width:720px){.cv-grille{grid-template-columns:1fr}}

@@ -87,6 +87,13 @@ const candidats = defineCollection({
     naissance: z.object({ date: z.coerce.date(), lieu: z.string() }).optional(),
     biographie: z.string().optional(),
     fonctions: z.array(z.object({ intitule: z.string(), periode: z.string() })).default([]),
+    // Curriculum vitae hors mandats électifs : formation et expériences professionnelles.
+    cv: z
+      .object({
+        etudes: z.array(z.object({ diplome: z.string(), etablissement: z.string().optional(), annee: z.number().optional() })).default([]),
+        experiences: z.array(z.object({ poste: z.string(), employeur: z.string().optional(), periode: z.string().optional() })).default([]),
+      })
+      .optional(),
     // Ouvrages écrits par le candidat (les plus récents d'abord) ; bibliographieTotal si la liste est tronquée.
     bibliographie: z.array(z.object({ titre: z.string(), annee: z.number(), editeur: z.string().optional(), coauteurs: z.string().optional() })).default([]),
     bibliographieTotal: z.number().optional(),

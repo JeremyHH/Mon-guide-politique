@@ -64,6 +64,7 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
 
     <nav class="sommaire" aria-label="Sections de la fiche">
       <a href="#biographie">Biographie</a>
+      {c.data.cv && <a href="#cv">Formation et carrière</a>}
       <a href="#bibliographie">Bibliographie</a>
       <a href="#parcours">Parcours politique</a>
       <a href="#resultats">Résultats électoraux</a>
@@ -86,6 +87,34 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
       )}
       {c.data.biographie ? <p class="fiche-texte">{c.data.biographie}</p> : <p class="none">Biographie à compléter.</p>}
     </section>
+
+    {c.data.cv && (
+    <section class="fiche-section" id="cv">
+      <h3 class="fiche-titre">Formation et parcours professionnel</h3>
+      <div class="cv-grille">
+        <div>
+          <span class="label">Formation</span>
+          {c.data.cv.etudes.length ? (
+            <ul class="cv-liste">
+              {c.data.cv.etudes.map((e) => (
+                <li><span class="cv-quand">{e.annee ?? ""}</span><span><strong>{e.diplome}</strong>{e.etablissement && <span class="cv-lieu"> · {e.etablissement}</span>}</span></li>
+              ))}
+            </ul>
+          ) : <p class="aucune">Non renseignée dans les sources consultées.</p>}
+        </div>
+        <div>
+          <span class="label">Expériences professionnelles (hors mandats)</span>
+          {c.data.cv.experiences.length ? (
+            <ul class="cv-liste">
+              {c.data.cv.experiences.map((e) => (
+                <li><span class="cv-quand">{e.periode ?? ""}</span><span><strong>{e.poste}</strong>{e.employeur && <span class="cv-lieu"> · {e.employeur}</span>}</span></li>
+              ))}
+            </ul>
+          ) : <p class="aucune">Non renseignées dans les sources consultées.</p>}
+        </div>
+      </div>
+    </section>
+    )}
 
     <section class="fiche-section" id="bibliographie">
       <h3 class="fiche-titre">Bibliographie</h3>
@@ -205,7 +234,7 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
     </section>
 
     {c.data.sourcesProfil.length > 0 && (
-      <p class="mono src">Sources de la biographie, de la bibliographie, du parcours, des résultats et des condamnations :{" "}
+      <p class="mono src">Sources de la biographie, de la formation et de la carrière, de la bibliographie, du parcours, des résultats et des condamnations :{" "}
         {c.data.sourcesProfil.map((s, i) => <>{i > 0 && " · "}<a href={s.url} rel="noopener">{s.titre}</a></>)}
       </p>
     )}
