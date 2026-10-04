@@ -187,19 +187,5 @@ const age = (d: Date) => {
       </p>
     )}
 
-    <div class="analysis">
-      <span class="label">Analyses · séparées des faits</span>
-      {c.data.analyses.length ? (
-        c.data.analyses.map((a) => (
-          <div>
-            <h3>{a.titre}</h3>
-            <p>{a.resume}</p>
-            <span class="mono src"><a href={a.source.url} rel="noopener">{a.source.titre}</a> · {dateFr(a.source.date)}</span>
-          </div>
-        ))
-      ) : (
-        <p>Aucune analyse publiée pour l'instant. Seules les évaluations d'organismes nommés (Cour des comptes, OFCE, Institut Montaigne, Fondation Jean-Jaurès…) figureront ici.</p>
-      )}
-    </div>
   </article>
 </Base>
