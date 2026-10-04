@@ -2,10 +2,11 @@
 import Base from "../layouts/Base.astro";
 import Frise from "../components/Frise.astro";
 import { RUBRIQUES } from "../lib/config";
-import { elections, fiches, lien } from "../lib/data";
+import { elections, fiches, lien, compteCandidats } from "../lib/data";
 
 const aVenir = (await elections()).filter((e) => +e.data.date >= Date.now() - 86400000 * 30);
 const prochaine = aVenir[0];
+const compte = prochaine ? await compteCandidats(prochaine) : null;
 const institutions = RUBRIQUES.institutions ? (await fiches("institutions")).slice(0, 4) : [];
 const voter = await fiches("voter");
 const slug = (id: string) => id.split("/")[1];
@@ -22,6 +23,12 @@ const slug = (id: string) => id.split("/")[1];
         <span class="label">Prochaine élection · {prochaine.data.nom}</span>
         <span class="n" id="jours" data-cible={prochaine.data.date.toISOString()}>—</span>
         <span class="mono">jours avant le premier tour ({prochaine.data.libelleDate})</span>
+        {compte && (
+          <span class="compte-candidats">
+            <span class="compte-ligne"><strong>{compte.total}</strong> candidatures déclarées</span>
+            <span class="compte-detail">dont {compte.suivis} détaillées sur le site{compte.primaire > 0 && ` (${compte.primaire} à la primaire socialiste)`}</span>
+          </span>
+        )}
       </a>
     )}
   </div>

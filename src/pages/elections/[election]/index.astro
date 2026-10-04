@@ -3,13 +3,14 @@ import Base from "../../../layouts/Base.astro";
 import NavElection from "../../../components/NavElection.astro";
 import BandeauVerif from "../../../components/BandeauVerif.astro";
 import Frise from "../../../components/Frise.astro";
-import { elections, candidatsDe, nomComplet, slugCandidat, STATUTS, lien, type Election } from "../../../lib/data";
+import { elections, candidatsDe, compteCandidats, nomComplet, slugCandidat, STATUTS, lien, type Election } from "../../../lib/data";
 
 export async function getStaticPaths() {
   return (await elections()).map((e) => ({ params: { election: e.id }, props: { election: e } }));
 }
 const { election } = Astro.props as { election: Election };
 const liste = await candidatsDe(election);
+const compte = await compteCandidats(election);
 ---
 <Base titre={election.data.nom} page="elections" description={election.data.resume}>
   <BandeauVerif slot="bandeau" />
@@ -21,6 +22,10 @@ const liste = await candidatsDe(election);
       <span class="label">Premier tour</span>
       <span class="n" id="jours" data-cible={election.data.date.toISOString()}>—</span>
       <span class="mono">jours avant le {election.data.libelleDate.split(" et ")[0]}</span>
+      <span class="compte-candidats">
+        <span class="compte-ligne"><strong>{compte.total}</strong> candidatures déclarées</span>
+        <span class="compte-detail">dont {compte.suivis} détaillées sur le site{compte.primaire > 0 && ` (${compte.primaire} à la primaire socialiste)`}</span>
+      </span>
     </div>
   </div>
 

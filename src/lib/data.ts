@@ -55,3 +55,14 @@ export const dateFr = (d: Date) =>
 /** Préfixe un chemin interne avec la base du site (utile sur GitHub Pages). */
 export const lien = (chemin: string) =>
   (import.meta.env.BASE_URL.replace(/\/$/, "") + "/" + chemin.replace(/^\//, "")).replace(/\/$/, "") || "/";
+
+/**
+ * Décompte des candidatures déclarées : candidats ayant une fiche (hors retirés)
+ * + autres candidatures déclarées (les intentions sans déclaration officielle ne comptent pas).
+ */
+export async function compteCandidats(election: Election) {
+  const liste = await candidatsDe(election);
+  const autres = election.data.autres.filter((a) => !/sans déclaration officielle/i.test(a)).length;
+  const primaire = liste.filter((c) => c.data.statut === "primaire").length;
+  return { suivis: liste.length, primaire, autres, total: liste.length + autres };
+}
