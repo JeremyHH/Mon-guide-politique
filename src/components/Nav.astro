@@ -101,19 +101,42 @@ const actuel = (href: string) => (lien(href).replace(/\/$/, "") === ici ? "page"
   const nav = document.getElementById("nav-principale")!;
   const boutons = [...document.querySelectorAll<HTMLButtonElement>(".a-sous-menu > .nav-lien")];
 
-  const fermerTout = (sauf?: HTMLButtonElement) =>
+  // Sur l'accueil, le sous-menu ouvert par défaut ne doit pas recouvrir le bandeau : on décale celui-ci
+  // juste sous le sous-menu, puis on le remonte dès que le sous-menu se referme.
+  const parDefaut = document.querySelector<HTMLButtonElement>("[data-ouvert-par-defaut]");
+  const bandeau = document.querySelector<HTMLElement>(".hero.bandeau");
+  function ajusterBandeau() {
+    if (!parDefaut || !bandeau) return;
+    const ouvert = parDefaut.getAttribute("aria-expanded") === "true" && getComputedStyle(toggle).display === "none";
+    if (!ouvert) {
+      bandeau.style.marginTop = "0px";
+      return;
+    }
+    const sousMenu = document.getElementById(parDefaut.getAttribute("aria-controls")!)!;
+    const margeActuelle = parseFloat(getComputedStyle(bandeau).marginTop) || 0;
+    const haut = bandeau.getBoundingClientRect().top - margeActuelle;
+    bandeau.style.marginTop = `${Math.max(0, sousMenu.getBoundingClientRect().bottom - haut + 16)}px`;
+  }
+
+  const fermerTout = (sauf?: HTMLButtonElement) => {
     boutons.forEach((b) => b !== sauf && b.setAttribute("aria-expanded", "false"));
+    ajusterBandeau();
+  };
 
   boutons.forEach((b) =>
     b.addEventListener("click", () => {
       const ouvert = b.getAttribute("aria-expanded") === "true";
       fermerTout(b);
       b.setAttribute("aria-expanded", String(!ouvert));
+      ajusterBandeau();
     }),
   );
 
   // Sur mobile, le menu est replié : on n'y garde pas de sous-menu ouvert par défaut.
   if (getComputedStyle(toggle).display !== "none") fermerTout();
+  ajusterBandeau();
+  addEventListener("resize", ajusterBandeau);
+  document.fonts?.ready.then(ajusterBandeau);
 
   toggle.addEventListener("click", () => {
     const ouvert = toggle.getAttribute("aria-expanded") === "true";
