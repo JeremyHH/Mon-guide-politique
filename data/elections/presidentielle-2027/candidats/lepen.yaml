@@ -75,3 +75,8 @@ photo:
   licenceUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
   source: "https://commons.wikimedia.org/wiki/File:Marine_Le_Pen_2025_(cropped).jpg"
   annee: 2025
+# Campagne : dates clés propres au candidat (les étapes communes viennent du calendrier de l'élection)
+campagne:
+  - { date: 2026-07-07, quand: "7 juillet 2026", type: justice, quoi: "Condamnée en appel mais éligible, elle annonce sa candidature le soir même sur TF1 et forme un pourvoi en cassation.", source: { titre: "LCP (7 juillet 2026)", url: "https://lcp.fr/actualites/ce-soir-je-suis-candidate-a-l-election-presidentielle-annonce-marine-le-pen-438886" } }
+  - { date: 2026-08-27, quand: "27 août 2026", type: debat, quoi: "Premier débat de la campagne, aux universités d'été du Medef, avec six autres candidats.", source: { titre: "Public Sénat, premier débat des candidats (27 août 2026)", url: "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle" } }
+  - { date: 2027-04-01, quand: "Début avril 2027 au plus tard (indicatif)", type: justice, quoi: "Décision attendue de la Cour de cassation sur son pourvoi.", source: { titre: "Public Sénat", url: "https://www.publicsenat.fr/actualites/politique/condamnation-de-marine-le-pen-la-cour-de-cassation-pourrait-se-prononcer-au-plus-tard-debut-avril-2027" } }

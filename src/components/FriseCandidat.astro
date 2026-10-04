@@ -1,0 +1,63 @@
+---
+import type { Candidat, Election } from "../lib/data";
+
+interface Props {
+  candidat: Candidat;
+  election: Election;
+}
+const { candidat, election } = Astro.props;
+
+const TYPES = {
+  annonce: "Candidature",
+  designation: "Désignation",
+  debat: "Débat",
+  meeting: "Terrain",
+  programme: "Programme",
+  parti: "Parti",
+  justice: "Justice",
+  commune: "Étape commune",
+} as const;
+
+// Étapes communes à tous les candidats, de la fin des parrainages au second tour.
+const second = election.data.calendrier.find((e) => e.phase === "vote" && /second tour/i.test(e.quoi));
+const communes = election.data.calendrier
+  .filter((e) => (e.phase === "campagne" || e.phase === "vote" || /parrainages/i.test(e.quoi)))
+  .map((e) => ({
+    date: e.date,
+    quand: e.quand,
+    type: "commune" as const,
+    quoi: e === second ? `${e.quoi.replace(/\.$/, "")} (si le candidat est qualifié).` : e.quoi,
+    source: undefined,
+  }));
+const etapes = [...candidat.data.campagne.map((e) => ({ ...e })), ...communes].sort((a, b) => +a.date - +b.date);
+---
+{etapes.length > 0 && (
+  <ol class="frise-candidat">
+    {etapes.map((e) => (
+      <li class={`fc-etape fc-${e.type}`} data-date={e.date.toISOString()}>
+        <span class="fc-point" aria-hidden="true"></span>
+        <div class="fc-tete">
+          <span class="fc-date">{e.quand}</span>
+          <span class="fc-type">{TYPES[e.type]}</span>
+        </div>
+        <p class="fc-texte">{e.quoi}</p>
+        {e.source && <a class="mono fc-source" href={e.source.url} rel="noopener">{e.source.titre}</a>}
+      </li>
+    ))}
+  </ol>
+)}
+
+<script>
+  const JOUR = 86400000;
+  document.querySelectorAll<HTMLElement>(".frise-candidat").forEach((liste) => {
+    let suivante = false;
+    liste.querySelectorAll<HTMLElement>(".fc-etape").forEach((li) => {
+      if (Date.parse(li.dataset.date!) + JOUR < Date.now()) li.classList.add("passee");
+      else if (!suivante) {
+        suivante = true;
+        li.classList.add("prochaine");
+        li.querySelector(".fc-tete")!.insertAdjacentHTML("beforeend", '<span class="frise-badge">Prochaine étape</span>');
+      }
+    });
+  });
+</script>

@@ -80,3 +80,8 @@ photo:
   licenceUrl: "https://creativecommons.org/licenses/by/4.0"
   source: "https://commons.wikimedia.org/wiki/File:Jean_Luc_M%C3%A9lenchon_en_mai_2026-_55261894422_(cropped).jpg"
   annee: 2026
+# Campagne : dates clés propres au candidat (les étapes communes viennent du calendrier de l'élection)
+campagne:
+  - { date: 2026-05-03, quand: "3 mai 2026", type: annonce, quoi: "Annonce sa quatrième candidature à l'élection présidentielle.", source: { titre: "Public Sénat, décompte des candidats (18 septembre 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart" } }
+  - { date: 2026-06-07, quand: "7 juin 2026", type: meeting, quoi: "Premier meeting de campagne, à Saint-Denis (Seine-Saint-Denis).", source: { titre: "Public Sénat, décompte des candidats (18 septembre 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart" } }
+  - { date: 2026-08-27, quand: "27 août 2026", type: debat, quoi: "Premier débat de la campagne, aux universités d'été du Medef, avec six autres candidats.", source: { titre: "Public Sénat, premier débat des candidats (27 août 2026)", url: "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle" } }

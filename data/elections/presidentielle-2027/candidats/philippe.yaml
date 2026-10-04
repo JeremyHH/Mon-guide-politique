@@ -3,7 +3,7 @@ prenom: "Édouard"
 nom: "Philippe"
 parti: "Horizons"
 statut: declare
-bio: "Maire du Havre, président d'Horizons, Premier ministre de 2017 à 2020. Candidat depuis septembre 2024."
+bio: "Maire du Havre, fondateur d'Horizons, Premier ministre de 2017 à 2020. Candidat depuis septembre 2024."
 positions:
   retraites:
     texte: "Reprendre la réforme de 2023, puis passer en moins de 10 ans à 65 ans et 45 annuités, avec des départs entre 60 et 64 ans pour les carrières longues et pénibles ; ajouter un volet capitalisation."
@@ -52,7 +52,7 @@ analyses: []
 naissance: { date: 1970-11-28, lieu: "Rouen (Seine-Maritime)" }
 biographie: "Diplômé de Sciences Po Paris et de l'ENA, il est membre du Conseil d'État, puis avocat. Membre du RPR, de l'UMP puis des Républicains jusqu'en 2017, il fonde Horizons en 2021."
 fonctions:
-  - { intitule: "Président d'Horizons", periode: "depuis octobre 2021" }
+  - { intitule: "Président d'Horizons", periode: "depuis octobre 2021 (départ annoncé le 9 septembre 2026)" }
   - { intitule: "Maire du Havre", periode: "2010 – 2017, depuis juillet 2020" }
   - { intitule: "Président de la communauté urbaine Le Havre Seine Métropole", periode: "depuis juillet 2020" }
   - { intitule: "Premier ministre", periode: "mai 2017 – juillet 2020" }
@@ -76,3 +76,11 @@ photo:
   licenceUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
   source: "https://commons.wikimedia.org/wiki/File:Edouard_Philippe_3x4_crop.jpg"
   annee: 2024
+# Campagne : dates clés propres au candidat (les étapes communes viennent du calendrier de l'élection)
+campagne:
+  - { date: 2024-09-03, quand: "Septembre 2024", type: annonce, quoi: "Se déclare candidat à l'élection présidentielle.", source: { titre: "Public Sénat, décompte des candidats (18 septembre 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart" } }
+  - { date: 2026-08-10, quand: "10 août 2026", type: programme, quoi: "Tribune dans Le Figaro sur l'immigration, après l'afflux de migrants à Ceuta.", source: { titre: "franceinfo (10 août 2026)", url: "https://www.franceinfo.fr/societe/immigration/apres-l-afflux-de-migrants-a-ceuta-edouard-philippe-propose-des-mesures-pour-limiter-l-immigration-et-les-regularisations-de-sans-papiers-dans-l-union-europeenne_8141837.html" } }
+  - { date: 2026-08-22, quand: "22 août 2026", type: meeting, quoi: "Déplacement à Mayotte consacré à l'immigration.", source: { titre: "franceinfo (22 août 2026)", url: "https://www.franceinfo.fr/politique/edouard-philippe/rentree-politique-edouard-philippe-et-jean-luc-melenchon-s-echarpent-au-sujet-de-l-immigration-a-mayotte_8157719.html" } }
+  - { date: 2026-08-27, quand: "27 août 2026", type: debat, quoi: "Premier débat de la campagne, aux universités d'été du Medef, avec six autres candidats.", source: { titre: "Public Sénat, premier débat des candidats (27 août 2026)", url: "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle" } }
+  - { date: 2026-09-09, quand: "9 septembre 2026", type: parti, quoi: "Annonce quitter la présidence d'Horizons pour élargir le rassemblement autour de sa candidature.", source: { titre: "Wikipédia, « Édouard Philippe »", url: "https://fr.wikipedia.org/wiki/Édouard_Philippe" } }
+  - { date: 2026-09-29, quand: "29 septembre 2026", type: programme, quoi: "Présente sa réforme des retraites (65 ans et 45 annuités à terme).", source: { titre: "franceinfo, comparatif retraites (30 septembre 2026)", url: "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/changement-de-systeme-passage-a-60-ou-a-65-ans-capitalisation-que-proposent-les-principaux-candidats-a-l-election-presidentielle-pour-les-retraites_8215784.html" } }

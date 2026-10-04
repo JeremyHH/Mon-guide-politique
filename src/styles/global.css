@@ -360,3 +360,22 @@ table.resultats{min-width:520px}
 .portrait figcaption a{color:var(--muted)}
 .ballot-photo{width:96px;height:128px;object-fit:cover;border-radius:8px;justify-self:center;margin-bottom:6px;border:1px solid var(--line);background:var(--ground)}
 @media (max-width:520px){.portrait,.portrait img{width:140px}.portrait img{height:187px}}
+
+/* ---------- Frise de campagne d'un candidat ---------- */
+.frise-candidat{list-style:none;margin:0;padding:0 0 0 22px;border-left:3px solid var(--bleu-soft);display:grid;gap:16px}
+.fc-etape{position:relative;display:grid;gap:3px}
+.fc-point{position:absolute;left:-31px;top:.3em;width:15px;height:15px;border-radius:50%;background:var(--paper);border:3px solid var(--bleu)}
+.fc-tete{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.fc-date{font-family:var(--f-display);font-weight:700}
+.fc-type{font-family:var(--f-mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.06em;padding:2px 7px;border-radius:999px;background:var(--bleu-soft);color:var(--bleu)}
+.fc-texte{margin:0;max-width:65ch}
+.fc-source{color:var(--muted);font-size:.72rem}
+.fc-annonce .fc-point,.fc-designation .fc-point{background:var(--bleu)}
+.fc-debat .fc-type{background:var(--rouge-soft);color:var(--rouge)}
+.fc-justice .fc-type{background:var(--warn-soft);color:var(--warn)}
+.fc-commune .fc-point{border-style:dashed;border-color:var(--muted)}
+.fc-commune .fc-type{background:var(--ground);color:var(--muted);border:1px dashed var(--line)}
+.fc-commune .fc-texte{color:var(--muted)}
+.fc-etape.passee .fc-point{background:var(--bleu)}
+.fc-etape.passee.fc-commune .fc-point{background:var(--muted)}
+.fc-etape.prochaine .fc-point{background:var(--rouge);border-color:var(--rouge);border-style:solid;box-shadow:0 0 0 5px var(--rouge-soft)}

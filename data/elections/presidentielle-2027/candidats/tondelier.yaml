@@ -64,3 +64,9 @@ photo:
   licenceUrl: "https://creativecommons.org/licenses/by-sa/4.0"
   source: "https://commons.wikimedia.org/wiki/File:20210819_tondelier.m-cr3.jpg"
   annee: 2021
+# Campagne : dates clés propres au candidat (les étapes communes viennent du calendrier de l'élection)
+campagne:
+  - { date: 2025-10-22, quand: "22 octobre 2025", type: annonce, quoi: "Se déclare candidate.", source: { titre: "Wikipédia, « Marine Tondelier »", url: "https://fr.wikipedia.org/wiki/Marine_Tondelier" } }
+  - { date: 2025-12-08, quand: "8 décembre 2025", type: designation, quoi: "Désignée par Les Écologistes pour les représenter à la primaire de la gauche.", source: { titre: "Wikipédia, « Marine Tondelier »", url: "https://fr.wikipedia.org/wiki/Marine_Tondelier" } }
+  - { date: 2026-07-15, quand: "Juillet 2026", type: designation, quoi: "Après l'abandon de la primaire unitaire, les militants valident une candidature autonome.", source: { titre: "Public Sénat, décompte des candidats (18 septembre 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart" } }
+  - { date: 2026-08-27, quand: "27 août 2026", type: debat, quoi: "Premier débat de la campagne, aux universités d'été du Medef, avec six autres candidats.", source: { titre: "Public Sénat, premier débat des candidats (27 août 2026)", url: "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle" } }

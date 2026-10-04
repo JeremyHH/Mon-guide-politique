@@ -92,6 +92,17 @@ const candidats = defineCollection({
     photo: z
       .object({ fichier: z.string(), auteur: z.string(), licence: z.string(), licenceUrl: z.string().url(), source: z.string().url(), annee: z.number() })
       .optional(),
+    campagne: z
+      .array(
+        z.object({
+          date: z.coerce.date(),
+          quand: z.string(),
+          type: z.enum(["annonce", "designation", "debat", "meeting", "programme", "parti", "justice"]),
+          quoi: z.string(),
+          source: z.object({ titre: z.string(), url: z.string().url() }),
+        }),
+      )
+      .default([]),
     sourcesProfil: z.array(z.object({ titre: z.string(), url: z.string().url() })).default([]),
   }),
 });
