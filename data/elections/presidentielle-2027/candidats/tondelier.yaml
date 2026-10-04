@@ -56,3 +56,11 @@ condamnations: []
 procedures: []
 sourcesProfil:
   - { titre: "Wikipédia, article « Marine Tondelier » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Marine_Tondelier" }
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/tondelier.jpg"
+  auteur: "Greenbox"
+  licence: "CC BY-SA 4.0"
+  licenceUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+  source: "https://commons.wikimedia.org/wiki/File:20210819_tondelier.m-cr3.jpg"
+  annee: 2021

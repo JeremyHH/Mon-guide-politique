@@ -72,3 +72,11 @@ condamnations:
 procedures: []
 sourcesProfil:
   - { titre: "Wikipédia, article « Jean-Luc Mélenchon » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Jean-Luc_Mélenchon" }
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/melenchon.jpg"
+  auteur: "jlm2017.fr"
+  licence: "CC BY 4.0"
+  licenceUrl: "https://creativecommons.org/licenses/by/4.0"
+  source: "https://commons.wikimedia.org/wiki/File:Jean_Luc_M%C3%A9lenchon_en_mai_2026-_55261894422_(cropped).jpg"
+  annee: 2026

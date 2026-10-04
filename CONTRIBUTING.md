@@ -70,3 +70,7 @@ Mêmes rubriques pour tous : `naissance`, `biographie` (formation, métier, parc
 - `condamnations` : condamnations **pénales** uniquement (ni relaxes, ni litiges civils), avec la juridiction, la peine et le statut : `definitive` (plus de recours possible), `non_definitive` (appel ou cassation en cours) ou `non_precise`.
 - `procedures` : enquêtes ou instructions publiques visant nommément le candidat, rédigées en rappelant la présomption d'innocence.
 - Sans condamnation, laisser `condamnations: []` : la fiche affiche « Aucune condamnation pénale connue ».
+
+## Photos des candidats
+
+Uniquement des images sous licence libre (Wikimedia Commons : CC0, CC BY, CC BY-SA), enregistrées dans `public/candidats/<id>.jpg`, recadrées en 3:4 (360 × 480 px). Renseigner le bloc `photo` (auteur, licence, lien de la licence, page Commons, année) : le crédit est affiché sous le portrait, comme l'exigent les licences CC BY et CC BY-SA. Préférer, pour chaque candidat, un portrait récent et posé, de cadrage comparable aux autres.

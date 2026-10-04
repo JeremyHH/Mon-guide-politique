@@ -89,6 +89,9 @@ const candidats = defineCollection({
       )
       .default([]),
     procedures: z.array(z.string()).default([]),
+    photo: z
+      .object({ fichier: z.string(), auteur: z.string(), licence: z.string(), licenceUrl: z.string().url(), source: z.string().url(), annee: z.number() })
+      .optional(),
     sourcesProfil: z.array(z.object({ titre: z.string(), url: z.string().url() })).default([]),
   }),
 });

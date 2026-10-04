@@ -25,12 +25,22 @@ const age = (d: Date) => {
   <BandeauVerif slot="bandeau" />
   <article class="sheet">
     <a class="back" href={lien(`/elections/${election.id}`)}>← {election.data.nom}</a>
-    <div class="sheet-head">
-      <div style="display:grid;gap:6px">
+    <div class="sheet-head avec-photo">
+      {c.data.photo && (
+        <figure class="portrait">
+          <img src={lien(c.data.photo.fichier)} alt={`Portrait de ${nomComplet(c)}`} width="360" height="480" />
+          <figcaption>
+            Photo ({c.data.photo.annee}) : {c.data.photo.auteur},{" "}
+            <a href={c.data.photo.licenceUrl} rel="noopener license">{c.data.photo.licence}</a>,{" "}
+            <a href={c.data.photo.source} rel="noopener">Wikimedia Commons</a>, recadrée
+          </figcaption>
+        </figure>
+      )}
+      <div class="sheet-ident">
         <h2>{nomComplet(c)}</h2>
         <span style="color:var(--muted)">{c.data.parti}</span>
+        <span class="pill ok" style="justify-self:start">{STATUTS[c.data.statut]}{c.data.declaration && ` · ${dateFr(c.data.declaration)}`}</span>
       </div>
-      <span class="pill ok">{STATUTS[c.data.statut]}{c.data.declaration && ` · ${dateFr(c.data.declaration)}`}</span>
     </div>
     <p style="margin:0;max-width:65ch">{c.data.bio}</p>
 

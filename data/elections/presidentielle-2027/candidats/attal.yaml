@@ -70,3 +70,11 @@ condamnations: []
 procedures: []
 sourcesProfil:
   - { titre: "Wikipédia, article « Gabriel Attal » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Gabriel_Attal" }
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/attal.jpg"
+  auteur: "Ismail Aissoub"
+  licence: "CC BY 4.0"
+  licenceUrl: "https://creativecommons.org/licenses/by/4.0"
+  source: "https://commons.wikimedia.org/wiki/File:Gabriel_Attal_2025_(close_crop).jpg"
+  annee: 2025

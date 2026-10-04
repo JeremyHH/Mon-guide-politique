@@ -343,3 +343,13 @@ table.resultats{min-width:520px}
 .aucune{margin:0;padding:10px 14px;border-radius:8px;background:var(--ground);font-family:var(--f-display)}
 .procedures{background:var(--warn-soft);border-radius:8px;padding:12px 14px;display:grid;gap:6px}
 .procedures p{margin:0;font-size:.95rem}
+
+/* ---------- Photos des candidats ---------- */
+.sheet-head.avec-photo{justify-content:flex-start;align-items:flex-end;gap:22px}
+.sheet-ident{display:grid;gap:8px}
+.portrait{margin:0;width:180px;display:grid;gap:6px}
+.portrait img{width:180px;height:240px;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:var(--ground);display:block}
+.portrait figcaption{font-family:var(--f-mono);font-size:.62rem;line-height:1.35;color:var(--muted)}
+.portrait figcaption a{color:var(--muted)}
+.ballot-photo{width:96px;height:128px;object-fit:cover;border-radius:8px;justify-self:center;margin-bottom:6px;border:1px solid var(--line);background:var(--ground)}
+@media (max-width:520px){.portrait,.portrait img{width:140px}.portrait img{height:187px}}

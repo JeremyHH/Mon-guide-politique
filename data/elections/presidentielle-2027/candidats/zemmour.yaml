@@ -94,3 +94,11 @@ condamnations:
 procedures: []
 sourcesProfil:
   - { titre: "Wikipédia, article « Éric Zemmour » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Éric_Zemmour" }
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/zemmour.jpg"
+  auteur: "Anh De France"
+  licence: "CC0"
+  licenceUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  source: "https://commons.wikimedia.org/wiki/File:Portrait_d%27%C3%89ric_Zemmour,_avril_2022.jpg"
+  annee: 2022

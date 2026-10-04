@@ -67,3 +67,11 @@ condamnations:
 procedures: []
 sourcesProfil:
   - { titre: "Wikipédia, article « Marine Le Pen » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Marine_Le_Pen" }
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/lepen.jpg"
+  auteur: "Vox España"
+  licence: "CC0"
+  licenceUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  source: "https://commons.wikimedia.org/wiki/File:Marine_Le_Pen_2025_(cropped).jpg"
+  annee: 2025

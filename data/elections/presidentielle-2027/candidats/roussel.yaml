@@ -35,3 +35,11 @@ condamnations: []
 procedures: []
 sourcesProfil:
   - { titre: "Wikipédia, article « Fabien Roussel » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Fabien_Roussel" }
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/roussel.jpg"
+  auteur: "Zouhair NAKARA"
+  licence: "CC BY-SA 4.0"
+  licenceUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+  source: "https://commons.wikimedia.org/wiki/File:Roussel_Fabien_1.jpg"
+  annee: 2018

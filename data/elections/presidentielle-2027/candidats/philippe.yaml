@@ -68,3 +68,11 @@ procedures:
   - "Une juge d'instruction est saisie depuis mai 2026 d'une enquête sur des soupçons de prise illégale d'intérêts, détournement de fonds publics et favoritisme à la communauté urbaine du Havre, après une enquête préliminaire du parquet national financier ouverte en 2024. Édouard Philippe conteste toute irrégularité et n'est pas condamné ; il bénéficie de la présomption d'innocence."
 sourcesProfil:
   - { titre: "Wikipédia, article « Édouard Philippe » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Édouard_Philippe" }
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/philippe.jpg"
+  auteur: "Wasasaq8"
+  licence: "CC0"
+  licenceUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  source: "https://commons.wikimedia.org/wiki/File:Edouard_Philippe_3x4_crop.jpg"
+  annee: 2024

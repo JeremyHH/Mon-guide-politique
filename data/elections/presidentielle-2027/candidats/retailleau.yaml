@@ -67,3 +67,11 @@ condamnations: []
 procedures: []
 sourcesProfil:
   - { titre: "Wikipédia, article « Bruno Retailleau » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Bruno_Retailleau" }
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/retailleau.jpg"
+  auteur: "Anthonymontardyfr"
+  licence: "CC BY 4.0"
+  licenceUrl: "https://creativecommons.org/licenses/by/4.0"
+  source: "https://commons.wikimedia.org/wiki/File:Bruno_Retailleau_-_Ministre_de_l%27Int%C3%A9rieur_fran%C3%A7ais_(cropped).jpg"
+  annee: 2025
