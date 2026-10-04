@@ -38,6 +38,8 @@ positions:
       date: 2026-09-14       # date de la déclaration, pas de la consultation
 ```
 
+Pour une page de programme non datée (site de campagne), indiquer la date de consultation et l'écrire dans le titre : « (page consultée le 4 octobre 2026) ».
+
 - `statut: verifie` exige une source complète, sinon le build échoue.
 - Source primaire en priorité : programme, site officiel, discours, interview filmée.
 - Pas de déclaration trouvée : `retraites: null` (affiché « Pas de position connue »).

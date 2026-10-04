@@ -35,9 +35,17 @@ positions:
       url: "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle"
       date: 2026-08-27
   europe:
-    texte: "Réforme constitutionnelle soumise à référendum pour réaffirmer la primauté du droit français."
-    statut: a_verifier
+    texte: "« Bouclier constitutionnel » pour faire primer le droit français sur le droit européen, notamment en matière d'immigration et de sécurité."
+    statut: verifie
+    source:
+      titre: "Public Sénat, « Présidentielle 2027 : Bruno Retailleau veut \"renverser la table\" avec une profonde réforme constitutionnelle »"
+      url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-renverser-la-table-avec-une-profonde-reforme-constitutionnelle"
+      date: 2026-09-03
   securite:
-    texte: "Peines planchers, fin des remises de peine automatiques."
-    statut: a_verifier
+    texte: "Inscrire dans la Constitution des peines minimales pour les crimes et délits graves et la rétention de sûreté ; permettre au peuple de « censurer la censure » du Conseil constitutionnel."
+    statut: verifie
+    source:
+      titre: "Public Sénat, « Présidentielle 2027 : Bruno Retailleau veut \"renverser la table\" avec une profonde réforme constitutionnelle »"
+      url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-renverser-la-table-avec-une-profonde-reforme-constitutionnelle"
+      date: 2026-09-03
 analyses: []

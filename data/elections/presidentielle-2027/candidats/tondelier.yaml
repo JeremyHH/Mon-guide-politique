@@ -24,14 +24,18 @@ positions:
       url: "https://www.revolution-energetique.com/actus/qui-dit-quoi-sur-lenergie-parmi-les-candidats-declares-a-la-presidentielle/"
       date: 2026-06-27
   fiscalite:
-    texte: "Taxer les superprofits des compagnies pétrolières pour financer des aides ciblées aux ménages."
+    texte: "Rétablir un ISF dès 1,3 million d'euros avec un volet climatique, soutenir la taxe Zucman, taxer de 10 % les héritages au-delà de 4 millions d'euros."
     statut: verifie
     source:
-      titre: "franceinfo, « Je reste une candidate pour l'écologie et pour l'union » (Les 4 Vérités)"
-      url: "https://www.franceinfo.fr/politique/eelv/je-serai-toujours-partie-de-la-solution-candidate-marine-tondelier-plaide-encore-pour-une-candidature-unique-a-gauche_8184458.html"
-      date: 2026-09-09
+      titre: "Les Écologistes, dossier de presse « Budget 2027 » (site de Marine Tondelier)"
+      url: "https://marinetondelier.fr/s/dossierpresse-budget2027.pdf"
+      date: 2026-08-26
   europe:
-    texte: "Europe fédérale et écologique."
-    statut: a_verifier
+    texte: "Une Europe fédérale, « écologique, sociale et démocratique », avec un État-providence européen et une justice fiscale européenne."
+    statut: verifie
+    source:
+      titre: "Site de Marine Tondelier, journal de campagne, « Épisode 27 - Une autre Europe est possible »"
+      url: "https://marinetondelier.fr/journal-de-campagne/une-autre-europe-est-possible"
+      date: 2026-09-16
   securite: null
 analyses: []

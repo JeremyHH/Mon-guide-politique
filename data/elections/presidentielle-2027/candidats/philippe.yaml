@@ -20,19 +20,31 @@ positions:
       url: "https://www.franceinfo.fr/societe/immigration/apres-l-afflux-de-migrants-a-ceuta-edouard-philippe-propose-des-mesures-pour-limiter-l-immigration-et-les-regularisations-de-sans-papiers-dans-l-union-europeenne_8141837.html"
       date: 2026-08-10
   energie:
-    texte: "Construire 6 réacteurs EPR2 puis une seconde série de 8, tout en développant les renouvelables."
-    statut: a_verifier
-  fiscalite:
-    texte: "Pas de hausse d'impôts ; supprimer 50 milliards d'euros d'impôts de production et 50 milliards d'aides aux entreprises ; économies surtout sur les dépenses sociales ; « règle d'or » budgétaire."
+    texte: "Relancer le nucléaire, développer les renouvelables et électrifier massivement les usages ; prix du carbone aux frontières européennes."
     statut: verifie
     source:
-      titre: "Public Sénat, « Dette, retraites, fiscalité… que retenir du premier débat des candidats à l'élection présidentielle ? »"
-      url: "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle"
-      date: 2026-08-27
+      titre: "Site de campagne d'Édouard Philippe, « Pour une France plus conquérante » (page consultée le 4 octobre 2026)"
+      url: "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante"
+      date: 2026-10-04
+  fiscalite:
+    texte: "Baisser de 50 milliards d'euros les impôts de production contre 50 milliards d'aides publiques en moins ; règle d'or ; déficit ramené à 2 % du PIB en fin de quinquennat ; aucun nouvel impôt."
+    statut: verifie
+    source:
+      titre: "Site de campagne d'Édouard Philippe, « Pour une France plus prospère » (page consultée le 4 octobre 2026)"
+      url: "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+      date: 2026-10-04
   europe:
-    texte: "Soutien à l'UE, renforcement du marché unique."
-    statut: a_verifier
+    texte: "Protéger le marché européen face à la concurrence chinoise, achever le marché unique, construire une union des marchés de capitaux."
+    statut: verifie
+    source:
+      titre: "Site de campagne d'Édouard Philippe, « Pour une France plus prospère » (page consultée le 4 octobre 2026)"
+      url: "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+      date: 2026-10-04
   securite:
-    texte: "Hausse des places de prison, autorité de l'État."
-    statut: a_verifier
+    texte: "Peines courtes dès la première infraction, peines planchers pour les infractions les plus graves, suppression du juge d'application des peines, « état d'urgence narco »."
+    statut: verifie
+    source:
+      titre: "Site de campagne d'Édouard Philippe, « Pour une France plus sûre » (page consultée le 4 octobre 2026)"
+      url: "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+      date: 2026-10-04
 analyses: []
