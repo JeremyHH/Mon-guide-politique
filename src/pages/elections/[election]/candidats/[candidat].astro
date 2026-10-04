@@ -15,6 +15,8 @@ export async function getStaticPaths() {
 }
 const { c, election } = Astro.props as { c: Candidat; election: Election };
 const STATUTS_JUSTICE = { definitive: "Définitive", non_definitive: "Non définitive (recours en cours)", non_precise: "Recours éventuels non précisés" } as const;
+// Un poste est en cours quand sa période contient « depuis » (ex. « 2010 – 2017, depuis juillet 2020 »).
+const enFonction = (periode: string) => /(^|,\s*)depuis\b/i.test(periode);
 const RANG = { definitive: 0, non_definitive: 1, non_precise: 2 } as const;
 const age = (d: Date) => {
   const n = new Date();
@@ -67,9 +69,13 @@ const age = (d: Date) => {
     <section class="fiche-section" id="parcours">
       <h3 class="fiche-titre">Fonctions politiques occupées</h3>
       {c.data.fonctions.length ? (
+        <p class="legende-parcours"><span class="puce pleine" aria-hidden="true"></span> en fonction <span class="puce vide" aria-hidden="true"></span> fonction passée</p>
         <ol class="parcours">
           {c.data.fonctions.map((f) => (
-            <li><span class="parcours-intitule">{f.intitule}</span>{f.periode && <span class="parcours-periode">{f.periode}</span>}</li>
+            <li class={enFonction(f.periode) ? "en-cours" : undefined}>
+              <span class="parcours-intitule">{f.intitule}</span>
+              {f.periode && <span class="parcours-periode">{f.periode}{enFonction(f.periode) && <span class="sr-only"> (en fonction)</span>}</span>}
+            </li>
           ))}
         </ol>
       ) : <p class="none">À compléter.</p>}

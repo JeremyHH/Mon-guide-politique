@@ -324,7 +324,14 @@ footer.foot a{color:var(--sur-bleu)}
 .parcours{list-style:none;margin:0;padding:0 0 0 18px;border-left:3px solid var(--bleu-soft);display:grid;gap:10px}
 .parcours li{position:relative;display:grid;gap:1px}
 .parcours li::before{content:"";position:absolute;left:-26px;top:.45em;width:11px;height:11px;border-radius:50%;background:var(--paper);border:3px solid var(--bleu)}
-.parcours li:first-child::before{background:var(--bleu)}
+.parcours li.en-cours::before{background:var(--titre);border-color:var(--titre)}
+.parcours li.en-cours .parcours-intitule{color:var(--ink)}
+.legende-parcours{margin:0;display:flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:.72rem;color:var(--muted)}
+.legende-parcours .puce{display:inline-block;width:11px;height:11px;border-radius:50%;border:3px solid var(--bleu);margin-left:8px}
+.legende-parcours .puce:first-child{margin-left:0}
+.legende-parcours .puce.pleine{background:var(--titre);border-color:var(--titre)}
+.legende-parcours .puce.vide{background:var(--paper)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .parcours-intitule{font-family:var(--f-display);font-weight:600}
 .parcours-periode{font-family:var(--f-mono);font-size:.78rem;color:var(--muted)}
 table.resultats{min-width:520px}
