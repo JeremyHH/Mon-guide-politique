@@ -7,16 +7,44 @@ representation: true
 declaration: 2026-09-06
 bio: "Secrétaire national du PCF, candidat en 2022. Déclaré le 6 septembre 2026."
 positions:
-  retraites: null
-  immigration: null
+  retraites:
+    texte: "Rétablir le départ à la retraite à 60 ans sans baisse de pension, et augmenter le montant des pensions."
+    statut: verifie
+    anterieur: "Présidentielle 2022"
+    source:
+      titre: "Fabien Roussel – La France des jours heureux, le programme (version FALC), présidentielle 2022"
+      url: "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1646668113/Programme_FALC_Fabien_ROUSSEL.pdf"
+      date: 2022-03-07
+  immigration:
+    texte: "Ouvrir des voies légales et sécurisées pour les migrants dans le respect du droit international, et accueillir dignement les migrants avec une coordination européenne sur le droit d'asile."
+    statut: verifie
+    anterieur: "Présidentielle 2022"
+    source:
+      titre: "Fabien Roussel | Présidentielle 2022 – Institut Montaigne"
+      url: "https://www.institutmontaigne.org/presidentielle-2022/fabien-roussel/"
+      date: 2022-02-14
   energie:
     texte: "Doubler la production d'électricité nucléaire, renouvelable et hydraulique ; nationaliser TotalEnergies."
     statut: a_verifier
   fiscalite:
     texte: "Hausse des salaires ; lutte renforcée contre la fraude et l'évasion fiscales ; taxer davantage les grandes fortunes et les grandes entreprises."
     statut: a_verifier
-  europe: null
-  securite: null
+  europe:
+    texte: "Transformer l'Union européenne en profondeur : fin de la règle des 3 % de déficit, BCE sous contrôle démocratique, pacte pour le climat et l'urgence sociale, Europe « à géométrie choisie »."
+    statut: verifie
+    anterieur: "Présidentielle 2022"
+    source:
+      titre: "Présidentielle 2022 : quelles sont les propositions des candidats sur l'Europe ? – Touteleurope.eu"
+      url: "https://www.touteleurope.eu/vie-politique-des-etats-membres/presidentielle-2022-quelles-sont-les-propositions-des-candidats-sur-l-europe/"
+      date: 2022-03-28
+  securite:
+    texte: "Créer une police nationale de proximité de 30 000 agents, lancer un plan de sauvetage de la justice et renforcer les droits des détenus ainsi que le recrutement des surveillants."
+    statut: verifie
+    anterieur: "Présidentielle 2022"
+    source:
+      titre: "Fabien Roussel | Présidentielle 2022 – Institut Montaigne"
+      url: "https://www.institutmontaigne.org/presidentielle-2022/fabien-roussel/"
+      date: 2022-02-14
 analyses: []
 # Profil (sources : voir sourcesProfil)
 naissance: { date: 1969-04-16, lieu: "Béthune (Pas-de-Calais)" }

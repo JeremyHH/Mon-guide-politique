@@ -6,9 +6,30 @@ statut: declare
 declaration: 2025-12-08
 bio: "Porte-parole de Lutte ouvrière depuis 2008, professeure d'économie-gestion. Candidate pour la quatrième fois à l'élection présidentielle."
 positions:
-  retraites: null
-  immigration: null
-  energie: null
+  retraites:
+    texte: "Porter les pensions, comme les salaires, à 2 000 euros minimum ; dénonce l'obligation faite aux plus de 60 ans de continuer à travailler et propose de répartir le travail entre tous."
+    statut: verifie
+    anterieur: "Présidentielle 2022"
+    source:
+      titre: "Profession de foi de Nathalie Arthaud au premier tour de l'élection présidentielle 2022 – promesses.fr"
+      url: "https://promesses.fr/profession-foi-nathalie-arthaud-premier-tour-election-presidentielle-2022/"
+      date: 2022-03-29
+  immigration:
+    texte: "Instaurer la liberté de circulation et d'installation, en considérant travailleurs français et immigrés comme appartenant à un même camp."
+    statut: verifie
+    anterieur: "Présidentielle 2022"
+    source:
+      titre: "Profession de foi de Nathalie Arthaud au premier tour de l'élection présidentielle 2022 – promesses.fr"
+      url: "https://promesses.fr/profession-foi-nathalie-arthaud-premier-tour-election-presidentielle-2022/"
+      date: 2022-03-29
+  energie:
+    texte: "Pas de mesure énergétique précise : ne s'oppose pas au nucléaire en soi mais à sa mise en œuvre dans un système capitaliste, et propose une planification écologique sous contrôle des travailleurs."
+    statut: verifie
+    anterieur: "Présidentielle 2022"
+    source:
+      titre: "Présidentielle : le programme de Nathalie Arthaud est-il dans les clous des objectifs climatiques de la France ? – franceinfo"
+      url: "https://www.franceinfo.fr/elections/programmes-election-presidentielle-2022/programmes-climat/presidentielle-le-programme-de-nathalie-arthaud-est-il-dans-les-clous-des-objectifs-climatiques-de-la-france_5021516.html"
+      date: 2022-03-29
   fiscalite:
     texte: "Porter le SMIC à 2 000 € net par mois et confisquer les « superprofits » de TotalEnergies."
     statut: verifie
@@ -16,7 +37,14 @@ positions:
       titre: "franceinfo, « L'invité politique » : Nathalie Arthaud souhaite la mise en place du Smic à 2 000 euros net par mois"
       url: "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/prix-du-carburant-nathalie-arthaud-porte-parole-de-lutte-ouvriere-souhaite-la-mise-en-place-du-smic-a-2-000-euros-net-par-mois_7978223.html"
       date: 2026-05-22
-  europe: null
+  europe:
+    texte: "Remplacer l'Europe actuelle, une fois le capitalisme renversé, par des « États-Unis socialistes d'Europe » sans frontières garantissant la liberté de se déplacer pour travailler."
+    statut: verifie
+    anterieur: "Présidentielle 2022"
+    source:
+      titre: "Présidentielle 2022 : quelles sont les propositions des candidats sur l'Europe ? – Touteleurope.eu"
+      url: "https://www.touteleurope.eu/vie-politique-des-etats-membres/presidentielle-2022-quelles-sont-les-propositions-des-candidats-sur-l-europe/"
+      date: 2022-03-28
   securite: null
 analyses: []
 # Profil (sources : voir sourcesProfil)

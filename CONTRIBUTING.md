@@ -74,3 +74,7 @@ Mêmes rubriques pour tous : `naissance`, `biographie` (formation, métier, parc
 ## Photos des candidats
 
 Uniquement des images sous licence libre (Wikimedia Commons : CC0, CC BY, CC BY-SA), enregistrées dans `public/candidats/<id>.jpg`, recadrées en 3:4 (360 × 480 px). Renseigner le bloc `photo` (auteur, licence, lien de la licence, page Commons, année) : le crédit est affiché sous le portrait, comme l'exigent les licences CC BY et CC BY-SA. Préférer, pour chaque candidat, un portrait récent et posé, de cadrage comparable aux autres.
+
+## Positions issues d'un programme précédent
+
+Si un candidat déjà candidat à une présidentielle n'a pas de position 2027 sur un thème, on peut reprendre celle de son dernier programme présidentiel : ajouter `anterieur: "Présidentielle 2022"` (ou l'année concernée) à la position, avec une source de l'époque (programme officiel, profession de foi, article daté de la campagne). Le site affiche alors l'étiquette « Programme présidentielle 2022 ». Remplacer la position dès qu'une position 2027 sourcée existe.

@@ -6,7 +6,14 @@ statut: declare
 declaration: 2025-03-08
 bio: "Président de Debout la France, maire d'Yerres (Essonne), ancien député. Candidat pour la quatrième fois à l'élection présidentielle."
 positions:
-  retraites: null
+  retraites:
+    texte: "Maintenir l’âge de départ à 62 ans et la durée de cotisation actuelle, assouplir les règles pour les carrières longues et métiers pénibles, et réindexer les pensions sur l’inflation."
+    statut: verifie
+    anterieur: "Présidentielle 2022"
+    source:
+      titre: "Élections présidentielles : les propositions des candidats sur la retraite"
+      url: "https://www.lafinancepourtous.com/2022/03/25/elections-presidentielles-les-propositions-des-candidats-sur-la-retraite/"
+      date: 2022-03-25
   immigration:
     texte: "Rétablir les contrôles aux frontières nationales."
     statut: verifie
@@ -21,7 +28,14 @@ positions:
       titre: "franceinfo, « L'invité politique » du 2 juin 2026 (Nicolas Dupont-Aignan)"
       url: "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/l-invite-politique-du-mardi-02-juin-2026_8001014.html"
       date: 2026-06-02
-  fiscalite: null
+  fiscalite:
+    texte: "Exonérer de droits de succession la résidence principale et relever à 90 % le plafond d’exonération des pactes Dutreil pour la transmission d’entreprises."
+    statut: verifie
+    anterieur: "Présidentielle 2022"
+    source:
+      titre: "Fiscalité successorale : le programme des candidats"
+      url: "https://www.lafinancepourtous.com/2022/01/31/fiscalite-successorale-le-programme-des-candidats/"
+      date: 2022-01-31
   europe:
     texte: "Sortir de l'Union européenne pour la reconstruire sur d'autres bases."
     statut: verifie
@@ -29,7 +43,14 @@ positions:
       titre: "franceinfo, « L'invité politique » du 2 juin 2026 (Nicolas Dupont-Aignan)"
       url: "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/l-invite-politique-du-mardi-02-juin-2026_8001014.html"
       date: 2026-06-02
-  securite: null
+  securite:
+    texte: "Simplifier la législation pénale, abaisser la majorité pénale à 16 ans, réinstaurer les peines planchers et supprimer les aménagements de peine pour les récidivistes."
+    statut: verifie
+    anterieur: "Présidentielle 2022"
+    source:
+      titre: "Présidentielle 2022 : Quelles sont les propositions en matière de justice de Nicolas Dupont-Aignan ?"
+      url: "https://www.lemondedudroit.fr/decryptages/79665-presidentielle-2022-quelles-sont-propositions-en-matiere-justice-nicolas-dupont-aignan.html"
+      date: 2022-02-01
 analyses: []
 # Profil (sources : voir sourcesProfil)
 naissance: { date: 1961-03-07, lieu: "Paris" }

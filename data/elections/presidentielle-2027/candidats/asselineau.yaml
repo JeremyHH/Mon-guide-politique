@@ -5,10 +5,38 @@ parti: "Union populaire républicaine"
 statut: declare
 bio: "Fondateur et président de l'Union populaire républicaine (UPR), inspecteur général des finances. Candidat en 2017, il milite pour la sortie de la France de l'Union européenne (« Frexit »)."
 positions:
-  retraites: null
-  immigration: null
-  energie: null
-  fiscalite: null
+  retraites:
+    texte: "Inscrire la retraite par répartition et une retraite minimale dans la Constitution, arrêter l’allongement des annuités (plafonnées à 41) et le report de l’âge légal, minimum vieillesse à 950 €."
+    statut: verifie
+    anterieur: "Présidentielle 2017"
+    source:
+      titre: "Libération nationale – Programme présidentiel de François Asselineau et programme législatif de l’UPR (Élections 2017)"
+      url: "https://upr.fr/post-img/uploads/2016/11/20161111_Programme-FA-presi-leg-2017.pdf"
+      date: 2017-03-14
+  immigration:
+    texte: "Organiser un grand débat national sur l’immigration, conclu par un référendum permettant aux Français de trancher la question."
+    statut: verifie
+    anterieur: "Présidentielle 2017"
+    source:
+      titre: "Libération nationale – Programme présidentiel de François Asselineau et programme législatif de l’UPR (Élections 2017)"
+      url: "https://upr.fr/post-img/uploads/2016/11/20161111_Programme-FA-presi-leg-2017.pdf"
+      date: 2017-03-14
+  energie:
+    texte: "Soumettre la politique énergétique, notamment la question du nucléaire, à un grand débat national suivi d’un référendum, et supprimer les subventions aux énergies fossiles."
+    statut: verifie
+    anterieur: "Présidentielle 2017"
+    source:
+      titre: "Libération nationale – Programme présidentiel de François Asselineau et programme législatif de l’UPR (Élections 2017)"
+      url: "https://upr.fr/post-img/uploads/2016/11/20161111_Programme-FA-presi-leg-2017.pdf"
+      date: 2017-03-14
+  fiscalite:
+    texte: "Récupérer 20 milliards d’euros par an de fraude fiscale grâce à la sortie de l’UE et au contrôle des capitaux, et rendre l’impôt sur les sociétés plus progressif."
+    statut: verifie
+    anterieur: "Présidentielle 2017"
+    source:
+      titre: "Libération nationale – Programme présidentiel de François Asselineau et programme législatif de l’UPR (Élections 2017)"
+      url: "https://upr.fr/post-img/uploads/2016/11/20161111_Programme-FA-presi-leg-2017.pdf"
+      date: 2017-03-14
   europe:
     texte: "Sortir de l'Union européenne, de l'euro et de l'OTAN (« Frexit »)."
     statut: verifie
@@ -16,7 +44,14 @@ positions:
       titre: "Site de l'UPR, page d'accueil (page consultée le 4 octobre 2026)"
       url: "https://www.upr.fr/"
       date: 2026-10-04
-  securite: null
+  securite:
+    texte: "Porter à 20 milliards d’euros le budget de la police et de la gendarmerie et lancer un plan de rétablissement de la justice sur cinq ans."
+    statut: verifie
+    anterieur: "Présidentielle 2017"
+    source:
+      titre: "Libération nationale – Programme présidentiel de François Asselineau et programme législatif de l’UPR (Élections 2017)"
+      url: "https://upr.fr/post-img/uploads/2016/11/20161111_Programme-FA-presi-leg-2017.pdf"
+      date: 2017-03-14
 analyses: []
 # Profil (sources : voir sourcesProfil)
 naissance: { date: 1957-09-14, lieu: "Paris" }
