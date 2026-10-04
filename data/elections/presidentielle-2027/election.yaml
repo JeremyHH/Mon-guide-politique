@@ -21,8 +21,6 @@ themes:
 # phase : candidatures | campagne | vote | apres. indicatif : true quand la date n'est pas fixée par un texte.
 calendrier:
   - { date: 2026-07-01, phase: candidatures, quand: "1er juillet 2026", quoi: "Le gouvernement fixe les dates du scrutin : 18 avril et 2 mai 2027." }
-  - { date: 2026-07-07, phase: candidatures, quand: "7 juillet 2026", quoi: "Décision en appel dans le procès de Marine Le Pen : elle reste éligible et se déclare candidate le soir même." }
-  - { date: 2026-10-17, phase: candidatures, quand: "9-10 et 16-17 octobre 2026", quoi: "Primaire PS – Place publique « Choisir 2027 »." }
   - { date: 2027-02-07, phase: candidatures, quand: "7 février 2027 au plus tard", quoi: "Décret de convocation des électeurs ; envoi des formulaires de parrainage aux élus." }
   - { date: 2027-03-12, phase: candidatures, quand: "12 mars 2027", quoi: "Date limite d'inscription sur les listes électorales, en ligne ou en mairie." }
   - { date: 2027-03-12, phase: candidatures, quand: "12 mars 2027, 18 h", quoi: "Fin du dépôt des 500 parrainages d'élus au Conseil constitutionnel." }

@@ -18,6 +18,10 @@ sources:                    # au moins une, de préférence officielle
 
 Décrire les règles en vigueur, sans commenter les réformes souhaitables. Pour un lien vers une autre fiche, écrire le chemin absolu (`/voter/procuration`) : la base du site est ajoutée au build.
 
+## Le calendrier d'une élection
+
+Uniquement les étapes institutionnelles, communes à tous les candidats (décret, inscriptions, parrainages, liste officielle, campagne, scrutins, proclamation, prise de fonction). Pas d'échéance propre à un parti ou à un candidat (primaires, congrès, décisions de justice).
+
 ## Ajouter une élection
 
 1. Créer `data/elections/<id>/election.yaml` (copier celui de `presidentielle-2027` et adapter les thèmes).
