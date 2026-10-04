@@ -64,7 +64,7 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
 
     <nav class="sommaire" aria-label="Sections de la fiche">
       <a href="#biographie">Biographie</a>
-      {c.data.cv && <a href="#cv">Formation et carrière</a>}
+      {c.data.cv && <a href="#cv">Carrière et formation</a>}
       <a href="#bibliographie">Bibliographie</a>
       <a href="#parcours">Parcours politique</a>
       <a href="#resultats">Résultats électoraux</a>
@@ -90,18 +90,8 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
 
     {c.data.cv && (
     <section class="fiche-section" id="cv">
-      <h3 class="fiche-titre">Formation et parcours professionnel</h3>
+      <h3 class="fiche-titre">Parcours professionnel et formation</h3>
       <div class="cv-grille">
-        <div>
-          <span class="label">Formation</span>
-          {c.data.cv.etudes.length ? (
-            <ul class="cv-liste">
-              {c.data.cv.etudes.map((e) => (
-                <li><span class="cv-quand">{e.annee ?? ""}</span><span><strong>{e.diplome}</strong>{e.etablissement && <span class="cv-lieu"> · {e.etablissement}</span>}</span></li>
-              ))}
-            </ul>
-          ) : <p class="aucune">Non renseignée dans les sources consultées.</p>}
-        </div>
         <div>
           <span class="label">Expériences professionnelles (hors mandats)</span>
           {c.data.cv.experiences.length ? (
@@ -111,6 +101,16 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
               ))}
             </ul>
           ) : <p class="aucune">Non renseignées dans les sources consultées.</p>}
+        </div>
+        <div>
+          <span class="label">Formation</span>
+          {c.data.cv.etudes.length ? (
+            <ul class="cv-liste">
+              {c.data.cv.etudes.map((e) => (
+                <li><span class="cv-quand">{e.annee ?? ""}</span><span><strong>{e.diplome}</strong>{e.etablissement && <span class="cv-lieu"> · {e.etablissement}</span>}</span></li>
+              ))}
+            </ul>
+          ) : <p class="aucune">Non renseignée dans les sources consultées.</p>}
         </div>
       </div>
     </section>
