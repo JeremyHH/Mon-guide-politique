@@ -134,9 +134,10 @@ select{font:inherit;font-family:var(--f-display);padding:6px 10px;border:1px sol
 .method h3{font-size:1.15rem}
 .method p,.method ul{margin:0;max-width:65ch}
 
+.entries.deux{grid-template-columns:repeat(2,1fr)}
 @media (max-width:820px){
   .hero,.quiz{grid-template-columns:1fr}
-  .entries{grid-template-columns:1fr}
+  .entries,.entries.deux{grid-template-columns:1fr}
   .results{position:static}
   .pos{grid-template-columns:1fr}
   .others ul{columns:1}

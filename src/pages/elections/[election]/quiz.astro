@@ -3,8 +3,10 @@ import Base from "../../../layouts/Base.astro";
 import NavElection from "../../../components/NavElection.astro";
 import BandeauVerif from "../../../components/BandeauVerif.astro";
 import { elections, candidatsDe, quizDe, nomComplet, slugCandidat, type Election } from "../../../lib/data";
+import { RUBRIQUES } from "../../../lib/config";
 
 export async function getStaticPaths() {
+  if (!RUBRIQUES.quiz) return [];
   return (await elections()).map((e) => ({ params: { election: e.id }, props: { election: e } }));
 }
 const { election } = Astro.props as { election: Election };

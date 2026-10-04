@@ -1,6 +1,11 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { fiches, lien } from "../../lib/data";
+import { RUBRIQUES } from "../../lib/config";
+
+export function getStaticPaths() {
+  return RUBRIQUES.institutions ? [{ params: { index: undefined } }] : [];
+}
 
 const liste = await fiches("institutions");
 ---

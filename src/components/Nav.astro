@@ -1,5 +1,6 @@
 ---
 import { elections, fiches, lien } from "../lib/data";
+import { RUBRIQUES } from "../lib/config";
 
 interface Props {
   page: "accueil" | "institutions" | "voter" | "elections" | "methode";
@@ -19,12 +20,14 @@ const versFiches = async (rubrique: "institutions" | "voter") =>
 
 const menu: Entree[] = [
   { id: "accueil", nom: "Accueil", href: "/" },
-  {
-    id: "institutions",
-    nom: "Institutions",
-    href: "/institutions",
-    groupes: [{ liens: [{ nom: "Toutes les fiches", href: "/institutions" }, ...(await versFiches("institutions"))] }],
-  },
+  ...(RUBRIQUES.institutions
+    ? [{
+        id: "institutions" as const,
+        nom: "Institutions",
+        href: "/institutions",
+        groupes: [{ liens: [{ nom: "Toutes les fiches", href: "/institutions" }, ...(await versFiches("institutions"))] }],
+      }]
+    : []),
   {
     id: "voter",
     nom: "Voter",
@@ -43,7 +46,7 @@ const menu: Entree[] = [
             liens: [
               { nom: "Candidats et calendrier", href: `/elections/${prochaine.id}` },
               { nom: "Comparer les positions", href: `/elections/${prochaine.id}/comparer` },
-              { nom: "Quiz « qui me ressemble »", href: `/elections/${prochaine.id}/quiz` },
+              ...(RUBRIQUES.quiz ? [{ nom: "Quiz « qui me ressemble »", href: `/elections/${prochaine.id}/quiz` }] : []),
             ],
           },
           { liens: [{ nom: "Toutes les élections", href: "/elections" }] },

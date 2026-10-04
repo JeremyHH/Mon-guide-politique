@@ -1,11 +1,12 @@
 ---
 import Base from "../layouts/Base.astro";
 import Frise from "../components/Frise.astro";
+import { RUBRIQUES } from "../lib/config";
 import { elections, fiches, lien } from "../lib/data";
 
 const aVenir = (await elections()).filter((e) => +e.data.date >= Date.now() - 86400000 * 30);
 const prochaine = aVenir[0];
-const institutions = (await fiches("institutions")).slice(0, 4);
+const institutions = RUBRIQUES.institutions ? (await fiches("institutions")).slice(0, 4) : [];
 const voter = await fiches("voter");
 const slug = (id: string) => id.split("/")[1];
 ---
@@ -14,7 +15,7 @@ const slug = (id: string) => id.split("/")[1];
     <div>
       <span class="label">Vie démocratique · France</span>
       <h1>Comprendre, voter, <em>choisir</em>.</h1>
-      <p class="lede">Comment fonctionnent les institutions, comment s'inscrire et voter, et ce que proposent les candidats à chaque élection. Neutre, sourcé, sans publicité ni collecte de données.</p>
+      <p class="lede">{RUBRIQUES.institutions && "Comment fonctionnent les institutions, "}Comment s'inscrire et voter, et ce que proposent les candidats à chaque élection. Neutre, sourcé, sans publicité ni collecte de données.</p>
     </div>
     {prochaine && (
       <a class="countdown" href={lien(`/elections/${prochaine.id}`)}>
@@ -27,20 +28,20 @@ const slug = (id: string) => id.split("/")[1];
 
   {prochaine && <Frise election={prochaine} titre={`${prochaine.data.menu ?? prochaine.data.nom} : les grandes étapes`} lienElection />}
 
-  <div class="entries">
-    <a class="entry bleu" href={lien("/institutions")}><span class="label">Comprendre</span><h3>Les institutions</h3><p>Président, gouvernement, Parlement, Conseil constitutionnel, collectivités, Union européenne.</p></a>
+  <div class={RUBRIQUES.institutions ? "entries" : "entries deux"}>
+    {RUBRIQUES.institutions && <a class="entry bleu" href={lien("/institutions")}><span class="label">Comprendre</span><h3>Les institutions</h3><p>Président, gouvernement, Parlement, Conseil constitutionnel, collectivités, Union européenne.</p></a>}
     <a class="entry rouge" href={lien("/voter")}><span class="label">Agir</span><h3>Voter</h3><p>Inscription sur les listes, procuration, modes de scrutin, référendum.</p></a>
-    <a class="entry tricolore" href={lien("/elections")}><span class="label">Choisir</span><h3>Les élections</h3><p>Candidats, positions comparées thème par thème et quiz de proximité.</p></a>
+    <a class="entry tricolore" href={lien("/elections")}><span class="label">Choisir</span><h3>Les élections</h3><p>Candidats et positions comparées thème par thème{RUBRIQUES.quiz && ", quiz de proximité"}.</p></a>
   </div>
 
-  <div style="display:grid;gap:14px">
+  {institutions.length > 0 && <div style="display:grid;gap:14px">
     <div class="section-head"><h2>Les institutions en bref</h2><a href={lien("/institutions")}>Toutes les fiches →</a></div>
     <div class="cards">
       {institutions.map((f) => (
         <a class="card bleu" href={lien(`/institutions/${slug(f.id)}`)}><h3>{f.data.titre}</h3><p>{f.data.resume}</p></a>
       ))}
     </div>
-  </div>
+  </div>}
 
   <div style="display:grid;gap:14px">
     <div class="section-head"><h2>Avant d'aller voter</h2><a href={lien("/voter")}>Guide complet →</a></div>

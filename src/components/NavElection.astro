@@ -1,5 +1,6 @@
 ---
 import { lien, type Election } from "../lib/data";
+import { RUBRIQUES } from "../lib/config";
 
 interface Props {
   election: Election;
@@ -10,8 +11,8 @@ const base = `/elections/${election.id}`;
 const onglets = [
   ["apercu", "Candidats et calendrier", base],
   ["comparer", "Comparer", `${base}/comparer`],
-  ["quiz", "Quiz", `${base}/quiz`],
-] as const;
+  ...(RUBRIQUES.quiz ? ([["quiz", "Quiz", `${base}/quiz`]] as const) : []),
+];
 ---
 <div style="display:grid;gap:12px">
   <a class="back" href={lien("/elections")}>← Toutes les élections</a>

@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import { RUBRIQUES } from "../lib/config";
 
 const depot = import.meta.env.PUBLIC_REPO_URL || "https://github.com";
 const signaler = `${depot}/issues/new?template=correction.yml`;
@@ -8,12 +9,12 @@ const historique = `${depot}/commits/main/data`;
 <Base titre="Méthode" page="methode">
   <div class="method">
       <h2 style="font-size:2rem">Méthode</h2>
-      <div><h3>Les fiches institutions et vote</h3><p>Elles décrivent les règles en vigueur, à partir de la Constitution, du Code électoral et des sites officiels (Légifrance, Conseil constitutionnel, service-public, vie-publique). Chaque fiche indique ses sources et sa date de mise à jour. Elles expliquent le fonctionnement des institutions sans prendre parti sur les réformes possibles.</p></div>
+      <div><h3>Les fiches {RUBRIQUES.institutions ? "institutions et vote" : "sur le vote"}</h3><p>Elles décrivent les règles en vigueur, à partir de la Constitution, du Code électoral et des sites officiels (Légifrance, Conseil constitutionnel, service-public, vie-publique). Chaque fiche indique ses sources et sa date de mise à jour. Elles expliquent les règles sans prendre parti sur les réformes possibles.</p></div>
       <div><h3>Les candidats retenus</h3><p>Pour chaque élection suivie, tout candidat ayant déclaré publiquement sa candidature. Les candidats des primaires apparaissent une fois désignés. Après la publication de la liste officielle par le Conseil constitutionnel, seuls les candidats retenus restent.</p></div>
       <div><h3>Comment une position est retenue</h3><ul><li>Source primaire en priorité : programme, site officiel, discours, interview.</li><li>Une phrase factuelle, sans adjectif, avec la date de la déclaration.</li><li>Si la position a changé, la plus récente est affichée et l'historique reste consultable.</li><li>Pas de déclaration trouvée : « pas de position connue ».</li></ul></div>
       <div><h3>Faits et analyses</h3><p>Les encarts « Analyses » sont séparés et étiquetés. Ils ne citent que des organismes nommés (Cour des comptes, OFCE, Institut Montaigne, Fondation Jean-Jaurès, iFRAP, Terra Nova…), choisis pour couvrir des sensibilités différentes.</p></div>
       <div><h3>Neutralité de la présentation</h3><p>Même gabarit et même longueur pour chaque fiche. Ordre alphabétique ou aléatoire, jamais selon les sondages. Aucune couleur de parti.</p></div>
-      <div><h3>Le quiz</h3><p>Chaque affirmation est positionnée pour chaque candidat sur une échelle de −2 à +2, d'après ses positions sourcées. Votre réponse est comparée à cette valeur ; les thèmes cochés « compte double » pèsent deux fois plus.</p></div>
+      {RUBRIQUES.quiz && <div><h3>Le quiz</h3><p>Chaque affirmation est positionnée pour chaque candidat sur une échelle de −2 à +2, d'après ses positions sourcées. Votre réponse est comparée à cette valeur ; les thèmes cochés « compte double » pèsent deux fois plus.</p></div>}
       <div><h3>Signaler une erreur</h3><p>Ouvrez un signalement sur <a href={signaler}>GitHub</a> en indiquant la fiche, la phrase en cause et une source. Chaque correction acceptée est visible dans <a href={historique}>l'historique public des modifications</a>.</p></div>
     </div>
 </Base>

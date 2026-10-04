@@ -3,8 +3,10 @@ import { render } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import Fiche from "../../components/Fiche.astro";
 import { fiches } from "../../lib/data";
+import { RUBRIQUES } from "../../lib/config";
 
 export async function getStaticPaths() {
+  if (!RUBRIQUES.institutions) return [];
   return (await fiches("institutions")).map((f) => ({ params: { fiche: f.id.split("/")[1] }, props: { f } }));
 }
 const { f } = Astro.props;

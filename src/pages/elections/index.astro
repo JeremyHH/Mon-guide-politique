@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import { elections, lien } from "../../lib/data";
+import { RUBRIQUES } from "../../lib/config";
 
 const suivies = await elections();
 const scrutins = await getCollection("scrutins");
@@ -9,7 +10,7 @@ const scrutins = await getCollection("scrutins");
 <Base titre="Élections" page="elections">
   <div>
     <h2 style="font-size:2rem">Élections</h2>
-    <p class="lede">Pour chaque scrutin suivi : les candidats, leurs positions comparées thème par thème et un quiz de proximité.</p>
+    <p class="lede">Pour chaque scrutin suivi : les candidats et leurs positions comparées thème par thème{RUBRIQUES.quiz && ", ainsi qu'un quiz de proximité"}.</p>
   </div>
   <div class="cards">
     {suivies.map((e) => (
