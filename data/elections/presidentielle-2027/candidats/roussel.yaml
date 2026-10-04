@@ -46,3 +46,7 @@ photo:
 # Campagne : dates clés propres au candidat (les étapes communes viennent du calendrier de l'élection)
 campagne:
   - { date: 2026-09-06, quand: "6 septembre 2026", type: designation, quoi: "Candidature validée par les militants du PCF (72 %) ; il l'annonce le soir même sur TF1, avec le slogan « Vivre ».", source: { titre: "Public Sénat, décompte des candidats (18 septembre 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart" } }
+# Tournée : meetings, déplacements, salons et débats (dates à venir incluses)
+tournee:
+  - { date: 2026-09-11, quand: "11 septembre 2026", lieu: "Brétigny-sur-Orge (Essonne)", type: debat, quoi: "Fête de l'Humanité : débat avec le président du Medef.", source: { titre: "LCP (11 septembre 2026)", url: "https://lcp.fr/actualites/presidentielle-a-la-fete-de-l-huma-fabien-roussel-au-defi-de-prouver-l-utilite-d-une" } }
+  - { date: 2026-09-12, quand: "12 septembre 2026", lieu: "Brétigny-sur-Orge (Essonne)", type: meeting, quoi: "Fête de l'Humanité : premier meeting de campagne sur la grande scène.", source: { titre: "LCP (11 septembre 2026)", url: "https://lcp.fr/actualites/presidentielle-a-la-fete-de-l-huma-fabien-roussel-au-defi-de-prouver-l-utilite-d-une" } }

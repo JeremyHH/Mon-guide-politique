@@ -1,0 +1,55 @@
+---
+import type { Candidat } from "../lib/data";
+
+interface Props {
+  candidat: Candidat;
+}
+const { candidat } = Astro.props;
+const TYPES = { meeting: "Meeting", deplacement: "Déplacement", salon: "Foire, festival", debat: "Débat" } as const;
+const etapes = [...candidat.data.tournee].sort((a, b) => +a.date - +b.date);
+const mois = new Map<string, typeof etapes>();
+for (const e of etapes) {
+  const cle = e.date.toLocaleDateString("fr-FR", { month: "long", year: "numeric" });
+  mois.set(cle, [...(mois.get(cle) ?? []), e]);
+}
+const meetings = etapes.filter((e) => e.type === "meeting").length;
+---
+{etapes.length ? (
+  <>
+    <p class="mono note-justice">
+      {etapes.length} étape{etapes.length > 1 ? "s" : ""} répertoriée{etapes.length > 1 ? "s" : ""}, dont {meetings} meeting{meetings > 1 ? "s" : ""}.
+      Liste non exhaustive, établie à partir des sources citées.
+    </p>
+    <div class="tournee">
+      {[...mois].map(([nom, liste]) => (
+        <div class="tournee-mois">
+          <h4 class="label tournee-titre">{nom}</h4>
+          <ul>
+            {liste.map((e) => (
+              <li class={`tournee-etape t-${e.type}`} data-date={e.date.toISOString()}>
+                <span class="tournee-date">{e.quand}</span>
+                <div class="tournee-corps">
+                  <p class="tournee-lieu"><strong>{e.lieu}</strong> <span class="tournee-type">{TYPES[e.type]}</span></p>
+                  <p class="tournee-quoi">{e.quoi}</p>
+                  <a class="mono fc-source" href={e.source.url} rel="noopener">{e.source.titre}</a>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </>
+) : (
+  <p class="aucune">Aucun déplacement répertorié pour l'instant.</p>
+)}
+
+<script>
+  // Signaler les étapes à venir, recalculé chaque jour dans le navigateur.
+  document.querySelectorAll<HTMLElement>(".tournee-etape").forEach((li) => {
+    if (Date.parse(li.dataset.date!) > Date.now()) {
+      li.classList.add("a-venir");
+      li.querySelector(".tournee-lieu")!.insertAdjacentHTML("beforeend", ' <span class="frise-badge">À venir</span>');
+    }
+  });
+</script>

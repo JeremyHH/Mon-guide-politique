@@ -379,3 +379,21 @@ table.resultats{min-width:520px}
 .fc-etape.passee .fc-point{background:var(--bleu)}
 .fc-etape.passee.fc-commune .fc-point{background:var(--muted)}
 .fc-etape.prochaine .fc-point{background:var(--rouge);border-color:var(--rouge);border-style:solid;box-shadow:0 0 0 5px var(--rouge-soft)}
+
+/* ---------- Tournée de campagne ---------- */
+.tournee{display:grid;gap:14px}
+.tournee-mois{display:grid;gap:6px}
+.tournee-titre{margin:0;color:var(--titre);font-weight:500}
+.tournee-mois ul{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.tournee-etape{display:grid;grid-template-columns:150px 1fr;gap:14px;padding:10px 14px;border-top:1px solid var(--line)}
+.tournee-etape:first-child{border-top:0}
+.tournee-etape.a-venir{background:var(--rouge-soft)}
+.tournee-date{font-family:var(--f-display);font-weight:600;font-size:.92rem;color:var(--muted)}
+.tournee-corps{display:grid;gap:2px;min-width:0}
+.tournee-corps p{margin:0}
+.tournee-lieu{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.tournee-type{font-family:var(--f-mono);font-size:.64rem;text-transform:uppercase;letter-spacing:.06em;padding:2px 7px;border-radius:999px;background:var(--bleu-soft);color:var(--bleu)}
+.t-meeting .tournee-type{background:var(--bleu);color:var(--sur-accent)}
+.t-debat .tournee-type{background:var(--rouge-soft);color:var(--rouge)}
+.tournee-quoi{font-size:.94rem;color:var(--muted)}
+@media (max-width:600px){.tournee-etape{grid-template-columns:1fr;gap:4px}}

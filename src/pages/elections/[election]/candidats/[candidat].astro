@@ -2,6 +2,7 @@
 import Base from "../../../../layouts/Base.astro";
 import Position from "../../../../components/Position.astro";
 import FriseCandidat from "../../../../components/FriseCandidat.astro";
+import Tournee from "../../../../components/Tournee.astro";
 import BandeauVerif from "../../../../components/BandeauVerif.astro";
 import { elections, candidatsDe, nomComplet, slugCandidat, STATUTS, dateFr, lien, type Candidat, type Election } from "../../../../lib/data";
 
@@ -52,6 +53,7 @@ const age = (d: Date) => {
       <a href="#parcours">Parcours politique</a>
       <a href="#resultats">Résultats électoraux</a>
       <a href="#campagne">Campagne</a>
+      <a href="#tournee">Tournée</a>
       <a href="#positions">Positions</a>
       <a href="#justice">Condamnations</a>
     </nav>
@@ -103,6 +105,11 @@ const age = (d: Date) => {
       <h3 class="fiche-titre">Campagne : les dates clés</h3>
       <p class="mono note-justice">De l'annonce de candidature au second tour. Les étapes en pointillé sont communes à tous les candidats.</p>
       <FriseCandidat candidat={c} election={election} />
+    </section>
+
+    <section class="fiche-section" id="tournee">
+      <h3 class="fiche-titre">Tournée de campagne</h3>
+      <Tournee candidat={c} />
     </section>
 
     <section class="fiche-section" id="positions">

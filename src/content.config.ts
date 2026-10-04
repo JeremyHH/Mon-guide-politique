@@ -103,6 +103,18 @@ const candidats = defineCollection({
         }),
       )
       .default([]),
+    tournee: z
+      .array(
+        z.object({
+          date: z.coerce.date(),
+          quand: z.string(),
+          lieu: z.string(),
+          type: z.enum(["meeting", "deplacement", "salon", "debat"]),
+          quoi: z.string(),
+          source: z.object({ titre: z.string(), url: z.string().url() }),
+        }),
+      )
+      .default([]),
     sourcesProfil: z.array(z.object({ titre: z.string(), url: z.string().url() })).default([]),
   }),
 });

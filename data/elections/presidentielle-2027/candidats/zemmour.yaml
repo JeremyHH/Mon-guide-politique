@@ -106,3 +106,6 @@ photo:
 campagne:
   - { date: 2026-09-13, quand: "13 septembre 2026", type: meeting, quoi: "Meeting dans les Yvelines : appelle à « l'immigration négative ».", source: { titre: "L'Avenir/Belga (18 septembre 2026)", url: "https://www.lavenir.net/actu/monde/2026/09/18/zemmour-confirme-quil-sera-candidat-a-lelection-presidentielle-en-france-et-durcit-encore-son-discours-sur-limmigration-5OFMOVM6CVCDFHY4B3GI5QID3Q/" } }
   - { date: 2026-09-17, quand: "17 septembre 2026", type: annonce, quoi: "Confirme sur BFMTV qu'il sera candidat ; déclaration formelle annoncée pour l'automne.", source: { titre: "L'Avenir/Belga (18 septembre 2026)", url: "https://www.lavenir.net/actu/monde/2026/09/18/zemmour-confirme-quil-sera-candidat-a-lelection-presidentielle-en-france-et-durcit-encore-son-discours-sur-limmigration-5OFMOVM6CVCDFHY4B3GI5QID3Q/" } }
+# Tournée : meetings, déplacements, salons et débats (dates à venir incluses)
+tournee:
+  - { date: 2026-09-13, quand: "13 septembre 2026", lieu: "Port-Marly (Yvelines)", type: meeting, quoi: "Université d'été de Reconquête.", source: { titre: "L'Avenir/Belga (18 septembre 2026)", url: "https://www.lavenir.net/actu/monde/2026/09/18/zemmour-confirme-quil-sera-candidat-a-lelection-presidentielle-en-france-et-durcit-encore-son-discours-sur-limmigration-5OFMOVM6CVCDFHY4B3GI5QID3Q/" } }
