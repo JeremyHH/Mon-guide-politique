@@ -17,15 +17,27 @@ themes:
   - { id: europe, nom: Europe }
   - { id: securite, nom: Sécurité et justice }
 
-# « date » sert au tri et à repérer la prochaine étape ; « quand » est le libellé affiché.
+# Calendrier. « date » sert au tri et à repérer la prochaine étape ; « quand » est le libellé affiché.
+# phase : candidatures | campagne | vote | apres. indicatif : true quand la date n'est pas fixée par un texte.
 calendrier:
-  - { date: 2026-07-07, quand: "7 juillet 2026", quoi: "Décision en appel dans le procès de Marine Le Pen : elle reste éligible et se déclare candidate le soir même." }
-  - { date: 2026-10-10, quand: "9-10 octobre 2026", quoi: "Primaire PS – Place publique, 1er tour." }
-  - { date: 2026-10-17, quand: "16-17 octobre 2026", quoi: "Primaire PS – Place publique, 2nd tour éventuel." }
-  - { date: 2027-03-12, quand: "12 mars 2027, 18 h", quoi: "Fin du recueil des 500 parrainages d'élus." }
-  - { date: 2027-03-20, quand: "Mars 2027", quoi: "Publication de la liste officielle des candidats par le Conseil constitutionnel." }
-  - { date: 2027-04-18, quand: "18 avril 2027", quoi: "Premier tour." }
-  - { date: 2027-05-02, quand: "2 mai 2027", quoi: "Second tour." }
+  - { date: 2026-07-01, phase: candidatures, quand: "1er juillet 2026", quoi: "Le gouvernement fixe les dates du scrutin : 18 avril et 2 mai 2027." }
+  - { date: 2026-07-07, phase: candidatures, quand: "7 juillet 2026", quoi: "Décision en appel dans le procès de Marine Le Pen : elle reste éligible et se déclare candidate le soir même." }
+  - { date: 2026-10-17, phase: candidatures, quand: "9-10 et 16-17 octobre 2026", quoi: "Primaire PS – Place publique « Choisir 2027 »." }
+  - { date: 2027-02-07, phase: candidatures, quand: "7 février 2027 au plus tard", quoi: "Décret de convocation des électeurs ; envoi des formulaires de parrainage aux élus." }
+  - { date: 2027-03-12, phase: candidatures, quand: "12 mars 2027", quoi: "Date limite d'inscription sur les listes électorales, en ligne ou en mairie." }
+  - { date: 2027-03-12, phase: candidatures, quand: "12 mars 2027, 18 h", quoi: "Fin du dépôt des 500 parrainages d'élus au Conseil constitutionnel." }
+  - { date: 2027-03-16, phase: campagne, quand: "16 mars 2027 (26 mars au plus tard)", quoi: "Publication de la liste officielle des candidats par le Conseil constitutionnel." }
+  - { date: 2027-04-05, phase: campagne, quand: "5 avril 2027", quoi: "Ouverture de la campagne officielle : égalité stricte de temps de parole entre les candidats." }
+  - { date: 2027-04-18, phase: vote, quand: "18 avril 2027", quoi: "Premier tour (la veille dans plusieurs territoires d'outre-mer)." }
+  - { date: 2027-05-02, phase: vote, quand: "2 mai 2027", quoi: "Second tour entre les deux candidats arrivés en tête." }
+  - { date: 2027-05-06, phase: apres, indicatif: true, quand: "Début mai 2027", quoi: "Proclamation des résultats officiels par le Conseil constitutionnel (trois jours après le second tour en 2017 et 2022)." }
+  - { date: 2027-05-14, phase: apres, quand: "14 mai 2027", quoi: "Fin du mandat d'Emmanuel Macron : passation des pouvoirs et prise de fonction du nouveau président." }
+  - { date: 2027-05-15, phase: apres, indicatif: true, quand: "Mi-mai 2027", quoi: "Nomination du Premier ministre par le président (article 8 de la Constitution)." }
+  - { date: 2027-05-17, phase: apres, indicatif: true, quand: "Quelques jours plus tard", quoi: "Nomination des ministres et premier Conseil des ministres : le gouvernement est constitué." }
+
+sourcesCalendrier:
+  - { titre: "Toute l'Europe, « Présidentielle 2027 : inscription, candidats, vote… le calendrier complet » (18 août 2026)", url: "https://www.touteleurope.eu/vie-politique-des-etats-membres/presidentielle-2027-calendrier-dates-inscription-candidats-vote/" }
+  - { titre: "LCP, « Pourquoi la présidentielle 2027 se jouera entre le 11 avril et le 2 mai » (fin du mandat le 14 mai 2027)", url: "https://lcp.fr/actualites/pourquoi-la-presidentielle-2027-se-jouera-entre-le-11-avril-et-le-2-mai-434190" }
 
 # Candidatures déclarées sans fiche détaillée pour l'instant.
 autres:

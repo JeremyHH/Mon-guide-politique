@@ -2,6 +2,7 @@
 import Base from "../../../layouts/Base.astro";
 import NavElection from "../../../components/NavElection.astro";
 import BandeauVerif from "../../../components/BandeauVerif.astro";
+import Frise from "../../../components/Frise.astro";
 import { elections, candidatsDe, nomComplet, slugCandidat, STATUTS, lien, type Election } from "../../../lib/data";
 
 export async function getStaticPaths() {
@@ -9,7 +10,6 @@ export async function getStaticPaths() {
 }
 const { election } = Astro.props as { election: Election };
 const liste = await candidatsDe(election);
-const etapes = [...election.data.calendrier].sort((a, b) => +a.date - +b.date);
 ---
 <Base titre={election.data.nom} page="elections" description={election.data.resume}>
   <BandeauVerif slot="bandeau" />
@@ -50,25 +50,12 @@ const etapes = [...election.data.calendrier].sort((a, b) => +a.date - +b.date);
     )}
   </div>
 
-  {etapes.length > 0 && (
-    <div>
-      <h2 style="font-size:1.5rem;margin-bottom:14px">Calendrier</h2>
-      <ol class="timeline" id="calendrier">
-        {etapes.map((e) => (
-          <li data-date={e.date.toISOString()}>
-            <span class="d">{e.quand}</span>
-            <span>{e.quoi}</span>
-          </li>
-        ))}
-      </ol>
-    </div>
-  )}
+  <Frise election={election} titre="Calendrier" />
 </Base>
 
 <script>
-  import { compteARebours, marquerEtapes } from "../../../lib/temps";
+  import { compteARebours } from "../../../lib/temps";
   compteARebours(document.getElementById("jours")!);
-  marquerEtapes(document.getElementById("calendrier"));
 
   const box = document.getElementById("bulletins")!;
   const initial = [...box.children];

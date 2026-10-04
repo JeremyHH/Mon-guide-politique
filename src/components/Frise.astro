@@ -1,0 +1,83 @@
+---
+import { lien, type Election } from "../lib/data";
+
+interface Props {
+  election: Election;
+  titre?: string;
+  lienElection?: boolean;
+}
+const { election, titre = "Les grandes étapes", lienElection = false } = Astro.props;
+const etapes = [...election.data.calendrier].sort((a, b) => +a.date - +b.date);
+const PHASES = {
+  candidatures: "Candidatures",
+  campagne: "Campagne",
+  vote: "Vote",
+  apres: "Prise de fonction",
+} as const;
+const phases = (Object.keys(PHASES) as (keyof typeof PHASES)[])
+  .map((id) => ({ id, nom: PHASES[id], etapes: etapes.filter((e) => e.phase === id) }))
+  .filter((p) => p.etapes.length);
+---
+<section class="frise-bloc" aria-labelledby="frise-titre">
+  <div class="section-head">
+    <h2 id="frise-titre">{titre}</h2>
+    <div class="frise-actions">
+      <button class="frise-fleche" type="button" data-sens="-1" aria-label="Étapes précédentes">←</button>
+      <button class="frise-fleche" type="button" data-sens="1" aria-label="Étapes suivantes">→</button>
+      {lienElection && <a href={lien(`/elections/${election.id}`)}>{election.data.nom} →</a>}
+    </div>
+  </div>
+  <div class="frise-defile" tabindex="0" aria-label="Frise chronologique, faire défiler horizontalement">
+    <ol class="frise">
+      {phases.map((p) => (
+        <li class={`frise-phase phase-${p.id}`}>
+          <p class="frise-phase-nom">{p.nom}</p>
+          <ol class="frise-etapes">
+            {p.etapes.map((e) => (
+              <li class="frise-etape" data-date={e.date.toISOString()}>
+                <span class="frise-point" aria-hidden="true"></span>
+                <span class="frise-date">{e.quand}{e.indicatif && <span class="frise-indicatif" title="Date indicative, non fixée par un texte">indicatif</span>}</span>
+                <span class="frise-texte">{e.quoi}</span>
+              </li>
+            ))}
+          </ol>
+        </li>
+      ))}
+    </ol>
+  </div>
+  {election.data.sourcesCalendrier.length > 0 && (
+    <p class="mono frise-sources">
+      Sources :{" "}
+      {election.data.sourcesCalendrier.map((s, i) => (
+        <>{i > 0 && " · "}<a href={s.url} rel="noopener">{s.titre}</a></>
+      ))}
+    </p>
+  )}
+</section>
+
+<script>
+  // Calculé dans le navigateur pour rester juste sans reconstruire le site chaque jour.
+  const JOUR = 86400000;
+  document.querySelectorAll<HTMLElement>(".frise-defile").forEach((defile) => {
+    let suivante: HTMLElement | null = null;
+    defile.querySelectorAll<HTMLElement>(".frise-etape").forEach((li) => {
+      if (Date.parse(li.dataset.date!) + JOUR < Date.now()) li.classList.add("passee");
+      else if (!suivante) {
+        suivante = li;
+        li.classList.add("prochaine");
+        li.querySelector(".frise-date")!.insertAdjacentHTML("afterbegin", '<span class="frise-badge">Prochaine étape</span>');
+      }
+    });
+    // Faire apparaître la prochaine étape (précédée d'une étape) dans la zone visible de la frise horizontale.
+    if (suivante && defile.scrollWidth > defile.clientWidth) {
+      const ecart = (suivante as HTMLElement).getBoundingClientRect().left - defile.getBoundingClientRect().left;
+      defile.style.scrollBehavior = "auto";
+      defile.scrollLeft = Math.max(0, defile.scrollLeft + ecart - 220);
+      defile.style.scrollBehavior = "";
+    }
+    const bloc = defile.closest(".frise-bloc")!;
+    bloc.querySelectorAll<HTMLButtonElement>(".frise-fleche").forEach((b) =>
+      b.addEventListener("click", () => defile.scrollBy({ left: Number(b.dataset.sens) * defile.clientWidth * 0.8 })),
+    );
+  });
+</script>

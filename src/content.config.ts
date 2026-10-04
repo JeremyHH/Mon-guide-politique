@@ -37,7 +37,18 @@ const elections = defineCollection({
     miseAJour: z.coerce.date(),
     introCandidats: z.string(),
     themes: z.array(z.object({ id: z.string(), nom: z.string() })).min(1),
-    calendrier: z.array(z.object({ date: z.coerce.date(), quand: z.string(), quoi: z.string() })).default([]),
+    calendrier: z
+      .array(
+        z.object({
+          date: z.coerce.date(),
+          quand: z.string(),
+          quoi: z.string(),
+          phase: z.enum(["candidatures", "campagne", "vote", "apres"]).default("candidatures"),
+          indicatif: z.boolean().default(false),
+        }),
+      )
+      .default([]),
+    sourcesCalendrier: z.array(z.object({ titre: z.string(), url: z.string().url() })).default([]),
     autres: z.array(z.string()).default([]),
   }),
 });

@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Frise from "../components/Frise.astro";
 import { elections, fiches, lien } from "../lib/data";
 
 const aVenir = (await elections()).filter((e) => +e.data.date >= Date.now() - 86400000 * 30);
@@ -23,6 +24,8 @@ const slug = (id: string) => id.split("/")[1];
       </a>
     )}
   </div>
+
+  {prochaine && <Frise election={prochaine} titre={`${prochaine.data.menu ?? prochaine.data.nom} : les grandes étapes`} lienElection />}
 
   <div class="entries">
     <a class="entry bleu" href={lien("/institutions")}><span class="label">Comprendre</span><h3>Les institutions</h3><p>Président, gouvernement, Parlement, Conseil constitutionnel, collectivités, Union européenne.</p></a>
