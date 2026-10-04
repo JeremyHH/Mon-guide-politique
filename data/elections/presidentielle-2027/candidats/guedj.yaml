@@ -6,6 +6,8 @@ statut: primaire
 representation: true
 declaration: 2026-02-05
 bio: "Député socialiste de l'Essonne. Candidat à la primaire PS – Place publique."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://www.jeromeguedj2027.fr/", type: campagne }
 positions:
   retraites: null
   immigration: null

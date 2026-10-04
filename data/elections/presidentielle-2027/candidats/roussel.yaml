@@ -6,6 +6,8 @@ statut: declare
 representation: true
 declaration: 2026-09-06
 bio: "Secrétaire national du PCF, candidat en 2022. Déclaré le 6 septembre 2026."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://www.fabienroussel2027.fr/", type: campagne }
 positions:
   retraites:
     texte: "Rétablir le départ à la retraite à 60 ans sans baisse de pension, et augmenter le montant des pensions."

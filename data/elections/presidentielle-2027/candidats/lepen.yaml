@@ -6,6 +6,8 @@ statut: declare
 representation: true
 declaration: 2026-07-07
 bio: "Députée du Pas-de-Calais, candidate en 2012, 2017 et 2022. Condamnée en appel le 7 juillet 2026 à 15 mois d'inéligibilité ferme, déjà purgés ; elle s'est pourvue en cassation."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://marinelepen.com/", type: campagne }
 positions:
   retraites:
     texte: "Départ à 62 ans, et à 60 ans avec 40 annuités pour ceux qui ont commencé à travailler avant 20 ans ; coût annoncé de 9 milliards d'euros par an."

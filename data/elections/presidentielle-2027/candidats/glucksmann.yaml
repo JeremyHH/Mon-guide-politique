@@ -6,6 +6,8 @@ statut: primaire
 representation: true
 declaration: 2026-08-23
 bio: "Député européen, coprésident de Place publique. Candidat à la primaire PS – Place publique."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://glucks2027.fr/", type: campagne }
 positions:
   retraites:
     texte: "Supprimer la réforme de 2023 sans se focaliser sur l'âge légal : départ plus tôt pour les carrières hachées et les métiers pénibles, plus tard pour ceux en bonne santé."

@@ -5,6 +5,8 @@ parti: "Debout !"
 statut: declare
 declaration: 2026-01-26
 bio: "Député de la Somme depuis 2017, journaliste et documentariste, fondateur de Debout !. Candidat qu'il y ait ou non une primaire de la gauche ; propose que le président soit payé au Smic."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://nouspresident.fr/", type: campagne }
 positions:
   retraites: null
   immigration: null

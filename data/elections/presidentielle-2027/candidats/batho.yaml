@@ -5,6 +5,8 @@ parti: "Génération écologie"
 statut: declare
 declaration: 2025-11-25
 bio: "Présidente de Génération écologie, députée des Deux-Sèvres et ancienne ministre de l'Écologie (2012-2013). Défend une « écologie capable de gouverner »."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://www.delphinebatho.fr/", type: campagne }
 positions:
   retraites: null
   immigration: null

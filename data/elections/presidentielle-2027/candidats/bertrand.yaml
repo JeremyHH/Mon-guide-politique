@@ -4,6 +4,8 @@ nom: "Bertrand"
 parti: "Nous France"
 statut: pressenti
 bio: "Président de la région Hauts-de-France depuis 2016, ancien ministre de la Santé puis du Travail. A affirmé le 27 août 2026 qu'il serait candidat, sans se déclarer officiellement ; dit vouloir se présenter en candidat indépendant et refuse une primaire de la droite et du centre."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://www.nousfrance.fr/", type: mouvement }
 positions:
   retraites:
     texte: "Défend le recours à la retraite par capitalisation."

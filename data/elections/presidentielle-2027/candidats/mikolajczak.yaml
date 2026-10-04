@@ -6,6 +6,8 @@ parti: "Équinoxe"
 statut: declare
 declaration: 2026-06-27
 bio: "Ingénieur, il a travaillé sur des projets locaux d'énergies renouvelables. Candidat d'Équinoxe, désigné par un vote des adhérents au jugement majoritaire."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://parti-equinoxe.fr/presidentielle-2027/", type: parti }
 positions:
   retraites: null
   immigration: null

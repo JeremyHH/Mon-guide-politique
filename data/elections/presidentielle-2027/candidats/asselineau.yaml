@@ -4,6 +4,8 @@ nom: "Asselineau"
 parti: "Union populaire républicaine"
 statut: declare
 bio: "Fondateur et président de l'Union populaire républicaine (UPR), inspecteur général des finances. Candidat en 2017, il milite pour la sortie de la France de l'Union européenne (« Frexit »)."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://upr.fr/", type: parti }
 positions:
   retraites: null
   immigration: null

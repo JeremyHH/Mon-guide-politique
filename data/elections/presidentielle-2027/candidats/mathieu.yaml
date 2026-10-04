@@ -4,6 +4,8 @@ nom: "Mathieu"
 parti: "Sans étiquette"
 statut: declare
 bio: "Ingénieur en agronomie de formation et professeur de mathématiques contractuel, 27 ans, originaire de Chauffailles (Saône-et-Loire). Candidat citoyen sans étiquette, il parcourt la France à vélo depuis mars 2026 pour réunir les 500 parrainages d'élus."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://benoitmathieu2027.fr/", type: campagne }
 positions:
   retraites: null
   immigration: null

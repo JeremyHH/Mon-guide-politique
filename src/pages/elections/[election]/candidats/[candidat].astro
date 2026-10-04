@@ -44,6 +44,11 @@ const age = (d: Date) => {
         <h2>{nomComplet(c)}</h2>
         <span style="color:var(--muted)">{c.data.parti}</span>
         <span class="pill ok" style="justify-self:start">{STATUTS[c.data.statut]}{c.data.declaration && ` · ${dateFr(c.data.declaration)}`}</span>
+        {c.data.site && (
+          <a class="site-officiel" href={c.data.site.url} rel="noopener">
+            {{ campagne: "Site de campagne", parti: "Site du parti", mouvement: "Site du mouvement" }[c.data.site.type]} : {new URL(c.data.site.url).hostname.replace(/^www\./, "")} ↗
+          </a>
+        )}
         {presidentiellesPassees(c).length > 0 && (
           <div class="deja-fiche">
             <span class="label">Déjà candidat·e à l'élection présidentielle</span>

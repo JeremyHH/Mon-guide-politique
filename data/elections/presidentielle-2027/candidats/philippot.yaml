@@ -5,6 +5,8 @@ parti: "Les Patriotes"
 statut: declare
 declaration: 2026-05-09
 bio: "Président des Patriotes, ancien vice-président du Front national et ancien député européen. Se dit prêt à se retirer au profit de Philippe de Villiers si celui-ci se présentait."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://les-patriotes.fr/", type: parti }
 positions:
   retraites: null
   immigration: null

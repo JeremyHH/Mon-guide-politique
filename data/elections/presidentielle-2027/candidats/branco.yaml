@@ -5,6 +5,8 @@ parti: "Les Ruches"
 statut: declare
 declaration: 2025-12-19
 bio: "Avocat, essayiste et réalisateur franco-espagnol, auteur du pamphlet « Crépuscule » (2019) et ancien conseiller juridique de WikiLeaks. Candidat soutenu par le mouvement citoyen Les Ruches, il défend notamment le référendum d'initiative citoyenne et les mandats révocatoires."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://ruches.org/juan-branco", type: mouvement }
 positions:
   retraites: null
   immigration: null

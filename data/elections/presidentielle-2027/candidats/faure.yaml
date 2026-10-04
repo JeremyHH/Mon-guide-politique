@@ -6,6 +6,8 @@ statut: primaire
 representation: true
 declaration: 2026-08-30
 bio: "Premier secrétaire du Parti socialiste depuis 2018, député de Seine-et-Marne. Candidat à la primaire PS – Place publique."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://avecfaure2027.fr/", type: campagne }
 positions:
   retraites:
     texte: "Supprimer la réforme de 2023 et revenir à 62 ans, en modulant le nombre d'annuités selon la pénibilité des métiers."

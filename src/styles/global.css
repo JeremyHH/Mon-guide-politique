@@ -416,3 +416,6 @@ table.resultats{min-width:520px}
 .deja-fiche{display:grid;gap:4px;margin-top:6px;padding:8px 12px;border-left:3px solid var(--bleu);background:var(--ground);border-radius:0 8px 8px 0}
 .deja-fiche ul{margin:0;padding-left:18px;font-size:.9rem}
 .pill.anterieur{border-color:var(--bleu);color:var(--bleu);margin-right:6px;vertical-align:1px}
+
+/* ---------- Site officiel du candidat ---------- */
+.site-officiel{justify-self:start;font-family:var(--f-mono);font-size:.8rem;color:var(--bleu);text-decoration:underline;text-underline-offset:3px}

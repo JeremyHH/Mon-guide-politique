@@ -4,6 +4,8 @@ nom: "Labib"
 parti: "NPA-Révolutionnaires"
 statut: declare
 bio: "Conductrice de bus, candidate du NPA-Révolutionnaires, en binôme avec le postier syndicaliste Gaël Quirante."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://npa-revolutionnaires.org/articles/presidentielle-selma-labib-une-candidate-ouvriere-et-revolutionnaire", type: parti }
 positions:
   retraites: null
   immigration: null

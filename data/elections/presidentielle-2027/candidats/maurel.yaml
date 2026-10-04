@@ -6,6 +6,8 @@ statut: primaire
 representation: true
 declaration: 2026-09-04
 bio: "Député du Val-d'Oise, animateur national de la Gauche républicaine et socialiste. Candidat à la primaire PS – Place publique."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://emmanuel-maurel.fr/", type: campagne }
 positions:
   retraites: null
   immigration: null

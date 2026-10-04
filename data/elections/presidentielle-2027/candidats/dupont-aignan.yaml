@@ -5,6 +5,8 @@ parti: "Debout la France"
 statut: declare
 declaration: 2025-03-08
 bio: "Président de Debout la France, maire d'Yerres (Essonne), ancien député. Candidat pour la quatrième fois à l'élection présidentielle."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://www.debout-la-france.fr/", type: parti }
 positions:
   retraites:
     texte: "Maintenir l’âge de départ à 62 ans et la durée de cotisation actuelle, assouplir les règles pour les carrières longues et métiers pénibles, et réindexer les pensions sur l’inflation."

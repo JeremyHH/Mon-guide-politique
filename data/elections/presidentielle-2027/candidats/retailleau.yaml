@@ -6,6 +6,8 @@ statut: declare
 representation: true
 declaration: 2026-02-12
 bio: "Ancien ministre de l'Intérieur, président des Républicains. Candidat depuis le 12 février 2026, désigné par les adhérents LR le 19 avril 2026."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://www.avecretailleau.fr/", type: campagne }
 positions:
   retraites:
     texte: "Âge minimal de départ à 63 ans avec une décote de 7 % par an, taux plein automatique à 65 ans, lié à l'espérance de vie ; capitalisation pour 25 à 30 % des retraites des jeunes."

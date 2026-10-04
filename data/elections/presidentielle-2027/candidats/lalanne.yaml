@@ -5,6 +5,8 @@ parti: "France Libre"
 statut: declare
 declaration: 2026-08-18
 bio: "Auteur-compositeur-interprète, acteur et écrivain, candidat à plusieurs élections depuis 2007. Candidat soutenu par le mouvement citoyen France Libre et par l'humoriste Dieudonné ; son programme défend notamment la sortie de l'Union européenne et de l'OTAN."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://dieudolalanne2027.com/", type: campagne }
 positions:
   retraites: null
   immigration: null

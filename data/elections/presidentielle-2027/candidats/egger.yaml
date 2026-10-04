@@ -6,6 +6,8 @@ parti: "Solution démocratique"
 statut: declare
 declaration: 2026-04-19
 bio: "Politologue, enseignante-chercheuse en relations internationales aux Pays-Bas. Candidate de Solution démocratique, elle fait de l'instauration du référendum d'initiative citoyenne sa mesure unique."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://solutiondemocratique.fr/clara-egger/", type: parti }
 positions:
   retraites: null
   immigration: null

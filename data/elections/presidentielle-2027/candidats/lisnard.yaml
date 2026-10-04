@@ -5,6 +5,8 @@ parti: "Nouvelle Énergie"
 statut: declare
 declaration: 2026-03-31
 bio: "Maire de Cannes depuis 2014 et président de l'Association des maires de France (AMF). A quitté LR en annonçant sa candidature ; défend un projet « libéral, sécuritaire, éducatif et scientifique »."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://www.unenouvelleenergie.fr/", type: mouvement }
 positions:
   retraites: null
   immigration: null

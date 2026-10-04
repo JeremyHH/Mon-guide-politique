@@ -5,6 +5,8 @@ parti: "Révolution permanente"
 statut: declare
 declaration: 2026-06-01
 bio: "Cheminot aiguilleur et syndicaliste SUD Rail, porte-parole de Révolution permanente, organisation trotskiste. Il avait tenté de se présenter en 2022 sans obtenir les parrainages nécessaires."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://anasse2027.fr/", type: campagne }
 positions:
   retraites:
     texte: "Retraite à 60 ans, et à 55 ans pour les métiers pénibles, sans condition de durée de cotisation."

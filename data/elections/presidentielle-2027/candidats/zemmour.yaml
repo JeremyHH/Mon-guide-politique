@@ -6,6 +6,8 @@ statut: declare
 representation: true
 declaration: 2026-09-17
 bio: "Président de Reconquête, candidat en 2022. A confirmé sa candidature le 17 septembre 2026 ; déclaration formelle annoncée pour l'automne."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://www.parti-reconquete.fr/", type: parti }
 positions:
   retraites:
     texte: "Repousser l'âge légal à « 64 voire 65 ans » et sortir progressivement de la répartition au profit de la capitalisation."

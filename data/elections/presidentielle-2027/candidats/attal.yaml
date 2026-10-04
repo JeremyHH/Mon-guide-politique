@@ -6,6 +6,8 @@ statut: declare
 representation: true
 declaration: 2026-05-22
 bio: "Ancien Premier ministre (2024), secrétaire général de Renaissance. Candidat officiel depuis le 22 mai 2026."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://attalpresident.fr/", type: campagne }
 positions:
   retraites:
     texte: "Supprimer l'âge légal : seule la durée de cotisation compte, avec décote ou surcote ; ajouter une part de capitalisation (1 000 euros versés par l'État à chaque nouveau-né)."

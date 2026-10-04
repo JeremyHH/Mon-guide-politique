@@ -6,6 +6,8 @@ statut: declare
 representation: true
 declaration: 2025-10-22
 bio: "Secrétaire nationale des Écologistes. Candidature autonome validée par les militants en juillet 2026, après l'abandon de la primaire unitaire de la gauche."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://marinetondelier.fr/", type: campagne }
 positions:
   retraites:
     texte: "Abroger la réforme de 2023 pour revenir à 62 ans ; objectif de 60 ans en priorité pour les carrières longues et les métiers pénibles, financé en partie par une réduction des exonérations de cotisations."

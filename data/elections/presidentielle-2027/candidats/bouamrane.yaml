@@ -5,6 +5,8 @@ parti: "La France humaine et forte"
 statut: declare
 declaration: 2026-06-09
 bio: "Maire socialiste de Saint-Ouen-sur-Seine depuis 2020, fondateur du mouvement La France humaine et forte. Candidat déclaré hors de la primaire du PS, à laquelle il est opposé ; veut éviter un second tour entre le RN et LFI."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://www.karimbouamrane2027.org/", type: campagne }
 positions:
   retraites: null
   immigration:

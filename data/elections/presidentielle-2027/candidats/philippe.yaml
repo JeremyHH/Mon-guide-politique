@@ -5,6 +5,8 @@ parti: "Horizons"
 statut: declare
 representation: true
 bio: "Maire du Havre, fondateur d'Horizons, Premier ministre de 2017 à 2020. Candidat depuis septembre 2024."
+# Site officiel (vérifié le 4 octobre 2026)
+site: { url: "https://www.edouardphilippe.fr/", type: campagne }
 positions:
   retraites:
     texte: "Reprendre la réforme de 2023, puis passer en moins de 10 ans à 65 ans et 45 annuités, avec des départs entre 60 et 64 ans pour les carrières longues et pénibles ; ajouter un volet capitalisation."
