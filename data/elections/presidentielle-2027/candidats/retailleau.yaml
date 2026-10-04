@@ -63,6 +63,11 @@ fonctions:
   - { intitule: "Président du conseil régional des Pays de la Loire", periode: "2016 – 2017" }
   - { intitule: "Président du conseil général de la Vendée", periode: "2010 – 2015" }
   - { intitule: "Député de la Vendée", periode: "1994 – 1997" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "Aurons-nous encore de la lumière en hiver ? - Pour une écologie du réel", annee: 2021, editeur: "Éditions de l'Observatoire" }
+  - { titre: "Refondation", annee: 2019, editeur: "Éditions de l'Observatoire" }
+bibliographieTotal: 3
 resultats:
   - { annee: 2015, scrutin: "Régionales, Pays de la Loire", resultat: "Liste élue avec 42,70 % au second tour" }
   - { annee: 2017, scrutin: "Sénatoriales, Vendée", resultat: "Réélu (également en 2020 et 2023)" }

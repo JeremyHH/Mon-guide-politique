@@ -50,6 +50,24 @@ fonctions:
   - { intitule: "Ministre délégué à l'Enseignement professionnel", periode: "mars 2000 – mai 2002" }
   - { intitule: "Sénateur de l'Essonne", periode: "1986 – 2000, 2004 – 2010" }
   - { intitule: "Conseiller général de l'Essonne", periode: "1985 – 1992, 1998 – 2004" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "Faites mieux ! Vers la Révolution citoyenne", annee: 2023, editeur: "Robert Laffont" }
+  - { titre: "Députés du peuple humain", annee: 2021, editeur: "Robert Laffont" }
+  - { titre: "Et ainsi de suite. Un procès politique en France", annee: 2019, editeur: "Plon" }
+  - { titre: "De la vertu", annee: 2017, editeur: "Éditions de L'Observatoire", coauteurs: "avec Cécile Amar" }
+  - { titre: "Le Choix de l'insoumission", annee: 2016, editeur: "Seuil", coauteurs: "avec Marc Endeweld" }
+  - { titre: "Le Hareng de Bismarck : Le poison allemand", annee: 2015, editeur: "Plon" }
+  - { titre: "L'Ère du peuple", annee: 2014, editeur: "Fayard" }
+  - { titre: "Comment faire ?", annee: 2013, editeur: "Flammarion" }
+  - { titre: "La Règle verte : Pour l'éco-socialisme", annee: 2013, editeur: "Bruno Leprince" }
+  - { titre: "L'Europe austéritaire : Critique argumentée du traité \"Merkozy\"", annee: 2012, editeur: "Bruno Leprince", coauteurs: "avec Cécile Meneses" }
+  - { titre: "Qu'ils s'en aillent tous ! Vite, la révolution citoyenne", annee: 2010, editeur: "Flammarion" }
+  - { titre: "L'Autre gauche", annee: 2009, editeur: "Éditions Bruno Leprince" }
+  - { titre: "Laïcité : Réplique au discours de Nicolas Sarkozy, chanoine de Latran", annee: 2008, editeur: "Éditions Bruno Leprince" }
+  - { titre: "En quête de gauche", annee: 2007, editeur: "Éditions Balland" }
+  - { titre: "Causes républicaines", annee: 2004, editeur: "Éditions du Seuil" }
+bibliographieTotal: 19
 resultats:
   - { annee: 2022, scrutin: "Présidentielle", resultat: "21,95 % au premier tour (3e)" }
   - { annee: 2017, scrutin: "Présidentielle", resultat: "19,58 % au premier tour (4e)" }

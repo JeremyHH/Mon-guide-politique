@@ -30,6 +30,10 @@ fonctions:
   - { intitule: "Animateur national de la Gauche républicaine et socialiste", periode: "depuis février 2019" }
   - { intitule: "Député européen", periode: "2014 – 2024" }
   - { intitule: "Conseiller régional d'Île-de-France", periode: "2004 – 2015" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "Leçons de droit constitutionnel et d'institutions politiques", annee: 2010, editeur: "Ellipses", coauteurs: "avec Manuel Delamarre" }
+  - { titre: "Jean Poperen, une vie à gauche", annee: 2005, editeur: "Graffic" }
 resultats:
   - { annee: 2024, scrutin: "Législatives, Val-d'Oise (3e)", resultat: "Élu avec 62,54 % au second tour" }
 condamnations: []

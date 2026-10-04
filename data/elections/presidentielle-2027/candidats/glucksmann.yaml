@@ -53,6 +53,16 @@ fonctions:
   - { intitule: "Coprésident de Place publique", periode: "depuis décembre 2022" }
   - { intitule: "Député européen", periode: "depuis juillet 2019" }
   - { intitule: "Conseiller spécial du président de la Géorgie", periode: "2009 – 2012" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "Nous avons encore envie", annee: 2026, editeur: "Allary Éditions" }
+  - { titre: "La grande confrontation", annee: 2023, editeur: "Allary Éditions" }
+  - { titre: "Lettre à la génération qui va tout changer", annee: 2021, editeur: "Allary Éditions" }
+  - { titre: "Les Enfants du vide. De l'impasse individualiste au réveil citoyen", annee: 2018, editeur: "Allary Éditions" }
+  - { titre: "Notre France. Dire et aimer ce que nous sommes", annee: 2016, editeur: "Allary Éditions" }
+  - { titre: "Génération gueule de bois. Manuel de lutte contre les réacs", annee: 2015, editeur: "Allary Éditions" }
+  - { titre: "Je vous parle de liberté : entretiens de Mikheil Saakachvili", annee: 2008, editeur: "Hachette Livre", coauteurs: "avec Mikheil Saakachvili (entretiens)" }
+  - { titre: "Mai 68 expliqué à Nicolas Sarkozy", annee: 2008, editeur: "Éditions Denoël", coauteurs: "avec André Glucksmann" }
 resultats:
   - { annee: 2024, scrutin: "Européennes (tête de liste PS – Place publique)", resultat: "13,8 %, 3e" }
   - { annee: 2019, scrutin: "Européennes (tête de liste PS – Place publique)", resultat: "6,2 %, 6e" }

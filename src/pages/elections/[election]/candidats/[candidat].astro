@@ -46,7 +46,8 @@ const age = (d: Date) => {
         <span class="pill ok" style="justify-self:start">{STATUTS[c.data.statut]}{c.data.declaration && ` · ${dateFr(c.data.declaration)}`}</span>
         {c.data.site && (
           <a class="site-officiel" href={c.data.site.url} rel="noopener">
-            {{ campagne: "Site de campagne", parti: "Site du parti", mouvement: "Site du mouvement" }[c.data.site.type]} : {new URL(c.data.site.url).hostname.replace(/^www\./, "")} ↗
+            <span class="site-type">{{ campagne: "Site de campagne", parti: "Site du parti", mouvement: "Site du mouvement" }[c.data.site.type]}</span>
+            <span class="site-domaine">{new URL(c.data.site.url).hostname.replace(/^www\./, "")} ↗</span>
           </a>
         )}
         {presidentiellesPassees(c).length > 0 && (
@@ -61,6 +62,7 @@ const age = (d: Date) => {
 
     <nav class="sommaire" aria-label="Sections de la fiche">
       <a href="#biographie">Biographie</a>
+      <a href="#bibliographie">Bibliographie</a>
       <a href="#parcours">Parcours politique</a>
       <a href="#resultats">Résultats électoraux</a>
       <a href="#campagne">Campagne</a>
@@ -79,6 +81,24 @@ const age = (d: Date) => {
         </dl>
       )}
       {c.data.biographie ? <p class="fiche-texte">{c.data.biographie}</p> : <p class="none">Biographie à compléter.</p>}
+    </section>
+
+    <section class="fiche-section" id="bibliographie">
+      <h3 class="fiche-titre">Bibliographie</h3>
+      {c.data.bibliographie.length ? (
+        <>
+          <ul class="biblio">
+            {c.data.bibliographie.map((l) => (
+              <li><span class="biblio-annee">{l.annee}</span> <cite>{l.titre}</cite>{l.coauteurs && <>, {l.coauteurs}</>}{l.editeur && <span class="biblio-editeur">, {l.editeur}</span>}</li>
+            ))}
+          </ul>
+          {c.data.bibliographieTotal && c.data.bibliographieTotal > c.data.bibliographie.length && (
+            <p class="mono src">Les {c.data.bibliographie.length} ouvrages les plus récents sur {c.data.bibliographieTotal} recensés (liste complète dans les sources ci-dessous).</p>
+          )}
+        </>
+      ) : (
+        <p class="aucune">Aucun ouvrage publié recensé.</p>
+      )}
     </section>
 
     <section class="fiche-section" id="parcours">
@@ -162,7 +182,7 @@ const age = (d: Date) => {
     </section>
 
     {c.data.sourcesProfil.length > 0 && (
-      <p class="mono src">Sources de la biographie, du parcours, des résultats et des condamnations :{" "}
+      <p class="mono src">Sources de la biographie, de la bibliographie, du parcours, des résultats et des condamnations :{" "}
         {c.data.sourcesProfil.map((s, i) => <>{i > 0 && " · "}<a href={s.url} rel="noopener">{s.titre}</a></>)}
       </p>
     )}

@@ -50,6 +50,10 @@ fonctions:
   - { intitule: "Députée européenne", periode: "2004 – 2017" }
   - { intitule: "Conseillère régionale (Île-de-France, puis Nord-Pas-de-Calais / Hauts-de-France)", periode: "1998 – 2021, avec interruptions" }
   - { intitule: "Conseillère départementale du Pas-de-Calais", periode: "2021 – 2025" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "Pour que vive la France", annee: 2012, editeur: "Grancher" }
+  - { titre: "À contre-flots", annee: 2006, editeur: "Grancher" }
 resultats:
   - { annee: 2024, scrutin: "Législatives, Pas-de-Calais (11e)", resultat: "Réélue dès le premier tour" }
   - { annee: 2022, scrutin: "Présidentielle", resultat: "23,15 % au premier tour (2e) ; 41,45 % au second tour" }

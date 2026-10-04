@@ -418,4 +418,16 @@ table.resultats{min-width:520px}
 .pill.anterieur{border-color:var(--bleu);color:var(--bleu);margin-right:6px;vertical-align:1px}
 
 /* ---------- Site officiel du candidat ---------- */
-.site-officiel{justify-self:start;font-family:var(--f-mono);font-size:.8rem;color:var(--bleu);text-decoration:underline;text-underline-offset:3px}
+.site-officiel{justify-self:start;display:inline-flex;flex-direction:column;gap:2px;margin-top:6px;padding:10px 18px;border-radius:12px;background:var(--bleu);color:var(--sur-accent);text-decoration:none;box-shadow:0 2px 0 var(--rouge);transition:transform .1s}
+.site-officiel:hover{transform:translateY(-1px)}
+.site-officiel:focus-visible{outline:3px solid var(--rouge);outline-offset:2px}
+.site-type{font-family:var(--f-mono);font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;opacity:.85}
+.site-domaine{font-family:var(--f-display);font-weight:700;font-size:1.05rem}
+.biblio{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.biblio li{padding-left:56px;text-indent:-56px}
+.biblio-annee{display:inline-block;width:48px;text-indent:0;font-family:var(--f-mono);font-size:.8rem;color:var(--muted)}
+.biblio-editeur{color:var(--muted)}
+
+.ballot-cell{display:grid;grid-template-rows:1fr auto;gap:6px}
+.ballot-site{justify-self:center;font-family:var(--f-mono);font-size:.75rem;padding:5px 12px;border-radius:999px;background:var(--bleu-soft);color:var(--bleu);text-decoration:none;font-weight:600}
+.ballot-site:hover{background:var(--bleu);color:var(--sur-accent)}

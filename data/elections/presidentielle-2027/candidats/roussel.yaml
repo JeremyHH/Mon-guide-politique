@@ -56,6 +56,11 @@ fonctions:
   - { intitule: "Maire de Saint-Amand-les-Eaux", periode: "depuis janvier 2025" }
   - { intitule: "Député du Nord (20e circonscription)", periode: "2017 – 2024" }
   - { intitule: "Conseiller municipal de Saint-Amand-les-Eaux", periode: "depuis 2014" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "Le parti pris du travail", annee: 2025, editeur: "Éditions du Cherche Midi" }
+  - { titre: "Les Jours heureux sont devant nous : de la présidentielle à la reconstruction de la gauche", annee: 2023, editeur: "Éditions du Cherche Midi" }
+  - { titre: "Ma France : heureuse, solidaire et digne", annee: 2021, editeur: "Éditions du Cherche Midi" }
 resultats:
   - { annee: 2026, scrutin: "Municipales, Saint-Amand-les-Eaux", resultat: "Liste élue dès le premier tour avec 51,06 %" }
   - { annee: 2024, scrutin: "Législatives, Nord (20e)", resultat: "Battu au premier tour avec 31,2 %" }

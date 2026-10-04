@@ -31,6 +31,24 @@ fonctions:
   - { intitule: "Ministre déléguée à la Famille, puis à l'Enseignement scolaire", periode: "1997 – 2002" }
   - { intitule: "Ministre de l'Environnement", periode: "1992 – 1993" }
   - { intitule: "Députée des Deux-Sèvres", periode: "1988 – 2007, avec interruptions" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "Mais qui va garder les enfants ?", annee: 2025, editeur: "Fayard" }
+  - { titre: "Refusez la cruauté du monde ! Le temps d’aimer est venu", annee: 2023, editeur: "Éditions du Rocher" }
+  - { titre: "Résilience française : sauvons notre modèle social", annee: 2020, editeur: "L'Observatoire" }
+  - { titre: "Ce que je peux enfin vous dire", annee: 2018, editeur: "Fayard" }
+  - { titre: "Manifeste pour la justice climatique", annee: 2017, editeur: "Plon" }
+  - { titre: "Cette belle idée du courage", annee: 2013, editeur: "Grasset" }
+  - { titre: "Lettre à tous les résignés et aux indignés qui veulent des solutions", annee: 2011, editeur: "Plon" }
+  - { titre: "Femme debout", annee: 2009, editeur: "Denoël", coauteurs: "entretiens avec Françoise Degois" }
+  - { titre: "Si la gauche veut des idées", annee: 2008, editeur: "Grasset", coauteurs: "avec Alain Touraine" }
+  - { titre: "Maintenant", annee: 2007, editeur: "Hachette Littératures", coauteurs: "entretiens avec Marie-Françoise Colombani" }
+  - { titre: "Les Droits de l'Enfant", annee: 2007, editeur: "Dalloz" }
+  - { titre: "Ma plus belle histoire, c'est vous", annee: 2007, editeur: "Grasset" }
+  - { titre: "Désirs d'avenir", annee: 2006, editeur: "Flammarion" }
+  - { titre: "La Vérité d'une femme", annee: 1996, editeur: "Stock" }
+  - { titre: "Pays, paysans, paysages", annee: 1993, editeur: "Robert Laffont" }
+bibliographieTotal: 17
 resultats:
   - { annee: 2007, scrutin: "Présidentielle", resultat: "25,87 % au premier tour (2e) ; 46,9 % au second tour" }
   - { annee: 2004, scrutin: "Régionales, Poitou-Charentes", resultat: "Liste élue avec 55,10 % au second tour" }

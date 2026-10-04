@@ -42,6 +42,13 @@ fonctions:
   - { intitule: "Député de Seine-et-Marne (11e circonscription)", periode: "depuis juin 2012" }
   - { intitule: "Président du groupe socialiste à l'Assemblée nationale", periode: "2016 – 2018" }
   - { intitule: "Porte-parole du Parti socialiste", periode: "2014 – 2016" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "La loi du plus juste", annee: 2026, editeur: "Éditions Robert Laffont" }
+  - { titre: "Je reviens te chercher", annee: 2025, editeur: "Éditions Robert Laffont" }
+  - { titre: "Le capital républicain", annee: 2023, editeur: "L'Aube" }
+  - { titre: "Ségo, François, papa et moi", annee: 2007, editeur: "Hachette Littératures" }
+  - { titre: "Le Bruit du tic tac", annee: 2001, editeur: "Robert Laffont", coauteurs: "avec Lucile Schmid" }
 resultats:
   - { annee: 2024, scrutin: "Législatives, Seine-et-Marne (11e)", resultat: "Réélu" }
   - { annee: 2022, scrutin: "Législatives, Seine-et-Marne (11e)", resultat: "Réélu avec 64,45 %" }

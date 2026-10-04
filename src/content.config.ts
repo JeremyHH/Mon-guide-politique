@@ -87,6 +87,9 @@ const candidats = defineCollection({
     naissance: z.object({ date: z.coerce.date(), lieu: z.string() }).optional(),
     biographie: z.string().optional(),
     fonctions: z.array(z.object({ intitule: z.string(), periode: z.string() })).default([]),
+    // Ouvrages écrits par le candidat (les plus récents d'abord) ; bibliographieTotal si la liste est tronquée.
+    bibliographie: z.array(z.object({ titre: z.string(), annee: z.number(), editeur: z.string().optional(), coauteurs: z.string().optional() })).default([]),
+    bibliographieTotal: z.number().optional(),
     resultats: z.array(z.object({ annee: z.number(), scrutin: z.string(), resultat: z.string() })).default([]),
     // Condamnations pénales uniquement ; « definitive » = plus aucun recours possible.
     condamnations: z

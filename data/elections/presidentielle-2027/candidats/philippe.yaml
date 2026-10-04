@@ -62,6 +62,14 @@ fonctions:
   - { intitule: "Député de la Seine-Maritime (7e circonscription)", periode: "2012 – 2017" }
   - { intitule: "Conseiller général de la Seine-Maritime", periode: "2008 – 2012" }
   - { intitule: "Conseiller régional de Haute-Normandie", periode: "2004 – 2008" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "Le prix de nos mensonges", annee: 2025, editeur: "Jean-Claude Lattès" }
+  - { titre: "Des lieux qui disent", annee: 2023, editeur: "Jean-Claude Lattès" }
+  - { titre: "Impressions et lignes claires", annee: 2021, editeur: "Jean-Claude Lattès", coauteurs: "avec Gilles Boyer" }
+  - { titre: "Des hommes qui lisent", annee: 2017, editeur: "Jean-Claude Lattès" }
+  - { titre: "Dans l'ombre", annee: 2011, editeur: "Jean-Claude Lattès", coauteurs: "avec Gilles Boyer" }
+  - { titre: "L'Heure de vérité", annee: 2007, editeur: "Flammarion", coauteurs: "avec Gilles Boyer" }
 resultats:
   - { annee: 2020, scrutin: "Municipales, Le Havre", resultat: "Liste élue (43,6 % au premier tour)" }
   - { annee: 2012, scrutin: "Législatives, Seine-Maritime (7e)", resultat: "Élu" }

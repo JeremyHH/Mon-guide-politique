@@ -42,6 +42,24 @@ biographie: "Diplômé de Sciences Po Paris, il est journaliste politique, notam
 fonctions:
   - { intitule: "Président de Reconquête", periode: "depuis décembre 2021" }
   - { intitule: "N'a jamais exercé de mandat électif", periode: "" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "La messe n'est pas dite : Pour un sursaut judéo-chrétien", annee: 2025, editeur: "Fayard" }
+  - { titre: "Je n'ai pas dit mon dernier mot", annee: 2023, editeur: "Rubempré" }
+  - { titre: "La France n'a pas dit son dernier mot", annee: 2021, editeur: "Rubempré" }
+  - { titre: "Destin français", annee: 2018, editeur: "Albin Michel" }
+  - { titre: "Un quinquennat pour rien", annee: 2016, editeur: "Albin Michel" }
+  - { titre: "Le Suicide français", annee: 2014, editeur: "Albin Michel" }
+  - { titre: "Le Bûcher des vaniteux 2", annee: 2013, editeur: "Albin Michel" }
+  - { titre: "Le Bûcher des vaniteux", annee: 2012, editeur: "Albin Michel" }
+  - { titre: "Z comme Zemmour", annee: 2011, editeur: "Le Cherche midi" }
+  - { titre: "Mélancolie française", annee: 2010, editeur: "Fayard/Denoël" }
+  - { titre: "Petit Frère", annee: 2008, editeur: "Denoël" }
+  - { titre: "Le Premier Sexe", annee: 2006, editeur: "Denoël" }
+  - { titre: "L'Autre", annee: 2004, editeur: "Denoël" }
+  - { titre: "Chirac, l'homme qui ne s'aimait pas", annee: 2002, editeur: "Balland" }
+  - { titre: "Les Rats de garde", annee: 2000, editeur: "Stock", coauteurs: "avec Patrick Poivre d'Arvor" }
+bibliographieTotal: 19
 resultats:
   - { annee: 2022, scrutin: "Présidentielle", resultat: "7,07 % au premier tour (4e)" }
   - { annee: 2022, scrutin: "Législatives, Var (4e)", resultat: "23,19 % au premier tour, éliminé" }

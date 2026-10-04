@@ -30,6 +30,10 @@ fonctions:
   - { intitule: "Conseiller régional d'Île-de-France", periode: "depuis juillet 2021" }
   - { intitule: "Président du conseil général de l'Essonne", periode: "2011 – 2015" }
   - { intitule: "Conseiller général puis départemental de l'Essonne", periode: "1998 – 2021" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "La République, c'est nous !", annee: 2026, editeur: "Éditions de l'Observatoire" }
+  - { titre: "Plaidoyer pour les vieux", annee: 2013, editeur: "Éditions Jean-Claude Gawséwitch" }
 resultats:
   - { annee: 2022, scrutin: "Législatives, Essonne (6e)", resultat: "Élu" }
   - { annee: 2017, scrutin: "Législatives, Essonne (6e)", resultat: "13,1 % au premier tour, éliminé" }

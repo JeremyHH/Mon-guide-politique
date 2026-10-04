@@ -65,6 +65,9 @@ fonctions:
   - { intitule: "Secrétaire d'État auprès du ministre de l'Éducation nationale", periode: "octobre 2018 – juillet 2020" }
   - { intitule: "Député des Hauts-de-Seine (10e circonscription)", periode: "2017-2018, 2022, depuis 2024" }
   - { intitule: "Conseiller municipal de Vanves", periode: "depuis 2014" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "En homme libre", annee: 2026, editeur: "Éditions de l'Observatoire" }
 resultats:
   - { annee: 2024, scrutin: "Législatives, Hauts-de-Seine (10e)", resultat: "Élu" }
   - { annee: 2022, scrutin: "Législatives, Hauts-de-Seine (10e)", resultat: "Élu au second tour avec 59,85 %" }

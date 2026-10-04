@@ -50,6 +50,10 @@ fonctions:
   - { intitule: "Conseillère régionale des Hauts-de-France", periode: "depuis juillet 2021" }
   - { intitule: "Conseillère municipale d'Hénin-Beaumont", periode: "2014 – 2026" }
   - { intitule: "Conseillère communautaire d'Hénin-Carvin", periode: "2014 – 2026" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "Demain, si tout va bien...", annee: 2025, editeur: "Éditions Albin Michel" }
+  - { titre: "Nouvelles du Front : la vie sous le Front national, une élue de l'opposition raconte", annee: 2017, editeur: "Les liens qui libèrent" }
 resultats:
   - { annee: 2021, scrutin: "Régionales, Hauts-de-France", resultat: "Élue conseillère régionale" }
   - { annee: 2020, scrutin: "Municipales, Hénin-Beaumont", resultat: "18,22 % (liste battue)" }

@@ -57,6 +57,7 @@ const groupes = [
         <p class="mono groupe-critere">{g.critere}</p>
         <div class="ballots bulletins">
           {g.liste.map((c) => (
+            <div class="ballot-cell">
             <a class="ballot" href={lien(`/elections/${election.id}/candidats/${slugCandidat(c)}`)}>
               {c.data.photo ? <img class="ballot-photo" src={lien(c.data.photo.fichier)} alt="" width="120" height="160" loading="lazy" /> : <span class="ballot-photo sans-photo" title="Pas de photo sous licence libre disponible">{c.data.prenom[0]}{c.data.nom[0]}</span>}
               <span class="name">{nomComplet(c)}</span>
@@ -66,6 +67,12 @@ const groupes = [
               )}
               <span class="status"><span class="pill ok">{STATUTS[c.data.statut]}</span></span>
             </a>
+            {c.data.site && (
+              <a class="ballot-site" href={c.data.site.url} rel="noopener" aria-label={`Site officiel de ${nomComplet(c)}`}>
+                {new URL(c.data.site.url).hostname.replace(/^www\./, "")} ↗
+              </a>
+            )}
+            </div>
           ))}
         </div>
       </section>
