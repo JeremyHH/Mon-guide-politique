@@ -7,30 +7,9 @@ representation: true
 declaration: 2026-07-10
 bio: "Ancienne ministre, candidate à la présidentielle de 2007. Candidate à la primaire PS – Place publique."
 positions:
-  retraites:
-    texte: "Revaloriser immédiatement de 5 % les petites retraites et négocier avec les partenaires sociaux un minimum de pension proche du SMIC, en tenant compte de la pénibilité."
-    statut: verifie
-    anterieur: "Présidentielle 2007"
-    source:
-      titre: "Pacte présidentiel de Ségolène Royal – « Plus juste, la France sera plus forte » (tract de 4 pages)"
-      url: "https://cr.middlebury.edu/public/french/lexique/politique/programmes_pres/royal/Royal%20pacte-presidentiel.pdf"
-      date: 2007-02-11
-  immigration:
-    texte: "Mettre en place une « immigration partagée » par le co-développement avec les pays du Sud, et accorder le droit de vote local aux étrangers résidant régulièrement depuis plus de cinq ans."
-    statut: verifie
-    anterieur: "Présidentielle 2007"
-    source:
-      titre: "Pacte présidentiel de Ségolène Royal – « Plus juste, la France sera plus forte » (tract de 4 pages)"
-      url: "https://cr.middlebury.edu/public/french/lexique/politique/programmes_pres/royal/Royal%20pacte-presidentiel.pdf"
-      date: 2007-02-11
-  energie:
-    texte: "Soutenir les économies d’énergie et les énergies renouvelables pour atteindre 20 % de la consommation en 2020, créer 70 000 emplois et réduire la part du nucléaire."
-    statut: verifie
-    anterieur: "Présidentielle 2007"
-    source:
-      titre: "Pacte présidentiel de Ségolène Royal – « Plus juste, la France sera plus forte » (tract de 4 pages)"
-      url: "https://cr.middlebury.edu/public/french/lexique/politique/programmes_pres/royal/Royal%20pacte-presidentiel.pdf"
-      date: 2007-02-11
+  retraites: null
+  immigration: null
+  energie: null
   fiscalite:
     texte: "Baisser temporairement la TVA sur les carburants, sans cibler certaines catégories de consommateurs."
     statut: verifie
@@ -38,22 +17,8 @@ positions:
       titre: "franceinfo, « Sept séquences à retenir du débat des candidats à la primaire de la gauche »"
       url: "https://www.franceinfo.fr/elections/presidentielle/videos-sept-sequences-a-retenir-du-debat-des-candidats-a-la-primaire-de-la-gauche-sur-france-2-et-france-inter_8218741.html"
       date: 2026-10-01
-  europe:
-    texte: "Inscrire l’objectif croissance-emploi dans les statuts de la BCE, créer un gouvernement de la zone euro, adopter un protocole social et soumettre un traité institutionnel à référendum."
-    statut: verifie
-    anterieur: "Présidentielle 2007"
-    source:
-      titre: "Pacte présidentiel de Ségolène Royal – « Plus juste, la France sera plus forte » (tract de 4 pages)"
-      url: "https://cr.middlebury.edu/public/french/lexique/politique/programmes_pres/royal/Royal%20pacte-presidentiel.pdf"
-      date: 2007-02-11
-  securite:
-    texte: "Créer une police de quartier, doubler le budget de la justice en cinq ans et supprimer la prison pour les mineurs sauf atteintes graves aux personnes."
-    statut: verifie
-    anterieur: "Présidentielle 2007"
-    source:
-      titre: "Pacte présidentiel de Ségolène Royal – « Plus juste, la France sera plus forte » (tract de 4 pages)"
-      url: "https://cr.middlebury.edu/public/french/lexique/politique/programmes_pres/royal/Royal%20pacte-presidentiel.pdf"
-      date: 2007-02-11
+  europe: null
+  securite: null
 analyses: []
 # Profil (sources : voir sourcesProfil)
 naissance: { date: 1953-09-22, lieu: "Dakar (Sénégal)" }

@@ -8,6 +8,9 @@ const source = z.object({
   date: z.coerce.date(),
 });
 
+// Sources des positions reprises d'un programme précédent : au plus un an avant la dernière présidentielle (10 avril 2022).
+const SOURCE_ANTERIEURE_MIN = new Date("2021-04-10");
+
 // Une position « verifie » doit obligatoirement citer une source datée.
 const position = z
   .object({
@@ -19,6 +22,9 @@ const position = z
   })
   .refine((p) => p.statut !== "verifie" || p.source, {
     message: "Une position vérifiée doit avoir une source (titre, url, date).",
+  })
+  .refine((p) => !p.anterieur || (p.source && p.source.date >= SOURCE_ANTERIEURE_MIN), {
+    message: "Une position reprise d'un programme précédent doit dater d'au plus un an avant la dernière présidentielle (10 avril 2021).",
   });
 
 /* ---------- Élections : un dossier par scrutin dans data/elections/<id>/ ---------- */
