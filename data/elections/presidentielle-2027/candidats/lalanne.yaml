@@ -37,6 +37,24 @@ analyses: []
 naissance: { date: 1958-08-08, lieu: "Bayonne (Pyrénées-Atlantiques)" }
 biographie: "Connu depuis 1986 pour la chanson « On se retrouvera », il s'engage d'abord dans l'écologie politique (MEI, Alliance écologiste indépendante), puis rejoint les Gilets jaunes en 2018. Tête de liste France libre avec Dieudonné aux européennes de 2024, il est déclaré inéligible pour 18 mois en 2025 faute d'avoir déposé ses comptes de campagne ; sa liste aux municipales de 2026 à Lyon n'est pas enregistrée."
 fonctions: []
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "Le droit de résister", annee: 2024, editeur: "Auteurs Du Monde" }
+  - { titre: "Lettre en vers à l'occupant de l'Élysée, à la Représentation nationale et au peuple français", annee: 2022, editeur: "Éditions Talma" }
+  - { titre: "L'Assemblée des loups", annee: 2021, editeur: "Éditions Lamiroy" }
+  - { titre: "Pauvre Baudelaire ou les fleurs du mal dire", annee: 2020, editeur: "Éditions Lamiroy" }
+  - { titre: "De mémoire amoureuse", annee: 2015, editeur: "Éditions Fortuna" }
+  - { titre: "La Fille imaginée", annee: 2014, editeur: "Éditions Fortuna" }
+  - { titre: "Révoltons-nous", annee: 2011, editeur: "InLibroVeritas" }
+  - { titre: "Mise en demeure à Monsieur le Président de la République française", annee: 2009, editeur: "Éditions Jean-Claude Gawsewitch" }
+  - { titre: "Mère Patrie, Planète Mère", annee: 2008, editeur: "Éditions Pascal Petiot" }
+  - { titre: "Skizogrammes, Pantoums", annee: 2006, editeur: "Bibliophane" }
+  - { titre: "DRAC ou le soliloque du vampire", annee: 2003, editeur: "Les Belles Lettres" }
+  - { titre: "Le Petit Livre de l'enfant", annee: 2000, editeur: "Éditions du Rocher", coauteurs: "avec Stella Sulak" }
+  - { titre: "Éliade ou l'idéale", annee: 1999, editeur: "Les Belles Lettres" }
+  - { titre: "D'amour et de mots", annee: 1997, editeur: "Les Belles Lettres" }
+  - { titre: "Le journal de Joseph", annee: 1995, editeur: "Éditions du Rocher" }
+bibliographieTotal: 18
 resultats:
   - { annee: 2024, scrutin: "Législatives, Guadeloupe (1re), suppléant de Dieudonné", resultat: "1,03 %" }
   - { annee: 2024, scrutin: "Européennes, tête de liste France libre", resultat: "0,02 %" }

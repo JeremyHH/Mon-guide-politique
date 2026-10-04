@@ -29,6 +29,13 @@ fonctions:
   - { intitule: "Président de l'Association des maires de France", periode: "depuis novembre 2021" }
   - { intitule: "Président de la communauté d'agglomération Cannes Pays de Lérins", periode: "depuis 2017" }
   - { intitule: "Conseiller départemental des Alpes-Maritimes", periode: "depuis 2008" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "Les robots, le pape, l’IA et nous", annee: 2026, editeur: "Fayard", coauteurs: "avec Romain Marsily" }
+  - { titre: "Ainsi va la France. Manifeste libéral", annee: 2025, editeur: "L'Observatoire" }
+  - { titre: "Les Leçons de Pompidou", annee: 2024, editeur: "L'Observatoire", coauteurs: "avec Christophe Tardieu" }
+  - { titre: "La culture nous sauvera", annee: 2021, editeur: "L'Observatoire", coauteurs: "avec Christophe Tardieu" }
+  - { titre: "Refaire communauté : pour en finir avec l'incivisme", annee: 2018, editeur: "Hermann", coauteurs: "avec Jean-Michel Arnaud" }
 resultats:
   - { annee: 2026, scrutin: "Municipales, Cannes", resultat: "Réélu dès le premier tour avec 81,11 %" }
   - { annee: 2021, scrutin: "Présidence de l'AMF", resultat: "Élu avec 62,3 %" }

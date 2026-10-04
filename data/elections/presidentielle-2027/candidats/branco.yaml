@@ -26,6 +26,23 @@ naissance: { date: 1989-08-26, lieu: "Estepona (Andalousie, Espagne)" }
 biographie: "Diplômé de l'École normale supérieure (2013) et docteur en droit (2014), il conseille WikiLeaks et Julian Assange avant de devenir avocat en 2017 ; il défend notamment des figures du mouvement des Gilets jaunes. Candidat de La France insoumise aux législatives de 2017 en Seine-Saint-Denis, il publie en 2019 « Crépuscule », critique de l'accession au pouvoir d'Emmanuel Macron. Le barreau de Paris l'a suspendu neuf mois pour avoir publié des éléments couverts par le secret de l'instruction d'une enquête le visant (sanction disciplinaire confirmée en appel en octobre 2025)."
 fonctions:
   - { intitule: "Avocat au barreau de Paris", periode: "depuis avril 2017" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "Comment fabriquer une guillotine", annee: 2024, editeur: "Au diable vauvert" }
+  - { titre: "Paroles", annee: 2024, editeur: "Au diable vauvert" }
+  - { titre: "Hanouna", annee: 2023, editeur: "Au diable vauvert" }
+  - { titre: "Coup d'État", annee: 2023, editeur: "Au diable vauvert" }
+  - { titre: "Luttes", annee: 2022, editeur: "Michel Lafon" }
+  - { titre: "Treize pillards", annee: 2022, editeur: "Au diable vauvert" }
+  - { titre: "Abattre l'ennemi", annee: 2021, editeur: "Michel Lafon" }
+  - { titre: "La République ne vous appartient pas : Discours à polytechnique", annee: 2020, editeur: "Au diable vauvert" }
+  - { titre: "Assange - l'antisouverain", annee: 2020, editeur: "Éditions du Cerf" }
+  - { titre: "Crépuscule", annee: 2019, editeur: "Au diable vauvert" }
+  - { titre: "Contre Macron", annee: 2019, editeur: "Éditions Divergences" }
+  - { titre: "D'après une image de Daesh", annee: 2017, editeur: "Éditions Lignes" }
+  - { titre: "L'Ordre et le Monde : critique de la Cour pénale internationale", annee: 2016, editeur: "Fayard" }
+  - { titre: "De l'affaire Katanga au contrat social global : un regard sur la Cour pénale internationale", annee: 2015, editeur: "Institut universitaire Varenne" }
+  - { titre: "Réponses à Hadopi, suivi d'un entretien avec Jean-Luc Godard", annee: 2011, editeur: "Capricci" }
 resultats:
   - { annee: 2017, scrutin: "Législatives, Seine-Saint-Denis (12e)", resultat: "13,9 % au premier tour (4e, éliminé)" }
 condamnations: []

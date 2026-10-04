@@ -23,6 +23,10 @@ fonctions:
   - { intitule: "Députée des Deux-Sèvres", periode: "2007 – 2012, depuis 2013" }
   - { intitule: "Ministre de l'Écologie, du Développement durable et de l'Énergie", periode: "juin 2012 – juillet 2013" }
   - { intitule: "Ministre déléguée auprès de la garde des Sceaux", periode: "mai – juin 2012" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "Écologie intégrale le manifeste", annee: 2019, editeur: "Éditions du Rocher" }
+  - { titre: "Insoumise", annee: 2014, editeur: "Grasset" }
 resultats:
   - { annee: 2017, scrutin: "Législatives, Deux-Sèvres (2e)", resultat: "Réélue avec 56,94 % au second tour" }
   - { annee: 2012, scrutin: "Législatives, Deux-Sèvres (2e)", resultat: "Réélue dès le premier tour avec 53,18 %" }

@@ -21,6 +21,9 @@ fonctions:
   - { intitule: "Porte-parole de l'Union démocratique bretonne", periode: "2019 – 2023, puis depuis 2025" }
   - { intitule: "Députée européenne (groupe Verts/ALE)", periode: "septembre 2023 – juillet 2024" }
   - { intitule: "Co-porte-parole de Régions et peuples solidaires", periode: "août 2022 – 2024" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "Nourrir nos territoires : entretiens avec Lydie Massard, députée européenne", annee: 2023, editeur: "Presses populaires de Bretagne" }
 resultats:
   - { annee: 2026, scrutin: "Municipales, Pontivy", resultat: "Élue conseillère municipale (liste conduite par Jean-Jacques Merceur)" }
   - { annee: 2022, scrutin: "Législatives, Morbihan (3e)", resultat: "1,92 % au premier tour" }

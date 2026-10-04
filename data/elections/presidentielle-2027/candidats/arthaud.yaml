@@ -55,6 +55,9 @@ biographie: "Agrégée d'économie et gestion, enseignante en lycée dans la ré
 fonctions:
   - { intitule: "Porte-parole de Lutte ouvrière", periode: "depuis décembre 2008" }
   - { intitule: "Conseillère municipale de Vaulx-en-Velin", periode: "2008 – 2014" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "Communiste, révolutionnaire, internationaliste !", annee: 2022, editeur: "Les Bons Caractères" }
 resultats:
   - { annee: 2022, scrutin: "Présidentielle", resultat: "0,56 % au premier tour" }
   - { annee: 2017, scrutin: "Présidentielle", resultat: "0,64 % au premier tour" }

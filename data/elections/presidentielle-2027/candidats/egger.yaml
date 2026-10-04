@@ -19,6 +19,11 @@ analyses: []
 # Profil (sources : voir sourcesProfil)
 biographie: "Originaire de l'Ardèche, diplômée de Sciences Po Grenoble et docteure en science politique (2016), elle a travaillé pour des ONG humanitaires avant de rejoindre l'université de Groningue, aux Pays-Bas, en 2018. Engagée en faveur du référendum d'initiative citoyenne, elle a été en 2022 la candidate du collectif Espoir RIC, devenu le parti Solution démocratique, sans obtenir les 500 parrainages requis. Son programme pour 2027 prévoit qu'une révision de la Constitution réclamée par 700 000 signataires puisse être soumise à référendum."
 fonctions: []
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "ONG : organisations néo-gouvernementales : Aide humanitaire et impérialisme en Afrique", annee: 2022, editeur: "Agone" }
+  - { titre: "Pour que voter serve enfin. Manifeste pour une transition démocratique", annee: 2022, editeur: "Talma Studios" }
+  - { titre: "RIC Le Référendum d'initiative citoyenne expliqué à tous : Au cœur de la démocratie directe", annee: 2019, editeur: "FYP", coauteurs: "avec Raul Magni-Berton" }
 resultats:
   - { annee: 2022, scrutin: "Présidentielle", resultat: "Candidature non validée (36 parrainages sur 500 requis)" }
 condamnations: []

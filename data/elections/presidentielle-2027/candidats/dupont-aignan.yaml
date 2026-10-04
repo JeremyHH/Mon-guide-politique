@@ -62,6 +62,24 @@ fonctions:
   - { intitule: "Président de Debout la France", periode: "depuis novembre 2008" }
   - { intitule: "Député de l'Essonne", periode: "1997 – 2024" }
   - { intitule: "Président de la communauté d'agglomération du Val d'Yerres", periode: "2002 – 2017" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "2027 : La liberté ou la mort", annee: 2026, editeur: "Fayard" }
+  - { titre: "Où va le pognon ?", annee: 2021, editeur: "Éditions de l'Archipel" }
+  - { titre: "Résistance", annee: 2019, editeur: "Éditions du Rocher" }
+  - { titre: "Mon agenda de président, 100 jours pour tout changer", annee: 2017, editeur: "Librio" }
+  - { titre: "France, lève-toi et marche", annee: 2016, editeur: "Fayard" }
+  - { titre: "Honte à ceux qui se taisent et à ceux qui n'agissent pas", annee: 2015, editeur: "Fayard" }
+  - { titre: "Les Voleurs de la République : enquête sur les parasites fiscaux", annee: 2013, editeur: "Fayard" }
+  - { titre: "Le Printemps français : ou comment les « petits » vont libérer la France !", annee: 2012, editeur: "Éditions du Rocher" }
+  - { titre: "L'Euro, les Banquiers et la Mondialisation : l'arnaque du siècle", annee: 2011, editeur: "Éditions du Rocher" }
+  - { titre: "Le Petit Livre mauve", annee: 2009, editeur: "InLibroVeritas" }
+  - { titre: "Le Coup d'État simplifié", annee: 2008, editeur: "Éditions du Rocher" }
+  - { titre: "Français, reprenez le pouvoir !", annee: 2006, editeur: "Éditions de l'Archipel" }
+  - { titre: "J'aime l'Europe, je vote non", annee: 2005, editeur: "Éditions François-Xavier de Guibert" }
+  - { titre: "Ne laissons pas mourir la France", annee: 2004, editeur: "Albin Michel", coauteurs: "avec Paul-Marie Coûteaux" }
+  - { titre: "L'Europe va dans le mur. Elle accélère. Et elle klaxonne !", annee: 2004, editeur: "Éditions de l'Archipel" }
+bibliographieTotal: 16
 resultats:
   - { annee: 2022, scrutin: "Présidentielle", resultat: "2,06 % au premier tour" }
   - { annee: 2017, scrutin: "Présidentielle", resultat: "4,70 % au premier tour" }

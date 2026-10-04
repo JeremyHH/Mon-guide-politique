@@ -21,6 +21,24 @@ biographie: "Diplômé du Centre de formation des journalistes, fondateur du jou
 fonctions:
   - { intitule: "Député de la Somme", periode: "depuis juin 2017" }
   - { intitule: "Président de Debout !", periode: "depuis juin 2025" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "Picardie splendor : les aventures de François Ruffin, député-reporter", annee: 2026, editeur: "Les Arènes", coauteurs: "avec Olivier Berlion, Benoît Blary, Damien Cuvillier, A.Dan et d'autres dessinateurs" }
+  - { titre: "Itinéraire : Ma France en entier, pas à moitié", annee: 2024, editeur: "Les Liens qui libèrent" }
+  - { titre: "Mal travail : le choix des élites", annee: 2024, editeur: "Les Liens qui libèrent" }
+  - { titre: "Le temps d'apprendre à vivre : La bataille des retraites", annee: 2022, editeur: "Les Liens qui libèrent" }
+  - { titre: "Je vous écris du front de la Somme", annee: 2022, editeur: "Les Liens qui libèrent" }
+  - { titre: "Leur progrès et le nôtre : de Prométhée à la 5G", annee: 2021, editeur: "Éditions du Seuil" }
+  - { titre: "Que faire de la police ?", annee: 2020, editeur: "Fakir Éditions" }
+  - { titre: "Leur folie, nos vies : la bataille de l'après", annee: 2020, editeur: "Les Liens qui libèrent" }
+  - { titre: "Il est où, le bonheur", annee: 2019, editeur: "Les Liens qui libèrent" }
+  - { titre: "Ce pays que tu ne connais pas", annee: 2019, editeur: "Les Arènes" }
+  - { titre: "Un député et son collab' chez Big Pharma", annee: 2018, editeur: "Fakir Éditions", coauteurs: "avec Cyril Pocréaux" }
+  - { titre: "Paix intérieure et paix sociale : entretiens avec Mgr Olivier Leborgne", annee: 2018, editeur: "Éditions Temps Présent" }
+  - { titre: "Un député à… la ferme", annee: 2018, editeur: "Fakir Éditions" }
+  - { titre: "Un député à… l'hôpital psychiatrique", annee: 2017, editeur: "Fakir Éditions" }
+  - { titre: "« L'égalité c'est la santé » (et l’amour aussi…)", annee: 2015, editeur: "Éditions Fakir", coauteurs: "avec l'équipe de Fakir" }
+bibliographieTotal: 26
 resultats:
   - { annee: 2024, scrutin: "Législatives, Somme (1re)", resultat: "Réélu avec 52,96 % au second tour" }
   - { annee: 2022, scrutin: "Législatives, Somme (1re)", resultat: "Réélu" }

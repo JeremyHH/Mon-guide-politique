@@ -30,6 +30,15 @@ fonctions:
   - { intitule: "Conseiller régional du Grand Est", periode: "2016 – 2021" }
   - { intitule: "Vice-président du Front national", periode: "2012 – 2017" }
   - { intitule: "Conseiller municipal de Forbach", periode: "2014 – 2016" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "Fini la comédie ! : Pourquoi l'oligarchie perdra la guerre qu'elle nous a déclarée", annee: 2024, editeur: "autoédition" }
+  - { titre: "Crises", annee: 2022, editeur: "autoédition" }
+  - { titre: "Manifeste pour la Paix et la Liberté : éloge de la France libre", annee: 2022, editeur: "autoédition" }
+  - { titre: "S'en sortir : face à l'oligarchie", annee: 2021, editeur: "autoédition" }
+  - { titre: "Covid-19 : la grande bascule", annee: 2021, editeur: "autoédition" }
+  - { titre: "Covid-19 : l'oligarchie démasquée", annee: 2020, editeur: "autoédition" }
+  - { titre: "Frexit : UE, en sortir pour s'en sortir", annee: 2018, editeur: "Toucan/L'Artilleur" }
 resultats:
   - { annee: 2019, scrutin: "Européennes (tête de liste Les Patriotes)", resultat: "0,6 %, non réélu" }
   - { annee: 2014, scrutin: "Européennes, circonscription Est", resultat: "Élu (liste FN)" }
