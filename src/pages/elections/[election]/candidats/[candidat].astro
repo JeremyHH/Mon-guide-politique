@@ -24,6 +24,7 @@ const age = (d: Date) => {
   const n = new Date();
   return n.getFullYear() - d.getFullYear() - (n < new Date(n.getFullYear(), d.getMonth(), d.getDate()) ? 1 : 0);
 };
+const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émission", tribune: "Tribune" } as const;
 ---
 <Base titre={`${nomComplet(c)} · ${election.data.nom}`} page="elections" description={`Positions de ${nomComplet(c)} (${c.data.parti}) : ${election.data.nom}.`}>
   <BandeauVerif slot="bandeau" />
@@ -67,6 +68,7 @@ const age = (d: Date) => {
       <a href="#resultats">Résultats électoraux</a>
       <a href="#campagne">Campagne</a>
       <a href="#tournee">Tournée</a>
+      {c.data.medias.length > 0 && <a href="#medias">Dans les médias</a>}
       <a href="#positions">Positions</a>
       <a href="#justice">Condamnations</a>
     </nav>
@@ -142,6 +144,25 @@ const age = (d: Date) => {
       <h3 class="fiche-titre">Tournée de campagne</h3>
       <Tournee candidat={c} />
     </section>
+
+    {c.data.medias.length > 0 && <section class="fiche-section" id="medias">
+      <h3 class="fiche-titre">Dans les médias</h3>
+      <p class="mono note-justice">Interviews, débats, émissions et tribunes du candidat depuis le 1er juillet 2026 (cinq au plus, les plus récentes d'abord). Liste non exhaustive.</p>
+      {c.data.medias.length ? (
+        <ul class="medias">
+          {[...c.data.medias].sort((a, b) => +b.date - +a.date).map((m) => (
+            <li>
+              <span class="medias-date">{dateFr(m.date)}</span>
+              <span class="pill">{TYPES_MEDIA[m.type]}</span>
+              <a href={m.url} rel="noopener">{m.titre}</a>
+              <span class="medias-source">{m.media}</span>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="aucune">Aucune apparition médiatique recensée sur la période.</p>
+      )}
+    </section>}
 
     <section class="fiche-section" id="positions">
       <h3 class="fiche-titre">Positions par thème</h3>

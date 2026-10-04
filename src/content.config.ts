@@ -131,6 +131,18 @@ const candidats = defineCollection({
         }),
       )
       .default([]),
+    // Apparitions récentes du candidat lui-même (interviews, débats, émissions, tribunes signées).
+    medias: z
+      .array(
+        z.object({
+          date: z.coerce.date(),
+          media: z.string(),
+          type: z.enum(["interview", "debat", "emission", "tribune"]),
+          titre: z.string(),
+          url: z.string().url(),
+        }),
+      )
+      .default([]),
     sourcesProfil: z.array(z.object({ titre: z.string(), url: z.string().url() })).default([]),
   }),
 });
