@@ -29,6 +29,7 @@ const elections = defineCollection({
   }),
   schema: z.object({
     nom: z.string(),
+    menu: z.string().optional(),
     type: z.enum(["presidentielle", "legislatives", "senatoriales", "municipales", "departementales", "regionales", "europeennes", "referendum"]),
     date: z.coerce.date(),
     libelleDate: z.string(),

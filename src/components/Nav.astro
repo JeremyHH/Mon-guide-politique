@@ -10,7 +10,9 @@ const slug = (id: string) => id.split("/")[1];
 
 type Lien = { nom: string; href: string };
 type Groupe = { titre?: string; liens: Lien[] };
-type Entree = { id: Props["page"]; nom: string; href: string; groupes?: Groupe[] };
+type Entree = { id: Props["page"]; nom: string; href: string; groupes?: Groupe[]; ouvertParDefaut?: boolean };
+
+const prochaine = (await elections()).find((e) => +e.data.date >= Date.now() - 86400000 * 30);
 
 const versFiches = async (rubrique: "institutions" | "voter") =>
   (await fiches(rubrique)).map((f) => ({ nom: f.data.titre, href: `/${rubrique}/${slug(f.id)}` }));
@@ -29,22 +31,25 @@ const menu: Entree[] = [
     href: "/voter",
     groupes: [{ liens: [{ nom: "Le guide du vote", href: "/voter" }, ...(await versFiches("voter"))] }],
   },
-  {
-    id: "elections",
-    nom: "Élections",
-    href: "/elections",
-    groupes: [
-      { liens: [{ nom: "Toutes les élections", href: "/elections" }] },
-      ...(await elections()).map((e) => ({
-        titre: e.data.nom,
-        liens: [
-          { nom: "Candidats et calendrier", href: `/elections/${e.id}` },
-          { nom: "Comparer les positions", href: `/elections/${e.id}/comparer` },
-          { nom: "Quiz « qui me ressemble »", href: `/elections/${e.id}/quiz` },
+  // L'élection à venir la plus proche a sa propre entrée ; les autres restent accessibles via « Toutes les élections ».
+  ...(prochaine
+    ? [{
+        id: "elections" as const,
+        nom: prochaine.data.menu ?? prochaine.data.nom,
+        href: `/elections/${prochaine.id}`,
+        ouvertParDefaut: page === "accueil",
+        groupes: [
+          {
+            liens: [
+              { nom: "Candidats et calendrier", href: `/elections/${prochaine.id}` },
+              { nom: "Comparer les positions", href: `/elections/${prochaine.id}/comparer` },
+              { nom: "Quiz « qui me ressemble »", href: `/elections/${prochaine.id}/quiz` },
+            ],
+          },
+          { liens: [{ nom: "Toutes les élections", href: "/elections" }] },
         ],
-      })),
-    ],
-  },
+      }]
+    : [{ id: "elections" as const, nom: "Élections", href: "/elections" }]),
   { id: "methode", nom: "Méthode", href: "/methode" },
 ];
 const actuel = (href: string) => (lien(href).replace(/\/$/, "") === ici ? "page" : undefined);
@@ -62,8 +67,9 @@ const actuel = (href: string) => (lien(href).replace(/\/$/, "") === ici ? "page"
             <button
               class="nav-lien"
               type="button"
-              aria-expanded="false"
+              aria-expanded={e.ouvertParDefaut ? "true" : "false"}
               aria-controls={`sm-${e.id}`}
+              data-ouvert-par-defaut={e.ouvertParDefaut ? "" : undefined}
               data-actif={e.id === page ? "" : undefined}
             >
               {e.nom}
@@ -106,12 +112,20 @@ const actuel = (href: string) => (lien(href).replace(/\/$/, "") === ici ? "page"
     }),
   );
 
+  // Sur mobile, le menu est replié : on n'y garde pas de sous-menu ouvert par défaut.
+  if (getComputedStyle(toggle).display !== "none") fermerTout();
+
   toggle.addEventListener("click", () => {
     const ouvert = toggle.getAttribute("aria-expanded") === "true";
     toggle.setAttribute("aria-expanded", String(!ouvert));
     nav.classList.toggle("ouverte", !ouvert);
     if (ouvert) fermerTout();
   });
+
+  // Au survol d'une autre rubrique, refermer le sous-menu resté ouvert (dont celui ouvert par défaut).
+  document.querySelectorAll<HTMLElement>(".a-sous-menu").forEach((item) =>
+    item.addEventListener("mouseenter", () => fermerTout(item.querySelector<HTMLButtonElement>(".nav-lien")!)),
+  );
 
   // Fermer avec Échap ou en cliquant ailleurs.
   document.addEventListener("keydown", (e) => {

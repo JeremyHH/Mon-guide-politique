@@ -1,4 +1,6 @@
 nom: Élection présidentielle 2027
+# Libellé court utilisé dans la barre de navigation.
+menu: Présidentielle 2027
 type: presidentielle
 # Date du premier tour ; sert au compte à rebours et au tri des élections.
 date: 2027-04-18
