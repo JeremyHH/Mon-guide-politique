@@ -19,6 +19,12 @@ analyses: []
 # Profil : pas d'article Wikipédia ; sources = site du parti et presse régionale
 biographie: "Ingénieur diplômé de l'Icam de Lille, il a grandi à Paillart (Oise) et a monté pendant cinq ans des projets d'énergies renouvelables avec des collectivités. Membre d'Équinoxe depuis les élections européennes de 2024, il a conduit la liste du parti dans le 5e arrondissement de Paris aux municipales de 2026. Il n'a jamais exercé de mandat électif."
 fonctions: []
+# Formation et parcours professionnel hors mandats (source : https://jhm.fr/sous-la-banniere-dequinoxe-antoine-mikolajczak-brigue-la-presidence-de-la-republique/)
+cv:
+  etudes:
+    - { diplome: "Diplôme d'ingénieur", etablissement: "Icam (Lille)" }
+  experiences:
+    - { poste: "Montage de projets locaux d'énergies renouvelables auprès des collectivités", periode: "pendant 5 ans" }
 resultats:
   - { annee: 2026, scrutin: "Municipales, Paris 5e arrondissement", resultat: "3,01 % au premier tour (tête de liste)" }
 condamnations: []

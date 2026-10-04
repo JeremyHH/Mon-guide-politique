@@ -56,6 +56,19 @@ fonctions:
   - { intitule: "Maire de Saint-Amand-les-Eaux", periode: "depuis janvier 2025" }
   - { intitule: "Député du Nord (20e circonscription)", periode: "2017 – 2024" }
   - { intitule: "Conseiller municipal de Saint-Amand-les-Eaux", periode: "depuis 2014" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Fabien_Roussel)
+cv:
+  etudes:
+    - { diplome: "Études secondaires à Champigny-sur-Marne" }
+    - { diplome: "Formation de journaliste reporter d'images", etablissement: "Centre de formation et de perfectionnement des journalistes (CFPJ)" }
+  experiences:
+    - { poste: "Stagiaire, coursier, distributeur de dépêches puis journaliste iconographe", employeur: "L'Humanité", periode: "1989" }
+    - { poste: "Chargé de production et assistant de production", employeur: "Daniel Roussel Productions", periode: "1990 – 1992" }
+    - { poste: "Journaliste reporter d'images pigiste (émission « Au bout de la rue »)", employeur: "France 3 (France Télévisions)", periode: "1995 – 1996" }
+    - { poste: "Conseiller chargé de la communication au cabinet de la secrétaire d'État au Tourisme Michelle Demessine", employeur: "Secrétariat d'État au Tourisme", periode: "1997 – 2001" }
+    - { poste: "Attaché parlementaire du député Alain Bocquet", employeur: "Assemblée nationale", periode: "années 2000" }
+    - { poste: "Attaché parlementaire du député Jean-Jacques Candelier", employeur: "Assemblée nationale", periode: "2009 – 2014" }
+    - { poste: "Assistant parlementaire de la sénatrice Michelle Demessine", employeur: "Sénat", periode: "2015 – 2017" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "Le parti pris du travail", annee: 2025, editeur: "Éditions du Cherche Midi" }

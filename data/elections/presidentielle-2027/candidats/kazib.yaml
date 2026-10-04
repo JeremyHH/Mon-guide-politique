@@ -39,6 +39,14 @@ biographie: "Cheminot depuis 2012, aiguilleur à la gare de triage du Bourget, i
 fonctions:
   - { intitule: "Porte-parole de Révolution permanente", periode: "en fonction (date de début non précisée)" }
   - { intitule: "Délégué syndical SUD Rail au Bourget", periode: "depuis 2015" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Anasse_Kazib)
+cv:
+  etudes: []
+  experiences:
+    - { poste: "Coursier pour des laboratoires chimiques" }
+    - { poste: "Cheminot aiguilleur", employeur: "SNCF, gare de triage du Bourget", periode: "depuis 2012" }
+    - { poste: "Délégué syndical", employeur: "SUD Rail, gare du Bourget", periode: "depuis 2015" }
+    - { poste: "Chroniqueur dans l'émission Les Grandes Gueules", employeur: "RMC", periode: "2018 – 2020" }
 resultats:
   - { annee: 2024, scrutin: "Législatives, Seine-Saint-Denis (2e)", resultat: "3,67 % au premier tour" }
   - { annee: 2022, scrutin: "Présidentielle", resultat: "Candidature non validée (160 parrainages)" }

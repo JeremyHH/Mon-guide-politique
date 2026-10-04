@@ -50,6 +50,20 @@ fonctions:
   - { intitule: "Ministre délégué à l'Enseignement professionnel", periode: "mars 2000 – mai 2002" }
   - { intitule: "Sénateur de l'Essonne", periode: "1986 – 2000, 2004 – 2010" }
   - { intitule: "Conseiller général de l'Essonne", periode: "1985 – 1992, 1998 – 2004" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon)
+cv:
+  etudes:
+    - { diplome: "Baccalauréat", etablissement: "Lycée Rouget-de-Lisle, Lons-le-Saunier", annee: 1969 }
+    - { diplome: "Licence de lettres modernes et licence de philosophie", etablissement: "Faculté des lettres et sciences humaines de l'université de Besançon", annee: 1972 }
+    - { diplome: "CAPES de lettres modernes" }
+  experiences:
+    - { poste: "Correcteur", employeur: "Imprimerie Néo-Typo, Besançon", periode: "années 1970" }
+    - { poste: "Ouvrier en usine horlogère, puis employé de station-service", employeur: "Maty (usine horlogère)", periode: "années 1970" }
+    - { poste: "Surveillant, puis maître auxiliaire", employeur: "Lycée du Bois, Mouchard", periode: "années 1970" }
+    - { poste: "Professeur de français en lycée technique", employeur: "Éducation nationale, Lons-le-Saunier", periode: "à partir de 1976" }
+    - { poste: "Journaliste pigiste (sous le pseudonyme Jean-Louis Mula)", employeur: "Les Dépêches du Jura", periode: "années 1970" }
+    - { poste: "Directeur de La Tribune du Jura, mensuel de la fédération socialiste du Jura", periode: "fin des années 1970" }
+    - { poste: "Directeur de cabinet du maire de Massy, Claude Germon", employeur: "Mairie de Massy", periode: "fin des années 1970" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "Faites mieux ! Vers la Révolution citoyenne", annee: 2023, editeur: "Robert Laffont" }

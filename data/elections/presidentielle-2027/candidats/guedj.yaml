@@ -30,6 +30,18 @@ fonctions:
   - { intitule: "Conseiller régional d'Île-de-France", periode: "depuis juillet 2021" }
   - { intitule: "Président du conseil général de l'Essonne", periode: "2011 – 2015" }
   - { intitule: "Conseiller général puis départemental de l'Essonne", periode: "1998 – 2021" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Jérôme_Guedj)
+cv:
+  etudes:
+    - { diplome: "Diplôme de l'Institut d'études politiques de Paris", etablissement: "Sciences Po Paris", annee: 1992 }
+    - { diplome: "École nationale d'administration (promotion Victor Schœlcher)", etablissement: "ENA", annee: 1996 }
+  experiences:
+    - { poste: "Assistant parlementaire de Jean-Luc Mélenchon", periode: "années 1990" }
+    - { poste: "Inspecteur à l'Inspection générale des affaires sociales (IGAS)", employeur: "IGAS", periode: "1996" }
+    - { poste: "Codirecteur d'un executive master sur les politiques du handicap", employeur: "Sciences Po Paris", periode: "années 2000" }
+    - { poste: "Gérant de la société de conseil J G Conseils", employeur: "J G Conseils", periode: "depuis 2006" }
+    - { poste: "Fondateur d'une entreprise de conseil", periode: "2018" }
+    - { poste: "Chargé de mission sur l'isolement des personnes âgées confinées", employeur: "Ministère de la Santé", periode: "2020" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "La République, c'est nous !", annee: 2026, editeur: "Éditions de l'Observatoire" }

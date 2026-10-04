@@ -62,6 +62,20 @@ fonctions:
   - { intitule: "Président de Debout la France", periode: "depuis novembre 2008" }
   - { intitule: "Député de l'Essonne", periode: "1997 – 2024" }
   - { intitule: "Président de la communauté d'agglomération du Val d'Yerres", periode: "2002 – 2017" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Nicolas_Dupont-Aignan)
+cv:
+  etudes:
+    - { diplome: "Diplôme de l'Institut d'études politiques de Paris (section Service public)", etablissement: "Sciences Po Paris", annee: 1982 }
+    - { diplome: "Licence de droit", annee: 1984 }
+    - { diplome: "DESS gestion de l'entreprise et marché financier", etablissement: "Université Paris-Dauphine", annee: 1985 }
+    - { diplome: "École nationale d'administration (promotion Liberté-Égalité-Fraternité)", etablissement: "ENA", annee: 1989 }
+  experiences:
+    - { poste: "Administrateur civil, adjoint au chef du bureau des élections", employeur: "Ministère de l'Intérieur", periode: "1988 – 1989" }
+    - { poste: "Chef de cabinet du préfet de la région Île-de-France, avec rang de sous-préfet", employeur: "Préfecture de la région Île-de-France", periode: "1990" }
+    - { poste: "Directeur adjoint du cabinet du préfet de la région Île-de-France", employeur: "Préfecture de la région Île-de-France", periode: "1992 – 1993" }
+    - { poste: "Chef de cabinet puis conseiller technique du ministre François Bayrou", employeur: "Ministère de l'Éducation nationale", periode: "1993 – 1994" }
+    - { poste: "Conseiller technique (emploi, écologie urbaine, bruit) au cabinet de Michel Barnier", employeur: "Ministère de l'Environnement", periode: "1994 – 1995" }
+    - { poste: "Directeur des études", employeur: "RPR", periode: "1997" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "2027 : La liberté ou la mort", annee: 2026, editeur: "Fayard" }

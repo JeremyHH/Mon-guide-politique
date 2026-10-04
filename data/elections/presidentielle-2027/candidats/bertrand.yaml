@@ -39,6 +39,14 @@ fonctions:
   - { intitule: "Secrétaire d'État chargé de l'Assurance maladie", periode: "mars 2004 – juin 2005" }
   - { intitule: "Maire de Saint-Quentin", periode: "2010 – 2016" }
   - { intitule: "Député de l'Aisne (2e circonscription)", periode: "2002 – 2016 (hors périodes au gouvernement)" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Xavier_Bertrand)
+cv:
+  etudes:
+    - { diplome: "Maîtrise de droit public", etablissement: "Université de Reims (UFR droit et science politique)" }
+    - { diplome: "DESS en administration locale", etablissement: "Université de Reims" }
+  experiences:
+    - { poste: "Assistant parlementaire du sénateur de l'Aisne Jacques Braconnier", employeur: "Sénat", periode: "1987 – 1992" }
+    - { poste: "Agent général d'assurance", employeur: "AXA, puis Swiss Life", periode: "1992 – 2004" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "Rien n'est jamais écrit", annee: 2025, editeur: "Robert Laffont" }

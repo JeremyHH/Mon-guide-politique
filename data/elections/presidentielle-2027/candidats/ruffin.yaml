@@ -21,6 +21,18 @@ biographie: "Diplômé du Centre de formation des journalistes, fondateur du jou
 fonctions:
   - { intitule: "Député de la Somme", periode: "depuis juin 2017" }
   - { intitule: "Président de Debout !", periode: "depuis juin 2025" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/François_Ruffin)
+cv:
+  etudes:
+    - { diplome: "Maîtrise de lettres modernes", etablissement: "Université de Picardie" }
+    - { diplome: "Diplôme du Centre de formation des journalistes (CFJ)", etablissement: "CFJ", annee: 2002 }
+  experiences:
+    - { poste: "Fondateur et rédacteur en chef du journal Fakir", employeur: "Fakir", periode: "depuis 1999" }
+    - { poste: "Reporter pour l'émission « Là-bas si j'y suis »", employeur: "France Inter", periode: "2005 – 2012" }
+    - { poste: "Journaliste (articles)", employeur: "Le Monde diplomatique", periode: "2005 – 2012" }
+    - { poste: "Cofondateur du journal Le Plan B", employeur: "Le Plan B", periode: "2006" }
+    - { poste: "Essayiste" }
+    - { poste: "Réalisateur de films documentaires (dont « Merci Patron ! », César 2017)", periode: "depuis 2015" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "Picardie splendor : les aventures de François Ruffin, député-reporter", annee: 2026, editeur: "Les Arènes", coauteurs: "avec Olivier Berlion, Benoît Blary, Damien Cuvillier, A.Dan et d'autres dessinateurs" }

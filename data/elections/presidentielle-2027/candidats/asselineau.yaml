@@ -26,6 +26,20 @@ biographie: "Diplômé d'HEC et de l'ENA, inspecteur général des finances. Il 
 fonctions:
   - { intitule: "Président de l'Union populaire républicaine", periode: "depuis mars 2007" }
   - { intitule: "Conseiller de Paris", periode: "2001 – 2008" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/François_Asselineau)
+cv:
+  etudes:
+    - { diplome: "Diplôme d'HEC Paris", annee: 1980 }
+    - { diplome: "École nationale d'administration (promotion Léonard-de-Vinci)", annee: 1985 }
+  experiences:
+    - { poste: "Inspecteur des finances", employeur: "Inspection générale des finances", periode: "1985 – 1989" }
+    - { poste: "Chef du bureau Asie-Océanie, direction des relations économiques extérieures", employeur: "Ministère de l'Économie et des Finances", periode: "1991 – 1993" }
+    - { poste: "Conseiller pour les affaires internationales aux cabinets de Gérard Longuet puis de José Rossi", employeur: "Ministère de l'Industrie", periode: "1993 – 1995" }
+    - { poste: "Directeur de cabinet de Françoise de Panafieu", employeur: "Ministère du Tourisme", periode: "1995" }
+    - { poste: "Chargé de mission au cabinet d'Hervé de Charette", employeur: "Ministère des Affaires étrangères", periode: "1996 – 1997" }
+    - { poste: "Inspecteur général des finances", employeur: "Inspection générale des finances", periode: "depuis 2001" }
+    - { poste: "Directeur de cabinet de Charles Pasqua", employeur: "Conseil général des Hauts-de-Seine", periode: "2001 – 2004" }
+    - { poste: "Délégué général à l'intelligence économique", employeur: "Ministère de l'Économie et des Finances", periode: "2004 – 2006" }
 resultats:
   - { annee: 2017, scrutin: "Présidentielle", resultat: "0,92 % au premier tour" }
 condamnations: []

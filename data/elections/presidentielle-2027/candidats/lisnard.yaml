@@ -29,6 +29,18 @@ fonctions:
   - { intitule: "Président de l'Association des maires de France", periode: "depuis novembre 2021" }
   - { intitule: "Président de la communauté d'agglomération Cannes Pays de Lérins", periode: "depuis 2017" }
   - { intitule: "Conseiller départemental des Alpes-Maritimes", periode: "depuis 2008" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/David_Lisnard)
+cv:
+  etudes:
+    - { diplome: "Baccalauréat", etablissement: "Lycée Bristol (Cannes)" }
+    - { diplome: "Diplôme de l'Institut d'études politiques de Bordeaux", etablissement: "Sciences Po Bordeaux", annee: 1992 }
+  experiences:
+    - { poste: "Petits boulots étudiants (serveur, livreur, déménageur, pompiste, boucher…)" }
+    - { poste: "Pigiste", employeur: "Magazines de France, Centrale des Artistes et revues spécialisées" }
+    - { poste: "Directeur de cabinet et attaché parlementaire de Jacques Pélissard, député-maire de Lons-le-Saunier", periode: "1996 – 1999" }
+    - { poste: "Président du Palais des festivals de Cannes et de la SEMEC", employeur: "SEMEC", periode: "2001" }
+    - { poste: "Président de Service Public 2000, cabinet de conseil aux collectivités locales", employeur: "Service Public 2000", periode: "2008" }
+    - { poste: "Propriétaire de magasins de vêtements à Cannes", periode: "jusqu'en 2016" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "Les robots, le pape, l’IA et nous", annee: 2026, editeur: "Fayard", coauteurs: "avec Romain Marsily" }

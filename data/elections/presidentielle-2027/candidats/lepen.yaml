@@ -50,6 +50,16 @@ fonctions:
   - { intitule: "Députée européenne", periode: "2004 – 2017" }
   - { intitule: "Conseillère régionale (Île-de-France, puis Nord-Pas-de-Calais / Hauts-de-France)", periode: "1998 – 2021, avec interruptions" }
   - { intitule: "Conseillère départementale du Pas-de-Calais", periode: "2021 – 2025" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Marine_Le_Pen)
+cv:
+  etudes:
+    - { diplome: "Baccalauréat (série B)", etablissement: "Lycée Florent-Schmitt, Saint-Cloud", annee: 1986 }
+    - { diplome: "Maîtrise en droit (mention carrières judiciaires)", etablissement: "Université Paris II Panthéon-Assas", annee: 1990 }
+    - { diplome: "DEA de droit pénal", etablissement: "Université Paris II Panthéon-Assas", annee: 1991 }
+    - { diplome: "Certificat d'aptitude à la profession d'avocat (CAPA)", etablissement: "École de formation professionnelle des barreaux de la cour d'appel de Paris (EFB)", annee: 1992 }
+  experiences:
+    - { poste: "Avocate au barreau de Paris (cabinet de Georges-Paul Wagner, puis à son compte à partir de 1994)", periode: "1992 – 1997" }
+    - { poste: "Directrice du service juridique du Front national", employeur: "Front national", periode: "1998 – 2003" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "Pour que vive la France", annee: 2012, editeur: "Grancher" }

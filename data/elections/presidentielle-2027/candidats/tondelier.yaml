@@ -50,6 +50,16 @@ fonctions:
   - { intitule: "Conseillère régionale des Hauts-de-France", periode: "depuis juillet 2021" }
   - { intitule: "Conseillère municipale d'Hénin-Beaumont", periode: "2014 – 2026" }
   - { intitule: "Conseillère communautaire d'Hénin-Carvin", periode: "2014 – 2026" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Marine_Tondelier)
+cv:
+  etudes:
+    - { diplome: "Classe préparatoire littéraire" }
+    - { diplome: "Cycle préparatoire à l'ENA (voie carrières publiques)", etablissement: "Institut d'études politiques de Lille", annee: 2009 }
+    - { diplome: "Master en gestion des établissements de santé" }
+  experiences:
+    - { poste: "Collaboratrice parlementaire de la sénatrice Aline Archimbaud", employeur: "Sénat", periode: "2011 – 2015" }
+    - { poste: "Collaboratrice parlementaire de la députée Cécile Duflot", employeur: "Assemblée nationale", periode: "2015 – 2017" }
+    - { poste: "Déléguée générale", employeur: "Fédération Atmo France (surveillance de la qualité de l'air)", periode: "2017 – 2022" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "Demain, si tout va bien...", annee: 2025, editeur: "Éditions Albin Michel" }

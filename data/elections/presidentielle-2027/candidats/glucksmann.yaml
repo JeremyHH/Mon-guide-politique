@@ -53,6 +53,18 @@ fonctions:
   - { intitule: "Coprésident de Place publique", periode: "depuis décembre 2022" }
   - { intitule: "Député européen", periode: "depuis juillet 2019" }
   - { intitule: "Conseiller spécial du président de la Géorgie", periode: "2009 – 2012" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Raphaël_Glucksmann)
+cv:
+  etudes:
+    - { diplome: "Classe préparatoire littéraire (hypokhâgne-khâgne)", etablissement: "Lycée Henri-IV (Paris)" }
+    - { diplome: "Diplôme de l'Institut d'études politiques de Paris", etablissement: "Sciences Po Paris", annee: 2003 }
+  experiences:
+    - { poste: "Journaliste", employeur: "Le Soir d'Algérie" }
+    - { poste: "Réalisateur de documentaires (dont « Tuez-les tous ! »)", periode: "années 2000" }
+    - { poste: "Conseiller du président géorgien Mikheil Saakachvili", employeur: "Présidence de la Géorgie", periode: "2009 – 2012" }
+    - { poste: "Essayiste" }
+    - { poste: "Chroniqueur dans l'émission « Questions politiques »", employeur: "France Inter / France Info", periode: "2017 – 2018" }
+    - { poste: "Directeur de la rédaction", employeur: "Le Nouveau Magazine littéraire", periode: "2017 – 2018" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "Nous avons encore envie", annee: 2026, editeur: "Allary Éditions" }

@@ -30,6 +30,18 @@ fonctions:
   - { intitule: "Conseiller régional du Grand Est", periode: "2016 – 2021" }
   - { intitule: "Vice-président du Front national", periode: "2012 – 2017" }
   - { intitule: "Conseiller municipal de Forbach", periode: "2014 – 2016" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Florian_Philippot)
+cv:
+  etudes:
+    - { diplome: "Classe préparatoire économique et commerciale", etablissement: "Lycée Louis-le-Grand (Paris)" }
+    - { diplome: "Diplôme d'HEC Paris", annee: 2009 }
+    - { diplome: "Préparation au concours de l'ENA", etablissement: "Université Paris-Dauphine" }
+    - { diplome: "École nationale d'administration (promotion Willy-Brandt)", annee: 2009 }
+  experiences:
+    - { poste: "Poste dans l'institut de sondages TNS Sofres (après un stage)", employeur: "TNS Sofres" }
+    - { poste: "Missions pour des entreprises de la distribution (3 Suisses, groupe Louis Delhaize)" }
+    - { poste: "Inspecteur de l'administration", employeur: "Inspection générale de l'administration", periode: "2009 – 2011 (en disponibilité depuis 2011)" }
+    - { poste: "Directeur stratégique de la campagne présidentielle de Marine Le Pen", employeur: "Front national", periode: "2012" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "Fini la comédie ! : Pourquoi l'oligarchie perdra la guerre qu'elle nous a déclarée", annee: 2024, editeur: "autoédition" }

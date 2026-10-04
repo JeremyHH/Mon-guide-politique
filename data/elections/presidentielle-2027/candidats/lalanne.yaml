@@ -37,6 +37,17 @@ analyses: []
 naissance: { date: 1958-08-08, lieu: "Bayonne (Pyrénées-Atlantiques)" }
 biographie: "Connu depuis 1986 pour la chanson « On se retrouvera », il s'engage d'abord dans l'écologie politique (MEI, Alliance écologiste indépendante), puis rejoint les Gilets jaunes en 2018. Tête de liste France libre avec Dieudonné aux européennes de 2024, il est déclaré inéligible pour 18 mois en 2025 faute d'avoir déposé ses comptes de campagne ; sa liste aux municipales de 2026 à Lyon n'est pas enregistrée."
 fonctions: []
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Francis_Lalanne)
+cv:
+  etudes:
+    - { diplome: "Cours d'art dramatique", etablissement: "Conservatoire de Marseille" }
+    - { diplome: "Baccalauréat" }
+    - { diplome: "Études de lettres modernes", etablissement: "Sorbonne" }
+  experiences:
+    - { poste: "Auteur-compositeur-interprète", periode: "depuis 1979" }
+    - { poste: "Écrivain et poète (romans, recueils de poésie)", periode: "depuis 1986" }
+    - { poste: "Coproducteur de films réalisés par René Manzor", periode: "1986 – 1990" }
+    - { poste: "Acteur (théâtre et cinéma)" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "Le droit de résister", annee: 2024, editeur: "Auteurs Du Monde" }

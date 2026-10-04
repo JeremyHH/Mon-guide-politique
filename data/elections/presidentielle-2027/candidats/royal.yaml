@@ -31,6 +31,19 @@ fonctions:
   - { intitule: "Ministre déléguée à la Famille, puis à l'Enseignement scolaire", periode: "1997 – 2002" }
   - { intitule: "Ministre de l'Environnement", periode: "1992 – 1993" }
   - { intitule: "Députée des Deux-Sèvres", periode: "1988 – 2007, avec interruptions" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Ségolène_Royal)
+cv:
+  etudes:
+    - { diplome: "Baccalauréat B", etablissement: "Lycée Notre-Dame d'Épinal", annee: 1971 }
+    - { diplome: "Licence de sciences économiques", etablissement: "Université Nancy-II" }
+    - { diplome: "Diplôme de l'Institut d'études politiques de Paris (section Service public)", etablissement: "Sciences Po Paris", annee: 1975 }
+    - { diplome: "École nationale d'administration (promotion Voltaire)", etablissement: "ENA", annee: 1980 }
+  experiences:
+    - { poste: "Conseillère au tribunal administratif de Paris", employeur: "Tribunal administratif de Paris", periode: "1980" }
+    - { poste: "Chargée de mission au secrétariat général de la présidence de la République (jeunesse et sports, puis affaires sociales et environnement)", employeur: "Présidence de la République (François Mitterrand)", periode: "1982 – 1988" }
+    - { poste: "Avocate au barreau de Paris", employeur: "Cabinet Mignard, Teitgen, Grisoni & associés", periode: "1994" }
+    - { poste: "Ambassadrice chargée de la négociation internationale pour les pôles arctique et antarctique", periode: "2017 – 2020" }
+    - { poste: "Chroniqueuse (rubrique « Ségolène explique »)", employeur: "Touche pas à mon poste ! (C8)", periode: "2023 – 2024" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "Mais qui va garder les enfants ?", annee: 2025, editeur: "Fayard" }

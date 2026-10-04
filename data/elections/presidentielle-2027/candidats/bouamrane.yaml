@@ -43,6 +43,12 @@ fonctions:
   - { intitule: "Président du conseil de surveillance de la Société du Grand Paris (Société des grands projets)", periode: "à partir de novembre 2022" }
   - { intitule: "Porte-parole du Parti socialiste", periode: "2016" }
   - { intitule: "Conseiller municipal (PCF) de Saint-Ouen", periode: "1995 – 2014" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Karim_Bouamrane)
+cv:
+  etudes: []
+  experiences:
+    - { poste: "Directeur des ventes", employeur: "RSA, Coredo Networks Security, Aruba Networks", periode: "1999 – 2012" }
+    - { poste: "Postes de direction dans la sécurité informatique", employeur: "Xirrus, Guidance Software, Bitglass", periode: "à partir de 2012" }
 resultats:
   - { annee: 2026, scrutin: "Municipales, Saint-Ouen-sur-Seine", resultat: "Réélu au second tour avec 56,4 % (46,63 % au premier tour)" }
   - { annee: 2020, scrutin: "Municipales, Saint-Ouen-sur-Seine", resultat: "Élu au second tour (triangulaire) avec 38,1 %" }

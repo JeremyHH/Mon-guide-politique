@@ -42,6 +42,19 @@ biographie: "Diplômé de Sciences Po Paris, il est journaliste politique, notam
 fonctions:
   - { intitule: "Président de Reconquête", periode: "depuis décembre 2021" }
   - { intitule: "N'a jamais exercé de mandat électif", periode: "" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/%C3%89ric_Zemmour)
+cv:
+  etudes:
+    - { diplome: "Diplôme de l'Institut d'études politiques de Paris (section Service public)", annee: 1979 }
+  experiences:
+    - { poste: "Journaliste au service politique", employeur: "Le Quotidien de Paris", periode: "1986 – 1994" }
+    - { poste: "Éditorialiste", employeur: "InfoMatin", periode: "1994 – 1995" }
+    - { poste: "Journaliste politique puis chroniqueur", employeur: "Le Figaro, Le Figaro Magazine", periode: "1996 – 2021" }
+    - { poste: "Débatteur dans l'émission « Ça se dispute »", employeur: "I-Télé", periode: "2003 – 2014" }
+    - { poste: "Chroniqueur dans l'émission « On n'est pas couché »", employeur: "France 2", periode: "2006 – 2011" }
+    - { poste: "Chroniqueur", employeur: "RTL", periode: "2010 – 2016" }
+    - { poste: "Coanimateur de l'émission « Zemmour et Naulleau »", employeur: "Paris Première", periode: "2011 – 2022" }
+    - { poste: "Éditorialiste dans l'émission « Face à l'info »", employeur: "CNews", periode: "2019 – 2021" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "La messe n'est pas dite : Pour un sursaut judéo-chrétien", annee: 2025, editeur: "Fayard" }

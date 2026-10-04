@@ -26,6 +26,22 @@ naissance: { date: 1989-08-26, lieu: "Estepona (Andalousie, Espagne)" }
 biographie: "Diplômé de l'École normale supérieure (2013) et docteur en droit (2014), il conseille WikiLeaks et Julian Assange avant de devenir avocat en 2017 ; il défend notamment des figures du mouvement des Gilets jaunes. Candidat de La France insoumise aux législatives de 2017 en Seine-Saint-Denis, il publie en 2019 « Crépuscule », critique de l'accession au pouvoir d'Emmanuel Macron. Le barreau de Paris l'a suspendu neuf mois pour avoir publié des éléments couverts par le secret de l'instruction d'une enquête le visant (sanction disciplinaire confirmée en appel en octobre 2025)."
 fonctions:
   - { intitule: "Avocat au barreau de Paris", periode: "depuis avril 2017" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Juan_Branco)
+cv:
+  etudes:
+    - { diplome: "Maîtrise de littérature moderne", etablissement: "Université Paris-IV", annee: 2011 }
+    - { diplome: "Masters de philosophie politique et de géopolitique", etablissement: "Université Paris 1", annee: 2012 }
+    - { diplome: "Master d'affaires publiques", etablissement: "Sciences Po", annee: 2012 }
+    - { diplome: "Diplôme de l'École normale supérieure (département littérature et langages)", etablissement: "École normale supérieure", annee: 2013 }
+    - { diplome: "Doctorat en droit", etablissement: "École normale supérieure", annee: 2014 }
+  experiences:
+    - { poste: "Réalisateur (courts métrages, puis long métrage en 2025)", periode: "depuis 2007" }
+    - { poste: "Membre du pôle culture de la campagne présidentielle de François Hollande", employeur: "Parti socialiste", periode: "2012" }
+    - { poste: "Collaborateur extérieur du ministre", employeur: "Ministère des Affaires étrangères", periode: "2012 – 2013" }
+    - { poste: "Chercheur en droit", employeur: "Université Yale, puis Institut Max-Planck (Luxembourg) et université de Rome « La Sapienza »", periode: "2013 – 2016" }
+    - { poste: "Conseiller juridique de WikiLeaks et de Julian Assange" }
+    - { poste: "Avocat", employeur: "Barreau de Paris", periode: "depuis 2017" }
+    - { poste: "Expert indépendant auprès de la Cour pénale spéciale centrafricaine", employeur: "ONU", periode: "2018" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "Comment fabriquer une guillotine", annee: 2024, editeur: "Au diable vauvert" }

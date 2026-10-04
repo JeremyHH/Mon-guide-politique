@@ -42,6 +42,17 @@ fonctions:
   - { intitule: "Député de Seine-et-Marne (11e circonscription)", periode: "depuis juin 2012" }
   - { intitule: "Président du groupe socialiste à l'Assemblée nationale", periode: "2016 – 2018" }
   - { intitule: "Porte-parole du Parti socialiste", periode: "2014 – 2016" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Olivier_Faure)
+cv:
+  etudes:
+    - { diplome: "DEA de droit économique", etablissement: "Université d'Orléans" }
+    - { diplome: "DEA de science politique", etablissement: "Université Paris-I-Panthéon-Sorbonne" }
+  experiences:
+    - { poste: "Collaborateur du président de la commission des lois de l'Assemblée nationale (Gérard Gouzes)", employeur: "Assemblée nationale", periode: "1991 – 1993" }
+    - { poste: "Cadre dirigeant d'une PME de 150 salariés", periode: "1993 – 1997" }
+    - { poste: "Conseiller de Martine Aubry", employeur: "Ministère de l'Emploi", periode: "1997 – 2000" }
+    - { poste: "Directeur adjoint du cabinet du premier secrétaire du PS (François Hollande)", employeur: "Parti socialiste", periode: "2000 – 2007" }
+    - { poste: "Secrétaire général du groupe socialiste à l'Assemblée nationale", employeur: "Groupe socialiste de l'Assemblée nationale", periode: "2007" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "La loi du plus juste", annee: 2026, editeur: "Éditions Robert Laffont" }

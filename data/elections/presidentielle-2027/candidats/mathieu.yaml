@@ -17,6 +17,12 @@ analyses: []
 # Profil : pas d'article Wikipédia ; sources = presse régionale
 biographie: "Sans expérience politique antérieure, il dit avoir décidé de se lancer après la réélection d'Emmanuel Macron en 2022. Il prévoit un tour de France à vélo d'environ 10 000 km en un an pour rencontrer en priorité des maires sans étiquette. Il défend une démocratie plus directe : référendum d'initiative citoyenne, conventions citoyennes tirées au sort et assemblée citoyenne chargée de réécrire la Constitution."
 fonctions: []
+# Formation et parcours professionnel hors mandats (source : https://www.lejsl.com/elections/2026/04/01/benoit-mathieu-candidat-a-la-presidentielle-a-velo-il-part-en-quete-des-500-parrainages)
+cv:
+  etudes:
+    - { diplome: "Diplôme d'ingénieur en agronomie" }
+  experiences:
+    - { poste: "Professeur de mathématiques contractuel" }
 resultats: []
 condamnations: []
 procedures: []

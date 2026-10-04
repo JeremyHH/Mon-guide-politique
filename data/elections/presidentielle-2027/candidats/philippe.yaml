@@ -62,6 +62,21 @@ fonctions:
   - { intitule: "Député de la Seine-Maritime (7e circonscription)", periode: "2012 – 2017" }
   - { intitule: "Conseiller général de la Seine-Maritime", periode: "2008 – 2012" }
   - { intitule: "Conseiller régional de Haute-Normandie", periode: "2004 – 2008" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/%C3%89douard_Philippe)
+cv:
+  etudes:
+    - { diplome: "Baccalauréat", etablissement: "Lycée français de Bonn", annee: 1988 }
+    - { diplome: "Hypokhâgne B/L", etablissement: "Lycée Janson-de-Sailly, Paris" }
+    - { diplome: "Diplôme de l'Institut d'études politiques de Paris (section Service public)", annee: 1992 }
+    - { diplome: "École nationale d'administration (ENA), promotion Marc-Bloch (1995-1997)", annee: 1997 }
+  experiences:
+    - { poste: "Membre du Conseil d'État (spécialisé en droit des marchés publics)", employeur: "Conseil d'État", periode: "1997 – 2004" }
+    - { poste: "Directeur général des services de l'UMP", employeur: "UMP", periode: "2002 – 2004" }
+    - { poste: "Avocat", employeur: "Cabinet Debevoise & Plimpton", periode: "2004 – 2007" }
+    - { poste: "Membre du cabinet du ministre de l'Écologie Alain Juppé", employeur: "Ministère de l'Écologie, du Développement et de l'Aménagement durables", periode: "2007" }
+    - { poste: "Directeur des affaires publiques", employeur: "Areva", periode: "2007 – 2010" }
+    - { poste: "Avocat", periode: "2011 – 2012" }
+    - { poste: "Membre du conseil d'administration", employeur: "Atos", periode: "à partir d'octobre 2020" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "Le prix de nos mensonges", annee: 2025, editeur: "Jean-Claude Lattès" }

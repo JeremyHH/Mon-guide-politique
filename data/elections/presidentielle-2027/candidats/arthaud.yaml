@@ -55,6 +55,15 @@ biographie: "Agrégée d'économie et gestion, enseignante en lycée dans la ré
 fonctions:
   - { intitule: "Porte-parole de Lutte ouvrière", periode: "depuis décembre 2008" }
   - { intitule: "Conseillère municipale de Vaulx-en-Velin", periode: "2008 – 2014" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Nathalie_Arthaud)
+cv:
+  etudes:
+    - { diplome: "Classes préparatoires", etablissement: "Lycée du Parc (Lyon)" }
+    - { diplome: "CAPET (certificat d'aptitude au professorat de l'enseignement technique)" }
+    - { diplome: "Agrégation d'économie et de gestion" }
+  experiences:
+    - { poste: "Enseignante en économie-gestion", employeur: "Lycée Albert-Camus, Rillieux-la-Pape", periode: "jusqu'en 2011" }
+    - { poste: "Enseignante en économie-gestion", employeur: "Lycée Le Corbusier, Aubervilliers", periode: "depuis 2011" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "Communiste, révolutionnaire, internationaliste !", annee: 2022, editeur: "Les Bons Caractères" }

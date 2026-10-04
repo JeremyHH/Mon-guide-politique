@@ -23,6 +23,15 @@ fonctions:
   - { intitule: "Députée des Deux-Sèvres", periode: "2007 – 2012, depuis 2013" }
   - { intitule: "Ministre de l'Écologie, du Développement durable et de l'Énergie", periode: "juin 2012 – juillet 2013" }
   - { intitule: "Ministre déléguée auprès de la garde des Sceaux", periode: "mai – juin 2012" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Delphine_Batho)
+cv:
+  etudes:
+    - { diplome: "Baccalauréat", etablissement: "Lycée Henri-IV (Paris)", annee: 1992 }
+    - { diplome: "Études d'histoire, abandonnées (sans diplôme)", etablissement: "Université Paris 7" }
+    - { diplome: "Auditrice de la session nationale", etablissement: "Institut national des hautes études de la sécurité et de la justice (INHESJ)", annee: 2006 }
+  experiences:
+    - { poste: "Collaboratrice de Julien Dray, chargée des questions de sécurité", employeur: "Conseil régional d'Île-de-France", periode: "2003" }
+    - { poste: "Cadre territoriale" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "Écologie intégrale le manifeste", annee: 2019, editeur: "Éditions du Rocher" }

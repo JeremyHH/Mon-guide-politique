@@ -17,6 +17,11 @@ analyses: []
 # Profil : pas d'article Wikipédia ; source = site du parti (page non datée)
 biographie: "Âgée d'une trentaine d'années, conductrice de bus et militante syndicale. Elle n'a jamais exercé de mandat électif. Le NPA-Révolutionnaires la présente comme « une candidate ouvrière et révolutionnaire »."
 fonctions: []
+# Formation et parcours professionnel hors mandats (source : https://npa-revolutionnaires.org/articles/presidentielle-selma-labib-une-candidate-ouvriere-et-revolutionnaire)
+cv:
+  etudes: []
+  experiences:
+    - { poste: "Conductrice de bus" }
 resultats: []
 condamnations: []
 procedures: []

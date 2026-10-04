@@ -30,6 +30,15 @@ fonctions:
   - { intitule: "Animateur national de la Gauche républicaine et socialiste", periode: "depuis février 2019" }
   - { intitule: "Député européen", periode: "2014 – 2024" }
   - { intitule: "Conseiller régional d'Île-de-France", periode: "2004 – 2015" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Emmanuel_Maurel)
+cv:
+  etudes:
+    - { diplome: "Diplômé en lettres modernes et en histoire", etablissement: "Université Paris-Sorbonne" }
+    - { diplome: "Diplôme de l'Institut d'études politiques de Paris (section Service public)", etablissement: "Sciences Po Paris", annee: 1996 }
+  experiences:
+    - { poste: "Chargé d'enseignement vacataire", employeur: "Sciences Po Paris" }
+    - { poste: "Éditorialiste", employeur: "La Corrèze républicaine et socialiste" }
+    - { poste: "Directeur de publication du mensuel politique et culturel Parti pris", employeur: "Parti pris" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "Leçons de droit constitutionnel et d'institutions politiques", annee: 2010, editeur: "Ellipses", coauteurs: "avec Manuel Delamarre" }

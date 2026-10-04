@@ -63,6 +63,15 @@ fonctions:
   - { intitule: "Président du conseil régional des Pays de la Loire", periode: "2016 – 2017" }
   - { intitule: "Président du conseil général de la Vendée", periode: "2010 – 2015" }
   - { intitule: "Député de la Vendée", periode: "1994 – 1997" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Bruno_Retailleau)
+cv:
+  etudes:
+    - { diplome: "Maîtrise de sciences économiques", etablissement: "Université de Nantes" }
+    - { diplome: "Diplôme de l'Institut d'études politiques de Paris (section Service public)", annee: 1985 }
+  experiences:
+    - { poste: "Directeur général adjoint", employeur: "Radio Alouette (Les Herbiers)", periode: "à partir de 1985" }
+    - { poste: "Metteur en scène de La Cinéscénie", employeur: "Puy du Fou", periode: "1987 – 2009" }
+    - { poste: "Directeur général de l'école de communication Sciencescom (Nantes)", employeur: "Sciencescom", periode: "1987 – 1994" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "Aurons-nous encore de la lumière en hiver ? - Pour une écologie du réel", annee: 2021, editeur: "Éditions de l'Observatoire" }

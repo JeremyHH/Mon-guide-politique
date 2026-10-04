@@ -65,6 +65,15 @@ fonctions:
   - { intitule: "Secrétaire d'État auprès du ministre de l'Éducation nationale", periode: "octobre 2018 – juillet 2020" }
   - { intitule: "Député des Hauts-de-Seine (10e circonscription)", periode: "2017-2018, 2022, depuis 2024" }
   - { intitule: "Conseiller municipal de Vanves", periode: "depuis 2014" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Gabriel_Attal)
+cv:
+  etudes:
+    - { diplome: "Scolarité à l'École alsacienne (Paris)" }
+    - { diplome: "Études de droit (trois ans), sans obtenir la licence", etablissement: "Université Panthéon-Assas" }
+    - { diplome: "Master 2 en affaires publiques", etablissement: "Institut d'études politiques de Paris (Sciences Po)", annee: 2013 }
+  experiences:
+    - { poste: "Chargé de mission auprès du directeur de la villa Médicis (Éric de Chassey)", employeur: "Villa Médicis, Rome", periode: "2009 – 2010" }
+    - { poste: "Conseiller au cabinet de la ministre des Affaires sociales et de la Santé Marisol Touraine (discours, puis conseiller politique et suivi du Parlement)", employeur: "Ministère des Affaires sociales et de la Santé", periode: "2012 – 2017" }
 # Bibliographie : ouvrages écrits par le candidat (source : Wikipédia, voir sourcesProfil)
 bibliographie:
   - { titre: "En homme libre", annee: 2026, editeur: "Éditions de l'Observatoire" }
