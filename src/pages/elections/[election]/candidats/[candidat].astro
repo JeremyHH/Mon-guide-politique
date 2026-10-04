@@ -4,6 +4,7 @@ import Position from "../../../../components/Position.astro";
 import FriseCandidat from "../../../../components/FriseCandidat.astro";
 import Tournee from "../../../../components/Tournee.astro";
 import BandeauVerif from "../../../../components/BandeauVerif.astro";
+import { logoParti } from "../../../../lib/partis";
 import { presidentiellesPassees, elections, candidatsDe, nomComplet, slugCandidat, STATUTS, dateFr, lien, type Candidat, type Election } from "../../../../lib/data";
 
 export async function getStaticPaths() {
@@ -39,12 +40,16 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
             Photo ({c.data.photo.annee}) : {c.data.photo.auteur},{" "}
             <a href={c.data.photo.licenceUrl} rel="noopener license">{c.data.photo.licence}</a>,{" "}
             <a href={c.data.photo.source} rel="noopener">Wikimedia Commons</a>, recadrée
+            {logoParti(c.data.parti) && <><br />Logo : <a href={logoParti(c.data.parti)!.source} rel="noopener">Wikimedia Commons</a> ({logoParti(c.data.parti)!.licence})</>}
           </figcaption>
         </figure>
       )}
       <div class="sheet-ident">
         <h2>{nomComplet(c)}</h2>
-        <span style="color:var(--muted)">{c.data.parti}</span>
+        <span class="parti-ligne">
+          {logoParti(c.data.parti) && <img class="parti-logo" src={lien(logoParti(c.data.parti)!.fichier)} alt={`Logo : ${c.data.parti}`} height="32" />}
+          <span style="color:var(--muted)">{c.data.parti}</span>
+        </span>
         <span class="pill ok" style="justify-self:start">{STATUTS[c.data.statut]}{c.data.declaration && ` · ${dateFr(c.data.declaration)}`}</span>
         {c.data.site && (
           <a class="site-officiel" href={c.data.site.url} rel="noopener">
