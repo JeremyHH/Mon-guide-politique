@@ -11,7 +11,7 @@ const liste = await fiches("institutions");
   </div>
   <div class="cards">
     {liste.map((f) => (
-      <a class="card" href={lien(`/institutions/${f.id.split("/")[1]}`)}>
+      <a class="card bleu" href={lien(`/institutions/${f.id.split("/")[1]}`)}>
         <h3>{f.data.titre}</h3>
         <p>{f.data.resume}</p>
       </a>

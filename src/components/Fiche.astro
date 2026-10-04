@@ -12,7 +12,7 @@ const i = soeurs.findIndex((f) => f.id === fiche.id);
 const suivante = soeurs[i + 1];
 const href = (f: CollectionEntry<"fiches">) => lien(`/${rubrique}/${f.id.split("/")[1]}`);
 ---
-<article class="prose">
+<article class={rubrique === "voter" ? "prose rouge" : "prose"}>
   <a class="back" href={lien(`/${rubrique}`)}>← {rubrique === "institutions" ? "Les institutions" : "Voter"}</a>
   <h1>{fiche.data.titre}</h1>
   <p class="lede" style="margin-top:0">{fiche.data.resume}</p>

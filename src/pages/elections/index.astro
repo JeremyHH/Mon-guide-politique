@@ -13,7 +13,7 @@ const scrutins = await getCollection("scrutins");
   </div>
   <div class="cards">
     {suivies.map((e) => (
-      <a class="card" href={lien(`/elections/${e.id}`)}>
+      <a class="card tricolore" href={lien(`/elections/${e.id}`)}>
         <span class="label">{e.data.libelleDate}</span>
         <h3>{e.data.nom}</h3>
         <p>{e.data.resume}</p>

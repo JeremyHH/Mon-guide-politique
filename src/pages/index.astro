@@ -9,14 +9,14 @@ const voter = await fiches("voter");
 const slug = (id: string) => id.split("/")[1];
 ---
 <Base titre="Accueil" page="accueil">
-  <div class="hero">
+  <div class="hero bandeau">
     <div>
       <span class="label">Vie démocratique · France</span>
-      <h1>Comprendre, voter, choisir.</h1>
+      <h1>Comprendre, voter, <em>choisir</em>.</h1>
       <p class="lede">Comment fonctionnent les institutions, comment s'inscrire et voter, et ce que proposent les candidats à chaque élection. Neutre, sourcé, sans publicité ni collecte de données.</p>
     </div>
     {prochaine && (
-      <a class="countdown" href={lien(`/elections/${prochaine.id}`)} style="text-decoration:none;color:inherit">
+      <a class="countdown" href={lien(`/elections/${prochaine.id}`)}>
         <span class="label">Prochaine élection · {prochaine.data.nom}</span>
         <span class="n" id="jours" data-cible={prochaine.data.date.toISOString()}>—</span>
         <span class="mono">jours avant le premier tour ({prochaine.data.libelleDate})</span>
@@ -25,16 +25,16 @@ const slug = (id: string) => id.split("/")[1];
   </div>
 
   <div class="entries">
-    <a class="entry" href={lien("/institutions")}><span class="label">Comprendre</span><h3>Les institutions</h3><p>Président, gouvernement, Parlement, Conseil constitutionnel, collectivités, Union européenne.</p></a>
-    <a class="entry" href={lien("/voter")}><span class="label">Agir</span><h3>Voter</h3><p>Inscription sur les listes, procuration, modes de scrutin, référendum.</p></a>
-    <a class="entry" href={lien("/elections")}><span class="label">Choisir</span><h3>Les élections</h3><p>Candidats, positions comparées thème par thème et quiz de proximité.</p></a>
+    <a class="entry bleu" href={lien("/institutions")}><span class="label">Comprendre</span><h3>Les institutions</h3><p>Président, gouvernement, Parlement, Conseil constitutionnel, collectivités, Union européenne.</p></a>
+    <a class="entry rouge" href={lien("/voter")}><span class="label">Agir</span><h3>Voter</h3><p>Inscription sur les listes, procuration, modes de scrutin, référendum.</p></a>
+    <a class="entry tricolore" href={lien("/elections")}><span class="label">Choisir</span><h3>Les élections</h3><p>Candidats, positions comparées thème par thème et quiz de proximité.</p></a>
   </div>
 
   <div style="display:grid;gap:14px">
     <div class="section-head"><h2>Les institutions en bref</h2><a href={lien("/institutions")}>Toutes les fiches →</a></div>
     <div class="cards">
       {institutions.map((f) => (
-        <a class="card" href={lien(`/institutions/${slug(f.id)}`)}><h3>{f.data.titre}</h3><p>{f.data.resume}</p></a>
+        <a class="card bleu" href={lien(`/institutions/${slug(f.id)}`)}><h3>{f.data.titre}</h3><p>{f.data.resume}</p></a>
       ))}
     </div>
   </div>
@@ -43,7 +43,7 @@ const slug = (id: string) => id.split("/")[1];
     <div class="section-head"><h2>Avant d'aller voter</h2><a href={lien("/voter")}>Guide complet →</a></div>
     <div class="cards">
       {voter.map((f) => (
-        <a class="card" href={lien(`/voter/${slug(f.id)}`)}><h3>{f.data.titre}</h3><p>{f.data.resume}</p></a>
+        <a class="card rouge" href={lien(`/voter/${slug(f.id)}`)}><h3>{f.data.titre}</h3><p>{f.data.resume}</p></a>
       ))}
     </div>
   </div>
