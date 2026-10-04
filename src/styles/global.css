@@ -309,3 +309,37 @@ footer.foot a{color:var(--sur-bleu)}
 .frise-fleche{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--paper);color:var(--bleu);cursor:pointer;font-family:var(--f-display);font-size:1rem;line-height:1}
 .frise-fleche:hover{background:var(--bleu-soft)}
 @media (max-width:700px){.frise-fleche{display:none}}
+
+/* ---------- Fiche candidat : sections ---------- */
+.sommaire{display:flex;flex-wrap:wrap;gap:8px;padding:10px 0;border-block:1px solid var(--line)}
+.sommaire a{font-family:var(--f-display);font-size:.88rem;text-decoration:none;color:var(--bleu);padding:4px 10px;border-radius:999px;background:var(--bleu-soft)}
+.sommaire a:hover{background:var(--bleu);color:var(--sur-accent)}
+.fiche-section{display:grid;gap:12px;scroll-margin-top:140px}
+.fiche-titre{font-size:1.25rem;color:var(--titre);padding-left:12px;border-left:5px solid var(--rouge)}
+.fiche-texte{margin:0;max-width:65ch}
+.faits{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:0}
+.faits div{background:var(--ground);border-radius:8px;padding:10px 12px}
+.faits dt{font-family:var(--f-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.faits dd{margin:2px 0 0;font-family:var(--f-display);font-weight:600}
+.parcours{list-style:none;margin:0;padding:0 0 0 18px;border-left:3px solid var(--bleu-soft);display:grid;gap:10px}
+.parcours li{position:relative;display:grid;gap:1px}
+.parcours li::before{content:"";position:absolute;left:-26px;top:.45em;width:11px;height:11px;border-radius:50%;background:var(--paper);border:3px solid var(--bleu)}
+.parcours li:first-child::before{background:var(--bleu)}
+.parcours-intitule{font-family:var(--f-display);font-weight:600}
+.parcours-periode{font-family:var(--f-mono);font-size:.78rem;color:var(--muted)}
+table.resultats{min-width:520px}
+.note-justice{margin:0;color:var(--muted);max-width:75ch}
+.condamnations{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.condamnation{border:1px solid var(--line);border-left:5px solid var(--muted);border-radius:8px;padding:12px 14px;display:grid;gap:4px}
+.condamnation.definitive{border-left-color:var(--rouge)}
+.condamnation.non_definitive{border-left-color:var(--warn)}
+.condamnation-tete{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
+.condamnation-date{font-family:var(--f-display);font-weight:700}
+.condamnation p{margin:0}
+.condamnation-motif{font-weight:600}
+.condamnation-peine,.condamnation-detail{font-size:.92rem;color:var(--muted)}
+.pill.statut-definitive{border-color:var(--rouge);color:var(--rouge)}
+.pill.statut-non_definitive{border-color:var(--warn);color:var(--warn)}
+.aucune{margin:0;padding:10px 14px;border-radius:8px;background:var(--ground);font-family:var(--f-display)}
+.procedures{background:var(--warn-soft);border-radius:8px;padding:12px 14px;display:grid;gap:6px}
+.procedures p{margin:0;font-size:.95rem}

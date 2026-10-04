@@ -33,3 +33,64 @@ positions:
     texte: "Peines planchers, majorité pénale à 16 ans, expulsion des délinquants étrangers."
     statut: a_verifier
 analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1958-08-31, lieu: "Montreuil (Seine-Saint-Denis)" }
+biographie: "Diplômé de Sciences Po Paris, il est journaliste politique, notamment au Figaro, puis éditorialiste et essayiste. Il entre en politique en 2021 et fonde Reconquête."
+fonctions:
+  - { intitule: "Président de Reconquête", periode: "depuis décembre 2021" }
+  - { intitule: "N'a jamais exercé de mandat électif", periode: "" }
+resultats:
+  - { annee: 2022, scrutin: "Présidentielle", resultat: "7,07 % au premier tour (4e)" }
+  - { annee: 2022, scrutin: "Législatives, Var (4e)", resultat: "23,19 % au premier tour, éliminé" }
+condamnations:
+  - date: "22 février 2024"
+    juridiction: "Cour d'appel de Paris"
+    motif: "Injures publiques en raison de l'origine (discours de septembre 2019 sur l'immigration)"
+    peine: "15 000 € d'amende"
+    statut: definitive
+    detail: "Pourvoi rejeté par la Cour de cassation en septembre 2025."
+  - date: "7 février 2024"
+    juridiction: "Tribunal correctionnel de Paris"
+    motif: "Complicité de diffamation publique envers la députée Danièle Obono"
+    peine: "1 000 € d'amende avec sursis"
+    statut: definitive
+    detail: "Confirmée en appel (janvier 2025) et en cassation (juin 2026)."
+  - date: "17 janvier 2022"
+    juridiction: "Tribunal judiciaire de Paris"
+    motif: "Complicité d'injure raciale et de provocation à la haine (propos sur les mineurs étrangers isolés)"
+    peine: "10 000 € d'amende"
+    statut: definitive
+    detail: "Confirmée en appel et en cassation."
+  - date: "3 mai 2018"
+    juridiction: "Cour d'appel de Paris"
+    motif: "Provocation à la haine religieuse envers les musulmans"
+    peine: "5 000 € d'amende"
+    statut: definitive
+    detail: "Pourvoi rejeté par la Cour de cassation le 17 septembre 2019."
+  - date: "18 février 2011"
+    juridiction: "Tribunal judiciaire de Paris"
+    motif: "Provocation à la discrimination raciale"
+    peine: "1 000 € d'amende avec sursis"
+    statut: definitive
+    detail: "Pas d'appel."
+  - date: "2 avril 2025"
+    juridiction: "Cour d'appel de Paris"
+    motif: "Contestation de crime contre l'humanité (propos sur le régime de Vichy)"
+    peine: "10 000 € d'amende"
+    statut: non_precise
+    detail: "Relaxé en première instance (2021) et en appel (2022) ; décision annulée en cassation puis condamnation par la cour d'appel de renvoi."
+  - date: "26 mars 2025"
+    juridiction: "Tribunal correctionnel de Paris"
+    motif: "Injure raciale (propos sur l'affaire de Crépol)"
+    peine: "9 000 € d'amende"
+    statut: non_precise
+    detail: "Jugement de première instance."
+  - date: "12 janvier 2023"
+    juridiction: "Tribunal de Paris"
+    motif: "Injure envers la chroniqueuse Hapsatou Sy"
+    peine: "4 000 € d'amende"
+    statut: non_precise
+    detail: "Confirmée en appel le 28 mars 2024."
+procedures: []
+sourcesProfil:
+  - { titre: "Wikipédia, article « Éric Zemmour » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Éric_Zemmour" }

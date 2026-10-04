@@ -49,3 +49,24 @@ positions:
       url: "https://www.franceinfo.fr/elections/presidentielle/quotas-limitatifs-pour-l-immigration-presence-dans-les-medias-de-la-sphere-bollore-gabriel-attal-profite-t-il-de-l-ete-pour-ancrer-sa-campagne-presidentielle-a-droite_8137157.html"
       date: 2026-08-07
 analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1989-03-16, lieu: "Clamart (Hauts-de-Seine)" }
+biographie: "Diplômé de Sciences Po Paris. Militant au Parti socialiste de 2006 à 2016, il rejoint En marche en 2016. En janvier 2024, il devient à 34 ans le plus jeune Premier ministre de la Ve République."
+fonctions:
+  - { intitule: "Secrétaire général de Renaissance", periode: "depuis décembre 2024" }
+  - { intitule: "Président du groupe Ensemble pour la République à l'Assemblée nationale", periode: "depuis juillet 2024" }
+  - { intitule: "Premier ministre", periode: "janvier – septembre 2024" }
+  - { intitule: "Ministre de l'Éducation nationale et de la Jeunesse", periode: "juillet 2023 – janvier 2024" }
+  - { intitule: "Ministre délégué chargé des Comptes publics", periode: "mai 2022 – juillet 2023" }
+  - { intitule: "Porte-parole du gouvernement", periode: "juillet 2020 – mai 2022" }
+  - { intitule: "Secrétaire d'État auprès du ministre de l'Éducation nationale", periode: "octobre 2018 – juillet 2020" }
+  - { intitule: "Député des Hauts-de-Seine (10e circonscription)", periode: "2017-2018, 2022, depuis 2024" }
+  - { intitule: "Conseiller municipal de Vanves", periode: "depuis 2014" }
+resultats:
+  - { annee: 2024, scrutin: "Législatives, Hauts-de-Seine (10e)", resultat: "Élu" }
+  - { annee: 2022, scrutin: "Législatives, Hauts-de-Seine (10e)", resultat: "Élu au second tour avec 59,85 %" }
+  - { annee: 2017, scrutin: "Législatives, Hauts-de-Seine (10e)", resultat: "Élu au second tour avec 60,94 %" }
+condamnations: []
+procedures: []
+sourcesProfil:
+  - { titre: "Wikipédia, article « Gabriel Attal » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Gabriel_Attal" }

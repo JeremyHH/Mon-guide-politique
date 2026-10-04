@@ -62,3 +62,11 @@ Chaque affirmation de `data/elections/<id>/quiz.yaml` doit donner une valeur de 
 1. Créer `data/elections/<election>/candidats/<id>.yaml` (copier une fiche existante). Les clés de `positions` doivent être des thèmes de l'élection.
 2. Ajouter `<id>: <valeur>` à chaque question du `quiz.yaml` de l'élection.
 3. Le retirer de la liste `autres` de `election.yaml` s'il y figurait.
+
+## Profil d'un candidat
+
+Mêmes rubriques pour tous : `naissance`, `biographie` (formation, métier, parcours partisan ; pas de vie privée), `fonctions`, `resultats` (élections publiques uniquement, pas les votes internes aux partis), `condamnations`, `procedures`, `sourcesProfil`.
+
+- `condamnations` : condamnations **pénales** uniquement (ni relaxes, ni litiges civils), avec la juridiction, la peine et le statut : `definitive` (plus de recours possible), `non_definitive` (appel ou cassation en cours) ou `non_precise`.
+- `procedures` : enquêtes ou instructions publiques visant nommément le candidat, rédigées en rappelant la présomption d'innocence.
+- Sans condamnation, laisser `condamnations: []` : la fiche affiche « Aucune condamnation pénale connue ».

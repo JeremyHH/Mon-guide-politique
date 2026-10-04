@@ -37,3 +37,33 @@ positions:
     texte: "Peines planchers, présomption de légitime défense pour les policiers."
     statut: a_verifier
 analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1968-08-05, lieu: "Neuilly-sur-Seine (Hauts-de-Seine)" }
+biographie: "Diplômée en droit de l'université Panthéon-Assas, avocate avant de se consacrer à la politique. Fille de Jean-Marie Le Pen, fondateur du Front national, elle adhère au parti en 1986 et le préside de 2011 à 2021 ; il prend le nom de Rassemblement national en 2018."
+fonctions:
+  - { intitule: "Présidente du groupe Rassemblement national à l'Assemblée nationale", periode: "depuis juin 2022" }
+  - { intitule: "Députée du Pas-de-Calais (11e circonscription)", periode: "depuis juin 2017" }
+  - { intitule: "Présidente du Front national puis du Rassemblement national", periode: "janvier 2011 – septembre 2021" }
+  - { intitule: "Députée européenne", periode: "2004 – 2017" }
+  - { intitule: "Conseillère régionale (Île-de-France, puis Nord-Pas-de-Calais / Hauts-de-France)", periode: "1998 – 2021, avec interruptions" }
+  - { intitule: "Conseillère départementale du Pas-de-Calais", periode: "2021 – 2025" }
+resultats:
+  - { annee: 2024, scrutin: "Législatives, Pas-de-Calais (11e)", resultat: "Réélue dès le premier tour" }
+  - { annee: 2022, scrutin: "Présidentielle", resultat: "23,15 % au premier tour (2e) ; 41,45 % au second tour" }
+  - { annee: 2017, scrutin: "Présidentielle", resultat: "21,30 % au premier tour (2e) ; 33,90 % au second tour" }
+  - { annee: 2012, scrutin: "Présidentielle", resultat: "17,90 % au premier tour (3e)" }
+condamnations:
+  - date: "7 juillet 2026"
+    juridiction: "Cour d'appel de Paris"
+    motif: "Détournement de fonds publics (affaire des assistants parlementaires européens du FN)"
+    peine: "3 ans d'emprisonnement dont 2 avec sursis et 1 an sous bracelet électronique, 100 000 € d'amende, 45 mois d'inéligibilité dont 15 ferme (déjà purgés)"
+    statut: non_definitive
+    detail: "Pourvoi en cassation formé ; il suspend l'exécution des peines prononcées en appel. Première instance : 31 mars 2025."
+  - date: "Octobre 2023"
+    juridiction: "Tribunal correctionnel"
+    motif: "Diffamation envers l'association la Cimade"
+    peine: "500 € d'amende avec sursis"
+    statut: non_precise
+procedures: []
+sourcesProfil:
+  - { titre: "Wikipédia, article « Marine Le Pen » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Marine_Le_Pen" }

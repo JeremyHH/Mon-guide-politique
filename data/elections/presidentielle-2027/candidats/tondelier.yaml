@@ -39,3 +39,20 @@ positions:
       date: 2026-09-16
   securite: null
 analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1986-08-23, lieu: "Bois-Bernard (Pas-de-Calais)" }
+biographie: "Diplômée de Sciences Po Lille. Membre des Verts puis d'EELV, devenu Les Écologistes, depuis 2009, elle siège dans l'opposition municipale à Hénin-Beaumont de 2014 à 2026."
+fonctions:
+  - { intitule: "Secrétaire nationale des Écologistes", periode: "depuis décembre 2022" }
+  - { intitule: "Conseillère régionale des Hauts-de-France", periode: "depuis juillet 2021" }
+  - { intitule: "Conseillère municipale d'Hénin-Beaumont", periode: "2014 – 2026" }
+  - { intitule: "Conseillère communautaire d'Hénin-Carvin", periode: "2014 – 2026" }
+resultats:
+  - { annee: 2021, scrutin: "Régionales, Hauts-de-France", resultat: "Élue conseillère régionale" }
+  - { annee: 2020, scrutin: "Municipales, Hénin-Beaumont", resultat: "18,22 % (liste battue)" }
+  - { annee: 2017, scrutin: "Législatives, Pas-de-Calais (11e)", resultat: "3,55 % au premier tour" }
+  - { annee: 2015, scrutin: "Régionales, Nord-Pas-de-Calais-Picardie (tête de liste dans le Pas-de-Calais)", resultat: "4,83 % au premier tour" }
+condamnations: []
+procedures: []
+sourcesProfil:
+  - { titre: "Wikipédia, article « Marine Tondelier » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Marine_Tondelier" }

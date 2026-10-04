@@ -48,3 +48,23 @@ positions:
       url: "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
       date: 2026-10-04
 analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1970-11-28, lieu: "Rouen (Seine-Maritime)" }
+biographie: "Diplômé de Sciences Po Paris et de l'ENA, il est membre du Conseil d'État, puis avocat. Membre du RPR, de l'UMP puis des Républicains jusqu'en 2017, il fonde Horizons en 2021."
+fonctions:
+  - { intitule: "Président d'Horizons", periode: "depuis octobre 2021" }
+  - { intitule: "Maire du Havre", periode: "2010 – 2017, depuis juillet 2020" }
+  - { intitule: "Président de la communauté urbaine Le Havre Seine Métropole", periode: "depuis juillet 2020" }
+  - { intitule: "Premier ministre", periode: "mai 2017 – juillet 2020" }
+  - { intitule: "Député de la Seine-Maritime (7e circonscription)", periode: "2012 – 2017" }
+  - { intitule: "Conseiller général de la Seine-Maritime", periode: "2008 – 2012" }
+  - { intitule: "Conseiller régional de Haute-Normandie", periode: "2004 – 2008" }
+resultats:
+  - { annee: 2020, scrutin: "Municipales, Le Havre", resultat: "Liste élue (43,6 % au premier tour)" }
+  - { annee: 2012, scrutin: "Législatives, Seine-Maritime (7e)", resultat: "Élu" }
+  - { annee: 2002, scrutin: "Législatives, Seine-Maritime (8e)", resultat: "Battu au second tour avec 42,5 %" }
+condamnations: []
+procedures:
+  - "Une juge d'instruction est saisie depuis mai 2026 d'une enquête sur des soupçons de prise illégale d'intérêts, détournement de fonds publics et favoritisme à la communauté urbaine du Havre, après une enquête préliminaire du parquet national financier ouverte en 2024. Édouard Philippe conteste toute irrégularité et n'est pas condamné ; il bénéficie de la présomption d'innocence."
+sourcesProfil:
+  - { titre: "Wikipédia, article « Édouard Philippe » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Édouard_Philippe" }

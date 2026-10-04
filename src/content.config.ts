@@ -70,6 +70,26 @@ const candidats = defineCollection({
     // Clés = identifiants des thèmes de l'élection (vérifié dans src/lib/data.ts).
     positions: z.record(z.string(), position.nullable()),
     analyses: z.array(z.object({ titre: z.string(), resume: z.string(), source })).default([]),
+    // Profil
+    naissance: z.object({ date: z.coerce.date(), lieu: z.string() }).optional(),
+    biographie: z.string().optional(),
+    fonctions: z.array(z.object({ intitule: z.string(), periode: z.string() })).default([]),
+    resultats: z.array(z.object({ annee: z.number(), scrutin: z.string(), resultat: z.string() })).default([]),
+    // Condamnations pénales uniquement ; « definitive » = plus aucun recours possible.
+    condamnations: z
+      .array(
+        z.object({
+          date: z.string(),
+          juridiction: z.string(),
+          motif: z.string(),
+          peine: z.string(),
+          statut: z.enum(["definitive", "non_definitive", "non_precise"]),
+          detail: z.string().optional(),
+        }),
+      )
+      .default([]),
+    procedures: z.array(z.string()).default([]),
+    sourcesProfil: z.array(z.object({ titre: z.string(), url: z.string().url() })).default([]),
   }),
 });
 

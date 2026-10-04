@@ -37,3 +37,38 @@ positions:
     texte: "Police de proximité, dissolution de la BRAV-M."
     statut: a_verifier
 analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1951-08-19, lieu: "Tanger (Maroc)" }
+biographie: "Diplômé de l'université de Franche-Comté, il exerce notamment comme professeur de français et journaliste. Militant trotskiste puis membre du Parti socialiste de 1976 à 2008, il fonde le Parti de gauche en 2009 puis La France insoumise en 2016."
+fonctions:
+  - { intitule: "Député des Bouches-du-Rhône (4e circonscription)", periode: "2017 – 2022" }
+  - { intitule: "Président du groupe La France insoumise à l'Assemblée nationale", periode: "2017 – 2021" }
+  - { intitule: "Député européen", periode: "2009 – 2017" }
+  - { intitule: "Ministre délégué à l'Enseignement professionnel", periode: "mars 2000 – mai 2002" }
+  - { intitule: "Sénateur de l'Essonne", periode: "1986 – 2000, 2004 – 2010" }
+  - { intitule: "Conseiller général de l'Essonne", periode: "1985 – 1992, 1998 – 2004" }
+resultats:
+  - { annee: 2022, scrutin: "Présidentielle", resultat: "21,95 % au premier tour (3e)" }
+  - { annee: 2017, scrutin: "Présidentielle", resultat: "19,58 % au premier tour (4e)" }
+  - { annee: 2017, scrutin: "Législatives, Bouches-du-Rhône (4e)", resultat: "Élu" }
+  - { annee: 2012, scrutin: "Présidentielle", resultat: "11,10 % au premier tour (4e)" }
+condamnations:
+  - date: "9 décembre 2019"
+    juridiction: "Tribunal correctionnel de Bobigny"
+    motif: "Actes d'intimidation envers l'autorité judiciaire, rébellion et provocation (perquisition d'octobre 2018)"
+    peine: "3 mois d'emprisonnement avec sursis et 8 000 € d'amende"
+    statut: definitive
+    detail: "Pas d'appel."
+  - date: "11 janvier 2022"
+    juridiction: "Tribunal judiciaire de Paris"
+    motif: "Injure publique et diffamation (plainte de Radio France)"
+    peine: "500 € d'amende avec sursis et 3 000 € de dommages et intérêts"
+    statut: non_precise
+  - date: "24 septembre 2021"
+    juridiction: "Tribunal judiciaire de Paris"
+    motif: "Diffamation envers le journaliste Paulo Paranaguá"
+    peine: "500 € d'amende avec sursis"
+    statut: non_precise
+procedures: []
+sourcesProfil:
+  - { titre: "Wikipédia, article « Jean-Luc Mélenchon » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Jean-Luc_Mélenchon" }

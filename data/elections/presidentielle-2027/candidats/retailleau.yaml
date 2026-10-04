@@ -49,3 +49,21 @@ positions:
       url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-renverser-la-table-avec-une-profonde-reforme-constitutionnelle"
       date: 2026-09-03
 analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1960-11-20, lieu: "Cholet (Maine-et-Loire)" }
+biographie: "Diplômé de Sciences Po Paris, il travaille dans le secteur privé comme dirigeant de société. Proche de Philippe de Villiers au Mouvement pour la France jusqu'en 2010, il rejoint l'UMP puis Les Républicains, dont il devient président en mai 2025."
+fonctions:
+  - { intitule: "Président des Républicains", periode: "depuis mai 2025" }
+  - { intitule: "Sénateur de la Vendée", periode: "2004 – 2024, depuis novembre 2025" }
+  - { intitule: "Ministre d'État, ministre de l'Intérieur", periode: "septembre 2024 – octobre 2025" }
+  - { intitule: "Président du groupe LR au Sénat", periode: "2014 – 2024" }
+  - { intitule: "Président du conseil régional des Pays de la Loire", periode: "2016 – 2017" }
+  - { intitule: "Président du conseil général de la Vendée", periode: "2010 – 2015" }
+  - { intitule: "Député de la Vendée", periode: "1994 – 1997" }
+resultats:
+  - { annee: 2015, scrutin: "Régionales, Pays de la Loire", resultat: "Liste élue avec 42,70 % au second tour" }
+  - { annee: 2017, scrutin: "Sénatoriales, Vendée", resultat: "Réélu (également en 2020 et 2023)" }
+condamnations: []
+procedures: []
+sourcesProfil:
+  - { titre: "Wikipédia, article « Bruno Retailleau » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Bruno_Retailleau" }
