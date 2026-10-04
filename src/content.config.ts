@@ -91,6 +91,7 @@ const candidats = defineCollection({
     cv: z
       .object({
         etudes: z.array(z.object({ diplome: z.string(), etablissement: z.string().optional(), annee: z.number().optional() })).default([]),
+        // Saisies de la plus ancienne à la plus récente ; affichées de la plus récente à la plus ancienne.
         experiences: z.array(z.object({ poste: z.string(), employeur: z.string().optional(), periode: z.string().optional() })).default([]),
       })
       .optional(),

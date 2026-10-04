@@ -106,7 +106,7 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
           <span class="label">Expériences professionnelles (hors mandats)</span>
           {c.data.cv.experiences.length ? (
             <ul class="cv-liste">
-              {c.data.cv.experiences.map((e) => (
+              {[...c.data.cv.experiences].reverse().map((e) => (
                 <li><span class="cv-quand">{e.periode ?? ""}</span><span><strong>{e.poste}</strong>{e.employeur && <span class="cv-lieu"> · {e.employeur}</span>}</span></li>
               ))}
             </ul>
