@@ -8,7 +8,6 @@ const aVenir = (await elections()).filter((e) => +e.data.date >= Date.now() - 86
 const prochaine = aVenir[0];
 const compte = prochaine ? await compteCandidats(prochaine) : null;
 const institutions = RUBRIQUES.institutions ? (await fiches("institutions")).slice(0, 4) : [];
-const voter = await fiches("voter");
 const slug = (id: string) => id.split("/")[1];
 ---
 <Base titre="Accueil" page="accueil">
@@ -50,14 +49,6 @@ const slug = (id: string) => id.split("/")[1];
     </div>
   </div>}
 
-  <div style="display:grid;gap:14px">
-    <div class="section-head"><h2>Avant d'aller voter</h2><a href={lien("/voter")}>Guide complet →</a></div>
-    <div class="cards">
-      {voter.map((f) => (
-        <a class="card rouge" href={lien(`/voter/${slug(f.id)}`)}><h3>{f.data.titre}</h3><p>{f.data.resume}</p></a>
-      ))}
-    </div>
-  </div>
 </Base>
 
 <script>
