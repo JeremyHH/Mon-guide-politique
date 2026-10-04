@@ -434,7 +434,8 @@ table.resultats{min-width:520px}
 
 /* ---------- Dans les médias ---------- */
 .medias{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-.medias li{display:grid;grid-template-columns:130px auto 1fr;gap:4px 10px;align-items:baseline;padding-bottom:10px;border-bottom:1px solid var(--line)}
-.medias-date{font-family:var(--f-mono);font-size:.8rem;color:var(--muted)}
+.medias li{display:grid;grid-template-columns:150px 96px 1fr;gap:4px 10px;align-items:baseline;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.medias-date{font-family:var(--f-mono);font-size:.8rem;color:var(--muted);white-space:nowrap}
+.medias .pill{justify-self:start}
 .medias-source{grid-column:3;font-family:var(--f-mono);font-size:.75rem;color:var(--muted)}
 @media (max-width:620px){.medias li{grid-template-columns:auto 1fr}.medias-source{grid-column:1 / -1}.medias li a{grid-column:1 / -1}}

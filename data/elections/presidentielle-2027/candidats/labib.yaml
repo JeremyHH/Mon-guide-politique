@@ -23,6 +23,9 @@ procedures: []
 # Campagne : dates clés propres à la candidate
 campagne:
   - { date: 2026-06-15, quand: "Juin 2026", type: designation, quoi: "Désignée candidate par le NPA-Révolutionnaires, avec Gaël Quirante.", source: { titre: "NPA-Révolutionnaires, « Présidentielle : Selma Labib, une candidate ouvrière et révolutionnaire » (page consultée le 4 octobre 2026)", url: "https://npa-revolutionnaires.org/articles/presidentielle-selma-labib-une-candidate-ouvriere-et-revolutionnaire" } }
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
+medias:
+  - { date: 2026-07-03, media: "Hugo au Perchoir (Twitch)", type: interview, titre: "Interview de Selma Labib et Gaël Quirante par Hugo au Perchoir (relayée par le NPA-R)", url: "https://npa-revolutionnaires.org/articles/interview-sur-twitch-de-selma-labib-et-gael-quirante-par-hugoauperchoir" }
 sourcesProfil:
   - { titre: "NPA-Révolutionnaires, « Présidentielle : Selma Labib, une candidate ouvrière et révolutionnaire » (page consultée le 4 octobre 2026)", url: "https://npa-revolutionnaires.org/articles/presidentielle-selma-labib-une-candidate-ouvriere-et-revolutionnaire" }
   - { titre: "Public Sénat (18 septembre 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart" }

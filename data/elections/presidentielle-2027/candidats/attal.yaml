@@ -74,6 +74,13 @@ resultats:
   - { annee: 2017, scrutin: "Législatives, Hauts-de-Seine (10e)", resultat: "Élu au second tour avec 60,94 %" }
 condamnations: []
 procedures: []
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
+medias:
+  - { date: 2026-10-03, media: "Le Parisien", type: interview, titre: "Entretien : « Il faut une coalition qui aille des électeurs de Raphaël Glucksmann à ceux de la droite républicaine »", url: "https://www.leparisien.fr/elections/presidentielle/gabriel-attal-il-faut-une-coalition-qui-aille-des-electeurs-de-raphael-glucksmann-a-ceux-de-la-droite-republicaine-03-10-2026-7A4AQ6UWBZAVZPFZJHDLQ2DM3A.php" }
+  - { date: 2026-09-30, media: "CNEWS / Europe 1 · La Grande Interview", type: interview, titre: "Invité de « La Grande Interview » de Laurence Ferrari", url: "https://www.cnews.fr/emission/2026-09-30/la-grande-interview-gabriel-attal-1926639" }
+  - { date: 2026-09-20, media: "France 2 · Franc-Jeu", type: emission, titre: "Invité de « Franc-Jeu » (Benjamin Duhamel)", url: "https://www.franceinfo.fr/replay-magazine/france-2/franc-jeu/franc-jeu-avec-gabriel-attal_8173034.html" }
+  - { date: 2026-09-09, media: "franceinfo · 8h30 franceinfo", type: interview, titre: "Le « 8h30 franceinfo » : présidentielle, salaires", url: "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/le-8h30-franceinfo-de-gabriel-attal_8161526.html" }
+  - { date: 2026-08-27, media: "Medef (REF) · reportage franceinfo", type: debat, titre: "Débat entre sept candidats à la présidentielle devant le Medef", url: "https://www.franceinfo.fr/elections/presidentielle/de-bruno-retailleau-a-jean-luc-melenchon-un-premier-debat-et-de-premieres-passes-d-armes-entre-sept-candidats-a-la-presidentielle-face-au-medef_8165666.html" }
 sourcesProfil:
   - { titre: "Wikipédia, article « Gabriel Attal » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Gabriel_Attal" }
 # Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/

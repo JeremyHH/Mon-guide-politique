@@ -86,6 +86,9 @@ campagne:
   - { date: 2026-08-22, quand: "22 août 2026", type: meeting, quoi: "Premier meeting de campagne au théâtre Galabru (Paris) ; présente un programme en « 9 étoiles ».", source: { titre: "Site de campagne de Francis Lalanne (27 août 2026)", url: "https://dieudolalanne2027.com/meeting-dieudo-lalanne-du-22-aout-ce-quil-faut-retenir/" } }
 tournee:
   - { date: 2026-08-22, quand: "22 août 2026", lieu: "Paris (18e), théâtre Galabru", type: meeting, quoi: "Premier meeting de campagne.", source: { titre: "ICI Paris Île-de-France (19 août 2026)", url: "https://www.ici.fr/ile-de-france/paris-75/paris/presidentielle-francis-lalanne-se-declare-candidat-aux-cotes-de-dieudonne-5740360" } }
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
+medias:
+  - { date: 2026-09-16, media: "TVLibertés (Bistro Libertés)", type: debat, titre: "Bistro Libertés : Francis Lalanne face à Jean Messiha", url: "https://www.dailymotion.com/video/xb8hga2" }
 sourcesProfil:
   - { titre: "Wikipédia, article « Francis Lalanne » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Francis_Lalanne" }
   - { titre: "ICI, « Présidentielle 2027 : Francis Lalanne se déclare candidat, aux côtés de Dieudonné » (19 août 2026)", url: "https://www.ici.fr/ile-de-france/paris-75/paris/presidentielle-francis-lalanne-se-declare-candidat-aux-cotes-de-dieudonne-5740360" }

@@ -73,6 +73,13 @@ resultats:
   - { annee: 2017, scrutin: "Sénatoriales, Vendée", resultat: "Réélu (également en 2020 et 2023)" }
 condamnations: []
 procedures: []
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
+medias:
+  - { date: 2026-10-01, media: "BFMTV / RMC", type: interview, titre: "Invité de la matinale BFMTV-RMC", url: "https://www.bfmtv.com/politique/elections/presidentielle/un-parti-seditieux-bruno-retailleau-estime-que-la-question-de-l-interdiction-de-lfi-se-pose_AN-202610010228.html" }
+  - { date: 2026-09-22, media: "LCI", type: emission, titre: "Invité de LCI, propositions sur les retraites", url: "https://www.tf1info.fr/politique/presidentielle-2027-age-minimal-de-depart-a-63-ans-a-taux-plein-a-65-ans-bruno-retailleau-devoile-sur-lci-ses-propositions-pour-les-retraites-2465712.html" }
+  - { date: 2026-09-16, media: "franceinfo · 8h30 franceinfo", type: interview, titre: "Le « 8h30 franceinfo » : présidentielle, carburants", url: "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/le-8h30-franceinfo-de-bruno-retailleau_8172920.html" }
+  - { date: 2026-09-02, media: "Le Figaro", type: interview, titre: "Entretien : « En France, la seule cour suprême, c'est le peuple. Je lui donnerai le dernier mot »", url: "https://www.lefigaro.fr/elections/presidentielles/programmes/bruno-retailleau-au-figaro-en-france-la-seule-cour-supreme-c-est-le-peuple-je-lui-donnerai-le-dernier-mot-20260902" }
+  - { date: 2026-08-27, media: "Medef (REF) · reportage franceinfo", type: debat, titre: "Débat entre sept candidats à la présidentielle devant le Medef", url: "https://www.franceinfo.fr/elections/presidentielle/de-bruno-retailleau-a-jean-luc-melenchon-un-premier-debat-et-de-premieres-passes-d-armes-entre-sept-candidats-a-la-presidentielle-face-au-medef_8165666.html" }
 sourcesProfil:
   - { titre: "Wikipédia, article « Bruno Retailleau » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Bruno_Retailleau" }
 # Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/

@@ -113,6 +113,10 @@ condamnations:
     statut: non_precise
     detail: "Confirmée en appel le 28 mars 2024."
 procedures: []
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
+medias:
+  - { date: 2026-09-17, media: "BFMTV · Face à BFM", type: emission, titre: "Invité de « Face à BFM » : présidentielle, immigration, voile", url: "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-immigration-voile-marine-le-pen-ce-qu-il-faut-retenir-de-l-interview-d-eric-zemmour-sur-bfmtv_AV-202609170966.html" }
+  - { date: 2026-09-17, media: "BFMTV", type: debat, titre: "Débat face à Jean-François Copé", url: "https://www.bfmtv.com/politique/elections/presidentielle/video-des-qu-on-vous-parle-d-economie-nous-sommes-dans-le-flou-reproche-jean-francois-cope-ancien-ministre-a-eric-zemmour_VN-202609170961.html" }
 sourcesProfil:
   - { titre: "Wikipédia, article « Éric Zemmour » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Éric_Zemmour" }
 # Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/

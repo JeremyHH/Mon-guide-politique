@@ -68,7 +68,7 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
       <a href="#resultats">Résultats électoraux</a>
       <a href="#campagne">Campagne</a>
       <a href="#tournee">Tournée</a>
-      {c.data.medias.length > 0 && <a href="#medias">Dans les médias</a>}
+      <a href="#medias">Dans les médias</a>
       <a href="#positions">Positions</a>
       <a href="#justice">Condamnations</a>
     </nav>
@@ -145,7 +145,7 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
       <Tournee candidat={c} />
     </section>
 
-    {c.data.medias.length > 0 && <section class="fiche-section" id="medias">
+    <section class="fiche-section" id="medias">
       <h3 class="fiche-titre">Dans les médias</h3>
       <p class="mono note-justice">Interviews, débats, émissions et tribunes du candidat depuis le 1er juillet 2026 (cinq au plus, les plus récentes d'abord). Liste non exhaustive.</p>
       {c.data.medias.length ? (
@@ -162,7 +162,7 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
       ) : (
         <p class="aucune">Aucune apparition médiatique recensée sur la période.</p>
       )}
-    </section>}
+    </section>
 
     <section class="fiche-section" id="positions">
       <h3 class="fiche-titre">Positions par thème</h3>

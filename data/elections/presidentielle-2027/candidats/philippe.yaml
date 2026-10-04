@@ -77,6 +77,13 @@ resultats:
 condamnations: []
 procedures:
   - "Une juge d'instruction est saisie depuis mai 2026 d'une enquête sur des soupçons de prise illégale d'intérêts, détournement de fonds publics et favoritisme à la communauté urbaine du Havre, après une enquête préliminaire du parquet national financier ouverte en 2024. Édouard Philippe conteste toute irrégularité et n'est pas condamné ; il bénéficie de la présomption d'innocence."
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
+medias:
+  - { date: 2026-10-01, media: "TF1 · Bonjour ! La Matinale TF1", type: interview, titre: "Invité d'Alba Ventura sur les retraites", url: "https://www.tf1info.fr/politique/videos/video-face-a-alba-ventura-edouard-philippe-2467354.html" }
+  - { date: 2026-09-08, media: "franceinfo · 8h30 franceinfo", type: interview, titre: "Le « 8h30 franceinfo » : présidentielle 2027", url: "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/le-8h30-franceinfo-d-edouard-philippe_8160212.html" }
+  - { date: 2026-09-02, media: "France Inter · L'invité de 7h50", type: interview, titre: "Invité de 7h50 de France Inter", url: "https://www.radiofrance.fr/franceinter/podcasts/l-invite-de-7h50/l-invite-de-7h50-du-mercredi-02-septembre-2026-3637660" }
+  - { date: 2026-08-27, media: "Medef (REF) · reportage franceinfo", type: debat, titre: "Débat entre sept candidats à la présidentielle devant le Medef", url: "https://www.franceinfo.fr/elections/presidentielle/de-bruno-retailleau-a-jean-luc-melenchon-un-premier-debat-et-de-premieres-passes-d-armes-entre-sept-candidats-a-la-presidentielle-face-au-medef_8165666.html" }
+  - { date: 2026-08-24, media: "Réunion La 1ère", type: interview, titre: "Entretien lors de son déplacement à La Réunion", url: "https://la1ere.franceinfo.fr/reunion/edouard-philippe-a-la-reunion-il-accorde-un-entretien-a-reunion-la-1ere-1730561.html" }
 sourcesProfil:
   - { titre: "Wikipédia, article « Édouard Philippe » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Édouard_Philippe" }
 # Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/

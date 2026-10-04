@@ -91,6 +91,13 @@ condamnations:
     peine: "500 € d'amende avec sursis"
     statut: non_precise
 procedures: []
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
+medias:
+  - { date: 2026-09-24, media: "Politico", type: interview, titre: "Grand entretien organisé par Politico (vidéo publiée sur melenchon.fr)", url: "https://melenchon.fr/2026/09/24/carburants-geopolitique-ia-jean-luc-melenchon-face-a-politico/" }
+  - { date: 2026-09-11, media: "L'Humanité · Agora de la Fête de l'Humanité", type: interview, titre: "Entretien face à la rédaction de l'Humanité (vidéo publiée sur melenchon.fr)", url: "https://melenchon.fr/2026/09/11/jean-luc-melenchon-face-a-la-redaction-de-lhumanite/" }
+  - { date: 2026-09-04, media: "Mediapart", type: tribune, titre: "Tribune « La dette sans tabou » (reprise sur melenchon.fr)", url: "https://melenchon.fr/2026/09/05/la-dette-sans-tabou/" }
+  - { date: 2026-08-27, media: "Medef (REF) · reportage franceinfo", type: debat, titre: "Débat entre sept candidats à la présidentielle devant le Medef", url: "https://www.franceinfo.fr/elections/presidentielle/de-bruno-retailleau-a-jean-luc-melenchon-un-premier-debat-et-de-premieres-passes-d-armes-entre-sept-candidats-a-la-presidentielle-face-au-medef_8165666.html" }
+  - { date: 2026-07-22, media: "Reporterre", type: interview, titre: "Entretien : « Une nouvelle gauche d'action a surgi » (repris sur melenchon.fr)", url: "https://melenchon.fr/2026/07/22/une-nouvelle-gauche-daction-a-surgi-elle-est-faite-dinsoumis-et-de-verts-tous-ecologistes-interview-reporterre/" }
 sourcesProfil:
   - { titre: "Wikipédia, article « Jean-Luc Mélenchon » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Jean-Luc_Mélenchon" }
 # Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/

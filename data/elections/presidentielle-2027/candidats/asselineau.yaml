@@ -42,5 +42,12 @@ photo:
 # Campagne : dates clés propres au candidat
 campagne:
   - { date: 2026-09-18, quand: "Septembre 2026", type: annonce, quoi: "Recensé parmi les candidats déclarés, pour l'UPR (date d'annonce non retrouvée).", source: { titre: "Public Sénat (18 septembre 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart" } }
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
+medias:
+  - { date: 2026-10-01, media: "GPTV", type: interview, titre: "Invité de Nicolas Stoquer : lancement de campagne, dette et Frexit (compte rendu UPR)", url: "https://upr.fr/medias/francois-asselineau-invite-de-nicolas-stoquer-sur-gp-tv-01-10-2026" }
+  - { date: 2026-09-28, media: "Radio Courtoisie (Ligne droite)", type: interview, titre: "La rentrée politique de François Asselineau, invité de Richard de Seze", url: "https://www.rc.fr/2026/09/28/ligne-droite-du-28-septembre-2026/" }
+  - { date: 2026-09-26, media: "TVLibertés (Le Samedi Politique)", type: emission, titre: "Le Samedi Politique avec François Asselineau : Ormuz, Ukraine, dette", url: "https://www.dailymotion.com/video/xbd0y4y" }
+  - { date: 2026-09-22, media: "Omerta", type: interview, titre: "Invité de Régis Le Sommier : « L'Union européenne a-t-elle trahi ses promesses démocratiques ? » (compte rendu UPR)", url: "https://upr.fr/medias/francois-asselineau-invite-de-regis-le-sommier-sur-omerta-22-09-2026" }
+  - { date: 2026-08-11, media: "Tocsin", type: emission, titre: "Invité de Tocsin sur la crise migratoire à Ceuta (compte rendu UPR)", url: "https://upr.fr/medias/francois-asselineau-invite-daxelle-le-gal-sur-tocsin-11-08-2026" }
 sourcesProfil:
   - { titre: "Wikipédia, article « François Asselineau » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/François_Asselineau" }

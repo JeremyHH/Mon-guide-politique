@@ -97,5 +97,11 @@ photo:
 # Campagne : dates clés propres au candidat
 campagne:
   - { date: 2025-03-08, quand: "8 mars 2025", type: annonce, quoi: "Annonce sa candidature à l'élection présidentielle.", source: { titre: "Wikipédia, « Nicolas Dupont-Aignan »", url: "https://fr.wikipedia.org/wiki/Nicolas_Dupont-Aignan" } }
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
+medias:
+  - { date: 2026-09-20, media: "Sud Radio (L'invité politique du week-end)", type: interview, titre: "« La position du RN est incompréhensible »", url: "https://www.sudradio.fr/linvite-politique/nicolas-dupont-aignan-la-position-du-rn-est-incomprehensible" }
+  - { date: 2026-09-19, media: "franceinfo", type: interview, titre: "« Je serai le seul candidat qui propose de sortir de l'Union européenne »", url: "https://www.franceinfo.fr/politique/nicolas-dupont-aignan/je-serai-le-seul-candidat-qui-propose-de-sortir-de-l-union-europeenne-dit-nicolas-dupont-aignan-qui-se-lance-dans-sa-quatrieme-campagne-presidentielle_8201024.html" }
+  - { date: 2026-09-16, media: "CNews / Europe 1 (La Grande Interview)", type: interview, titre: "Invité de La Grande Interview de Laurence Ferrari", url: "https://www.cnews.fr/emission/2026-09-16/la-grande-interview-nicolas-dupont-aignan-1919694" }
+  - { date: 2026-07-03, media: "CNews / Europe 1 (La Grande Interview)", type: interview, titre: "« L'État doit reprendre en main la protection de nos enfants »", url: "https://www.cnews.fr/france/2026-07-03/letat-doit-reprendre-en-main-la-protection-de-nos-enfants-exhorte-nicolas-dupont" }
 sourcesProfil:
   - { titre: "Wikipédia, article « Nicolas Dupont-Aignan » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Nicolas_Dupont-Aignan" }

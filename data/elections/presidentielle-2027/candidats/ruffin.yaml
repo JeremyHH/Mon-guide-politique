@@ -65,5 +65,11 @@ campagne:
   - { date: 2026-05-12, quand: "12 mai 2026", type: annonce, quoi: "Confirme qu'il sera candidat même sans primaire de la gauche.", source: { titre: "franceinfo (12 mai 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-je-souhaite-qu-une-primaire-de-la-gauche-ait-lieu-mais-s-il-n-y-en-a-pas-j-y-vais-assure-francois-ruffin_7999316.html" } }
 tournee:
   - { date: 2026-04-25, quand: "25 avril 2026", lieu: "Lyon", type: meeting, quoi: "Meeting de campagne (environ 2 000 personnes).", source: { titre: "franceinfo (12 mai 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-je-souhaite-qu-une-primaire-de-la-gauche-ait-lieu-mais-s-il-n-y-en-a-pas-j-y-vais-assure-francois-ruffin_7999316.html" } }
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
+medias:
+  - { date: 2026-09-30, media: "ICI Picardie (L'invité d'ICI matin)", type: interview, titre: "« Bloquer les marges des entreprises et faire le tri » pour les comptes publics et le carburant", url: "https://www.ici.fr/emissions/l-invite-d-ici-matin-ici-picardie/francois-ruffin-depute-de-la-somme-et-candidat-a-l-election-presidentielle-3905071" }
+  - { date: 2026-09-22, media: "France Télévisions (Face aux Outre-mer)", type: emission, titre: "Invité de « Face aux Outre-mer » : sa vision des territoires ultramarins", url: "https://la1ere.franceinfo.fr/les-questions-d-independance-ne-doivent-pas-masquer-la-question-de-l-egalite-francois-ruffin-detaille-sa-vision-des-territoires-d-outre-mer-1740986.html" }
+  - { date: 2026-09-09, media: "RTL (RTL Matin)", type: interview, titre: "Présidentielle 2027 : invité de RTL Matin", url: "https://francoisruffin.fr/presidentielles-2027-francois-ruffin-invite-de-rtl-matin/" }
+  - { date: 2026-09-02, media: "Libération", type: debat, titre: "Débat organisé par Libération avec Dominique de Villepin", url: "https://www.franceinfo.fr/elections/presidentielle/c-est-le-premier-moment-original-de-cette-campagne-pourquoi-dominique-de-villepin-et-francois-ruffin-affichent-leurs-convergences-pour-la-presidentielle_8175026.html" }
 sourcesProfil:
   - { titre: "Wikipédia, article « François Ruffin » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/François_Ruffin" }

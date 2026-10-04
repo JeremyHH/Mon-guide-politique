@@ -69,6 +69,13 @@ resultats:
   - { annee: 2017, scrutin: "Législatives, Nord (20e)", resultat: "Élu au second tour avec 63,88 %" }
 condamnations: []
 procedures: []
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
+medias:
+  - { date: 2026-10-04, media: "BFMTV · BFM Politique", type: emission, titre: "Invité de « BFM Politique »", url: "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-fabien-roussel-declare-qu-il-ne-se-retirera-jamais-au-profit-d-une-autre-formation-politique_AV-202610040231.html" }
+  - { date: 2026-09-21, media: "France Inter · L'invité de 7h50", type: interview, titre: "Invité de 7h50 de France Inter : budget 2027, prix de l'énergie", url: "https://www.radiofrance.fr/franceinter/podcasts/l-invite-de-7h50/l-invite-de-7h50-du-lundi-21-septembre-2026-6313163" }
+  - { date: 2026-09-16, media: "BFMTV / RMC", type: interview, titre: "Invité de la matinale BFMTV-RMC", url: "https://www.bfmtv.com/politique/parti-communiste-francais/fabien-roussel-appelle-a-mettre-un-stop-sur-l-economie-de-guerre-et-au-surarmement-de-la-france-et-de-l-ue_AV-202609160339.html" }
+  - { date: 2026-09-11, media: "France 2 · Les 4 Vérités", type: interview, titre: "Invité des « 4 Vérités » : prix des carburants", url: "https://www.franceinfo.fr/politique/prix-des-carburants-j-appelle-les-francais-a-se-mobiliser-comme-nous-avons-su-le-faire-en-2018-avec-les-gilets-jaunes-demande-fabien-roussel_8187953.html" }
+  - { date: 2026-09-06, media: "TF1 · Journal de 20h", type: interview, titre: "Invité du 20h de TF1, annonce de sa candidature (compte rendu franceinfo)", url: "https://www.franceinfo.fr/elections/presidentielle/le-communiste-fabien-roussel-officialise-sa-candidature-a-l-election-presidentielle-de-2027-pour-defendre-un-projet-de-rupture_8179856.html" }
 sourcesProfil:
   - { titre: "Wikipédia, article « Fabien Roussel » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Fabien_Roussel" }
 # Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/

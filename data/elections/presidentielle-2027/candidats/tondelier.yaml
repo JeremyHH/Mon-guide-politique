@@ -61,6 +61,13 @@ resultats:
   - { annee: 2015, scrutin: "Régionales, Nord-Pas-de-Calais-Picardie (tête de liste dans le Pas-de-Calais)", resultat: "4,83 % au premier tour" }
 condamnations: []
 procedures: []
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
+medias:
+  - { date: 2026-09-16, media: "France Inter · L'invité de 7h50", type: interview, titre: "Invitée de 7h50 de France Inter : mobilisation contre la vie chère", url: "https://www.radiofrance.fr/franceinter/podcasts/l-invite-de-7h50/l-invite-de-7h50-du-mercredi-16-septembre-2026-6637653" }
+  - { date: 2026-09-12, media: "franceinfo · L'interview politique", type: interview, titre: "Invitée politique de franceinfo : « Chacun a décidé d'être dans son couloir de natation »", url: "https://www.franceinfo.fr/replay-radio/l-interview-politique/chacun-a-decide-d-etre-dans-son-couloir-de-natation-deplore-marine-tondelier-candidate-ecologiste-a-l-election-presidentielle_8189441.html" }
+  - { date: 2026-09-09, media: "France 2 · Les 4 Vérités", type: interview, titre: "Invitée des « 4 Vérités »", url: "https://www.franceinfo.fr/politique/eelv/je-serai-toujours-partie-de-la-solution-candidate-marine-tondelier-plaide-encore-pour-une-candidature-unique-a-gauche_8184458.html" }
+  - { date: 2026-09-07, media: "LCI · Le Grand Entretien", type: emission, titre: "Invitée du « Grand Entretien »", url: "https://www.tf1info.fr/replay-lci/videos/video-le-grand-entretien-du-lundi-7-septembre-2026-marine-tondelier-2463008.html" }
+  - { date: 2026-09-02, media: "franceinfo · 8h30 franceinfo", type: interview, titre: "Le « 8h30 franceinfo » : présidentielle, RN", url: "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/le-8h30-franceinfo-de-marine-tondelier_8144867.html" }
 sourcesProfil:
   - { titre: "Wikipédia, article « Marine Tondelier » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Marine_Tondelier" }
 # Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/

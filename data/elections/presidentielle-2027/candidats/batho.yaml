@@ -44,5 +44,10 @@ photo:
 campagne:
   - { date: 2025-11-25, quand: "25 novembre 2025", type: annonce, quoi: "Se déclare candidate à l'élection présidentielle.", source: { titre: "France 3 Nouvelle-Aquitaine (26 novembre 2025)", url: "https://france3-regions.franceinfo.fr/nouvelle-aquitaine/deux-sevres/niort/la-deputee-ecologiste-delphine-batho-se-declare-candidate-pour-la-presidentielle-de-2027-3255724.html" } }
   - { date: 2026-09-18, quand: "Septembre 2026", type: annonce, quoi: "Maintient sa candidature, primaire ou non.", source: { titre: "Public Sénat (18 septembre 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart" } }
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
+medias:
+  - { date: 2026-09-14, media: "ICI Poitou (L'invité d'ICI Poitou)", type: interview, titre: "Présidentielle : « Les Français aspirent à des idées et à des forces nouvelles »", url: "https://www.ici.fr/emissions/l-invite-de-ici-poitou/delphine-batho-candidate-en-2027-les-francaises-aspirent-a-des-idees-nouvelles-et-a-des-forces-nouvelles-6628651" }
+  - { date: 2026-08-24, media: "Sud Radio", type: interview, titre: "Invitée de Sud Radio : construire « une nouvelle écologie de gouvernement »", url: "https://www.generationecologie.fr/2026/08/24/dans-les-circonstances-historiques-de-cet-ete-il-faut-construire-une-nouvelle-ecologie/" }
+  - { date: 2026-08-20, media: "RMC", type: interview, titre: "Invitée de Matthieu Belliard sur RMC : l'été 2026 et la rentrée des écologistes", url: "https://www.generationecologie.fr/2026/08/20/les-francaises-et-les-francais-attendent-une-election-presidentielle-feconde/" }
 sourcesProfil:
   - { titre: "Wikipédia, article « Delphine Batho » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Delphine_Batho" }

@@ -75,5 +75,12 @@ photo:
 # Campagne : dates clés propres à la candidate
 campagne:
   - { date: 2025-12-08, quand: "8 décembre 2025", type: annonce, quoi: "Annonce sa candidature pour Lutte ouvrière.", source: { titre: "Wikipédia, « Nathalie Arthaud »", url: "https://fr.wikipedia.org/wiki/Nathalie_Arthaud" } }
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
+medias:
+  - { date: 2026-10-04, media: "BFMTV", type: interview, titre: "Policier frappé à Belfort et interpellation d'un mineur : « Ce qui est grave, c'est qu'un commissaire de police agisse comme ça »", url: "https://www.dailymotion.com/video/xbhuq5u" }
+  - { date: 2026-10-02, media: "BFMTV", type: interview, titre: "Colère lycéenne : « Si on parle de violence, on pose le problème à l'envers »", url: "https://www.dailymotion.com/video/xbgu6mi" }
+  - { date: 2026-09-29, media: "BFMTV", type: interview, titre: "Grève de la fonction publique : « La fonction publique, c'est le royaume des bas salaires »", url: "https://www.dailymotion.com/video/xbepzlu" }
+  - { date: 2026-09-18, media: "BFMTV", type: interview, titre: "Nathalie Arthaud sur BFM : « Il faut qu'on se mobilise » (vidéo relayée par Lutte ouvrière)", url: "https://www.lutte-ouvriere.org/portail/multimedia/nathalie-arthaud-bfm-faut-quon-mobilise-197227.html" }
+  - { date: 2026-08-27, media: "BFMTV (Forum BFMTV)", type: debat, titre: "Forum BFMTV « Pouvoir d'achat : alerte sur la rentrée » : Nathalie Arthaud veut « abolir l'héritage sur les grandes entreprises »", url: "https://www.dailymotion.com/video/xb1eeg6" }
 sourcesProfil:
   - { titre: "Wikipédia, article « Nathalie Arthaud » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Nathalie_Arthaud" }

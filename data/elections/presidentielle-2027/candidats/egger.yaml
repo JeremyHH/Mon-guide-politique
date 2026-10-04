@@ -31,6 +31,9 @@ procedures: []
 # Campagne : dates clés propres à la candidate
 campagne:
   - { date: 2026-04-19, quand: "19 avril 2026", type: annonce, quoi: "Annonce sa candidature par un communiqué de Solution démocratique.", source: { titre: "Solution démocratique, « Présidentielle 2027 : Clara Egger annonce sa candidature » (page consultée le 4 octobre 2026)", url: "https://solutiondemocratique.fr/presidentielle2027-annonce-candidature-clara-egger/" } }
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
+medias:
+  - { date: 2026-10-01, media: "Fréquence Protestante (La Grâce matinale)", type: interview, titre: "Démocratie directe : Clara Egger invitée de Raphaël Warnery", url: "https://frequenceprotestante.com/democratie-directe-et-litterature-au-programme-de-la-grace-matinale" }
 sourcesProfil:
   - { titre: "Wikipédia, article « Clara Egger » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Clara_Egger" }
   - { titre: "Solution démocratique, « Qui est Clara Egger, candidate à l'élection présidentielle 2027 » (page consultée le 4 octobre 2026)", url: "https://solutiondemocratique.fr/clara-egger/" }

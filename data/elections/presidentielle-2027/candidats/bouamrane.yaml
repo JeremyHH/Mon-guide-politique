@@ -63,6 +63,13 @@ campagne:
   - { date: 2026-06-09, quand: "9 juin 2026", type: annonce, quoi: "Annonce sa candidature sur France Inter : « Moi, Karim Bouamrane, je suis candidat pour la prochaine élection présidentielle ».", source: { titre: "franceinfo (9 juin 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/karim-bouamrane-maire-ps-de-saint-ouen-annonce-sa-candidature-a-la-presidentielle_8051630.html" } }
   - { date: 2026-06-30, quand: "30 juin 2026", type: parti, quoi: "Dénonce les « barons socialistes » et maintient son refus d'une primaire : « Ce sont les sondages qui vont nous départager ».", source: { titre: "franceinfo (30 juin 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/le-maire-de-saint-ouen-karim-bouamrane-fustige-les-barons-socialistes-qui-le-meprisent-et-que-sa-candidature-a-la-presidentielle-2027-bouscule_8086388.html" } }
 tournee: []
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
+medias:
+  - { date: 2026-09-07, media: "CNews / Europe 1 (La Grande Interview)", type: interview, titre: "Invité de La Grande Interview de Laurence Ferrari", url: "https://www.cnews.fr/emission/2026-09-07/la-grande-interview-karim-bouamrane-1915141" }
+  - { date: 2026-08-31, media: "Sud Radio (L'invité politique)", type: interview, titre: "Présidentielle : « C'est moi le recours à gauche »", url: "https://www.sudradio.fr/sud-radio/karim-bouamrane-ps-cest-moi-le-recours-a-gauche" }
+  - { date: 2026-07-30, media: "CNews", type: interview, titre: "« J'invite les candidats à l'élection présidentielle à se faire une bonne cure de réel »", url: "https://www.cnews.fr/france/2026-07-30/jinvite-les-candidats-lelection-presidentielle-se-faire-une-bonne-cure-de-reel" }
+  - { date: 2026-07-28, media: "Africa Radio", type: interview, titre: "Présidentielle 2027 : il veut « une France humaine et forte »", url: "https://www.africaradio.com/actualite-116076-election-presidentielle-2027-karim-bouamrane-candidat-et-maire-de-saint-ouen-veut-une-france-humaine-et-forte" }
+  - { date: 2026-07-02, media: "Sud Radio (L'invité politique)", type: interview, titre: "Primaire du PS : « Je n'irai pas à la primaire »", url: "https://www.sudradio.fr/linvite-politique/karim-bouamrane-je-nirai-pas-a-la-primaire-du-parti-socialiste" }
 sourcesProfil:
   - { titre: "Wikipédia, article « Karim Bouamrane » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Karim_Bouamrane" }
   - { titre: "LCP, « Présidentielle 2027 : qui est Karim Bouamrane, le maire socialiste de Saint-Ouen et nouveau candidat à l'élection ? » (9 juin 2026)", url: "https://lcp.fr/actualites/presidentielle-2027-qui-est-karim-bouamrane-le-maire-socialiste-de-saint-ouen-et-nouveau" }

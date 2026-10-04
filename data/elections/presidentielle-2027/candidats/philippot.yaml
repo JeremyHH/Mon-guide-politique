@@ -55,5 +55,12 @@ photo:
 # Campagne : dates clés propres au candidat
 campagne:
   - { date: 2026-05-09, quand: "9 mai 2026", type: annonce, quoi: "Annonce sa candidature sur France 2.", source: { titre: "franceinfo (9 mai 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-souverainiste-florian-philippot-annonce-sa-candidature-a-l-elysee_7993346.html" } }
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
+medias:
+  - { date: 2026-09-14, media: "Radio Courtoisie (Ligne droite)", type: interview, titre: "Les Assises de la souveraineté : être intransigeant avec le système", url: "https://www.rc.fr/2026/09/14/ligne-droite-du-14-septembre-2026/" }
+  - { date: 2026-09-12, media: "TVLibertés (Le Samedi Politique)", type: emission, titre: "Le Samedi Politique avec Florian Philippot : choc pétrolier, crise, ingérence", url: "https://www.dailymotion.com/video/xb6t8j6" }
+  - { date: 2026-09-04, media: "BFMTV", type: interview, titre: "« Si on veut reprendre le contrôle de notre pays, il faut sortir de l'Union européenne »", url: "https://www.dailymotion.com/video/xb3ynly" }
+  - { date: 2026-07-13, media: "Europe 1 / CNews (L'Heure des pros)", type: emission, titre: "Invité d'Eliot Deval : « Les Français en ont ras le bol de voir ce laxisme épouvantable »", url: "https://www.dailymotion.com/video/xaoveia" }
+  - { date: 2026-07-06, media: "TVLibertés (Politique & Éco)", type: emission, titre: "Politique & Éco avec Florian Philippot : économie de guerre, la France face à Poutine ?", url: "https://www.dailymotion.com/video/xam034e" }
 sourcesProfil:
   - { titre: "Wikipédia, article « Florian Philippot » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Florian_Philippot" }
