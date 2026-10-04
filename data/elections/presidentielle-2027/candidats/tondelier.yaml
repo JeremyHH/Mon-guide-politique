@@ -4,24 +4,32 @@ nom: "Tondelier"
 parti: "Les Écologistes"
 statut: declare
 declaration: 2025-10-22
-bio: "Secrétaire nationale des Écologistes, désignée candidate en décembre 2025."
+bio: "Secrétaire nationale des Écologistes. Candidature autonome validée par les militants en juillet 2026, après l'abandon de la primaire unitaire de la gauche."
 positions:
   retraites:
-    texte: "Abrogation de la réforme de 2023 et retour immédiat à 62 ans ; objectif de 60 ans, en priorité pour les carrières longues et les métiers pénibles."
+    texte: "Abroger la réforme de 2023 pour revenir à 62 ans ; objectif de 60 ans en priorité pour les carrières longues et les métiers pénibles, financé en partie par une réduction des exonérations de cotisations."
     statut: verifie
     source:
-      titre: "CNews, « Présidentielle 2027 : départ à 60 ans, hausse des petites pensions, pénibilité… Quelles sont les propositions des candidats de gauche sur les retraites ? »"
-      url: "https://www.cnews.fr/france/2026-10-02/presidentielle-2027-depart-60-ans-hausse-des-petites-pensions-penibilite-quelles"
-      date: 2026-10-02
+      titre: "franceinfo, « Changement de système, passage à 60 ou à 65 ans, capitalisation... Que proposent les principaux candidats à l'élection présidentielle pour les retraites ? »"
+      url: "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/changement-de-systeme-passage-a-60-ou-a-65-ans-capitalisation-que-proposent-les-principaux-candidats-a-l-election-presidentielle-pour-les-retraites_8215784.html"
+      date: 2026-09-30
   immigration:
     texte: "Abroger la loi immigration de janvier 2024 ; refuser les quotas ; développer les voies légales de migration."
     statut: a_verifier
   energie:
-    texte: "Sortie progressive du nucléaire : arrêt des programmes EPR2 et SMR, objectif 100 % renouvelables à terme."
-    statut: a_verifier
+    texte: "Système reposant à terme sur les renouvelables, le nucléaire étant jugé trop cher et trop lent ; ne demande plus la fermeture anticipée des centrales existantes."
+    statut: verifie
+    source:
+      titre: "Révolution Énergétique, « Qui dit quoi sur l'énergie parmi les candidats déclarés à la présidentielle ? »"
+      url: "https://www.revolution-energetique.com/actus/qui-dit-quoi-sur-lenergie-parmi-les-candidats-declares-a-la-presidentielle/"
+      date: 2026-06-27
   fiscalite:
-    texte: "Taxe sur les plus hauts patrimoines (type Zucman)."
-    statut: a_verifier
+    texte: "Taxer les superprofits des compagnies pétrolières pour financer des aides ciblées aux ménages."
+    statut: verifie
+    source:
+      titre: "franceinfo, « Je reste une candidate pour l'écologie et pour l'union » (Les 4 Vérités)"
+      url: "https://www.franceinfo.fr/politique/eelv/je-serai-toujours-partie-de-la-solution-candidate-marine-tondelier-plaide-encore-pour-une-candidature-unique-a-gauche_8184458.html"
+      date: 2026-09-09
   europe:
     texte: "Europe fédérale et écologique."
     statut: a_verifier

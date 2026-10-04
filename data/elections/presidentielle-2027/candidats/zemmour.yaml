@@ -7,19 +7,19 @@ declaration: 2026-09-17
 bio: "Président de Reconquête, candidat en 2022. A confirmé sa candidature le 17 septembre 2026 ; déclaration formelle annoncée pour l'automne."
 positions:
   retraites:
-    texte: "Relever progressivement l'âge de départ à 64, voire 65 ans ; donner plus de place à la capitalisation."
+    texte: "Repousser l'âge légal à « 64 voire 65 ans » et sortir progressivement de la répartition au profit de la capitalisation."
     statut: verifie
     source:
-      titre: "CNews, « Retraites : voici les propositions des différents candidats à l'élection présidentielle 2027 »"
-      url: "https://www.cnews.fr/france/2026-10-03/retraites-voici-les-propositions-des-differents-candidats-lelection"
-      date: 2026-10-03
+      titre: "franceinfo, « Changement de système, passage à 60 ou à 65 ans, capitalisation... Que proposent les principaux candidats à l'élection présidentielle pour les retraites ? »"
+      url: "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/changement-de-systeme-passage-a-60-ou-a-65-ans-capitalisation-que-proposent-les-principaux-candidats-a-l-election-presidentielle-pour-les-retraites_8215784.html"
+      date: 2026-09-30
   immigration:
-    texte: "Aller au-delà de l'immigration zéro vers une « immigration négative » ; expulser les étrangers, même en situation régulière, après un an de chômage."
+    texte: "« Remigration » : expulser les étrangers détenus ou condamnés, les clandestins, et les étrangers même en situation régulière après un an de chômage."
     statut: verifie
     source:
-      titre: "CNews, direct « Présidentielle 2027 : il faut enclencher l'immigration négative, réclame Eric Zemmour »"
-      url: "https://www.cnews.fr/france/2026-09-13/presidentielle-2027-il-ne-suffit-pas-de-reclamer-une-immigration-zero-mais-il"
-      date: 2026-09-13
+      titre: "L'Avenir (Belga/AFP), « Zemmour confirme qu'il sera candidat… et durcit encore son discours sur l'immigration »"
+      url: "https://www.lavenir.net/actu/monde/2026/09/18/zemmour-confirme-quil-sera-candidat-a-lelection-presidentielle-en-france-et-durcit-encore-son-discours-sur-limmigration-5OFMOVM6CVCDFHY4B3GI5QID3Q/"
+      date: 2026-09-18
   energie:
     texte: "Nucléaire, sortie de l'éolien."
     statut: a_verifier

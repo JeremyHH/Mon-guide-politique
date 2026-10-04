@@ -3,21 +3,33 @@ prenom: "Gabriel"
 nom: "Attal"
 parti: "Renaissance"
 statut: declare
-bio: "Ancien Premier ministre (2024), secrétaire général de Renaissance."
+declaration: 2026-05-22
+bio: "Ancien Premier ministre (2024), secrétaire général de Renaissance. Candidat officiel depuis le 22 mai 2026."
 positions:
-  # Source repérée : Meilleurtaux Placement, mai 2026 (jour non connu). À confirmer par une déclaration de G. Attal.
   retraites:
-    texte: "Supprimer l'âge légal au profit de la seule durée de cotisation, avec décote ou surcote selon l'âge de départ ; ajouter une part de capitalisation."
-    statut: a_verifier
+    texte: "Supprimer l'âge légal : seule la durée de cotisation compte, avec décote ou surcote ; ajouter une part de capitalisation (1 000 euros versés par l'État à chaque nouveau-né)."
+    statut: verifie
+    source:
+      titre: "franceinfo, « Changement de système, passage à 60 ou à 65 ans, capitalisation... Que proposent les principaux candidats à l'élection présidentielle pour les retraites ? »"
+      url: "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/changement-de-systeme-passage-a-60-ou-a-65-ans-capitalisation-que-proposent-les-principaux-candidats-a-l-election-presidentielle-pour-les-retraites_8215784.html"
+      date: 2026-09-30
   immigration:
-    texte: "Quotas d'immigration économique votés chaque année par le Parlement ; priorité à l'immigration de travail sur le regroupement familial."
-    statut: a_verifier
+    texte: "Instaurer des « quotas limitatifs » pour l'immigration."
+    statut: verifie
+    source:
+      titre: "franceinfo, « \"Quotas limitatifs\" pour l'immigration… Gabriel Attal profite-t-il de l'été pour ancrer sa campagne à droite ? »"
+      url: "https://www.franceinfo.fr/elections/presidentielle/quotas-limitatifs-pour-l-immigration-presence-dans-les-medias-de-la-sphere-bollore-gabriel-attal-profite-t-il-de-l-ete-pour-ancrer-sa-campagne-presidentielle-a-droite_8137157.html"
+      date: 2026-08-07
   energie:
     texte: "Relance du nucléaire et accélération des renouvelables."
     statut: a_verifier
   fiscalite:
-    texte: "Pas de hausse générale d'impôts, baisse ciblée de la dépense."
-    statut: a_verifier
+    texte: "Plan de 150 milliards d'euros d'économies en cinq ans (assurance chômage, retraites, départs volontaires de fonctionnaires) ; déficit sous 3 % en 2032 et équilibre en 2037."
+    statut: verifie
+    source:
+      titre: "franceinfo, « Que proposent les candidats à la présidentielle pour réduire la dette publique ? »"
+      url: "https://www.franceinfo.fr/economie/crise/crise-de-la-dette/que-proposent-les-candidats-a-la-presidentielle-pour-reduire-la-dette-publique_8215481.html"
+      date: 2026-09-29
   europe:
     texte: "Approfondissement de l'intégration, défense européenne."
     statut: a_verifier

@@ -3,24 +3,32 @@ prenom: "Édouard"
 nom: "Philippe"
 parti: "Horizons"
 statut: declare
-bio: "Maire du Havre, Premier ministre de 2017 à 2020."
+bio: "Maire du Havre, président d'Horizons, Premier ministre de 2017 à 2020. Candidat depuis septembre 2024."
 positions:
   retraites:
-    texte: "Reprendre la réforme de 2023, puis porter progressivement l'âge de départ à 65 ans et la durée de cotisation à 45 ans ; créer un pilier par capitalisation (10 à 15 % des pensions à terme)."
+    texte: "Reprendre la réforme de 2023, puis passer en moins de 10 ans à 65 ans et 45 annuités, avec des départs entre 60 et 64 ans pour les carrières longues et pénibles ; ajouter un volet capitalisation."
     statut: verifie
     source:
-      titre: "CNews, « Capitalisation, départ à 65 ans, durée de cotisation… Edouard Philippe dévoile sa réforme des retraites pour 2027 »"
-      url: "https://www.cnews.fr/france/2026-09-29/capitalisation-depart-65-ans-duree-de-cotisation-edouard-philippe-devoile-sa"
-      date: 2026-09-29
+      titre: "franceinfo, « Changement de système, passage à 60 ou à 65 ans, capitalisation... Que proposent les principaux candidats à l'élection présidentielle pour les retraites ? »"
+      url: "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/changement-de-systeme-passage-a-60-ou-a-65-ans-capitalisation-que-proposent-les-principaux-candidats-a-l-election-presidentielle-pour-les-retraites_8215784.html"
+      date: 2026-09-30
   immigration:
-    texte: "Quotas migratoires pour choisir l'immigration économique, restriction du regroupement familial, liste de « pays sûrs » votée chaque année par le Parlement."
-    statut: a_verifier
+    texte: "Suspendre pour plusieurs années les demandes d'asile à Mayotte et en Guyane, mettre fin à l'accord franco-algérien de 1968, soumettre les régularisations massives à l'accord des pays Schengen."
+    statut: verifie
+    source:
+      titre: "franceinfo, « Après l'afflux de migrants à Ceuta, Edouard Philippe propose des mesures pour limiter l'immigration… »"
+      url: "https://www.franceinfo.fr/societe/immigration/apres-l-afflux-de-migrants-a-ceuta-edouard-philippe-propose-des-mesures-pour-limiter-l-immigration-et-les-regularisations-de-sans-papiers-dans-l-union-europeenne_8141837.html"
+      date: 2026-08-10
   energie:
     texte: "Construire 6 réacteurs EPR2 puis une seconde série de 8, tout en développant les renouvelables."
     statut: a_verifier
   fiscalite:
-    texte: "Ramener le déficit sous 3 % du PIB sans hausse d'impôts, par une revue générale des dépenses ; inscrire une règle d'or budgétaire dans la Constitution."
-    statut: a_verifier
+    texte: "Pas de hausse d'impôts ; supprimer 50 milliards d'euros d'impôts de production et 50 milliards d'aides aux entreprises ; économies surtout sur les dépenses sociales ; « règle d'or » budgétaire."
+    statut: verifie
+    source:
+      titre: "Public Sénat, « Dette, retraites, fiscalité… que retenir du premier débat des candidats à l'élection présidentielle ? »"
+      url: "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle"
+      date: 2026-08-27
   europe:
     texte: "Soutien à l'UE, renforcement du marché unique."
     statut: a_verifier

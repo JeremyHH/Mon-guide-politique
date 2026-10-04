@@ -3,24 +3,33 @@ prenom: "Jean-Luc"
 nom: "Mélenchon"
 parti: "La France insoumise"
 statut: declare
-bio: "Fondateur de LFI, candidat en 2012, 2017 et 2022."
+declaration: 2026-05-03
+bio: "Fondateur de La France insoumise, candidat en 2012, 2017 et 2022. Quatrième candidature annoncée le 3 mai 2026."
 positions:
   retraites:
-    texte: "Retraite à 60 ans avec 40 annuités ; départs anticipés à 55 ou 57 ans selon la pénibilité des métiers."
+    texte: "Retraite d'abord à 62 ans, puis « le plus vite possible » à 60 ans pour 40 années de cotisation ; départ possible à 60 ans sans tous ses trimestres, avec une pension au prorata."
     statut: verifie
     source:
-      titre: "CNews, « Présidentielle 2027 : départ à 60 ans, hausse des petites pensions, pénibilité… Quelles sont les propositions des candidats de gauche sur les retraites ? »"
-      url: "https://www.cnews.fr/france/2026-10-02/presidentielle-2027-depart-60-ans-hausse-des-petites-pensions-penibilite-quelles"
-      date: 2026-10-02
+      titre: "franceinfo, « Changement de système, passage à 60 ou à 65 ans, capitalisation... Que proposent les principaux candidats à l'élection présidentielle pour les retraites ? »"
+      url: "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/changement-de-systeme-passage-a-60-ou-a-65-ans-capitalisation-que-proposent-les-principaux-candidats-a-l-election-presidentielle-pour-les-retraites_8215784.html"
+      date: 2026-09-30
   immigration:
     texte: "Régularisation des travailleurs sans papiers, accueil digne."
     statut: a_verifier
   energie:
-    texte: "Sortie du nucléaire et 100 % renouvelables (géothermie, éolien en mer, hydraulique), dans le cadre d'une planification écologique."
-    statut: a_verifier
+    texte: "Sortie progressive du nucléaire et 100 % d'énergies renouvelables."
+    statut: verifie
+    source:
+      titre: "Révolution Énergétique, « Qui dit quoi sur l'énergie parmi les candidats déclarés à la présidentielle ? »"
+      url: "https://www.revolution-energetique.com/actus/qui-dit-quoi-sur-lenergie-parmi-les-candidats-declares-a-la-presidentielle/"
+      date: 2026-06-27
   fiscalite:
-    texte: "Rétablissement de l'ISF, impôt sur le revenu à 14 tranches."
-    statut: a_verifier
+    texte: "Geler la dette française détenue par la Banque centrale européenne (environ 600 milliards d'euros) ; augmenter les salaires ; créer un pôle bancaire public."
+    statut: verifie
+    source:
+      titre: "franceinfo, « Que proposent les candidats à la présidentielle pour réduire la dette publique ? »"
+      url: "https://www.franceinfo.fr/economie/crise/crise-de-la-dette/que-proposent-les-candidats-a-la-presidentielle-pour-reduire-la-dette-publique_8215481.html"
+      date: 2026-09-29
   europe:
     texte: "Désobéissance aux traités budgétaires européens."
     statut: a_verifier

@@ -4,8 +4,8 @@ type: presidentielle
 date: 2027-04-18
 libelleDate: "18 avril et 2 mai 2027"
 resume: "Élection du président de la République pour cinq ans, au suffrage universel direct, en deux tours."
-miseAJour: 2026-10-03
-introCandidats: "Principales candidatures déclarées au 3 octobre 2026. Les parrainages (500 signatures d'élus) ne seront validés par le Conseil constitutionnel qu'au printemps 2027."
+miseAJour: 2026-10-04
+introCandidats: "Principales candidatures déclarées au 4 octobre 2026. Les parrainages (500 signatures d'élus) ne seront validés par le Conseil constitutionnel qu'au printemps 2027."
 
 themes:
   - { id: retraites, nom: Retraites }
@@ -17,19 +17,23 @@ themes:
 
 # « date » sert au tri et à repérer la prochaine étape ; « quand » est le libellé affiché.
 calendrier:
-  - { date: 2026-07-07, quand: "7 juillet 2026", quoi: "Décision en appel dans le procès de Marine Le Pen : elle reste éligible." }
+  - { date: 2026-07-07, quand: "7 juillet 2026", quoi: "Décision en appel dans le procès de Marine Le Pen : elle reste éligible et se déclare candidate le soir même." }
   - { date: 2026-10-10, quand: "9-10 octobre 2026", quoi: "Primaire PS – Place publique, 1er tour." }
   - { date: 2026-10-17, quand: "16-17 octobre 2026", quoi: "Primaire PS – Place publique, 2nd tour éventuel." }
-  - { date: 2027-03-01, quand: "Février-mars 2027", quoi: "Recueil des 500 parrainages d'élus." }
+  - { date: 2027-03-12, quand: "12 mars 2027, 18 h", quoi: "Fin du recueil des 500 parrainages d'élus." }
   - { date: 2027-03-20, quand: "Mars 2027", quoi: "Publication de la liste officielle des candidats par le Conseil constitutionnel." }
   - { date: 2027-04-18, quand: "18 avril 2027", quoi: "Premier tour." }
   - { date: 2027-05-02, quand: "2 mai 2027", quoi: "Second tour." }
 
 # Candidatures déclarées sans fiche détaillée pour l'instant.
 autres:
+  - "Nathalie Arthaud · Lutte ouvrière"
   - "François Asselineau · Union populaire républicaine"
   - "Delphine Batho · Génération écologie"
-  - "Nicolas Dupont-Aignan · Debout la France (déclaré le 19 sept. 2026)"
+  - "Nicolas Dupont-Aignan · Debout la France"
   - "Selma Labib · NPA-Révolutionnaires"
-  - "David Lisnard · Nouvelle Énergie"
-  - "Primaire PS – Place publique : Faure, Glucksmann, Guedj, Maurel, Royal (vote 9-10 et 16-17 oct.)"
+  - "David Lisnard · Nouvelle Énergie (déclaré le 31 mars 2026)"
+  - "Florian Philippot · Les Patriotes"
+  - "François Ruffin · Debout !"
+  - "Primaire PS « Choisir 2027 » : Faure, Glucksmann, Guedj, Maurel, Royal (vote les 9-10 et 16-17 octobre)"
+  - "Xavier Bertrand a annoncé le 27 août son intention d'être candidat, sans déclaration officielle"

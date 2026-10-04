@@ -3,12 +3,16 @@ prenom: "Marine"
 nom: "Le Pen"
 parti: "Rassemblement national"
 statut: declare
-bio: "Députée du Pas-de-Calais, candidate en 2012, 2017 et 2022. Condamnée en appel le 7 juillet 2026, reste éligible."
+declaration: 2026-07-07
+bio: "Députée du Pas-de-Calais, candidate en 2012, 2017 et 2022. Condamnée en appel le 7 juillet 2026 à 15 mois d'inéligibilité ferme, déjà purgés ; elle s'est pourvue en cassation."
 positions:
-  # Sources divergentes : JDD et Europe 1 (oct. 2026) décrivent 62 ans / 60 ans pour les carrières longues ; d'autres titres parlent d'un « retour à 60 ans ». À trancher avec le programme officiel.
   retraites:
-    texte: "Retour à 62 ans avec 42 annuités ; départ à 60 ans avec 40 annuités pour ceux qui ont commencé à travailler avant 20 ans."
-    statut: a_verifier
+    texte: "Départ à 62 ans, et à 60 ans avec 40 annuités pour ceux qui ont commencé à travailler avant 20 ans ; coût annoncé de 9 milliards d'euros par an."
+    statut: verifie
+    source:
+      titre: "franceinfo, « Changement de système, passage à 60 ou à 65 ans, capitalisation... Que proposent les principaux candidats à l'élection présidentielle pour les retraites ? »"
+      url: "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/changement-de-systeme-passage-a-60-ou-a-65-ans-capitalisation-que-proposent-les-principaux-candidats-a-l-election-presidentielle-pour-les-retraites_8215784.html"
+      date: 2026-09-30
   immigration:
     texte: "Référendum sur l'immigration ; priorité nationale pour l'emploi, le logement social et les aides sociales."
     statut: a_verifier
@@ -16,11 +20,19 @@ positions:
     texte: "Moratoire sur l'éolien, nouveaux réacteurs nucléaires."
     statut: a_verifier
   fiscalite:
-    texte: "Baisse de la TVA sur l'énergie, impôt sur la fortune financière."
-    statut: a_verifier
+    texte: "« Règle d'or » budgétaire dans la Constitution ; 125 milliards d'euros d'économies, notamment sur l'immigration, les agences de l'État et la contribution à l'Union européenne."
+    statut: verifie
+    source:
+      titre: "Public Sénat, « Dette, retraites, fiscalité… que retenir du premier débat des candidats à l'élection présidentielle ? »"
+      url: "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle"
+      date: 2026-08-27
   europe:
-    texte: "Primauté du droit national, baisse de la contribution française."
-    statut: a_verifier
+    texte: "Limiter la contribution nette de la France au budget de l'Union européenne à 5 milliards d'euros."
+    statut: verifie
+    source:
+      titre: "franceinfo, « Que proposent les candidats à la présidentielle pour réduire la dette publique ? »"
+      url: "https://www.franceinfo.fr/economie/crise/crise-de-la-dette/que-proposent-les-candidats-a-la-presidentielle-pour-reduire-la-dette-publique_8215481.html"
+      date: 2026-09-29
   securite:
     texte: "Peines planchers, présomption de légitime défense pour les policiers."
     statut: a_verifier
