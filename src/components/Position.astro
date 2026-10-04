@@ -2,12 +2,13 @@
 import { dateFr } from "../lib/data";
 
 interface Props {
-  position: { texte: string; statut: "verifie" | "a_verifier"; source?: { titre: string; url: string; date: Date } } | null | undefined;
+  position: { texte: string; statut: "verifie" | "a_verifier"; anterieur?: string; source?: { titre: string; url: string; date: Date } } | null | undefined;
 }
 const { position } = Astro.props;
 ---
 {position ? (
   <>
+    {position.anterieur && <span class="pill anterieur" title="Pas encore de position pour 2027 : position tirée du programme de cette élection.">Programme {position.anterieur}</span>}
     {position.texte}
     <span class="mono src">
       {position.source ? (

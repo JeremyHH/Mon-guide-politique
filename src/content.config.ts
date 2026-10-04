@@ -14,6 +14,8 @@ const position = z
     texte: z.string().min(5),
     statut: z.enum(["verifie", "a_verifier"]),
     source: source.optional(),
+    // Position reprise d'un programme antérieur (ex. « Présidentielle 2022 »), faute de position actuelle.
+    anterieur: z.string().optional(),
   })
   .refine((p) => p.statut !== "verifie" || p.source, {
     message: "Une position vérifiée doit avoir une source (titre, url, date).",

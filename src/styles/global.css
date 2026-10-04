@@ -410,3 +410,9 @@ table.resultats{min-width:520px}
 .groupe-candidats h3{font-size:1.15rem;color:var(--titre);display:flex;align-items:baseline;gap:8px}
 .groupe-n{font-size:.75rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:1px 8px}
 .groupe-critere{margin:0 0 4px;color:var(--muted)}
+
+/* ---------- Candidatures présidentielles précédentes ---------- */
+.ballot .deja{font-size:.68rem;color:var(--muted);line-height:1.4}
+.deja-fiche{display:grid;gap:4px;margin-top:6px;padding:8px 12px;border-left:3px solid var(--bleu);background:var(--ground);border-radius:0 8px 8px 0}
+.deja-fiche ul{margin:0;padding-left:18px;font-size:.9rem}
+.pill.anterieur{border-color:var(--bleu);color:var(--bleu);margin-right:6px;vertical-align:1px}

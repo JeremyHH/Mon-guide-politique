@@ -49,6 +49,19 @@ export const STATUTS: Record<Candidat["data"]["statut"], string> = {
   retire: "Retiré",
 };
 
+/** Candidatures officielles aux présidentielles précédentes (tirées des résultats, hors candidatures non validées). */
+export function presidentiellesPassees(c: Candidat) {
+  return c.data.resultats
+    .filter((r) => r.scrutin === "Présidentielle" && /%/.test(r.resultat) && !/non validée/i.test(r.resultat))
+    .map((r) => ({
+      annee: r.annee,
+      resultat: r.resultat,
+      premierTour: r.resultat.match(/[\d,]+\s?%/)?.[0] ?? "",
+      secondTour: /second tour/i.test(r.resultat),
+    }))
+    .sort((a, b) => b.annee - a.annee);
+}
+
 export const dateFr = (d: Date) =>
   d.toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
 

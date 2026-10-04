@@ -4,7 +4,7 @@ import Position from "../../../../components/Position.astro";
 import FriseCandidat from "../../../../components/FriseCandidat.astro";
 import Tournee from "../../../../components/Tournee.astro";
 import BandeauVerif from "../../../../components/BandeauVerif.astro";
-import { elections, candidatsDe, nomComplet, slugCandidat, STATUTS, dateFr, lien, type Candidat, type Election } from "../../../../lib/data";
+import { presidentiellesPassees, elections, candidatsDe, nomComplet, slugCandidat, STATUTS, dateFr, lien, type Candidat, type Election } from "../../../../lib/data";
 
 export async function getStaticPaths() {
   const routes = [];
@@ -44,6 +44,12 @@ const age = (d: Date) => {
         <h2>{nomComplet(c)}</h2>
         <span style="color:var(--muted)">{c.data.parti}</span>
         <span class="pill ok" style="justify-self:start">{STATUTS[c.data.statut]}{c.data.declaration && ` · ${dateFr(c.data.declaration)}`}</span>
+        {presidentiellesPassees(c).length > 0 && (
+          <div class="deja-fiche">
+            <span class="label">Déjà candidat·e à l'élection présidentielle</span>
+            <ul>{presidentiellesPassees(c).map((r) => <li><strong>{r.annee}</strong> : {r.resultat}</li>)}</ul>
+          </div>
+        )}
       </div>
     </div>
     <p style="margin:0;max-width:65ch">{c.data.bio}</p>
