@@ -64,5 +64,7 @@ export async function compteCandidats(election: Election) {
   const liste = await candidatsDe(election);
   const autres = election.data.autres.filter((a) => !/sans déclaration officielle/i.test(a)).length;
   const primaire = liste.filter((c) => c.data.statut === "primaire").length;
-  return { suivis: liste.length, primaire, autres, total: liste.length + autres };
+  const pressentis = liste.filter((c) => c.data.statut === "pressenti").length;
+  const declares = liste.filter((c) => !["pressenti", "retire"].includes(c.data.statut)).length;
+  return { declares, primaire, pressentis, autres, total: declares + autres };
 }

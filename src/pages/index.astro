@@ -26,7 +26,7 @@ const slug = (id: string) => id.split("/")[1];
         {compte && (
           <span class="compte-candidats">
             <span class="compte-ligne"><strong>{compte.total}</strong> candidatures déclarées</span>
-            <span class="compte-detail">dont {compte.suivis} détaillées sur le site{compte.primaire > 0 && ` (${compte.primaire} à la primaire socialiste)`}</span>
+            <span class="compte-detail">{[compte.primaire > 0 && `dont ${compte.primaire} à la primaire socialiste`, compte.pressentis > 0 && `et ${compte.pressentis} intention${compte.pressentis > 1 ? "s" : ""} de candidature non officielle${compte.pressentis > 1 ? "s" : ""}`].filter(Boolean).join(", ")}</span>
           </span>
         )}
       </a>
