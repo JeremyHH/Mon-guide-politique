@@ -1,0 +1,42 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "Delphine"
+nom: "Batho"
+parti: "Génération écologie"
+statut: declare
+declaration: 2025-11-25
+bio: "Présidente de Génération écologie, députée des Deux-Sèvres et ancienne ministre de l'Écologie (2012-2013). Défend une « écologie capable de gouverner »."
+positions:
+  retraites: null
+  immigration: null
+  energie: null
+  fiscalite: null
+  europe: null
+  securite: null
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1973-03-23, lieu: "Paris" }
+biographie: "Ancienne présidente de la FIDL (syndicat lycéen), militante socialiste de 1994 à 2018. Proche de Ségolène Royal, elle est élue députée en 2007, puis rejoint et préside Génération écologie à partir de 2018."
+fonctions:
+  - { intitule: "Présidente de Génération écologie", periode: "depuis septembre 2018" }
+  - { intitule: "Députée des Deux-Sèvres", periode: "2007 – 2012, depuis 2013" }
+  - { intitule: "Ministre de l'Écologie, du Développement durable et de l'Énergie", periode: "juin 2012 – juillet 2013" }
+  - { intitule: "Ministre déléguée auprès de la garde des Sceaux", periode: "mai – juin 2012" }
+resultats:
+  - { annee: 2017, scrutin: "Législatives, Deux-Sèvres (2e)", resultat: "Réélue avec 56,94 % au second tour" }
+  - { annee: 2012, scrutin: "Législatives, Deux-Sèvres (2e)", resultat: "Réélue dès le premier tour avec 53,18 %" }
+condamnations: []
+procedures: []
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/batho.jpg"
+  auteur: "DeuxSevres79"
+  licence: "CC BY-SA 4.0"
+  licenceUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+  source: "https://commons.wikimedia.org/wiki/File:Delphine_Batho_(cropped-2).png"
+  annee: 2018
+# Campagne : dates clés propres à la candidate
+campagne:
+  - { date: 2025-11-25, quand: "25 novembre 2025", type: annonce, quoi: "Se déclare candidate à l'élection présidentielle.", source: { titre: "France 3 Nouvelle-Aquitaine (26 novembre 2025)", url: "https://france3-regions.franceinfo.fr/nouvelle-aquitaine/deux-sevres/niort/la-deputee-ecologiste-delphine-batho-se-declare-candidate-pour-la-presidentielle-de-2027-3255724.html" } }
+  - { date: 2026-09-18, quand: "Septembre 2026", type: annonce, quoi: "Maintient sa candidature, primaire ou non.", source: { titre: "Public Sénat (18 septembre 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart" } }
+sourcesProfil:
+  - { titre: "Wikipédia, article « Delphine Batho » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Delphine_Batho" }

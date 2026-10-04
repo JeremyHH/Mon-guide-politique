@@ -1,0 +1,49 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "François"
+nom: "Ruffin"
+parti: "Debout !"
+statut: declare
+declaration: 2026-01-26
+bio: "Député de la Somme depuis 2017, journaliste et documentariste, fondateur de Debout !. Candidat qu'il y ait ou non une primaire de la gauche ; propose que le président soit payé au Smic."
+positions:
+  retraites: null
+  immigration: null
+  energie: null
+  fiscalite: null
+  europe: null
+  securite: null
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1975-10-18, lieu: "Calais (Pas-de-Calais)" }
+biographie: "Diplômé du Centre de formation des journalistes, fondateur du journal Fakir à Amiens. Réalisateur de « Merci Patron ! » (César du meilleur documentaire 2017). Élu député en 2017 avec le soutien de La France insoumise, sans en être membre, il s'en éloigne en 2024 et lance son mouvement Debout ! en 2025."
+fonctions:
+  - { intitule: "Député de la Somme", periode: "depuis juin 2017" }
+  - { intitule: "Président de Debout !", periode: "depuis juin 2025" }
+resultats:
+  - { annee: 2024, scrutin: "Législatives, Somme (1re)", resultat: "Réélu avec 52,96 % au second tour" }
+  - { annee: 2022, scrutin: "Législatives, Somme (1re)", resultat: "Réélu" }
+  - { annee: 2017, scrutin: "Législatives, Somme (1re)", resultat: "Élu avec 55,97 % au second tour" }
+condamnations:
+  - date: "23 avril 2008"
+    juridiction: "Tribunal d'Amiens"
+    motif: "Diffamation, à la suite de la publication de son livre « Quartier Nord » (plainte d'un habitant)"
+    peine: "Non précisée dans les sources consultées"
+    statut: non_precise
+procedures: []
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/ruffin.jpg"
+  auteur: "Thinkerview"
+  licence: "CC BY-SA 4.0"
+  licenceUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+  source: "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Ruffin_(cropped).jpg"
+  annee: 2022
+# Campagne : dates clés propres au candidat
+campagne:
+  - { date: 2026-01-26, quand: "26 janvier 2026", type: annonce, quoi: "Se déclare candidat à une primaire de la gauche.", source: { titre: "franceinfo (30 janvier 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/francois-ruffin-paye-au-smic-une-fois-president-c-est-un-symbole-il-nous-faut-une-grande-loi-de-separation-de-l-argent-et-de-l-etat-explique-le-candidat-a-la-primaire-de-la-gauche_7774160.html" } }
+  - { date: 2026-04-25, quand: "25 avril 2026", type: meeting, quoi: "Lance sa campagne lors d'un meeting à Lyon (environ 2 000 sympathisants).", source: { titre: "franceinfo (12 mai 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-je-souhaite-qu-une-primaire-de-la-gauche-ait-lieu-mais-s-il-n-y-en-a-pas-j-y-vais-assure-francois-ruffin_7999316.html" } }
+  - { date: 2026-05-12, quand: "12 mai 2026", type: annonce, quoi: "Confirme qu'il sera candidat même sans primaire de la gauche.", source: { titre: "franceinfo (12 mai 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-je-souhaite-qu-une-primaire-de-la-gauche-ait-lieu-mais-s-il-n-y-en-a-pas-j-y-vais-assure-francois-ruffin_7999316.html" } }
+tournee:
+  - { date: 2026-04-25, quand: "25 avril 2026", lieu: "Lyon", type: meeting, quoi: "Meeting de campagne (environ 2 000 personnes).", source: { titre: "franceinfo (12 mai 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-je-souhaite-qu-une-primaire-de-la-gauche-ait-lieu-mais-s-il-n-y-en-a-pas-j-y-vais-assure-francois-ruffin_7999316.html" } }
+sourcesProfil:
+  - { titre: "Wikipédia, article « François Ruffin » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/François_Ruffin" }

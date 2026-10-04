@@ -41,7 +41,7 @@ const compte = await compteCandidats(election);
     <div class="ballots" id="bulletins">
       {liste.map((c) => (
         <a class="ballot" href={lien(`/elections/${election.id}/candidats/${slugCandidat(c)}`)}>
-          {c.data.photo && <img class="ballot-photo" src={lien(c.data.photo.fichier)} alt="" width="120" height="160" loading="lazy" />}
+          {c.data.photo ? <img class="ballot-photo" src={lien(c.data.photo.fichier)} alt="" width="120" height="160" loading="lazy" /> : <span class="ballot-photo sans-photo" title="Pas de photo sous licence libre disponible">{c.data.prenom[0]}{c.data.nom[0]}</span>}
           <span class="name">{nomComplet(c)}</span>
           <span class="party">{c.data.parti}</span>
           <span class="status"><span class="pill ok">{STATUTS[c.data.statut]}</span></span>
@@ -50,7 +50,7 @@ const compte = await compteCandidats(election);
     </div>
     {election.data.autres.length > 0 && (
       <div class="others">
-        <span class="label">Autres candidatures déclarées (fiches à venir)</span>
+        <span class="label">Autres intentions de candidature</span>
         <ul>{election.data.autres.map((a) => <li>{a}</li>)}</ul>
       </div>
     )}

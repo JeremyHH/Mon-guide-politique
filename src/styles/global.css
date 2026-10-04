@@ -358,6 +358,7 @@ table.resultats{min-width:520px}
 .portrait img{width:180px;height:240px;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:var(--ground);display:block}
 .portrait figcaption{font-family:var(--f-mono);font-size:.62rem;line-height:1.35;color:var(--muted)}
 .portrait figcaption a{color:var(--muted)}
+.sans-photo{display:grid;place-items:center;font:600 1.6rem/1 var(--f-display);color:var(--muted);letter-spacing:.05em}
 .ballot-photo{width:96px;height:128px;object-fit:cover;border-radius:8px;justify-self:center;margin-bottom:6px;border:1px solid var(--line);background:var(--ground)}
 @media (max-width:520px){.portrait,.portrait img{width:140px}.portrait img{height:187px}}
 

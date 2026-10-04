@@ -1,0 +1,46 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "Nathalie"
+nom: "Arthaud"
+parti: "Lutte ouvrière"
+statut: declare
+declaration: 2025-12-08
+bio: "Porte-parole de Lutte ouvrière depuis 2008, professeure d'économie-gestion. Candidate pour la quatrième fois à l'élection présidentielle."
+positions:
+  retraites: null
+  immigration: null
+  energie: null
+  fiscalite:
+    texte: "Porter le SMIC à 2 000 € net par mois et confisquer les « superprofits » de TotalEnergies."
+    statut: verifie
+    source:
+      titre: "franceinfo, « L'invité politique » : Nathalie Arthaud souhaite la mise en place du Smic à 2 000 euros net par mois"
+      url: "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/prix-du-carburant-nathalie-arthaud-porte-parole-de-lutte-ouvriere-souhaite-la-mise-en-place-du-smic-a-2-000-euros-net-par-mois_7978223.html"
+      date: 2026-05-22
+  europe: null
+  securite: null
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1970-02-23, lieu: "Peyrins (Drôme)" }
+biographie: "Agrégée d'économie et gestion, enseignante en lycée dans la région lyonnaise puis en Seine-Saint-Denis. Militante de Lutte ouvrière depuis la fin des années 1980, elle succède à Arlette Laguiller comme porte-parole du parti."
+fonctions:
+  - { intitule: "Porte-parole de Lutte ouvrière", periode: "depuis décembre 2008" }
+  - { intitule: "Conseillère municipale de Vaulx-en-Velin", periode: "2008 – 2014" }
+resultats:
+  - { annee: 2022, scrutin: "Présidentielle", resultat: "0,56 % au premier tour" }
+  - { annee: 2017, scrutin: "Présidentielle", resultat: "0,64 % au premier tour" }
+  - { annee: 2012, scrutin: "Présidentielle", resultat: "0,56 % au premier tour" }
+condamnations: []
+procedures: []
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/arthaud.jpg"
+  auteur: "Kokluts"
+  licence: "CC BY-SA 4.0"
+  licenceUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+  source: "https://commons.wikimedia.org/wiki/File:Nathalie_Arthaud_(LO)_19-05-2024.jpg"
+  annee: 2024
+# Campagne : dates clés propres à la candidate
+campagne:
+  - { date: 2025-12-08, quand: "8 décembre 2025", type: annonce, quoi: "Annonce sa candidature pour Lutte ouvrière.", source: { titre: "Wikipédia, « Nathalie Arthaud »", url: "https://fr.wikipedia.org/wiki/Nathalie_Arthaud" } }
+sourcesProfil:
+  - { titre: "Wikipédia, article « Nathalie Arthaud » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Nathalie_Arthaud" }

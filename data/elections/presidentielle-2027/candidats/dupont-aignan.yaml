@@ -1,0 +1,60 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "Nicolas"
+nom: "Dupont-Aignan"
+parti: "Debout la France"
+statut: declare
+declaration: 2025-03-08
+bio: "Président de Debout la France, maire d'Yerres (Essonne), ancien député. Candidat pour la quatrième fois à l'élection présidentielle."
+positions:
+  retraites: null
+  immigration:
+    texte: "Rétablir les contrôles aux frontières nationales."
+    statut: verifie
+    source:
+      titre: "franceinfo, « L'invité politique » du 2 juin 2026 (Nicolas Dupont-Aignan)"
+      url: "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/l-invite-politique-du-mardi-02-juin-2026_8001014.html"
+      date: 2026-06-02
+  energie:
+    texte: "Baisser le prix de l'électricité de 30 % en sortant du marché européen de l'électricité."
+    statut: verifie
+    source:
+      titre: "franceinfo, « L'invité politique » du 2 juin 2026 (Nicolas Dupont-Aignan)"
+      url: "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/l-invite-politique-du-mardi-02-juin-2026_8001014.html"
+      date: 2026-06-02
+  fiscalite: null
+  europe:
+    texte: "Sortir de l'Union européenne pour la reconstruire sur d'autres bases."
+    statut: verifie
+    source:
+      titre: "franceinfo, « L'invité politique » du 2 juin 2026 (Nicolas Dupont-Aignan)"
+      url: "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/l-invite-politique-du-mardi-02-juin-2026_8001014.html"
+      date: 2026-06-02
+  securite: null
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1961-03-07, lieu: "Paris" }
+biographie: "Diplômé de Sciences Po, de l'université Paris-Dauphine et de l'ENA, administrateur civil. Membre du RPR puis de l'UMP, il quitte ce parti en 2007 et fonde Debout la République, devenu Debout la France."
+fonctions:
+  - { intitule: "Maire d'Yerres", periode: "1995 – 2017, depuis mars 2026" }
+  - { intitule: "Président de Debout la France", periode: "depuis novembre 2008" }
+  - { intitule: "Député de l'Essonne", periode: "1997 – 2024" }
+  - { intitule: "Président de la communauté d'agglomération du Val d'Yerres", periode: "2002 – 2017" }
+resultats:
+  - { annee: 2022, scrutin: "Présidentielle", resultat: "2,06 % au premier tour" }
+  - { annee: 2017, scrutin: "Présidentielle", resultat: "4,70 % au premier tour" }
+  - { annee: 2012, scrutin: "Présidentielle", resultat: "1,79 % au premier tour" }
+condamnations: []
+procedures: []
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/dupont-aignan.jpg"
+  auteur: "Debout la France"
+  licence: "CC BY-SA 4.0"
+  licenceUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+  source: "https://commons.wikimedia.org/wiki/File:Nicolas_Dupont-Aignan,_homme_politique_fran%C3%A7ais.jpg"
+  annee: 2019
+# Campagne : dates clés propres au candidat
+campagne:
+  - { date: 2025-03-08, quand: "8 mars 2025", type: annonce, quoi: "Annonce sa candidature à l'élection présidentielle.", source: { titre: "Wikipédia, « Nicolas Dupont-Aignan »", url: "https://fr.wikipedia.org/wiki/Nicolas_Dupont-Aignan" } }
+sourcesProfil:
+  - { titre: "Wikipédia, article « Nicolas Dupont-Aignan » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Nicolas_Dupont-Aignan" }

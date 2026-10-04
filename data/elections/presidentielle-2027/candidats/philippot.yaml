@@ -1,0 +1,48 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "Florian"
+nom: "Philippot"
+parti: "Les Patriotes"
+statut: declare
+declaration: 2026-05-09
+bio: "Président des Patriotes, ancien vice-président du Front national et ancien député européen. Se dit prêt à se retirer au profit de Philippe de Villiers si celui-ci se présentait."
+positions:
+  retraites: null
+  immigration: null
+  energie: null
+  fiscalite: null
+  europe:
+    texte: "Sortir de l'Union européenne et de l'OTAN."
+    statut: verifie
+    source:
+      titre: "franceinfo, « Présidentielle 2027 : le souverainiste Florian Philippot annonce sa candidature à l'Élysée »"
+      url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-souverainiste-florian-philippot-annonce-sa-candidature-a-l-elysee_7993346.html"
+      date: 2026-05-09
+  securite: null
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1981-10-24, lieu: "Croix (Nord)" }
+biographie: "Diplômé d'HEC, de l'université Paris-Dauphine et de l'ENA, inspecteur de l'administration. Stratège de Marine Le Pen au Front national, il quitte le parti en 2017 et fonde Les Patriotes."
+fonctions:
+  - { intitule: "Président des Patriotes", periode: "depuis septembre 2017" }
+  - { intitule: "Député européen", periode: "2014 – 2019" }
+  - { intitule: "Conseiller régional du Grand Est", periode: "2016 – 2021" }
+  - { intitule: "Vice-président du Front national", periode: "2012 – 2017" }
+  - { intitule: "Conseiller municipal de Forbach", periode: "2014 – 2016" }
+resultats:
+  - { annee: 2019, scrutin: "Européennes (tête de liste Les Patriotes)", resultat: "0,6 %, non réélu" }
+  - { annee: 2014, scrutin: "Européennes, circonscription Est", resultat: "Élu (liste FN)" }
+condamnations: []
+procedures: []
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/philippot.jpg"
+  auteur: "Thomas Bresson"
+  licence: "CC BY 4.0"
+  licenceUrl: "https://creativecommons.org/licenses/by/4.0"
+  source: "https://commons.wikimedia.org/wiki/File:2022-04-16_16-49-26_MAM-Paris_02.jpg"
+  annee: 2022
+# Campagne : dates clés propres au candidat
+campagne:
+  - { date: 2026-05-09, quand: "9 mai 2026", type: annonce, quoi: "Annonce sa candidature sur France 2.", source: { titre: "franceinfo (9 mai 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-souverainiste-florian-philippot-annonce-sa-candidature-a-l-elysee_7993346.html" } }
+sourcesProfil:
+  - { titre: "Wikipédia, article « Florian Philippot » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Florian_Philippot" }

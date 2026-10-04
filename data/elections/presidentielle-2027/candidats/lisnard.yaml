@@ -1,0 +1,49 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "David"
+nom: "Lisnard"
+parti: "Nouvelle Énergie"
+statut: declare
+declaration: 2026-03-31
+bio: "Maire de Cannes depuis 2014 et président de l'Association des maires de France (AMF). A quitté LR en annonçant sa candidature ; défend un projet « libéral, sécuritaire, éducatif et scientifique »."
+positions:
+  retraites: null
+  immigration: null
+  energie: null
+  fiscalite:
+    texte: "Baisser l'impôt sur les sociétés de 25 % à 20 % et plafonner la taxation des revenus du capital à 22 %."
+    statut: verifie
+    source:
+      titre: "France 3 Provence-Alpes-Côte d'Azur, « David Lisnard appelle à \"libérer l'innovation\" en supprimant le principe de précaution de la Constitution »"
+      url: "https://france3-regions.franceinfo.fr/provence-alpes-cote-d-azur/alpes-maritimes/cannes/en-pleine-campagne-pour-l-election-presidentielle-david-lisnard-appelle-a-liberer-l-innovation-en-supprimant-le-principe-de-precaution-de-la-constitution-3358204.html"
+      date: 2026-05-28
+  europe: null
+  securite: null
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1969-02-02, lieu: "Limoges (Haute-Vienne)" }
+biographie: "Diplômé de Sciences Po Bordeaux, il travaille en cabinet et dans le secteur privé avant de s'engager à Cannes, où il devient premier adjoint puis maire. Membre de l'UMP puis de LR jusqu'en mars 2026, il fonde et préside le mouvement Nouvelle Énergie."
+fonctions:
+  - { intitule: "Maire de Cannes", periode: "depuis avril 2014" }
+  - { intitule: "Président de l'Association des maires de France", periode: "depuis novembre 2021" }
+  - { intitule: "Président de la communauté d'agglomération Cannes Pays de Lérins", periode: "depuis 2017" }
+  - { intitule: "Conseiller départemental des Alpes-Maritimes", periode: "depuis 2008" }
+resultats:
+  - { annee: 2026, scrutin: "Municipales, Cannes", resultat: "Réélu dès le premier tour avec 81,11 %" }
+  - { annee: 2021, scrutin: "Présidence de l'AMF", resultat: "Élu avec 62,3 %" }
+  - { annee: 2020, scrutin: "Municipales, Cannes", resultat: "Réélu dès le premier tour avec 88,08 %" }
+  - { annee: 2014, scrutin: "Municipales, Cannes", resultat: "Élu dès le premier tour avec 54,52 %" }
+condamnations: []
+procedures: []
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/lisnard.jpg"
+  auteur: "Frantogian"
+  licence: "CC BY-SA 3.0"
+  licenceUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+  source: "https://commons.wikimedia.org/wiki/File:David_Lisnard_-_2013.jpg"
+  annee: 2013
+# Campagne : dates clés propres au candidat
+campagne:
+  - { date: 2026-03-31, quand: "31 mars 2026", type: annonce, quoi: "Annonce sa candidature, quitte LR et plaide pour une primaire ouverte de la droite.", source: { titre: "LCP (1er avril 2026)", url: "https://lcp.fr/actualites/je-suis-candidat-david-lisnard-quitte-lr-et-relance-le-debat-sur-une-primaire-a-droite" } }
+sourcesProfil:
+  - { titre: "Wikipédia, article « David Lisnard » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/David_Lisnard" }

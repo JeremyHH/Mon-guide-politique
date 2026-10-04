@@ -1,0 +1,26 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "Selma"
+nom: "Labib"
+parti: "NPA-Révolutionnaires"
+statut: declare
+bio: "Conductrice de bus, candidate du NPA-Révolutionnaires, en binôme avec le postier syndicaliste Gaël Quirante."
+positions:
+  retraites: null
+  immigration: null
+  energie: null
+  fiscalite: null
+  europe: null
+  securite: null
+analyses: []
+# Profil : pas d'article Wikipédia ; source = site du parti (page non datée)
+biographie: "Âgée d'une trentaine d'années, conductrice de bus et militante syndicale. Elle n'a jamais exercé de mandat électif. Le NPA-Révolutionnaires la présente comme « une candidate ouvrière et révolutionnaire »."
+fonctions: []
+resultats: []
+condamnations: []
+procedures: []
+# Campagne : dates clés propres à la candidate
+campagne:
+  - { date: 2026-06-15, quand: "Juin 2026", type: designation, quoi: "Désignée candidate par le NPA-Révolutionnaires, avec Gaël Quirante.", source: { titre: "NPA-Révolutionnaires, « Présidentielle : Selma Labib, une candidate ouvrière et révolutionnaire » (page consultée le 4 octobre 2026)", url: "https://npa-revolutionnaires.org/articles/presidentielle-selma-labib-une-candidate-ouvriere-et-revolutionnaire" } }
+sourcesProfil:
+  - { titre: "NPA-Révolutionnaires, « Présidentielle : Selma Labib, une candidate ouvrière et révolutionnaire » (page consultée le 4 octobre 2026)", url: "https://npa-revolutionnaires.org/articles/presidentielle-selma-labib-une-candidate-ouvriere-et-revolutionnaire" }
+  - { titre: "Public Sénat (18 septembre 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart" }
