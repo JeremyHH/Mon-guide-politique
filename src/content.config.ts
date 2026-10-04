@@ -64,7 +64,7 @@ const candidats = defineCollection({
     prenom: z.string(),
     nom: z.string(),
     parti: z.string(),
-    statut: z.enum(["declare", "pressenti", "parrainages_valides", "retire"]),
+    statut: z.enum(["declare", "primaire", "pressenti", "parrainages_valides", "retire"]),
     declaration: z.coerce.date().optional(),
     bio: z.string(),
     // Clés = identifiants des thèmes de l'élection (vérifié dans src/lib/data.ts).

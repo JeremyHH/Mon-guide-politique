@@ -1,0 +1,54 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "Ségolène"
+nom: "Royal"
+parti: "Parti socialiste"
+statut: primaire
+declaration: 2026-07-10
+bio: "Ancienne ministre, candidate à la présidentielle de 2007. Candidate à la primaire PS – Place publique."
+positions:
+  retraites: null
+  immigration: null
+  energie: null
+  fiscalite:
+    texte: "Baisser temporairement la TVA sur les carburants, sans cibler certaines catégories de consommateurs."
+    statut: verifie
+    source:
+      titre: "franceinfo, « Sept séquences à retenir du débat des candidats à la primaire de la gauche »"
+      url: "https://www.franceinfo.fr/elections/presidentielle/videos-sept-sequences-a-retenir-du-debat-des-candidats-a-la-primaire-de-la-gauche-sur-france-2-et-france-inter_8218741.html"
+      date: 2026-10-01
+  europe: null
+  securite: null
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1953-09-22, lieu: "Dakar (Sénégal)" }
+biographie: "Diplômée de l'université Nancy-II, de Sciences Po Paris et de l'ENA, juge administrative puis avocate. Conseillère de François Mitterrand dans les années 1980, elle est la candidate du PS à la présidentielle de 2007."
+fonctions:
+  - { intitule: "Présidente de l'association France-Algérie", periode: "depuis décembre 2025" }
+  - { intitule: "Ambassadrice chargée des pôles arctique et antarctique", periode: "2017 – 2020" }
+  - { intitule: "Ministre de l'Environnement, de l'Énergie et de la Mer", periode: "2014 – 2017" }
+  - { intitule: "Présidente du conseil régional de Poitou-Charentes", periode: "2004 – 2014" }
+  - { intitule: "Ministre déléguée à la Famille, puis à l'Enseignement scolaire", periode: "1997 – 2002" }
+  - { intitule: "Ministre de l'Environnement", periode: "1992 – 1993" }
+  - { intitule: "Députée des Deux-Sèvres", periode: "1988 – 2007, avec interruptions" }
+resultats:
+  - { annee: 2007, scrutin: "Présidentielle", resultat: "25,87 % au premier tour (2e) ; 46,9 % au second tour" }
+  - { annee: 2004, scrutin: "Régionales, Poitou-Charentes", resultat: "Liste élue avec 55,10 % au second tour" }
+condamnations: []
+procedures: []
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/royal.jpg"
+  auteur: "Jackolan1"
+  licence: "CC BY-SA 3.0"
+  licenceUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+  source: "https://commons.wikimedia.org/wiki/File:Royal_Toulouse_2012.JPG"
+  annee: 2012
+# Campagne : dates clés propres au candidat
+campagne:
+  - { date: 2026-07-10, quand: "10 juillet 2026", type: annonce, quoi: "Annonce sa candidature à la primaire du Parti socialiste.", source: { titre: "franceinfo (24 août 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/raphael-glucksmann-segolene-royal-qui-sont-a-ce-stade-les-candidats-a-la-primaire-socialiste-pour-la-presidentielle-2027_8159171.html" } }
+  - { date: 2026-09-23, quand: "23 septembre 2026", type: debat, quoi: "Premier débat télévisé de la primaire, sur LCI.", source: { titre: "LCP (23 septembre 2026)", url: "https://lcp.fr/actualites/primaire-de-gauche-les-candidats-face-a-face-lors-d-un-premier-debat-televise-ce" } }
+  - { date: 2026-10-01, quand: "1er octobre 2026", type: debat, quoi: "Deuxième débat de la primaire, sur France 2 et France Inter (1,8 million de téléspectateurs).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+  - { date: 2026-10-10, quand: "9 et 10 octobre 2026", type: designation, quoi: "Premier tour de la primaire PS – Place publique (vote en ligne).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+  - { date: 2026-10-17, quand: "16 et 17 octobre 2026", type: designation, quoi: "Second tour de la primaire, si aucun candidat n'obtient la majorité au premier tour.", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+sourcesProfil:
+  - { titre: "Wikipédia, article « Ségolène Royal » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Ségolène_Royal" }

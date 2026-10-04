@@ -1,0 +1,65 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "Olivier"
+nom: "Faure"
+parti: "Parti socialiste"
+statut: primaire
+declaration: 2026-08-30
+bio: "Premier secrétaire du Parti socialiste depuis 2018, député de Seine-et-Marne. Candidat à la primaire PS – Place publique."
+positions:
+  retraites:
+    texte: "Supprimer la réforme de 2023 et revenir à 62 ans, en modulant le nombre d'annuités selon la pénibilité des métiers."
+    statut: verifie
+    source:
+      titre: "franceinfo, « Changement de système, passage à 60 ou à 65 ans, capitalisation... Que proposent les principaux candidats à l'élection présidentielle pour les retraites ? »"
+      url: "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/changement-de-systeme-passage-a-60-ou-a-65-ans-capitalisation-que-proposent-les-principaux-candidats-a-l-election-presidentielle-pour-les-retraites_8215784.html"
+      date: 2026-09-30
+  immigration: null
+  energie:
+    texte: "Prudent sur le nouveau nucléaire : le projet du PS de juin 2026 ne prévoit qu'un renouvellement partiel du parc existant."
+    statut: verifie
+    source:
+      titre: "Révolution Énergétique, « Qui dit quoi sur l'énergie parmi les candidats déclarés à la présidentielle ? »"
+      url: "https://www.revolution-energetique.com/actus/qui-dit-quoi-sur-lenergie-parmi-les-candidats-declares-a-la-presidentielle/"
+      date: 2026-06-27
+  fiscalite:
+    texte: "Taxer les gros héritages ou instaurer la taxe Zucman (2 % sur les patrimoines de plus de 100 millions d'euros)."
+    statut: verifie
+    source:
+      titre: "franceinfo, « Que proposent les candidats à la présidentielle pour réduire la dette publique ? »"
+      url: "https://www.franceinfo.fr/economie/crise/crise-de-la-dette/que-proposent-les-candidats-a-la-presidentielle-pour-reduire-la-dette-publique_8215481.html"
+      date: 2026-09-29
+  europe: null
+  securite: null
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1968-08-18, lieu: "La Tronche (Isère)" }
+biographie: "Diplômé en droit (universités d'Orléans et Paris-I Panthéon-Sorbonne), juriste de formation. Membre du Parti socialiste depuis 1984, collaborateur de plusieurs dirigeants socialistes avant d'être élu député en 2012."
+fonctions:
+  - { intitule: "Premier secrétaire du Parti socialiste", periode: "depuis avril 2018" }
+  - { intitule: "Député de Seine-et-Marne (11e circonscription)", periode: "depuis juin 2012" }
+  - { intitule: "Président du groupe socialiste à l'Assemblée nationale", periode: "2016 – 2018" }
+  - { intitule: "Porte-parole du Parti socialiste", periode: "2014 – 2016" }
+resultats:
+  - { annee: 2024, scrutin: "Législatives, Seine-et-Marne (11e)", resultat: "Réélu" }
+  - { annee: 2022, scrutin: "Législatives, Seine-et-Marne (11e)", resultat: "Réélu avec 64,45 %" }
+  - { annee: 2017, scrutin: "Législatives, Seine-et-Marne (11e)", resultat: "Réélu avec 61,1 %" }
+  - { annee: 2012, scrutin: "Législatives, Seine-et-Marne (11e)", resultat: "Élu avec 63,2 % au second tour" }
+condamnations: []
+procedures: []
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/faure.jpg"
+  auteur: "KimiRaikkonen3"
+  licence: "Public domain"
+  licenceUrl: "https://commons.wikimedia.org/wiki/File:OF_MATIGNON_-_MAXIME_CLAM_(cropped).png"
+  source: "https://commons.wikimedia.org/wiki/File:OF_MATIGNON_-_MAXIME_CLAM_(cropped).png"
+  annee: 2025
+# Campagne : dates clés propres au candidat
+campagne:
+  - { date: 2026-08-30, quand: "30 août 2026", type: annonce, quoi: "Se déclare candidat à la primaire PS – Place publique.", source: { titre: "Wikipédia, « Olivier Faure »", url: "https://fr.wikipedia.org/wiki/Olivier_Faure" } }
+  - { date: 2026-09-23, quand: "23 septembre 2026", type: debat, quoi: "Premier débat télévisé de la primaire, sur LCI.", source: { titre: "LCP (23 septembre 2026)", url: "https://lcp.fr/actualites/primaire-de-gauche-les-candidats-face-a-face-lors-d-un-premier-debat-televise-ce" } }
+  - { date: 2026-10-01, quand: "1er octobre 2026", type: debat, quoi: "Deuxième débat de la primaire, sur France 2 et France Inter (1,8 million de téléspectateurs).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+  - { date: 2026-10-10, quand: "9 et 10 octobre 2026", type: designation, quoi: "Premier tour de la primaire PS – Place publique (vote en ligne).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+  - { date: 2026-10-17, quand: "16 et 17 octobre 2026", type: designation, quoi: "Second tour de la primaire, si aucun candidat n'obtient la majorité au premier tour.", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+sourcesProfil:
+  - { titre: "Wikipédia, article « Olivier Faure » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Olivier_Faure" }

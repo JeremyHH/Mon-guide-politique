@@ -1,0 +1,74 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "Raphaël"
+nom: "Glucksmann"
+parti: "Place publique"
+statut: primaire
+declaration: 2026-08-23
+bio: "Député européen, coprésident de Place publique. Candidat à la primaire PS – Place publique."
+positions:
+  retraites:
+    texte: "Supprimer la réforme de 2023 sans se focaliser sur l'âge légal : départ plus tôt pour les carrières hachées et les métiers pénibles, plus tard pour ceux en bonne santé."
+    statut: verifie
+    source:
+      titre: "franceinfo, « Changement de système, passage à 60 ou à 65 ans, capitalisation... Que proposent les principaux candidats à l'élection présidentielle pour les retraites ? »"
+      url: "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/changement-de-systeme-passage-a-60-ou-a-65-ans-capitalisation-que-proposent-les-principaux-candidats-a-l-election-presidentielle-pour-les-retraites_8215784.html"
+      date: 2026-09-30
+  immigration:
+    texte: "Organiser une convention citoyenne sur l'immigration, dont les propositions seraient soumises au Parlement."
+    statut: verifie
+    source:
+      titre: "Public Sénat, « Fiscalité, école, immigration : ce que propose Raphaël Glucksmann »"
+      url: "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann"
+      date: 2026-08-24
+  energie:
+    texte: "Indépendance énergétique et « révolution écologique » au cœur d'un « nouveau contrat patriotique »."
+    statut: verifie
+    source:
+      titre: "LCP, « Primaire de gauche : ce qui oppose Glucksmann, Faure, Royal, Guedj et Maurel »"
+      url: "https://lcp.fr/actualites/primaire-de-gauche-ce-qui-oppose-glucksmann-faure-royal-guedj-et-maurel-442266"
+      date: 2026-09-23
+  fiscalite:
+    texte: "Taxer le 1 % des plus gros héritages (15 milliards d'euros) pour augmenter le salaire net ; réorienter les aides publiques aux entreprises."
+    statut: verifie
+    source:
+      titre: "Public Sénat, « Fiscalité, école, immigration : ce que propose Raphaël Glucksmann »"
+      url: "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann"
+      date: 2026-08-24
+  europe:
+    texte: "Europe fédérale, défense européenne commune et soutien à l'Ukraine."
+    statut: verifie
+    source:
+      titre: "LCP, « Primaire de gauche : ce qui oppose Glucksmann, Faure, Royal, Guedj et Maurel »"
+      url: "https://lcp.fr/actualites/primaire-de-gauche-ce-qui-oppose-glucksmann-faure-royal-guedj-et-maurel-442266"
+      date: 2026-09-23
+  securite: null
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1979-10-15, lieu: "Boulogne-Billancourt (Hauts-de-Seine)" }
+biographie: "Diplômé de Sciences Po Paris, réalisateur de documentaires puis essayiste et chroniqueur. Conseiller du président géorgien de 2009 à 2012, il fonde en 2018 le mouvement Place publique."
+fonctions:
+  - { intitule: "Coprésident de Place publique", periode: "depuis décembre 2022" }
+  - { intitule: "Député européen", periode: "depuis juillet 2019" }
+  - { intitule: "Conseiller spécial du président de la Géorgie", periode: "2009 – 2012" }
+resultats:
+  - { annee: 2024, scrutin: "Européennes (tête de liste PS – Place publique)", resultat: "13,8 %, 3e" }
+  - { annee: 2019, scrutin: "Européennes (tête de liste PS – Place publique)", resultat: "6,2 %, 6e" }
+condamnations: []
+procedures: []
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/glucksmann.jpg"
+  auteur: "European Union 2024 - Source : EP"
+  licence: "European Parliament"
+  licenceUrl: "https://www.europarl.europa.eu/legal-notice/"
+  source: "https://commons.wikimedia.org/wiki/File:1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg"
+  annee: 2024
+# Campagne : dates clés propres au candidat
+campagne:
+  - { date: 2026-08-23, quand: "23 août 2026", type: annonce, quoi: "Annonce sa candidature sur TF1 et présente ses premières propositions.", source: { titre: "Public Sénat, « Fiscalité, école, immigration : ce que propose Raphaël Glucksmann »", url: "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann" } }
+  - { date: 2026-09-23, quand: "23 septembre 2026", type: debat, quoi: "Premier débat télévisé de la primaire, sur LCI.", source: { titre: "LCP (23 septembre 2026)", url: "https://lcp.fr/actualites/primaire-de-gauche-les-candidats-face-a-face-lors-d-un-premier-debat-televise-ce" } }
+  - { date: 2026-10-01, quand: "1er octobre 2026", type: debat, quoi: "Deuxième débat de la primaire, sur France 2 et France Inter (1,8 million de téléspectateurs).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+  - { date: 2026-10-10, quand: "9 et 10 octobre 2026", type: designation, quoi: "Premier tour de la primaire PS – Place publique (vote en ligne).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+  - { date: 2026-10-17, quand: "16 et 17 octobre 2026", type: designation, quoi: "Second tour de la primaire, si aucun candidat n'obtient la majorité au premier tour.", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+sourcesProfil:
+  - { titre: "Wikipédia, article « Raphaël Glucksmann » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Raphaël_Glucksmann" }

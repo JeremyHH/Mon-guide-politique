@@ -1,0 +1,50 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "Emmanuel"
+nom: "Maurel"
+parti: "Gauche républicaine et socialiste"
+statut: primaire
+declaration: 2026-09-04
+bio: "Député du Val-d'Oise, animateur national de la Gauche républicaine et socialiste. Candidat à la primaire PS – Place publique."
+positions:
+  retraites: null
+  immigration: null
+  energie: null
+  fiscalite:
+    texte: "Lancer un « grand emprunt national » pour financer la transition écologique."
+    statut: verifie
+    source:
+      titre: "LCP, « Primaire de gauche : ce qui oppose Glucksmann, Faure, Royal, Guedj et Maurel »"
+      url: "https://lcp.fr/actualites/primaire-de-gauche-ce-qui-oppose-glucksmann-faure-royal-guedj-et-maurel-442266"
+      date: 2026-09-23
+  europe: null
+  securite: null
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1973-05-10, lieu: "Épinay-sur-Seine (Seine-Saint-Denis)" }
+biographie: "Diplômé de Sciences Po Paris, enseignant vacataire dans le supérieur. Membre du Parti socialiste de 1990 à 2018, où il anime l'aile gauche, il fonde ensuite la Gauche républicaine et socialiste."
+fonctions:
+  - { intitule: "Député du Val-d'Oise (3e circonscription)", periode: "depuis juillet 2024" }
+  - { intitule: "Animateur national de la Gauche républicaine et socialiste", periode: "depuis février 2019" }
+  - { intitule: "Député européen", periode: "2014 – 2024" }
+  - { intitule: "Conseiller régional d'Île-de-France", periode: "2004 – 2015" }
+resultats:
+  - { annee: 2024, scrutin: "Législatives, Val-d'Oise (3e)", resultat: "Élu avec 62,54 % au second tour" }
+condamnations: []
+procedures: []
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/maurel.jpg"
+  auteur: "Echwander"
+  licence: "CC BY-SA 4.0"
+  licenceUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+  source: "https://commons.wikimedia.org/wiki/File:Emmanuel_Maurel_en_2016.jpg"
+  annee: 2016
+# Campagne : dates clés propres au candidat
+campagne:
+  - { date: 2026-09-04, quand: "4 septembre 2026", type: annonce, quoi: "Annonce sa candidature à la primaire sur franceinfo.", source: { titre: "franceinfo (4 septembre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-socialiste/le-depute-emmanuel-maurel-annonce-sa-candidature-a-la-primaire-socialiste-pour-l-election-presidentielle_8176532.html" } }
+  - { date: 2026-09-23, quand: "23 septembre 2026", type: debat, quoi: "Premier débat télévisé de la primaire, sur LCI.", source: { titre: "LCP (23 septembre 2026)", url: "https://lcp.fr/actualites/primaire-de-gauche-les-candidats-face-a-face-lors-d-un-premier-debat-televise-ce" } }
+  - { date: 2026-10-01, quand: "1er octobre 2026", type: debat, quoi: "Deuxième débat de la primaire, sur France 2 et France Inter (1,8 million de téléspectateurs).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+  - { date: 2026-10-10, quand: "9 et 10 octobre 2026", type: designation, quoi: "Premier tour de la primaire PS – Place publique (vote en ligne).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+  - { date: 2026-10-17, quand: "16 et 17 octobre 2026", type: designation, quoi: "Second tour de la primaire, si aucun candidat n'obtient la majorité au premier tour.", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+sourcesProfil:
+  - { titre: "Wikipédia, article « Emmanuel Maurel » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Emmanuel_Maurel" }

@@ -7,7 +7,7 @@ date: 2027-04-18
 libelleDate: "18 avril et 2 mai 2027"
 resume: "Élection du président de la République pour cinq ans, au suffrage universel direct, en deux tours."
 miseAJour: 2026-10-04
-introCandidats: "Principales candidatures déclarées au 4 octobre 2026. Les parrainages (500 signatures d'élus) ne seront validés par le Conseil constitutionnel qu'au printemps 2027."
+introCandidats: "Principales candidatures déclarées au 4 octobre 2026, y compris les cinq candidats à la primaire PS – Place publique (vote les 9-10 et 16-17 octobre). Les parrainages (500 signatures d'élus) ne seront validés par le Conseil constitutionnel qu'au printemps 2027."
 
 themes:
   - { id: retraites, nom: Retraites }
@@ -47,5 +47,4 @@ autres:
   - "David Lisnard · Nouvelle Énergie (déclaré le 31 mars 2026)"
   - "Florian Philippot · Les Patriotes"
   - "François Ruffin · Debout !"
-  - "Primaire PS « Choisir 2027 » : Faure, Glucksmann, Guedj, Maurel, Royal (vote les 9-10 et 16-17 octobre)"
   - "Xavier Bertrand a annoncé le 27 août son intention d'être candidat, sans déclaration officielle"

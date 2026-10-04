@@ -43,6 +43,7 @@ export async function fiches(rubrique: "institutions" | "voter") {
 
 export const STATUTS: Record<Candidat["data"]["statut"], string> = {
   declare: "Déclaré",
+  primaire: "Primaire socialiste",
   pressenti: "Pressenti",
   parrainages_valides: "Parrainages validés",
   retire: "Retiré",

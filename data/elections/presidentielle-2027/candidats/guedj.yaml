@@ -1,0 +1,53 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "Jérôme"
+nom: "Guedj"
+parti: "Parti socialiste"
+statut: primaire
+declaration: 2026-02-05
+bio: "Député socialiste de l'Essonne. Candidat à la primaire PS – Place publique."
+positions:
+  retraites: null
+  immigration: null
+  energie: null
+  fiscalite:
+    texte: "Rétablir l'impôt sur la fortune."
+    statut: verifie
+    source:
+      titre: "LCP, « Primaire de gauche : ce qui oppose Glucksmann, Faure, Royal, Guedj et Maurel »"
+      url: "https://lcp.fr/actualites/primaire-de-gauche-ce-qui-oppose-glucksmann-faure-royal-guedj-et-maurel-442266"
+      date: 2026-09-23
+  europe: null
+  securite: null
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1972-01-23, lieu: "Pantin (Seine-Saint-Denis)" }
+biographie: "Diplômé de Sciences Po Paris et de l'ENA, inspecteur des affaires sociales. Membre du Parti socialiste depuis 1993, d'abord assistant parlementaire de Jean-Luc Mélenchon, il préside le conseil général de l'Essonne de 2011 à 2015."
+fonctions:
+  - { intitule: "Député de l'Essonne (6e circonscription)", periode: "2012 – 2014, depuis juin 2022" }
+  - { intitule: "Conseiller régional d'Île-de-France", periode: "depuis juillet 2021" }
+  - { intitule: "Président du conseil général de l'Essonne", periode: "2011 – 2015" }
+  - { intitule: "Conseiller général puis départemental de l'Essonne", periode: "1998 – 2021" }
+resultats:
+  - { annee: 2022, scrutin: "Législatives, Essonne (6e)", resultat: "Élu" }
+  - { annee: 2017, scrutin: "Législatives, Essonne (6e)", resultat: "13,1 % au premier tour, éliminé" }
+  - { annee: 2011, scrutin: "Cantonales, Massy-Est", resultat: "Réélu avec 54,44 %" }
+condamnations: []
+procedures: []
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/guedj.jpg"
+  auteur: "Audrey AK"
+  licence: "CC BY-SA 2.0"
+  licenceUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+  source: "https://commons.wikimedia.org/wiki/File:J%C3%A9r%C3%B4me_Guedj_2010.jpg"
+  annee: 2010
+# Campagne : dates clés propres au candidat
+campagne:
+  - { date: 2026-02-05, quand: "5 février 2026", type: annonce, quoi: "Annonce sa candidature à l'élection présidentielle sur France Inter.", source: { titre: "Wikipédia, « Jérôme Guedj »", url: "https://fr.wikipedia.org/wiki/Jérôme_Guedj" } }
+  - { date: 2026-08-23, quand: "Fin août 2026", type: designation, quoi: "Confirme qu'il participera à la primaire PS – Place publique.", source: { titre: "franceinfo (24 août 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/raphael-glucksmann-segolene-royal-qui-sont-a-ce-stade-les-candidats-a-la-primaire-socialiste-pour-la-presidentielle-2027_8159171.html" } }
+  - { date: 2026-09-23, quand: "23 septembre 2026", type: debat, quoi: "Premier débat télévisé de la primaire, sur LCI.", source: { titre: "LCP (23 septembre 2026)", url: "https://lcp.fr/actualites/primaire-de-gauche-les-candidats-face-a-face-lors-d-un-premier-debat-televise-ce" } }
+  - { date: 2026-10-01, quand: "1er octobre 2026", type: debat, quoi: "Deuxième débat de la primaire, sur France 2 et France Inter (1,8 million de téléspectateurs).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+  - { date: 2026-10-10, quand: "9 et 10 octobre 2026", type: designation, quoi: "Premier tour de la primaire PS – Place publique (vote en ligne).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+  - { date: 2026-10-17, quand: "16 et 17 octobre 2026", type: designation, quoi: "Second tour de la primaire, si aucun candidat n'obtient la majorité au premier tour.", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+sourcesProfil:
+  - { titre: "Wikipédia, article « Jérôme Guedj » (consulté le 4 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Jérôme_Guedj" }
