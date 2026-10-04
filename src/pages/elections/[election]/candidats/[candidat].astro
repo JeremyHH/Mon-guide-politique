@@ -28,7 +28,8 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
 ---
 <Base titre={`${nomComplet(c)} · ${election.data.nom}`} page="elections" description={`Positions de ${nomComplet(c)} (${c.data.parti}) : ${election.data.nom}.`}>
   <BandeauVerif slot="bandeau" />
-  <article class="sheet">
+  <article class="fiche-candidat">
+    <div class="sheet fiche-entete">
     <a class="back" href={lien(`/elections/${election.id}`)}>← {election.data.nom}</a>
     <div class="sheet-head avec-photo">
       {c.data.photo && (
@@ -72,6 +73,7 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
       <a href="#positions">Positions</a>
       <a href="#justice">Condamnations</a>
     </nav>
+    </div>
 
     <section class="fiche-section" id="biographie">
       <h3 class="fiche-titre">Biographie</h3>
