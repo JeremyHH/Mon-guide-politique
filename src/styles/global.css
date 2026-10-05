@@ -492,3 +492,9 @@ table.resultats{min-width:520px}
 .filtre-compte{margin:0 0 7px auto;color:var(--muted)}
 .ballot-cell[hidden],.groupe-candidats[hidden]{display:none}
 @media (max-width:620px){.filtres .filtre-recherche,.filtres input[type=search],.filtres select{width:100%}.filtre-compte{margin-left:0}}
+
+/* ---------- Soutiens ---------- */
+.soutiens-grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px 28px}
+.soutiens{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:10px}
+.soutiens li{display:grid;gap:2px;padding-left:12px;border-left:3px solid var(--bleu-soft)}
+.soutien-qualite{color:var(--muted)}

@@ -92,6 +92,7 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
       <a href="#campagne">Campagne</a>
       <a href="#tournee">Tournée</a>
       <a href="#medias">Dans les médias</a>
+      {c.data.soutiens && <a href="#soutiens">Soutiens</a>}
       <a href="#positions">Positions</a>
       <a href="#justice">Condamnations</a>
     </nav>
@@ -215,6 +216,35 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
         <p class="aucune">Aucune apparition médiatique recensée sur la période.</p>
       )}
     </section>
+
+    {c.data.soutiens && (
+    <section class="fiche-section" id="soutiens">
+      <h3 class="fiche-titre">Soutiens</h3>
+      <p class="mono note-justice">Personnalités ayant publiquement déclaré soutenir cette candidature depuis 2025 (huit au plus). Liste non exhaustive ; chaque soutien renvoie à sa source.</p>
+      {c.data.soutiens.length ? (
+        <div class="soutiens-grille">
+          {(["national", "international"] as const).map((portee) => {
+            const liste = c.data.soutiens!.filter((x) => x.portee === portee).sort((a, b) => +b.date - +a.date);
+            return liste.length > 0 && (
+              <div>
+                <span class="label">{portee === "national" ? "En France" : "À l'étranger"}</span>
+                <ul class="soutiens">
+                  {liste.map((x) => (
+                    <li>
+                      <strong>{x.nom}</strong>, <span class="soutien-qualite">{x.qualite}</span>
+                      <span class="mono src"><a href={x.source.url} rel="noopener">{x.source.titre}</a> · {dateFr(x.date)}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+      ) : (
+        <p class="aucune">Aucun soutien de personnalité recensé à ce jour.</p>
+      )}
+    </section>
+    )}
 
     <section class="fiche-section" id="positions">
       <h3 class="fiche-titre">Positions par thème</h3>

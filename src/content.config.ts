@@ -148,6 +148,18 @@ const candidats = defineCollection({
         }),
       )
       .default([]),
+    // Soutiens publics de personnalités connues à la candidature 2027 (déclarations explicites, sourcées).
+    soutiens: z
+      .array(
+        z.object({
+          nom: z.string(),
+          qualite: z.string(),
+          portee: z.enum(["national", "international"]),
+          date: z.coerce.date(),
+          source: z.object({ titre: z.string(), url: z.string().url() }),
+        }),
+      )
+      .optional(),
     // Apparitions récentes du candidat lui-même (interviews, débats, émissions, tribunes signées).
     medias: z
       .array(
