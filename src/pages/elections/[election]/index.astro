@@ -3,7 +3,7 @@ import Base from "../../../layouts/Base.astro";
 import NavElection from "../../../components/NavElection.astro";
 import BandeauVerif from "../../../components/BandeauVerif.astro";
 import Frise from "../../../components/Frise.astro";
-import { logoParti } from "../../../lib/partis";
+import { logoParti, siteParti } from "../../../lib/partis";
 import { elections, candidatsDe, compteCandidats, presidentiellesPassees, nomComplet, slugCandidat, STATUTS, lien, type Election } from "../../../lib/data";
 
 export async function getStaticPaths() {
@@ -59,15 +59,19 @@ const groupes = [
         <div class="ballots bulletins">
           {g.liste.map((c) => (
             <div class="ballot-cell">
-            <a class="ballot" href={lien(`/elections/${election.id}/candidats/${slugCandidat(c)}`)}>
+            <div class="ballot">
               {c.data.photo ? <img class="ballot-photo" src={lien(c.data.photo.fichier)} alt="" width="120" height="160" loading="lazy" /> : <span class="ballot-photo sans-photo" title="Pas de photo sous licence libre disponible">{c.data.prenom[0]}{c.data.nom[0]}</span>}
-              <span class="name">{nomComplet(c)}</span>
-              <span class="party">{logoParti(c.data.parti) && <img class="parti-logo-carte" src={lien(logoParti(c.data.parti)!.fichier)} alt="" height="20" loading="lazy" />}{c.data.parti}</span>
+              <a class="name ballot-lien" href={lien(`/elections/${election.id}/candidats/${slugCandidat(c)}`)}>{nomComplet(c)}</a>
+              {siteParti(c.data.parti) ? (
+                <a class="party party-lien" href={siteParti(c.data.parti)} rel="noopener" title={`Site de ${c.data.parti}`}>{logoParti(c.data.parti) && <img class="parti-logo-carte" src={lien(logoParti(c.data.parti)!.fichier)} alt="" height="24" loading="lazy" />}{c.data.parti}</a>
+              ) : (
+                <span class="party">{logoParti(c.data.parti) && <img class="parti-logo-carte" src={lien(logoParti(c.data.parti)!.fichier)} alt="" height="24" loading="lazy" />}{c.data.parti}</span>
+              )}
               {presidentiellesPassees(c).length > 0 && (
                 <span class="deja mono">Déjà candidat·e : {presidentiellesPassees(c).map((r) => `${r.annee} (${r.premierTour}${r.secondTour ? ", 2d tour" : ""})`).join(" · ")}</span>
               )}
               <span class="status"><span class="pill ok">{STATUTS[c.data.statut]}</span></span>
-            </a>
+            </div>
             {c.data.site && (
               <a class="ballot-site" href={c.data.site.url} rel="noopener" aria-label={`Site officiel de ${nomComplet(c)}`}>
                 {new URL(c.data.site.url).hostname.replace(/^www\./, "")} ↗
