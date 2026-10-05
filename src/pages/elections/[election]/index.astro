@@ -52,13 +52,34 @@ const groupes = [
       </div>
     </div>
     <p class="lede" style="margin:0">{election.data.introCandidats}</p>
+    <form class="filtres" id="filtres" role="search" aria-label="Filtrer les candidats" onsubmit="return false">
+      <label class="filtre-recherche">
+        <span class="label">Rechercher</span>
+        <input type="search" id="f-texte" placeholder="Nom ou parti" autocomplete="off" />
+      </label>
+      <label>
+        <span class="label">Statut</span>
+        <select id="f-statut">
+          <option value="">Tous</option>
+          {[...new Set(liste.map((c) => c.data.statut))].map((st) => <option value={st}>{STATUTS[st]}</option>)}
+        </select>
+      </label>
+      <label class="filtre-case"><input type="checkbox" id="f-unique" /> Seule candidature du parti</label>
+      <label class="filtre-case"><input type="checkbox" id="f-deja" /> Déjà candidat·e à une présidentielle</label>
+      <button type="button" class="chip" id="f-reset">Réinitialiser</button>
+      <p class="mono filtre-compte" id="f-compte" aria-live="polite"></p>
+    </form>
     {groupes.map((g) => g.liste.length > 0 && (
-      <section class="groupe-candidats">
+      <section class="groupe-candidats" data-groupe>
         <h3>{g.titre} <span class="mono groupe-n">{g.liste.length}</span></h3>
         <p class="mono groupe-critere">{g.critere}</p>
         <div class="ballots bulletins">
           {g.liste.map((c) => (
-            <div class="ballot-cell">
+            <div class="ballot-cell"
+              data-texte={`${nomComplet(c)} ${c.data.parti}`.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase()}
+              data-statut={c.data.statut}
+              data-unique={candidatUnique(c, liste) ? "1" : "0"}
+              data-deja={presidentiellesPassees(c).length > 0 ? "1" : "0"}>
             <div class="ballot">
               {c.data.photo ? <img class="ballot-photo" src={lien(c.data.photo.fichier)} alt="" width="120" height="160" loading="lazy" /> : <span class="ballot-photo sans-photo" title="Pas de photo sous licence libre disponible">{c.data.prenom[0]}{c.data.nom[0]}</span>}
               <a class="name ballot-lien" href={lien(`/elections/${election.id}/candidats/${slugCandidat(c)}`)}>{nomComplet(c)}</a>
@@ -118,4 +139,35 @@ const groupes = [
   }
   alpha.onclick = () => tri(alpha);
   hasard.onclick = () => tri(hasard);
+
+  // Filtres : n'agissent que sur l'affichage (attribut hidden), compatibles avec le tri.
+  const fTexte = document.getElementById("f-texte") as HTMLInputElement;
+  const fStatut = document.getElementById("f-statut") as HTMLSelectElement;
+  const fUnique = document.getElementById("f-unique") as HTMLInputElement;
+  const fDeja = document.getElementById("f-deja") as HTMLInputElement;
+  const fCompte = document.getElementById("f-compte")!;
+  const norm = (t: string) => t.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().trim();
+  function filtrer() {
+    const q = norm(fTexte.value);
+    let n = 0;
+    const cells = [...document.querySelectorAll<HTMLElement>(".ballot-cell")];
+    for (const el of cells) {
+      const ok =
+        (!q || (el.dataset.texte ?? "").includes(q)) &&
+        (!fStatut.value || el.dataset.statut === fStatut.value) &&
+        (!fUnique.checked || el.dataset.unique === "1") &&
+        (!fDeja.checked || el.dataset.deja === "1");
+      el.hidden = !ok;
+      if (ok) n++;
+    }
+    for (const g of document.querySelectorAll<HTMLElement>("[data-groupe]")) {
+      g.hidden = !g.querySelector(".ballot-cell:not([hidden])");
+    }
+    fCompte.textContent = n === cells.length ? `${n} fiches affichées` : `${n} fiche${n > 1 ? "s" : ""} sur ${cells.length}`;
+  }
+  for (const el of [fTexte, fStatut, fUnique, fDeja]) el.addEventListener("input", filtrer);
+  document.getElementById("f-reset")!.onclick = () => {
+    fTexte.value = ""; fStatut.value = ""; fUnique.checked = false; fDeja.checked = false; filtrer();
+  };
+  filtrer();
 </script>

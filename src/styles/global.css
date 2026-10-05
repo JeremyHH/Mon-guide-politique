@@ -482,3 +482,13 @@ table.resultats{min-width:520px}
 .coche{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--bleu);color:var(--sur-accent);font-size:.72rem;font-weight:700;line-height:1;flex:none}
 .coche-ligne{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-family:var(--f-mono);font-size:.7rem;color:var(--muted);justify-self:center}
 .sheet-ident .coche-ligne{justify-self:start;font-size:.78rem}
+
+/* ---------- Filtres de la liste des candidats ---------- */
+.filtres{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 18px;padding:14px 16px;background:var(--paper);border:1px solid var(--line);border-radius:12px}
+.filtres label{display:grid;gap:4px}
+.filtres input[type=search],.filtres select{font:inherit;font-size:.92rem;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--ground);color:var(--ink);min-width:180px}
+.filtres .filtre-case{display:flex;align-items:center;gap:6px;font-size:.9rem;padding-bottom:7px;cursor:pointer}
+.filtres .filtre-case input{accent-color:var(--bleu);width:16px;height:16px}
+.filtre-compte{margin:0 0 7px auto;color:var(--muted)}
+.ballot-cell[hidden],.groupe-candidats[hidden]{display:none}
+@media (max-width:620px){.filtres .filtre-recherche,.filtres input[type=search],.filtres select{width:100%}.filtre-compte{margin-left:0}}
