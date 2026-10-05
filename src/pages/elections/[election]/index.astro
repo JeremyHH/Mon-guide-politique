@@ -4,7 +4,7 @@ import NavElection from "../../../components/NavElection.astro";
 import BandeauVerif from "../../../components/BandeauVerif.astro";
 import Frise from "../../../components/Frise.astro";
 import { logoParti, siteParti } from "../../../lib/partis";
-import { elections, candidatsDe, compteCandidats, presidentiellesPassees, nomComplet, slugCandidat, STATUTS, lien, type Election } from "../../../lib/data";
+import { elections, candidatsDe, compteCandidats, presidentiellesPassees, candidatUnique, nomComplet, slugCandidat, STATUTS, lien, type Election } from "../../../lib/data";
 
 export async function getStaticPaths() {
   return (await elections()).map((e) => ({ params: { election: e.id }, props: { election: e } }));
@@ -67,6 +67,7 @@ const groupes = [
               ) : (
                 <span class="party">{logoParti(c.data.parti) && <img class="parti-logo-carte" src={lien(logoParti(c.data.parti)!.fichier)} alt="" height="24" loading="lazy" />}{c.data.parti}</span>
               )}
+              {candidatUnique(c, liste) && <span class="coche-ligne"><span class="coche" aria-hidden="true">✓</span> Seule candidature du parti</span>}
               {c.data.vainqueurPrimaire && <span class="pill vainqueur" title={`${c.data.vainqueurPrimaire.nom}${c.data.vainqueurPrimaire.resultat ? ` : ${c.data.vainqueurPrimaire.resultat}` : ""}`}>Vainqueur de la primaire</span>}
               {presidentiellesPassees(c).length > 0 && (
                 <span class="deja mono">Déjà candidat·e : {presidentiellesPassees(c).map((r) => `${r.annee} (${r.premierTour}${r.secondTour ? ", 2d tour" : ""})`).join(" · ")}</span>

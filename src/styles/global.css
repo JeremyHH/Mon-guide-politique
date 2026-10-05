@@ -477,3 +477,8 @@ table.resultats{min-width:520px}
 .pill.vainqueur{border-color:var(--bleu);background:var(--bleu);color:var(--sur-accent);justify-self:center}
 .vainqueur-fiche{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:.9rem;color:var(--muted)}
 .vainqueur-fiche .pill{justify-self:start}
+
+/* ---------- Candidat unique du parti ---------- */
+.coche{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--bleu);color:var(--sur-accent);font-size:.72rem;font-weight:700;line-height:1;flex:none}
+.coche-ligne{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-family:var(--f-mono);font-size:.7rem;color:var(--muted);justify-self:center}
+.sheet-ident .coche-ligne{justify-self:start;font-size:.78rem}

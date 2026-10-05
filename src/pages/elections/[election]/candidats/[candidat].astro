@@ -5,7 +5,7 @@ import FriseCandidat from "../../../../components/FriseCandidat.astro";
 import Tournee from "../../../../components/Tournee.astro";
 import BandeauVerif from "../../../../components/BandeauVerif.astro";
 import { logoParti, siteParti } from "../../../../lib/partis";
-import { presidentiellesPassees, elections, candidatsDe, nomComplet, slugCandidat, STATUTS, dateFr, lien, type Candidat, type Election } from "../../../../lib/data";
+import { candidatUnique, presidentiellesPassees, elections, candidatsDe, nomComplet, slugCandidat, STATUTS, dateFr, lien, type Candidat, type Election } from "../../../../lib/data";
 
 export async function getStaticPaths() {
   const routes = [];
@@ -17,6 +17,7 @@ export async function getStaticPaths() {
   return routes;
 }
 const { c, election } = Astro.props as { c: Candidat; election: Election };
+const tous = await candidatsDe(election);
 const STATUTS_JUSTICE = { definitive: "Définitive", non_definitive: "Non définitive (recours en cours)", non_precise: "Recours éventuels non précisés" } as const;
 // Un poste est en cours quand sa période contient « depuis » (ex. « 2010 – 2017, depuis juillet 2020 »).
 const enFonction = (periode: string) => /(^|,\s*)depuis\b/i.test(periode);
@@ -57,6 +58,7 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
             <span style="color:var(--muted)">{c.data.parti}</span>
           </span>
         )}
+        {candidatUnique(c, tous) && <span class="coche-ligne"><span class="coche" aria-hidden="true">✓</span> Seule candidature de son parti</span>}
         {c.data.vainqueurPrimaire && (
           <span class="vainqueur-fiche">
             <span class="pill vainqueur">Vainqueur de la primaire</span>

@@ -62,6 +62,12 @@ export function presidentiellesPassees(c: Candidat) {
     .sort((a, b) => b.annee - a.annee);
 }
 
+/** Candidat unique de son parti : déclaré (ou parrainages validés), avec une étiquette, et seul candidat non retiré de ce parti. */
+export function candidatUnique(c: Candidat, liste: Candidat[]) {
+  if (!["declare", "parrainages_valides"].includes(c.data.statut) || c.data.parti === "Sans étiquette") return false;
+  return liste.filter((x) => x.data.parti === c.data.parti && x.data.statut !== "retire").length === 1;
+}
+
 export const dateFr = (d: Date) =>
   d.toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
 
