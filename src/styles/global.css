@@ -472,3 +472,8 @@ table.resultats{min-width:520px}
 .party-lien:hover{color:var(--bleu);text-decoration-color:currentColor}
 .parti-lien{color:var(--bleu);text-decoration:none;justify-self:start}
 .parti-lien:hover span{text-decoration:underline}
+
+/* ---------- Vainqueur d'une primaire ---------- */
+.pill.vainqueur{border-color:var(--bleu);background:var(--bleu);color:var(--sur-accent);justify-self:center}
+.vainqueur-fiche{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:.9rem;color:var(--muted)}
+.vainqueur-fiche .pill{justify-self:start}

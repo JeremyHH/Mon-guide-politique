@@ -78,3 +78,13 @@ Uniquement des images sous licence libre (Wikimedia Commons : CC0, CC BY, CC BY-
 ## Positions issues d'un programme précédent
 
 Si un candidat déjà candidat à une présidentielle n'a pas de position 2027 sur un thème, on peut reprendre celle de son programme de la dernière présidentielle (2022) : ajouter `anterieur: "Présidentielle 2022"` (ou l'année concernée) à la position, avec une source de l'époque (programme officiel, profession de foi, article daté de la campagne). La source doit dater d'au plus un an avant la dernière présidentielle (pas avant le 10 avril 2021) ; le build échoue sinon. Le site affiche alors l'étiquette « Programme présidentielle 2022 ». Remplacer la position dès qu'une position 2027 sourcée existe.
+
+## Vainqueur d'une primaire
+
+Après une primaire (scrutin opposant plusieurs candidats, pas une simple validation par les adhérents), renseigner sur la fiche du vainqueur :
+
+```yaml
+vainqueurPrimaire: { nom: "Primaire PS – Place publique", date: 2026-10-17, resultat: "54 % au second tour", source: { titre: "franceinfo (17 octobre 2026)", url: "https://..." } }
+```
+
+Passer son `statut` à `declare` et celui des autres participants à `retire`. Le badge « Vainqueur de la primaire » s'affiche alors près du parti, sur la carte et sur la fiche.

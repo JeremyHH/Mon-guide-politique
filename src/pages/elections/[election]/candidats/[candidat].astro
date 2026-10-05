@@ -57,6 +57,13 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
             <span style="color:var(--muted)">{c.data.parti}</span>
           </span>
         )}
+        {c.data.vainqueurPrimaire && (
+          <span class="vainqueur-fiche">
+            <span class="pill vainqueur">Vainqueur de la primaire</span>
+            <span>{c.data.vainqueurPrimaire.nom} · {dateFr(c.data.vainqueurPrimaire.date)}{c.data.vainqueurPrimaire.resultat && ` · ${c.data.vainqueurPrimaire.resultat}`}
+              {" "}(<a href={c.data.vainqueurPrimaire.source.url} rel="noopener">source</a>)</span>
+          </span>
+        )}
         <span class="pill ok" style="justify-self:start">{STATUTS[c.data.statut]}{c.data.declaration && ` · ${dateFr(c.data.declaration)}`}</span>
         {c.data.site && (
           <a class="site-officiel" href={c.data.site.url} rel="noopener">

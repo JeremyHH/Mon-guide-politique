@@ -78,6 +78,15 @@ const candidats = defineCollection({
     // Investi ou soutenu par un parti disposant d'un groupe à l'Assemblée nationale ou au Sénat,
     // ou d'élus au Parlement européen (voir la page Méthode). Sert uniquement à grouper les cartes.
     representation: z.boolean().default(false),
+    // Victoire à une primaire (scrutin ouvert à plusieurs candidats, pas une simple validation par les adhérents).
+    vainqueurPrimaire: z
+      .object({
+        nom: z.string(),
+        date: z.coerce.date(),
+        resultat: z.string().optional(),
+        source: z.object({ titre: z.string(), url: z.string().url() }),
+      })
+      .optional(),
     // Site officiel : de campagne si possible, sinon du parti ou du mouvement qui soutient la candidature.
     site: z.object({ url: z.string().url(), type: z.enum(["campagne", "parti", "mouvement"]) }).optional(),
     // Clés = identifiants des thèmes de l'élection (vérifié dans src/lib/data.ts).
