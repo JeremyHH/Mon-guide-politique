@@ -1,1 +1,104 @@
-{}
+{
+ "renaissance": {
+  "fichier": "partis/renaissance.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Renaissance-logotype-officiel.svg",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Original: Stéphane Séjourné Vector:  Valo139"
+ },
+ "rn": {
+  "fichier": "partis/rn.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Logo_Rassemblement_National.svg",
+  "licence": "Public domain",
+  "auteur": "Rassemblement national"
+ },
+ "lfi": {
+  "fichier": "partis/lfi.png",
+  "source": "https://commons.wikimedia.org/wiki/File:LOGO-LFI-2026.png",
+  "licence": "Public domain",
+  "auteur": "—"
+ },
+ "horizons": {
+  "fichier": "partis/horizons.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Logo_Parti_Politique_Horizons_-_2021.svg",
+  "licence": "Public domain",
+  "auteur": "Horizons"
+ },
+ "reconquete": {
+  "fichier": "partis/reconquete.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Logo_du_parti_Reconqu%C3%AAte.svg",
+  "licence": "Public domain",
+  "auteur": "Reconquête"
+ },
+ "place-publique": {
+  "fichier": "partis/place-publique.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Logo_Place_publique.svg",
+  "licence": "Public domain",
+  "auteur": "Place publique"
+ },
+ "lo": {
+  "fichier": "partis/lo.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Logo_Lutte_Ouvri%C3%A8re.svg",
+  "licence": "Public domain",
+  "auteur": "Probably Édouard Taubé (Mody)"
+ },
+ "dlf": {
+  "fichier": "partis/dlf.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Debout_la_France_logo_(2022).png",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Site Officiel Debout la France"
+ },
+ "npa-r": {
+  "fichier": "partis/npa-r.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Logo-NPA_Revo.svg",
+  "licence": "CC0",
+  "auteur": "NPA Révolutionnaires"
+ },
+ "nouvelle-energie": {
+  "fichier": "partis/nouvelle-energie.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Logo-blanc-bleu.png",
+  "licence": "Public domain",
+  "auteur": "Nouvelle Énergie"
+ },
+ "debout": {
+  "fichier": "partis/debout.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Logo-Debout!-rouge.png",
+  "licence": "CC BY 3.0",
+  "auteur": "—"
+ },
+ "revolution-permanente": {
+  "fichier": "partis/revolution-permanente.png",
+  "source": "https://commons.wikimedia.org/wiki/File:R%C3%A9volution_Permenente.png",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "https://www.revolutionpermanente.fr/"
+ },
+ "lr": {
+  "fichier": "partis/lr.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Les_R%C3%A9publicains_-_logo_(France,_2023).svg",
+  "licence": "Public domain",
+  "auteur": "Les Républicains"
+ },
+ "ps": {
+  "fichier": "partis/ps.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Le_Parti_socialiste_wordmark.svg",
+  "licence": "Public domain",
+  "auteur": "Le Parti socialiste"
+ },
+ "pcf": {
+  "fichier": "partis/pcf.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Logo_%E2%80%93_Parti_communiste_fran%C3%A7ais_(2018).svg",
+  "licence": "Public domain",
+  "auteur": "Parti communiste français"
+ },
+ "ecologistes": {
+  "fichier": "partis/ecologistes.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Logo_Les_%C3%89cologistes_(France).png",
+  "licence": "Public domain",
+  "auteur": "AliFatehi"
+ },
+ "upr": {
+  "fichier": "partis/upr.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Logo_Union_Populaire_R%C3%A9publicaine.svg",
+  "licence": "Public domain",
+  "auteur": "Union populaire républicaine"
+ }
+}

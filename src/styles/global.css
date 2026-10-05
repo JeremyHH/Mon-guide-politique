@@ -460,4 +460,4 @@ table.resultats{min-width:520px}
 .parti-ligne{display:flex;align-items:center;gap:10px}
 .parti-logo{height:32px;width:auto;max-width:120px;object-fit:contain;background:#fff;border-radius:6px;padding:3px;border:1px solid var(--line)}
 .ballot .party{display:inline-flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap}
-.parti-logo-carte{height:20px;width:auto;max-width:70px;object-fit:contain;background:#fff;border-radius:4px;padding:2px}
+.parti-logo-carte{height:24px;width:auto;max-width:84px;object-fit:contain;background:#fff;border-radius:4px;padding:2px}
