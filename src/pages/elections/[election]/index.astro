@@ -90,9 +90,6 @@ const groupes = [
               )}
               {candidatUnique(c, liste) && <span class="coche-ligne"><span class="coche" aria-hidden="true">✓</span> Seule candidature du parti</span>}
               {c.data.vainqueurPrimaire && <span class="pill vainqueur" title={`${c.data.vainqueurPrimaire.nom}${c.data.vainqueurPrimaire.resultat ? ` : ${c.data.vainqueurPrimaire.resultat}` : ""}`}>Vainqueur de la primaire</span>}
-              {presidentiellesPassees(c).length > 0 && (
-                <span class="deja mono">Déjà candidat·e : {presidentiellesPassees(c).map((r) => `${r.annee} (${r.premierTour}${r.secondTour ? ", 2d tour" : ""})`).join(" · ")}</span>
-              )}
               <span class="status"><span class="pill ok">{STATUTS[c.data.statut]}</span></span>
             </div>
             {c.data.site && (
