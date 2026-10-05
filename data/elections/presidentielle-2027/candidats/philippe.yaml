@@ -92,6 +92,13 @@ resultats:
 condamnations: []
 procedures:
   - "Une juge d'instruction est saisie depuis mai 2026 d'une enquête sur des soupçons de prise illégale d'intérêts, détournement de fonds publics et favoritisme à la communauté urbaine du Havre, après une enquête préliminaire du parquet national financier ouverte en 2024. Édouard Philippe conteste toute irrégularité et n'est pas condamné ; il bénéficie de la présomption d'innocence."
+# Soutiens de personnalités (déclarations publiques depuis 2025, vérifiées le 5 octobre 2026)
+soutiens:
+  - { nom: "Benjamin Haddad", qualite: "ministre délégué chargé de l'Europe", portee: national, date: 2026-08-26, source: { titre: "LCP (26 août 2026)", url: "https://lcp.fr/actualites/presidentielle-2027-benjamin-haddad-va-soutenir-edouard-philippe-et-les-autres-ministres" } }
+  - { nom: "Gérald Darmanin", qualite: "ministre de la Justice", portee: national, date: 2026-08-17, source: { titre: "franceinfo (18 août 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-gerald-darmanin-rallie-le-camp-edouard-philippe_8151761.html" } }
+  - { nom: "Maud Bregeon", qualite: "porte-parole du gouvernement", portee: national, date: 2026-06-29, source: { titre: "franceinfo (29 juin 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-maud-bregeon-annonce-son-soutien-a-edouard-philippe-le-plus-a-meme-de-rassembler_8084522.html" } }
+  - { nom: "Christophe Béchu", qualite: "ancien ministre, maire d'Angers", portee: national, date: 2026-05-07, source: { titre: "Public Sénat (7 mai 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-edouard-philippe-met-en-place-son-organigramme-pour-elargir-au-maximum-le-socle-et-depasser-horizons" } }
+  - { nom: "Marie Guévenoux", qualite: "ancienne ministre des Outre-mer", portee: national, date: 2026-05-07, source: { titre: "Public Sénat (7 mai 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-edouard-philippe-met-en-place-son-organigramme-pour-elargir-au-maximum-le-socle-et-depasser-horizons" } }
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
 medias:
   - { date: 2026-10-01, media: "TF1 · Bonjour ! La Matinale TF1", type: interview, titre: "Invité d'Alba Ventura sur les retraites", url: "https://www.tf1info.fr/politique/videos/video-face-a-alba-ventura-edouard-philippe-2467354.html" }

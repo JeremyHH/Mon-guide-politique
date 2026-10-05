@@ -126,6 +126,9 @@ condamnations:
     statut: non_precise
     detail: "Confirmée en appel le 28 mars 2024."
 procedures: []
+# Soutiens de personnalités (déclarations publiques depuis 2025, vérifiées le 5 octobre 2026)
+soutiens:
+  - { nom: "Sarah Knafo", qualite: "députée européenne (Reconquête)", portee: national, date: 2026-05-09, source: { titre: "Le JDD (9 mai 2026)", url: "https://www.lejdd.fr/politique/sarah-knafo-eurodeputee-reconquete-je-souhaite-queric-zemmour-soit-notre-candidat-173520" } }
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
 medias:
   - { date: 2026-09-17, media: "BFMTV · Face à BFM", type: emission, titre: "Invité de « Face à BFM » : présidentielle, immigration, voile", url: "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-immigration-voile-marine-le-pen-ce-qu-il-faut-retenir-de-l-interview-d-eric-zemmour-sur-bfmtv_AV-202609170966.html" }

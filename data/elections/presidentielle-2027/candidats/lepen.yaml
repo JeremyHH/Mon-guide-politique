@@ -82,6 +82,9 @@ condamnations:
     peine: "500 € d'amende avec sursis"
     statut: non_precise
 procedures: []
+# Soutiens de personnalités (déclarations publiques depuis 2025, vérifiées le 5 octobre 2026)
+soutiens:
+  - { nom: "Jordan Bardella", qualite: "président du Rassemblement national, député européen", portee: national, date: 2026-07-08, source: { titre: "franceinfo (8 juillet 2026)", url: "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/video-jordan-bardella-affirme-se-rejouir-que-marine-le-pen-puisse-porter-nos-couleurs-pour-la-presidentielle_8099870.html" } }
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
 medias:
   - { date: 2026-09-16, media: "LCI · Objectif 2027", type: emission, titre: "Invitée de l'émission « Objectif 2027 » (Darius Rochebin)", url: "https://www.tf1info.fr/replay-lci/video-objectif-2027-budget-2027-sur-lci-marine-le-pen-ne-s-interdit-rien-2464613.html" }

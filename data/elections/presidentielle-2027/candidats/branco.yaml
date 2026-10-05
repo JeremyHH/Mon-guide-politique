@@ -77,6 +77,8 @@ photo:
 campagne:
   - { date: 2025-12-19, quand: "19 décembre 2025", type: annonce, quoi: "Annonce sa candidature à l'élection présidentielle sur Sud Radio, avec un projet de plus de 300 propositions.", source: { titre: "Sud Radio (19 décembre 2025)", url: "https://www.sudradio.fr/sud-radio/lavocat-juan-branco-candidat-a-la-presidentielle" } }
   - { date: 2026-08-06, quand: "6 août 2026", type: justice, quoi: "Le parquet de Paris requiert son renvoi en procès pour viol ; il conteste les faits.", source: { titre: "Le Figaro (1er septembre 2026)", url: "https://www.lefigaro.fr/faits-divers/le-parquet-de-paris-requiert-le-renvoi-en-proces-pour-viol-de-l-avocat-juan-branco-20260901" } }
+# Soutiens de personnalités : aucun recensé au 5 octobre 2026
+soutiens: []
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
 medias:
   - { date: 2026-09-09, media: "Thinkerview", type: interview, titre: "Juan Branco : « Guerre mondiale, l'échec de l'élite ? »", url: "https://www.thinkerview.com/juan-branco-guerre-mondiale-lechec-de-lelite/" }

@@ -83,6 +83,13 @@ resultats:
   - { annee: 2017, scrutin: "Législatives, Hauts-de-Seine (10e)", resultat: "Élu au second tour avec 60,94 %" }
 condamnations: []
 procedures: []
+# Soutiens de personnalités (déclarations publiques depuis 2025, vérifiées le 5 octobre 2026)
+soutiens:
+  - { nom: "Prisca Thevenot", qualite: "députée, ancienne porte-parole du gouvernement", portee: national, date: 2026-05-30, source: { titre: "Public Sénat (30 mai 2026)", url: "https://www.publicsenat.fr/actualites/politique/un-an-pour-convaincre-pour-son-premier-grand-meeting-gabriel-attal-mise-sur-lespoir-et-joue-sa-difference-avec-edouard-philippe" } }
+  - { nom: "Renaud Muselier", qualite: "président de la région Provence-Alpes-Côte d'Azur", portee: national, date: 2026-05-16, source: { titre: "franceinfo (17 mai 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-500-elus-locaux-appellent-dans-une-tribune-gabriel-attal-a-se-presenter_8009561.html" } }
+  - { nom: "Franck Riester", qualite: "ancien ministre de la Culture, maire de Coulommiers", portee: national, date: 2026-05-16, source: { titre: "Public Sénat (18 mai 2026)", url: "https://www.publicsenat.fr/actualites/politique/candidature-de-gabriel-attal-pour-2027-on-sy-prepare-il-sy-prepare-depuis-des-annees-explique-franck-riester" } }
+  - { nom: "Thomas Cazenave", qualite: "maire de Bordeaux, ancien ministre", portee: national, date: 2026-05-16, source: { titre: "franceinfo (17 mai 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-500-elus-locaux-appellent-dans-une-tribune-gabriel-attal-a-se-presenter_8009561.html" } }
+  - { nom: "Antoine Armand", qualite: "ancien ministre de l'Économie, maire d'Annecy", portee: national, date: 2026-05-16, source: { titre: "franceinfo (17 mai 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-500-elus-locaux-appellent-dans-une-tribune-gabriel-attal-a-se-presenter_8009561.html" } }
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
 medias:
   - { date: 2026-10-03, media: "Le Parisien", type: interview, titre: "Entretien : « Il faut une coalition qui aille des électeurs de Raphaël Glucksmann à ceux de la droite républicaine »", url: "https://www.leparisien.fr/elections/presidentielle/gabriel-attal-il-faut-une-coalition-qui-aille-des-electeurs-de-raphael-glucksmann-a-ceux-de-la-droite-republicaine-03-10-2026-7A4AQ6UWBZAVZPFZJHDLQ2DM3A.php" }

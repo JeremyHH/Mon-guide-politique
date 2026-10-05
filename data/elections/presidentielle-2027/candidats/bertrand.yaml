@@ -75,6 +75,8 @@ tournee:
   - { date: 2026-08-05, quand: "5 août 2026", lieu: "Bastia (Haute-Corse)", type: deplacement, quoi: "Séance de dédicaces de son livre « Rien n'est jamais écrit » ; soutien au projet d'autonomie de la Corse.", source: { titre: "ICI Corse (5 août 2026)", url: "https://www.ici.fr/corse/je-veux-faire-sauter-le-verrou-parisien-en-corse-xavier-bertrand-defend-sa-candidature-a-l-elysee-1086499" } }
   - { date: 2026-08-27, quand: "27 août 2026", lieu: "Paris, université de rentrée du Medef", type: debat, quoi: "Participe à un débat et confirme qu'il sera candidat.", source: { titre: "ICI (27 août 2026)", url: "https://www.ici.fr/infos/politique/presidentielle-2027-xavier-bertrand-annonce-officiellement-sa-candidature-1274056" } }
   - { date: 2026-09-05, quand: "5 septembre 2026", lieu: "Lille (Nord)", type: salon, quoi: "Braderie de Lille.", source: { titre: "franceinfo (5 septembre 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/immigration-jordan-bardella-a-propose-de-devenir-un-sous-traitant-de-la-grande-bretagne-tacle-xavier-bertrand_8178881.html" } }
+# Soutiens de personnalités : aucun recensé au 5 octobre 2026
+soutiens: []
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
 medias:
   - { date: 2026-08-21, media: "ICI RCFM · L'invité de la rédaction", type: interview, titre: "Invité de la rédaction d'ICI RCFM : République des territoires, autonomie de la Corse", url: "https://www.ici.fr/emissions/l-invite-de-la-redaction-ici-rcfm/en-corse-xavier-bertrand-plaide-pour-une-republique-des-territoires-et-la-fin-du-centralisme-parisien-8159774" }

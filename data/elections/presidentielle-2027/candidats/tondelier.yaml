@@ -71,6 +71,8 @@ resultats:
   - { annee: 2015, scrutin: "Régionales, Nord-Pas-de-Calais-Picardie (tête de liste dans le Pas-de-Calais)", resultat: "4,83 % au premier tour" }
 condamnations: []
 procedures: []
+# Soutiens de personnalités : aucun recensé au 5 octobre 2026
+soutiens: []
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
 medias:
   - { date: 2026-09-16, media: "France Inter · L'invité de 7h50", type: interview, titre: "Invitée de 7h50 de France Inter : mobilisation contre la vie chère", url: "https://www.radiofrance.fr/franceinter/podcasts/l-invite-de-7h50/l-invite-de-7h50-du-mercredi-16-septembre-2026-6637653" }

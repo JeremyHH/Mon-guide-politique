@@ -231,7 +231,7 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
                 <ul class="soutiens">
                   {liste.map((x) => (
                     <li>
-                      <strong>{x.nom}</strong>, <span class="soutien-qualite">{x.qualite}</span>
+                      <span><strong>{x.nom}</strong>, <span class="soutien-qualite">{x.qualite}</span></span>
                       <span class="mono src"><a href={x.source.url} rel="noopener">{x.source.titre}</a> · {dateFr(x.date)}</span>
                     </li>
                   ))}

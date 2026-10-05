@@ -56,6 +56,8 @@ photo:
 # Campagne : dates clés propres au candidat
 campagne:
   - { date: 2026-09-18, quand: "Septembre 2026", type: annonce, quoi: "Recensé parmi les candidats déclarés, pour l'UPR (date d'annonce non retrouvée).", source: { titre: "Public Sénat (18 septembre 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart" } }
+# Soutiens de personnalités : aucun recensé au 5 octobre 2026
+soutiens: []
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
 medias:
   - { date: 2026-10-01, media: "GPTV", type: interview, titre: "Invité de Nicolas Stoquer : lancement de campagne, dette et Frexit (compte rendu UPR)", url: "https://upr.fr/medias/francois-asselineau-invite-de-nicolas-stoquer-sur-gp-tv-01-10-2026" }

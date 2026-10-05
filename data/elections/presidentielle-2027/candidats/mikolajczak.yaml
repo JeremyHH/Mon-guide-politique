@@ -35,6 +35,8 @@ campagne:
 tournee:
   - { date: 2026-06-27, quand: "27 juin 2026", lieu: "Saint-Père-sur-Loire (Loiret)", type: meeting, quoi: "Réunion de lancement de campagne.", source: { titre: "Équinoxe, « Retour sur le lancement de campagne d'Équinoxe » (page consultée le 4 octobre 2026)", url: "https://parti-equinoxe.fr/retour-sur-le-lancement-de-campagne-dequinoxe/" } }
   - { date: 2026-07-09, quand: "9 et 10 juillet 2026", lieu: "Haute-Marne", type: deplacement, quoi: "Deux jours de rencontres avec des élus locaux à la recherche de parrainages.", source: { titre: "Le Journal de la Haute-Marne (11 juillet 2026)", url: "https://jhm.fr/sous-la-banniere-dequinoxe-antoine-mikolajczak-brigue-la-presidence-de-la-republique/" } }
+# Soutiens de personnalités : aucun recensé au 5 octobre 2026
+soutiens: []
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
 medias:
   - { date: 2026-08-12, media: "Le Parisien", type: interview, titre: "Portrait-entretien dans Le Parisien (relayé par Équinoxe)", url: "https://parti-equinoxe.fr/antoine-mikolajczak-dans-le-parisien/" }

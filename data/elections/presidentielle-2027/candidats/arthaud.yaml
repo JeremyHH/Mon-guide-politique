@@ -84,6 +84,8 @@ photo:
 # Campagne : dates clés propres à la candidate
 campagne:
   - { date: 2025-12-08, quand: "8 décembre 2025", type: annonce, quoi: "Annonce sa candidature pour Lutte ouvrière.", source: { titre: "Wikipédia, « Nathalie Arthaud »", url: "https://fr.wikipedia.org/wiki/Nathalie_Arthaud" } }
+# Soutiens de personnalités : aucun recensé au 5 octobre 2026
+soutiens: []
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
 medias:
   - { date: 2026-10-04, media: "BFMTV", type: interview, titre: "Policier frappé à Belfort et interpellation d'un mineur : « Ce qui est grave, c'est qu'un commissaire de police agisse comme ça »", url: "https://www.dailymotion.com/video/xbhuq5u" }

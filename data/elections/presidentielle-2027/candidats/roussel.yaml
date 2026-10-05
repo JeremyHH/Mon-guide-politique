@@ -82,6 +82,8 @@ resultats:
   - { annee: 2017, scrutin: "Législatives, Nord (20e)", resultat: "Élu au second tour avec 63,88 %" }
 condamnations: []
 procedures: []
+# Soutiens de personnalités : aucun recensé au 5 octobre 2026
+soutiens: []
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
 medias:
   - { date: 2026-10-04, media: "BFMTV · BFM Politique", type: emission, titre: "Invité de « BFM Politique »", url: "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-fabien-roussel-declare-qu-il-ne-se-retirera-jamais-au-profit-d-une-autre-formation-politique_AV-202610040231.html" }

@@ -67,6 +67,8 @@ photo:
 # Campagne : dates clés propres au candidat
 campagne:
   - { date: 2026-05-09, quand: "9 mai 2026", type: annonce, quoi: "Annonce sa candidature sur France 2.", source: { titre: "franceinfo (9 mai 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-souverainiste-florian-philippot-annonce-sa-candidature-a-l-elysee_7993346.html" } }
+# Soutiens de personnalités : aucun recensé au 5 octobre 2026
+soutiens: []
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
 medias:
   - { date: 2026-09-14, media: "Radio Courtoisie (Ligne droite)", type: interview, titre: "Les Assises de la souveraineté : être intransigeant avec le système", url: "https://www.rc.fr/2026/09/14/ligne-droite-du-14-septembre-2026/" }

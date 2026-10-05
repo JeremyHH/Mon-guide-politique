@@ -77,6 +77,8 @@ campagne:
   - { date: 2026-05-12, quand: "12 mai 2026", type: annonce, quoi: "Confirme qu'il sera candidat même sans primaire de la gauche.", source: { titre: "franceinfo (12 mai 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-je-souhaite-qu-une-primaire-de-la-gauche-ait-lieu-mais-s-il-n-y-en-a-pas-j-y-vais-assure-francois-ruffin_7999316.html" } }
 tournee:
   - { date: 2026-04-25, quand: "25 avril 2026", lieu: "Lyon", type: meeting, quoi: "Meeting de campagne (environ 2 000 personnes).", source: { titre: "franceinfo (12 mai 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-je-souhaite-qu-une-primaire-de-la-gauche-ait-lieu-mais-s-il-n-y-en-a-pas-j-y-vais-assure-francois-ruffin_7999316.html" } }
+# Soutiens de personnalités : aucun recensé au 5 octobre 2026
+soutiens: []
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
 medias:
   - { date: 2026-09-30, media: "ICI Picardie (L'invité d'ICI matin)", type: interview, titre: "« Bloquer les marges des entreprises et faire le tri » pour les comptes publics et le carburant", url: "https://www.ici.fr/emissions/l-invite-d-ici-matin-ici-picardie/francois-ruffin-depute-de-la-somme-et-candidat-a-l-election-presidentielle-3905071" }

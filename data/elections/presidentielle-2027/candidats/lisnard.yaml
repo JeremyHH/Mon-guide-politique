@@ -66,6 +66,8 @@ photo:
 # Campagne : dates clés propres au candidat
 campagne:
   - { date: 2026-03-31, quand: "31 mars 2026", type: annonce, quoi: "Annonce sa candidature, quitte LR et plaide pour une primaire ouverte de la droite.", source: { titre: "LCP (1er avril 2026)", url: "https://lcp.fr/actualites/je-suis-candidat-david-lisnard-quitte-lr-et-relance-le-debat-sur-une-primaire-a-droite" } }
+# Soutiens de personnalités : aucun recensé au 5 octobre 2026
+soutiens: []
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
 medias:
   - { date: 2026-10-03, media: "Le JDD", type: tribune, titre: "Tribune : « Les leçons du pape Léon XIV »", url: "https://www.lejdd.fr/Societe/david-lisnard-les-lecons-du-pape-leon-xiv-185175" }

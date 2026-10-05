@@ -82,6 +82,10 @@ resultats:
   - { annee: 2017, scrutin: "Sénatoriales, Vendée", resultat: "Réélu (également en 2020 et 2023)" }
 condamnations: []
 procedures: []
+# Soutiens de personnalités (déclarations publiques depuis 2025, vérifiées le 5 octobre 2026)
+soutiens:
+  - { nom: "Manfred Weber", qualite: "président du Parti populaire européen (Allemagne)", portee: international, date: 2026-09-28, source: { titre: "La Gazette France / AFP (28 septembre 2026)", url: "https://www.lagazettefrance.fr/article/presidentielles-retailleau-recoit-le-soutien-du-ppe" } }
+  - { nom: "Boualem Sansal", qualite: "écrivain, membre de l'Académie française", portee: national, date: 2026-06-19, source: { titre: "LCP (20 juin 2026)", url: "https://lcp.fr/actualites/j-irai-jusqu-au-bout-bruno-retailleau-lance-sa-conquete-de-l-elysee-devant-une-droite" } }
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
 medias:
   - { date: 2026-10-01, media: "BFMTV / RMC", type: interview, titre: "Invité de la matinale BFMTV-RMC", url: "https://www.bfmtv.com/politique/elections/presidentielle/un-parti-seditieux-bruno-retailleau-estime-que-la-question-de-l-interdiction-de-lfi-se-pose_AN-202610010228.html" }

@@ -105,6 +105,11 @@ condamnations:
     peine: "500 € d'amende avec sursis"
     statut: non_precise
 procedures: []
+# Soutiens de personnalités (déclarations publiques depuis 2025, vérifiées le 5 octobre 2026)
+soutiens:
+  - { nom: "Robert Guédiguian", qualite: "cinéaste", portee: national, date: 2026-10-02, source: { titre: "L'Insoumission (2 octobre 2026)", url: "https://linsoumission.fr/2026/10/02/communistes-melenchon-2027" } }
+  - { nom: "Annie Ernaux", qualite: "écrivaine, prix Nobel de littérature 2022", portee: national, date: 2026-06-07, source: { titre: "La France insoumise (8 juin 2026)", url: "https://lafranceinsoumise.fr/2026/06/08/26-000-personnes-a-saint-denis-pour-le-meeting-de-jean-luc-melenchon-la-demonstration-de-force-insoumise/" } }
+  - { nom: "Éric Vuillard", qualite: "écrivain, prix Goncourt 2017", portee: national, date: 2026-06-07, source: { titre: "La France insoumise (8 juin 2026)", url: "https://lafranceinsoumise.fr/2026/06/08/26-000-personnes-a-saint-denis-pour-le-meeting-de-jean-luc-melenchon-la-demonstration-de-force-insoumise/" } }
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)
 medias:
   - { date: 2026-09-24, media: "Politico", type: interview, titre: "Grand entretien organisé par Politico (vidéo publiée sur melenchon.fr)", url: "https://melenchon.fr/2026/09/24/carburants-geopolitique-ia-jean-luc-melenchon-face-a-politico/" }
