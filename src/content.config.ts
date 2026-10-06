@@ -148,6 +148,18 @@ const candidats = defineCollection({
         }),
       )
       .default([]),
+    // Budget / chiffrage du programme publié par le candidat (null = pas de chiffrage publié à ce jour).
+    budget: z
+      .object({
+        date: z.coerce.date(),
+        titre: z.string(),
+        resume: z.string(),
+        chiffres: z.array(z.object({ libelle: z.string(), valeur: z.string() })).default([]),
+        source: z.object({ titre: z.string(), url: z.string().url() }),
+        evaluations: z.array(z.object({ organisme: z.string(), conclusion: z.string(), date: z.coerce.date(), source: z.object({ titre: z.string(), url: z.string().url() }) })).default([]),
+      })
+      .nullable()
+      .optional(),
     // Soutiens publics de personnalités connues à la candidature 2027 (déclarations explicites, sourcées).
     soutiens: z
       .array(

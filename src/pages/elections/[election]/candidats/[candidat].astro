@@ -94,6 +94,7 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
       <a href="#medias">Dans les médias</a>
       {c.data.soutiens && <a href="#soutiens">Soutiens</a>}
       <a href="#positions">Positions</a>
+      {c.data.budget !== undefined && <a href="#budget">Budget</a>}
       <a href="#justice">Condamnations</a>
     </nav>
     </div>
@@ -255,6 +256,34 @@ const TYPES_MEDIA = { interview: "Interview", debat: "Débat", emission: "Émiss
         </div>
       ))}
     </section>
+
+    {c.data.budget !== undefined && (
+    <section class="fiche-section" id="budget">
+      <h3 class="fiche-titre">Budget et chiffrage du programme</h3>
+      {c.data.budget ? (
+        <>
+          <p class="budget-tete"><strong>{c.data.budget.titre}</strong> · présenté le {dateFr(c.data.budget.date)}</p>
+          <p style="margin:0;max-width:70ch">{c.data.budget.resume}</p>
+          {c.data.budget.chiffres.length > 0 && (
+            <dl class="budget-chiffres">
+              {c.data.budget.chiffres.map((x) => <div><dt>{x.libelle}</dt><dd>{x.valeur}</dd></div>)}
+            </dl>
+          )}
+          <p class="mono src">Chiffres annoncés par le candidat. Source : <a href={c.data.budget.source.url} rel="noopener">{c.data.budget.source.titre}</a></p>
+          {c.data.budget.evaluations.length > 0 && (
+            <div class="budget-evals">
+              <span class="label">Évaluations indépendantes</span>
+              {c.data.budget.evaluations.map((e) => (
+                <p><strong>{e.organisme}</strong> : {e.conclusion} <span class="mono src"><a href={e.source.url} rel="noopener">{e.source.titre}</a> · {dateFr(e.date)}</span></p>
+              ))}
+            </div>
+          )}
+        </>
+      ) : (
+        <p class="aucune">Pas de budget ni de chiffrage global publié à ce jour.</p>
+      )}
+    </section>
+    )}
 
     <section class="fiche-section" id="justice">
       <h3 class="fiche-titre">Condamnations judiciaires</h3>
