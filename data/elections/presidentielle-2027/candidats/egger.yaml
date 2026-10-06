@@ -43,6 +43,8 @@ procedures: []
 # Campagne : dates clés propres à la candidate
 campagne:
   - { date: 2026-04-19, quand: "19 avril 2026", type: annonce, quoi: "Annonce sa candidature par un communiqué de Solution démocratique.", source: { titre: "Solution démocratique, « Présidentielle 2027 : Clara Egger annonce sa candidature » (page consultée le 4 octobre 2026)", url: "https://solutiondemocratique.fr/presidentielle2027-annonce-candidature-clara-egger/" } }
+# Budget : pas de chiffrage global publié au 6 octobre 2026
+budget: null
 # Soutiens de personnalités : aucun recensé au 5 octobre 2026
 soutiens: []
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)

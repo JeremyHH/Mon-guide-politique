@@ -65,6 +65,8 @@ photo:
 campagne:
   - { date: 2026-06-01, quand: "1er juin 2026", type: annonce, quoi: "Annonce sa candidature pour Révolution permanente dans un clip de campagne.", source: { titre: "franceinfo (1er juin 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-cheminot-anasse-kazib-annonce-sa-candidature_8040020.html" } }
   - { date: 2026-06-25, quand: "25 juin 2026", type: justice, quoi: "Son procès pour « apologie du terrorisme » est renvoyé après la transmission d'une question prioritaire de constitutionnalité.", source: { titre: "Le Courrier de l'Atlas (26 juin 2026)", url: "https://www.lecourrierdelatlas.com/proces-anasse-kazib-apologie-terrorisme-renvoye/" } }
+# Budget : pas de chiffrage global publié au 6 octobre 2026
+budget: null
 # Soutiens de personnalités : aucun recensé au 5 octobre 2026
 soutiens: []
 sourcesProfil:

@@ -111,6 +111,8 @@ photo:
 # Campagne : dates clés propres au candidat
 campagne:
   - { date: 2025-03-08, quand: "8 mars 2025", type: annonce, quoi: "Annonce sa candidature à l'élection présidentielle.", source: { titre: "Wikipédia, « Nicolas Dupont-Aignan »", url: "https://fr.wikipedia.org/wiki/Nicolas_Dupont-Aignan" } }
+# Budget : pas de chiffrage global publié au 6 octobre 2026
+budget: null
 # Soutiens de personnalités : aucun recensé au 5 octobre 2026
 soutiens: []
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)

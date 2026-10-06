@@ -69,6 +69,8 @@ campagne:
   - { date: 2026-06-09, quand: "9 juin 2026", type: annonce, quoi: "Annonce sa candidature sur France Inter : « Moi, Karim Bouamrane, je suis candidat pour la prochaine élection présidentielle ».", source: { titre: "franceinfo (9 juin 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/karim-bouamrane-maire-ps-de-saint-ouen-annonce-sa-candidature-a-la-presidentielle_8051630.html" } }
   - { date: 2026-06-30, quand: "30 juin 2026", type: parti, quoi: "Dénonce les « barons socialistes » et maintient son refus d'une primaire : « Ce sont les sondages qui vont nous départager ».", source: { titre: "franceinfo (30 juin 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/le-maire-de-saint-ouen-karim-bouamrane-fustige-les-barons-socialistes-qui-le-meprisent-et-que-sa-candidature-a-la-presidentielle-2027-bouscule_8086388.html" } }
 tournee: []
+# Budget : pas de chiffrage global publié au 6 octobre 2026
+budget: null
 # Soutiens de personnalités : aucun recensé au 5 octobre 2026
 soutiens: []
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)

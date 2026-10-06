@@ -82,6 +82,17 @@ condamnations:
     peine: "500 € d'amende avec sursis"
     statut: non_precise
 procedures: []
+# Budget / chiffrage publié par le candidat (vérifié le 6 octobre 2026)
+budget:
+  date: 2026-10-06
+  titre: "Contre-budget du Rassemblement national : grandes lignes budgétaires du programme présidentiel"
+  resume: "Lors d'une conférence de presse au siège du RN avec Jordan Bardella et Jean-Philippe Tanguy, Marine Le Pen a présenté la trajectoire budgétaire de son programme pour 2027. Elle prévoit des économies portant notamment sur l'organisation territoriale, les agences de l'État, l'immigration et la contribution au budget européen, ainsi que des baisses d'impôts et une « règle d'or » budgétaire adoptée par référendum."
+  chiffres:
+    - { libelle: "Économies", valeur: "140 milliards d'euros net d'ici 2032 par rapport à 2026" }
+    - { libelle: "Objectif de déficit", valeur: "Sous 3 % du PIB dès 2030" }
+    - { libelle: "Contribution au budget de l'UE", valeur: "Limitée à 5 milliards d'euros (contre près de 29 milliards prévus cette année) (selon TIME France, 6 octobre 2026)" }
+  source: { titre: "franceinfo (6 octobre 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-a-2032_8224807.html" }
+  evaluations: []
 # Soutiens de personnalités (déclarations publiques depuis 2025, vérifiées le 5 octobre 2026)
 soutiens:
   - { nom: "Jordan Bardella", qualite: "président du Rassemblement national, député européen", portee: national, date: 2026-07-08, source: { titre: "franceinfo (8 juillet 2026)", url: "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/video-jordan-bardella-affirme-se-rejouir-que-marine-le-pen-puisse-porter-nos-couleurs-pour-la-presidentielle_8099870.html" } }

@@ -126,6 +126,8 @@ condamnations:
     statut: non_precise
     detail: "Confirmée en appel le 28 mars 2024."
 procedures: []
+# Budget : pas de chiffrage global publié au 6 octobre 2026
+budget: null
 # Soutiens de personnalités (déclarations publiques depuis 2025, vérifiées le 5 octobre 2026)
 soutiens:
   - { nom: "Sarah Knafo", qualite: "députée européenne (Reconquête)", portee: national, date: 2026-05-09, source: { titre: "Le JDD (9 mai 2026)", url: "https://www.lejdd.fr/politique/sarah-knafo-eurodeputee-reconquete-je-souhaite-queric-zemmour-soit-notre-candidat-173520" } }

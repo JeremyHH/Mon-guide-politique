@@ -53,6 +53,8 @@ photo:
 campagne:
   - { date: 2025-11-25, quand: "25 novembre 2025", type: annonce, quoi: "Se déclare candidate à l'élection présidentielle.", source: { titre: "France 3 Nouvelle-Aquitaine (26 novembre 2025)", url: "https://france3-regions.franceinfo.fr/nouvelle-aquitaine/deux-sevres/niort/la-deputee-ecologiste-delphine-batho-se-declare-candidate-pour-la-presidentielle-de-2027-3255724.html" } }
   - { date: 2026-09-18, quand: "Septembre 2026", type: annonce, quoi: "Maintient sa candidature, primaire ou non.", source: { titre: "Public Sénat (18 septembre 2026)", url: "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart" } }
+# Budget : pas de chiffrage global publié au 6 octobre 2026
+budget: null
 # Soutiens de personnalités : aucun recensé au 5 octobre 2026
 soutiens: []
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)

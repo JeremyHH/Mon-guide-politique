@@ -82,6 +82,8 @@ resultats:
   - { annee: 2017, scrutin: "Législatives, Nord (20e)", resultat: "Élu au second tour avec 63,88 %" }
 condamnations: []
 procedures: []
+# Budget : pas de chiffrage global publié au 6 octobre 2026
+budget: null
 # Soutiens de personnalités : aucun recensé au 5 octobre 2026
 soutiens: []
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)

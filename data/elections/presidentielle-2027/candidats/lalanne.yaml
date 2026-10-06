@@ -97,6 +97,8 @@ campagne:
   - { date: 2026-08-22, quand: "22 août 2026", type: meeting, quoi: "Premier meeting de campagne au théâtre Galabru (Paris) ; présente un programme en « 9 étoiles ».", source: { titre: "Site de campagne de Francis Lalanne (27 août 2026)", url: "https://dieudolalanne2027.com/meeting-dieudo-lalanne-du-22-aout-ce-quil-faut-retenir/" } }
 tournee:
   - { date: 2026-08-22, quand: "22 août 2026", lieu: "Paris (18e), théâtre Galabru", type: meeting, quoi: "Premier meeting de campagne.", source: { titre: "ICI Paris Île-de-France (19 août 2026)", url: "https://www.ici.fr/ile-de-france/paris-75/paris/presidentielle-francis-lalanne-se-declare-candidat-aux-cotes-de-dieudonne-5740360" } }
+# Budget : pas de chiffrage global publié au 6 octobre 2026
+budget: null
 # Soutiens de personnalités (déclarations publiques depuis 2025, vérifiées le 5 octobre 2026)
 soutiens:
   - { nom: "Dieudonné M'bala M'bala", qualite: "Humoriste, associé à Francis Lalanne sur un ticket commun (« Dieudo / Lalanne »)", portee: national, date: 2026-08-19, source: { titre: "ICI (France Bleu) (19 août 2026)", url: "https://www.ici.fr/ile-de-france/paris-75/paris/presidentielle-francis-lalanne-se-declare-candidat-aux-cotes-de-dieudonne-5740360" } }

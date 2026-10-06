@@ -71,6 +71,20 @@ resultats:
   - { annee: 2015, scrutin: "Régionales, Nord-Pas-de-Calais-Picardie (tête de liste dans le Pas-de-Calais)", resultat: "4,83 % au premier tour" }
 condamnations: []
 procedures: []
+# Budget / chiffrage publié par le candidat (vérifié le 6 octobre 2026)
+budget:
+  date: 2026-08-26
+  titre: "Budget 2027 : la grande transmission doit financer la grande transition (dossier de presse des Écologistes)"
+  resume: "Dossier de presse des Écologistes, publié sur le site de campagne de Marine Tondelier, formulant des propositions pour le projet de loi de finances 2027 : une hausse de la fiscalité des très grosses successions pour financer 10 milliards d'euros de dépenses pour le climat dès 2027. Il s'agit de propositions budgétaires ciblées, et non d'un chiffrage complet du programme présidentiel."
+  chiffres:
+    - { libelle: "Dépenses nouvelles", valeur: "10 Md€ pour le climat dès 2027" }
+    - { libelle: "Recettes nouvelles (successions)", valeur: "Rendement pouvant atteindre 15 milliards d'euros par an en régime de croisière" }
+    - { libelle: "Contribution sur les héritages", valeur: "10 % au-delà de 4 millions d'euros, 10 % supplémentaires au-delà de 13 millions d'euros" }
+    - { libelle: "Rénovation du bâti scolaire", valeur: "2 milliards d'euros par an de l'État dès 2027" }
+    - { libelle: "Fonds vert", valeur: "+1,9 Md€" }
+    - { libelle: "MaPrimeRénov'", valeur: "+1,4 Md€" }
+  source: { titre: "Les Écologistes, dossier de presse, marinetondelier.fr (26 août 2026)", url: "https://marinetondelier.fr/s/dossierpresse-budget2027.pdf" }
+  evaluations: []
 # Soutiens de personnalités : aucun recensé au 5 octobre 2026
 soutiens: []
 # Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 4 octobre 2026)

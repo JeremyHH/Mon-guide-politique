@@ -92,6 +92,8 @@ resultats:
 condamnations: []
 procedures:
   - "Une juge d'instruction est saisie depuis mai 2026 d'une enquête sur des soupçons de prise illégale d'intérêts, détournement de fonds publics et favoritisme à la communauté urbaine du Havre, après une enquête préliminaire du parquet national financier ouverte en 2024. Édouard Philippe conteste toute irrégularité et n'est pas condamné ; il bénéficie de la présomption d'innocence."
+# Budget : pas de chiffrage global publié au 6 octobre 2026
+budget: null
 # Soutiens de personnalités (déclarations publiques depuis 2025, vérifiées le 5 octobre 2026)
 soutiens:
   - { nom: "Benjamin Haddad", qualite: "ministre délégué chargé de l'Europe", portee: national, date: 2026-08-26, source: { titre: "LCP (26 août 2026)", url: "https://lcp.fr/actualites/presidentielle-2027-benjamin-haddad-va-soutenir-edouard-philippe-et-les-autres-ministres" } }

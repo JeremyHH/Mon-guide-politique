@@ -82,6 +82,8 @@ campagne:
   - { date: 2026-10-01, quand: "1er octobre 2026", type: debat, quoi: "Deuxième débat de la primaire, sur France 2 et France Inter (1,8 million de téléspectateurs).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
   - { date: 2026-10-10, quand: "9 et 10 octobre 2026", type: designation, quoi: "Premier tour de la primaire PS – Place publique (vote en ligne).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
   - { date: 2026-10-17, quand: "16 et 17 octobre 2026", type: designation, quoi: "Second tour de la primaire, si aucun candidat n'obtient la majorité au premier tour.", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+# Budget : pas de chiffrage global publié au 6 octobre 2026
+budget: null
 # Soutiens de personnalités (déclarations publiques depuis 2025, vérifiées le 5 octobre 2026)
 soutiens:
   - { nom: "Victorin Lurel", qualite: "Sénateur de la Guadeloupe, ancien ministre des Outre-mer", portee: national, date: 2026-09-24, source: { titre: "Outremers360 (24 septembre 2026)", url: "https://outremers360.com/bassin-atlantique-appli/presidentielle-2027-pour-la-primaire-socialiste-olivier-faure-revendique-plus-de-500-soutiens-delus-dont-24-en-outre-mer" } }

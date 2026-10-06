@@ -105,6 +105,8 @@ condamnations:
     peine: "500 € d'amende avec sursis"
     statut: non_precise
 procedures: []
+# Budget : pas de chiffrage global publié au 6 octobre 2026
+budget: null
 # Soutiens de personnalités (déclarations publiques depuis 2025, vérifiées le 5 octobre 2026)
 soutiens:
   - { nom: "Robert Guédiguian", qualite: "cinéaste", portee: national, date: 2026-10-02, source: { titre: "L'Insoumission (2 octobre 2026)", url: "https://linsoumission.fr/2026/10/02/communistes-melenchon-2027" } }

@@ -83,6 +83,20 @@ resultats:
   - { annee: 2017, scrutin: "Législatives, Hauts-de-Seine (10e)", resultat: "Élu au second tour avec 60,94 %" }
 condamnations: []
 procedures: []
+# Budget / chiffrage publié par le candidat (vérifié le 6 octobre 2026)
+budget:
+  date: 2026-07-02
+  titre: "Plan de redressement des finances publiques (entretien au Parisien)"
+  resume: "Dans un entretien au Parisien, Gabriel Attal a présenté son plan pour revenir à l'équilibre des finances publiques en dix ans, sans hausse d'impôts, avec deux tiers de l'effort portant sur les dépenses sociales. Il propose une loi de programmation économique et fiscale sur dix ans, une « règle d'or » par référendum et une « impunité zéro » pour les responsables de dérapages budgétaires."
+  chiffres:
+    - { libelle: "Économies", valeur: "Entre 120 et 150 milliards d'euros, sans hausse d'impôts" }
+    - { libelle: "Répartition", valeur: "Deux tiers dans les dépenses sociales" }
+    - { libelle: "Objectif de déficit intermédiaire", valeur: "3 % avant 2032" }
+    - { libelle: "Objectif de déficit final", valeur: "0 % du PIB en 2037" }
+    - { libelle: "Fonction publique", valeur: "100 000 postes supprimés (hors Éducation, Armées, Justice, Intérieur)" }
+    - { libelle: "Prestations sociales", valeur: "Année blanche dans le budget 2028, hors petites retraites" }
+  source: { titre: "MoneyVox, dépêche AFP (3 juillet 2026)", url: "https://www.moneyvox.fr/impot/actualites/109548/attal-veut-100-000-departs-volontaires-de-fonctionnaires-et-impunite-budgetaire-zero" }
+  evaluations: []
 # Soutiens de personnalités (déclarations publiques depuis 2025, vérifiées le 5 octobre 2026)
 soutiens:
   - { nom: "Prisca Thevenot", qualite: "députée, ancienne porte-parole du gouvernement", portee: national, date: 2026-05-30, source: { titre: "Public Sénat (30 mai 2026)", url: "https://www.publicsenat.fr/actualites/politique/un-an-pour-convaincre-pour-son-premier-grand-meeting-gabriel-attal-mise-sur-lespoir-et-joue-sa-difference-avec-edouard-philippe" } }

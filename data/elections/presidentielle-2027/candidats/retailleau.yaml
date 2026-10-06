@@ -82,6 +82,8 @@ resultats:
   - { annee: 2017, scrutin: "Sénatoriales, Vendée", resultat: "Réélu (également en 2020 et 2023)" }
 condamnations: []
 procedures: []
+# Budget : pas de chiffrage global publié au 6 octobre 2026
+budget: null
 # Soutiens de personnalités (déclarations publiques depuis 2025, vérifiées le 5 octobre 2026)
 soutiens:
   - { nom: "Manfred Weber", qualite: "président du Parti populaire européen (Allemagne)", portee: international, date: 2026-09-28, source: { titre: "La Gazette France / AFP (28 septembre 2026)", url: "https://www.lagazettefrance.fr/article/presidentielles-retailleau-recoit-le-soutien-du-ppe" } }
