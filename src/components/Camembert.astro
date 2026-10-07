@@ -7,13 +7,16 @@ interface Props {
   total: number;
   postes: { nom: string; montant: number }[];
   unite?: string;
+  // Noms des postes dans l'ordre des couleurs : la couleur suit le poste, pas son rang (identique d'un graphique à l'autre).
+  couleurs?: string[];
 }
-const { titre, total, postes, unite = "Md€" } = Astro.props;
+const { titre, total, postes, unite = "Md€", couleurs } = Astro.props;
 
 const tries = [...postes].sort((a, b) => b.montant - a.montant);
 const principaux = tries.slice(0, 5);
 const reste = total - principaux.reduce((s, p) => s + p.montant, 0);
-const parts = [...principaux.map((p, i) => ({ ...p, serie: i + 1 })), ...(reste > 0.05 ? [{ nom: "Autres", montant: reste, serie: 0 }] : [])];
+const serie = (nom: string, i: number) => (couleurs ? couleurs.indexOf(nom) + 1 || 0 : i + 1);
+const parts = [...principaux.map((p, i) => ({ ...p, serie: serie(p.nom, i) })), ...(reste > 0.05 ? [{ nom: "Autres", montant: reste, serie: 0 }] : [])];
 
 const R = 90, r = 56, C = 110; // rayons extérieur / intérieur, centre
 const pt = (a: number, rad: number) => [C + rad * Math.sin(a), C - rad * Math.cos(a)];

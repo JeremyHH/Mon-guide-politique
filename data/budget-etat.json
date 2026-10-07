@@ -1,0 +1,435 @@
+{
+ "2026": {
+  "statut": "Loi de finances initiale promulguée le 19 février 2026 (loi n° 2026-103 du 19 février 2026, JO n° 43 du 20 février 2026), après adoption définitive par l’Assemblée nationale le 2 février 2026 (art. 49.3) et décision du Conseil constitutionnel n° 2026-901 DC du 19 février 2026 (censure partielle de 8 articles/cavaliers, article d’équilibre et états A/B non censurés). Du 1er janvier au 19 février 2026, l’État a fonctionné sous la loi spéciale n° 2025-1316 du 26 décembre 2025 (JO du 27 décembre 2025).",
+  "date": "2026-02-19",
+  "depenses_total": 452.716,
+  "recettes_fiscales_total": 363.603,
+  "recettes_non_fiscales": 28.9,
+  "solde_etat": -134.627,
+  "deficit_public_pib": -5.0,
+  "dette_pib": 118.2,
+  "sources": [
+   {
+    "titre": "Projet de loi de finances pour 2026, texte définitif adopté par l’Assemblée nationale (T.A. n° 227, 17e législature, 2 février 2026)",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17t0227_texte-adopte-seance.pdf",
+    "note": "Article liminaire p. 3 ; article 147 (équilibre, tableau p. 278) ; état A, récapitulation des recettes du budget général p. 364-365 ; état B, crédits par mission p. 375-381 (total CP 593 890 071 649 €). Texte avant promulgation : les censures du CC ne portent pas sur l’article d’équilibre ni sur les états A/B ; la numérotation des articles dans la loi publiée au JO peut différer."
+   },
+   {
+    "titre": "Conseil constitutionnel, décision n° 2026-901 DC du 19 février 2026, Loi de finances pour 2026",
+    "url": "https://www.conseil-constitutionnel.fr/decision/2026/2026901DC.htm",
+    "note": "Dispositif art. 1er : censure des art. 59 (III 1° et 3°), 69 (III), 99 (I), 124, 160 (I-II), 170, 180 (I-III), 200 ; article 147 jugé sincère (cons. 17-33)."
+   },
+   {
+    "titre": "Sénat, dossier législatif PLF 2026",
+    "url": "https://www.senat.fr/dossier-legislatif/pjlf2026.html",
+    "note": "Loi n° 2026-103 du 19 février 2026 parue au JO n° 43 du 20 février 2026."
+   },
+   {
+    "titre": "Sénat, dossier législatif projet de loi spéciale (article 45 LOLF)",
+    "url": "https://www.senat.fr/dossier-legislatif/pjl25-248.html",
+    "note": "Loi n° 2025-1316 du 26 décembre 2025, JO n° 303 du 27 décembre 2025."
+   },
+   {
+    "titre": "Banque des Territoires (Localtis), « Après sa validation quasi intégrale par le Conseil constitutionnel, le budget 2026 est publié », 20 février 2026",
+    "url": "https://www.banquedesterritoires.fr/apres-sa-validation-quasi-integrale-par-le-conseil-constitutionnel-le-budget-2026-est-publie",
+    "note": "Confirmation des dates (presse spécialisée)."
+   }
+  ],
+  "missions": [
+   {
+    "nom": "Action extérieure de l’État",
+    "montant": 3.454
+   },
+   {
+    "nom": "Administration générale et territoriale de l’État",
+    "montant": 5.082
+   },
+   {
+    "nom": "Agriculture, alimentation, forêt et affaires rurales",
+    "montant": 4.126
+   },
+   {
+    "nom": "Aide publique au développement",
+    "montant": 3.569
+   },
+   {
+    "nom": "Cohésion des territoires",
+    "montant": 22.571
+   },
+   {
+    "nom": "Conseil et contrôle de l’État",
+    "montant": 0.866
+   },
+   {
+    "nom": "Crédits non répartis",
+    "montant": 0.475
+   },
+   {
+    "nom": "Culture",
+    "montant": 3.745
+   },
+   {
+    "nom": "Défense",
+    "montant": 66.475
+   },
+   {
+    "nom": "Direction de l’action du Gouvernement",
+    "montant": 1.052
+   },
+   {
+    "nom": "Écologie, développement et mobilité durables",
+    "montant": 22.763
+   },
+   {
+    "nom": "Économie",
+    "montant": 3.513
+   },
+   {
+    "nom": "Engagements financiers de l’État",
+    "montant": 60.341
+   },
+   {
+    "nom": "Enseignement scolaire",
+    "montant": 89.621
+   },
+   {
+    "nom": "Gestion des finances publiques",
+    "montant": 11.018
+   },
+   {
+    "nom": "Immigration, asile et intégration",
+    "montant": 2.131
+   },
+   {
+    "nom": "Investir pour la France de 2030",
+    "montant": 4.398
+   },
+   {
+    "nom": "Justice",
+    "montant": 12.967
+   },
+   {
+    "nom": "Médias, livre et industries culturelles",
+    "montant": 0.703
+   },
+   {
+    "nom": "Monde combattant, mémoire et liens avec la Nation",
+    "montant": 1.73
+   },
+   {
+    "nom": "Outre-mer",
+    "montant": 3.277
+   },
+   {
+    "nom": "Pouvoirs publics",
+    "montant": 1.14
+   },
+   {
+    "nom": "Recherche et enseignement supérieur",
+    "montant": 31.634
+   },
+   {
+    "nom": "Régimes sociaux et de retraite",
+    "montant": 6.068
+   },
+   {
+    "nom": "Relations avec les collectivités territoriales",
+    "montant": 3.959
+   },
+   {
+    "nom": "Remboursements et dégrèvements d'impôts locaux",
+    "montant": 4.426
+   },
+   {
+    "nom": "Santé",
+    "montant": 1.888
+   },
+   {
+    "nom": "Sécurités",
+    "montant": 25.845
+   },
+   {
+    "nom": "Solidarité, insertion et égalité des chances",
+    "montant": 31.282
+   },
+   {
+    "nom": "Sport, jeunesse et vie associative",
+    "montant": 1.259
+   },
+   {
+    "nom": "Transformation et fonction publiques",
+    "montant": 0.518
+   },
+   {
+    "nom": "Travail, emploi et administration des ministères sociaux",
+    "montant": 20.821
+   }
+  ],
+  "recettes": [
+   {
+    "nom": "Taxe sur la valeur ajoutée nette",
+    "montant": 99.805
+   },
+   {
+    "nom": "Impôt net sur le revenu",
+    "montant": 99.836
+   },
+   {
+    "nom": "Impôt net sur les sociétés",
+    "montant": 61.629
+   },
+   {
+    "nom": "Accises sur les énergies (ex-TICPE)",
+    "montant": 25.29
+   },
+   {
+    "nom": "Autres impôts directs perçus par voie d’émission de rôles",
+    "montant": 2.414
+   },
+   {
+    "nom": "Contribution sociale sur les bénéfices des sociétés",
+    "montant": 1.411
+   },
+   {
+    "nom": "Contribution de la Caisse des dépôts et consignations représentative de l’IS",
+    "montant": 0.374
+   },
+   {
+    "nom": "Impôt minimum mondial à 15 % – pilier 2",
+    "montant": 0.5
+   },
+   {
+    "nom": "Autres impôts directs et taxes assimilées",
+    "montant": 39.891
+   },
+   {
+    "nom": "Enregistrement, timbre, autres contributions et taxes indirectes",
+    "montant": 42.914
+   },
+   {
+    "nom": "Autres remboursements et dégrèvements d’impôts d’État",
+    "montant": -10.462
+   }
+  ],
+  "prelevements": [
+   {
+    "nom": "Prélèvements sur recettes au profit des collectivités territoriales",
+    "montant": 44.824
+   },
+   {
+    "nom": "Prélèvement sur recettes au profit de l’Union européenne",
+    "montant": 28.44
+   }
+  ],
+  "charge_dette": 58.615
+ },
+ "2027": {
+  "statut": "Projet de loi de finances pour 2027 (n° 3210), présenté en Conseil des ministres et déposé à l’Assemblée nationale le jeudi 1er octobre 2026 ; en cours d’examen parlementaire au 7 octobre 2026 (chiffres = proposition du Gouvernement, non votés).",
+  "date": "2026-10-01",
+  "depenses_total": 474.946,
+  "recettes_fiscales_total": 375.688,
+  "recettes_non_fiscales": 16.678,
+  "solde_etat": -156.394,
+  "deficit_public_pib": -5.0,
+  "dette_pib": 121.7,
+  "sources": [
+   {
+    "titre": "Projet de loi de finances pour 2027, n° 3210, enregistré à la présidence de l’Assemblée nationale le 1er octobre 2026",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi.pdf",
+    "note": "Article liminaire p. 29 ; article 57 (équilibre) p. 164 ; état A, récapitulation des recettes du budget général p. 236 ; état B p. 245-251 (total CP 615 139 875 333 €) ; tableau de comparaison LFI 2026 / PLF 2027 par mission p. 307-314."
+   },
+   {
+    "titre": "Le Club des Juristes, « Présentation du budget 2027 par Sébastien Lecornu en Conseil des ministres », 1er octobre 2026",
+    "url": "https://www.leclubdesjuristes.com/?p=17567",
+    "note": "Confirmation de la date de présentation en Conseil des ministres (jeudi 1er octobre 2026)."
+   }
+  ],
+  "missions": [
+   {
+    "nom": "Action extérieure de l’État",
+    "montant": 3.464
+   },
+   {
+    "nom": "Administration générale et territoriale de l’État",
+    "montant": 5.517
+   },
+   {
+    "nom": "Agriculture et alimentation",
+    "montant": 3.585
+   },
+   {
+    "nom": "Aide publique au développement",
+    "montant": 3.171
+   },
+   {
+    "nom": "Cohésion des territoires",
+    "montant": 22.515
+   },
+   {
+    "nom": "Conseil et contrôle de l’État",
+    "montant": 0.859
+   },
+   {
+    "nom": "Crédits non répartis",
+    "montant": 0.185
+   },
+   {
+    "nom": "Culture",
+    "montant": 3.649
+   },
+   {
+    "nom": "Défense",
+    "montant": 73.153
+   },
+   {
+    "nom": "Direction de l’action du Gouvernement",
+    "montant": 0.966
+   },
+   {
+    "nom": "Écologie, développement et mobilité durables",
+    "montant": 23.413
+   },
+   {
+    "nom": "Économie",
+    "montant": 3.498
+   },
+   {
+    "nom": "Engagements financiers de l’État",
+    "montant": 74.452
+   },
+   {
+    "nom": "Enseignement scolaire",
+    "montant": 90.86
+   },
+   {
+    "nom": "Gestion des finances publiques et lutte contre les fraudes",
+    "montant": 11.085
+   },
+   {
+    "nom": "Immigration, asile et intégration",
+    "montant": 2.088
+   },
+   {
+    "nom": "Investir pour la France de 2030",
+    "montant": 4.0
+   },
+   {
+    "nom": "Justice",
+    "montant": 13.432
+   },
+   {
+    "nom": "Médias, livre et industries culturelles",
+    "montant": 0.713
+   },
+   {
+    "nom": "Monde combattant, mémoire et liens avec la Nation",
+    "montant": 1.603
+   },
+   {
+    "nom": "Outre-mer",
+    "montant": 3.74
+   },
+   {
+    "nom": "Pouvoirs publics",
+    "montant": 1.159
+   },
+   {
+    "nom": "Recherche et enseignement supérieur",
+    "montant": 32.055
+   },
+   {
+    "nom": "Régimes sociaux et de retraite",
+    "montant": 6.273
+   },
+   {
+    "nom": "Relations avec les collectivités territoriales",
+    "montant": 3.991
+   },
+   {
+    "nom": "Remboursements et dégrèvements d'impôts locaux",
+    "montant": 4.312
+   },
+   {
+    "nom": "Santé",
+    "montant": 1.769
+   },
+   {
+    "nom": "Sécurités",
+    "montant": 26.635
+   },
+   {
+    "nom": "Solidarité, insertion et égalité des chances",
+    "montant": 32.186
+   },
+   {
+    "nom": "Sport, jeunesse et vie associative",
+    "montant": 1.251
+   },
+   {
+    "nom": "Transformation et fonction publiques",
+    "montant": 0.516
+   },
+   {
+    "nom": "Travail, emploi et administration des ministères sociaux",
+    "montant": 18.852
+   }
+  ],
+  "recettes": [
+   {
+    "nom": "Taxe sur la valeur ajoutée nette",
+    "montant": 107.018
+   },
+   {
+    "nom": "Impôt net sur le revenu",
+    "montant": 102.505
+   },
+   {
+    "nom": "Impôt net sur les sociétés",
+    "montant": 58.516
+   },
+   {
+    "nom": "Accises sur les énergies (ex-TICPE)",
+    "montant": 23.464
+   },
+   {
+    "nom": "Autres impôts directs perçus par voie d’émission de rôles",
+    "montant": 2.42
+   },
+   {
+    "nom": "Contribution sociale sur les bénéfices des sociétés",
+    "montant": 1.538
+   },
+   {
+    "nom": "Contribution de la Caisse des dépôts et consignations représentative de l’IS",
+    "montant": 0.435
+   },
+   {
+    "nom": "Impôt minimum mondial à 15 % – pilier 2",
+    "montant": 0.0
+   },
+   {
+    "nom": "Autres impôts directs et taxes assimilées",
+    "montant": 45.017
+   },
+   {
+    "nom": "Enregistrement, timbre, autres contributions et taxes indirectes",
+    "montant": 42.648
+   },
+   {
+    "nom": "Autres remboursements et dégrèvements d’impôts d’État",
+    "montant": -7.873
+   }
+  ],
+  "prelevements": [
+   {
+    "nom": "Prélèvements sur recettes au profit des collectivités territoriales",
+    "montant": 43.096
+   },
+   {
+    "nom": "Prélèvement sur recettes au profit de l’Union européenne",
+    "montant": 30.906
+   }
+  ],
+  "charge_dette": 72.373
+ }
+}

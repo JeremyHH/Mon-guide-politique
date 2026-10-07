@@ -3,7 +3,7 @@ import { elections, fiches, lien } from "../lib/data";
 import { RUBRIQUES } from "../lib/config";
 
 interface Props {
-  page: "accueil" | "institutions" | "voter" | "elections" | "methode";
+  page: "accueil" | "institutions" | "voter" | "elections" | "budget" | "methode";
 }
 const { page } = Astro.props;
 const ici = Astro.url.pathname.replace(/\/$/, "");
@@ -53,6 +53,7 @@ const menu: Entree[] = [
         ],
       }]
     : [{ id: "elections" as const, nom: "Élections", href: "/elections" }]),
+  { id: "budget", nom: "Budget de l'État", href: "/budget-etat" },
   { id: "methode", nom: "Méthode", href: "/methode" },
 ];
 const actuel = (href: string) => (lien(href).replace(/\/$/, "") === ici ? "page" : undefined);

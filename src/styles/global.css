@@ -524,8 +524,25 @@ table.resultats{min-width:520px}
 .camembert-total{text-anchor:middle;font-family:var(--f-display);font-weight:700;font-size:22px;fill:var(--ink)}
 .camembert-unite{text-anchor:middle;font-family:var(--f-mono);font-size:11px;fill:var(--muted)}
 .camembert-legende{list-style:none;margin:0;padding:0;display:grid;gap:6px}
-.camembert-legende li{display:grid;grid-template-columns:12px 1fr auto;gap:8px;align-items:center;font-size:.9rem}
+.camembert-legende li{display:grid;grid-template-columns:12px 1fr;gap:0 8px;align-items:center;font-size:.9rem;line-height:1.3}
+.camembert-legende .leg-val{grid-column:2}
 .pastille{width:12px;height:12px;border-radius:3px;display:inline-block}
 .leg-val{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);white-space:nowrap}
 .camembert-bulle{position:absolute;z-index:5;pointer-events:none;background:var(--ink);color:var(--paper);font-size:.8rem;padding:6px 9px;border-radius:6px;white-space:nowrap}
 @media (max-width:620px){.camembert-corps{grid-template-columns:1fr;justify-items:center}.camembert-legende{width:100%}}
+
+/* ---------- Page Budget de l'État ---------- */
+.budget-annees{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+.budget-annee{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:20px 22px;display:grid;gap:10px;border-top:5px solid var(--bleu)}
+.budget-annee + .budget-annee{border-top-color:var(--rouge)}
+.budget-annee h2{font-size:1.25rem;color:var(--titre)}
+.budget-bloc{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:22px 24px}
+.budget-paire{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:24px 32px}
+.budget-tableau summary{cursor:pointer;color:var(--bleu);font-family:var(--f-display)}
+.budget-tableau table,.budget-mini{width:100%;border-collapse:collapse;margin-top:10px;font-size:.9rem}
+.budget-tableau th,.budget-tableau td,.budget-mini th,.budget-mini td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right}
+.budget-tableau th:first-child,.budget-tableau td:first-child,.budget-mini td:first-child{text-align:left}
+.budget-tableau td:not(:first-child),.budget-mini td:not(:first-child){font-family:var(--f-mono);font-size:.82rem;white-space:nowrap}
+.budget-tableau tr.total td{font-weight:700;border-top:2px solid var(--ink)}
+.budget-note{color:var(--muted);font-size:.72rem}
+@media (max-width:620px){.budget-paire{grid-template-columns:1fr}.budget-bloc{padding:16px}.budget-tableau{overflow-x:auto}}

@@ -1,0 +1,126 @@
+---
+import Base from "../layouts/Base.astro";
+import Camembert from "../components/Camembert.astro";
+import budget from "../../data/budget-etat.json";
+import { dateFr } from "../lib/data";
+
+type Annee = (typeof budget)["2026"];
+const A = budget["2026"] as Annee, B = budget["2027"] as Annee;
+const fmt = (n: number) => n.toLocaleString("fr-FR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+const delta = (a: number, b: number) => {
+  const d = b - a;
+  return `${d >= 0 ? "+" : "−"}${fmt(Math.abs(d))}`;
+};
+// Tableau comparatif des missions : on rapproche les deux années par nom ; les missions renommées en 2027 sont appariées explicitement.
+const RENOMMAGES: Record<string, string> = {
+  "Agriculture, alimentation, forêt et affaires rurales": "Agriculture et alimentation",
+  "Gestion des finances publiques": "Gestion des finances publiques et lutte contre les fraudes",
+};
+const nom27 = (n: string) => RENOMMAGES[n] ?? n;
+const lignes = A.missions.map((m) => {
+  const b = B.missions.find((x) => x.nom === nom27(m.nom));
+  return { nom: nom27(m.nom), renomme: RENOMMAGES[m.nom] ? m.nom : null, a: m.montant, b: b?.montant ?? 0 };
+});
+for (const m of B.missions) if (!lignes.some((l) => l.nom === m.nom)) lignes.push({ nom: m.nom, renomme: null, a: 0, b: m.montant });
+lignes.sort((x, y) => y.b - x.b);
+const recettes = A.recettes.map((r) => ({ nom: r.nom, a: r.montant, b: B.recettes.find((x) => x.nom === r.nom)?.montant ?? 0 }));
+const sources = [...A.sources, ...B.sources];
+// Couleurs fixées par poste (union des cinq premiers postes des deux années, ordre de 2026).
+const top5 = (l: { nom: string; montant: number }[]) => [...l].sort((x, y) => y.montant - x.montant).slice(0, 5).map((x) => x.nom);
+const couleursMissions = [...new Set([...top5(A.missions), ...top5(B.missions)])];
+const couleursRecettes = [...new Set([...top5(A.recettes), ...top5(B.recettes)])];
+---
+<Base titre="Budget de l'État" page="budget" description="Le budget de l'État pour 2026 (loi de finances) et le projet pour 2027 : dépenses par mission, recettes par impôt, déficit et dette.">
+  <div class="hero bandeau">
+    <div>
+      <span class="label">Finances publiques</span>
+      <h1>Le budget de l'État</h1>
+      <p class="lede">Ce que l'État prévoit de dépenser, mission par mission, et ce qu'il prévoit de percevoir, impôt par impôt : la loi de finances pour 2026, en vigueur, et le projet de loi de finances pour 2027, en cours d'examen au Parlement.</p>
+    </div>
+  </div>
+
+  <div class="budget-annees">
+    {[["2026", "Loi de finances 2026", A, `Promulguée le ${dateFr(new Date(A.date))}`], ["2027", "Projet de loi de finances 2027", B, `Présenté le ${dateFr(new Date(B.date))} · non voté`]].map(([an, titre, v, sous]) => {
+      const x = v as Annee;
+      return (
+        <section class="budget-annee">
+          <h2>{titre as string}</h2>
+          <p class="mono" style="margin:0;color:var(--muted)">{sous as string}</p>
+          <dl class="budget-chiffres">
+            <div><dt>Dépenses nettes</dt><dd>{fmt(x.depenses_total)} Md€</dd></div>
+            <div><dt>Recettes fiscales nettes</dt><dd>{fmt(x.recettes_fiscales_total)} Md€</dd></div>
+            <div><dt>Solde de l'État</dt><dd>{fmt(x.solde_etat)} Md€</dd></div>
+            <div><dt>Charge de la dette</dt><dd>{fmt(x.charge_dette)} Md€</dd></div>
+            <div><dt>Déficit public visé</dt><dd>{fmt(Math.abs(x.deficit_public_pib))} % du PIB</dd></div>
+            <div><dt>Dette publique visée</dt><dd>{fmt(x.dette_pib)} % du PIB</dd></div>
+          </dl>
+        </section>
+      );
+    })}
+  </div>
+
+  <section class="fiche-section budget-bloc">
+    <h2 class="fiche-titre">Où va l'argent : les dépenses par mission</h2>
+    <p class="mono note-justice">Dépenses nettes du budget général, en crédits de paiement. Les cinq premières missions sont détaillées ; les autres sont regroupées (liste complète dans le tableau). La « charge de la dette » fait partie de la mission Engagements financiers de l'État.</p>
+    <div class="budget-paire">
+      <Camembert titre="2026 (loi de finances)" total={A.depenses_total} postes={A.missions} couleurs={couleursMissions} />
+      <Camembert titre="2027 (projet de loi)" total={B.depenses_total} postes={B.missions} couleurs={couleursMissions} />
+    </div>
+    <details class="budget-tableau">
+      <summary>Voir toutes les missions (tableau)</summary>
+      <table>
+        <thead><tr><th>Mission</th><th>2026</th><th>2027 (projet)</th><th>Écart</th></tr></thead>
+        <tbody>
+          {lignes.map((l) => (
+            <tr><td>{l.nom}{l.renomme && <span class="mono budget-note"> (en 2026 : « {l.renomme} »)</span>}</td><td>{fmt(l.a)}</td><td>{fmt(l.b)}</td><td>{delta(l.a, l.b)}</td></tr>
+          ))}
+          <tr class="total"><td>Total des dépenses nettes</td><td>{fmt(A.depenses_total)}</td><td>{fmt(B.depenses_total)}</td><td>{delta(A.depenses_total, B.depenses_total)}</td></tr>
+        </tbody>
+      </table>
+      <p class="mono src">En milliards d'euros. Les périmètres de quelques missions changent en 2027 (programme « Forêt » transféré à l'Écologie, « Interventions territoriales de l'État » transféré à l'Outre-mer) : les écarts de ces lignes reflètent en partie ces transferts.</p>
+    </details>
+  </section>
+
+  <section class="fiche-section budget-bloc">
+    <h2 class="fiche-titre">D'où vient l'argent : les recettes fiscales par impôt</h2>
+    <p class="mono note-justice">Recettes fiscales nettes de l'État (après remboursements et dégrèvements). Les cinq premiers postes sont détaillés ; « Autres » regroupe le reste, net des autres remboursements.</p>
+    <div class="budget-paire">
+      <Camembert titre="2026 (loi de finances)" total={A.recettes_fiscales_total} postes={A.recettes.filter((r) => r.montant > 0)} couleurs={couleursRecettes} />
+      <Camembert titre="2027 (projet de loi)" total={B.recettes_fiscales_total} postes={B.recettes.filter((r) => r.montant > 0)} couleurs={couleursRecettes} />
+    </div>
+    <details class="budget-tableau">
+      <summary>Voir toutes les recettes (tableau)</summary>
+      <table>
+        <thead><tr><th>Recette</th><th>2026</th><th>2027 (projet)</th><th>Écart</th></tr></thead>
+        <tbody>
+          {recettes.map((r) => <tr><td>{r.nom}</td><td>{fmt(r.a)}</td><td>{fmt(r.b)}</td><td>{delta(r.a, r.b)}</td></tr>)}
+          <tr class="total"><td>Total des recettes fiscales nettes</td><td>{fmt(A.recettes_fiscales_total)}</td><td>{fmt(B.recettes_fiscales_total)}</td><td>{delta(A.recettes_fiscales_total, B.recettes_fiscales_total)}</td></tr>
+          <tr><td>Recettes non fiscales</td><td>{fmt(A.recettes_non_fiscales)}</td><td>{fmt(B.recettes_non_fiscales)}</td><td>{delta(A.recettes_non_fiscales, B.recettes_non_fiscales)}</td></tr>
+        </tbody>
+      </table>
+      <p class="mono src">En milliards d'euros.</p>
+    </details>
+  </section>
+
+  <section class="fiche-section budget-bloc">
+    <h2 class="fiche-titre">Ce que l'État reverse avant de dépenser</h2>
+    <p style="margin:0;max-width:70ch">Une partie des recettes est reversée directement, sans être comptée comme dépense : ce sont les <strong>prélèvements sur recettes</strong>, au profit des collectivités territoriales et de l'Union européenne.</p>
+    <table class="budget-mini">
+      <thead><tr><th></th><th>2026</th><th>2027 (projet)</th></tr></thead>
+      <tbody>
+        {A.prelevements.map((p, i) => <tr><td>{p.nom}</td><td>{fmt(p.montant)} Md€</td><td>{fmt(B.prelevements[i]?.montant ?? 0)} Md€</td></tr>)}
+      </tbody>
+    </table>
+  </section>
+
+  <section class="fiche-section budget-bloc">
+    <h2 class="fiche-titre">Repères</h2>
+    <ul style="margin:0;padding-left:20px;display:grid;gap:6px;max-width:75ch">
+      <li><strong>Budget de l'État ≠ dépenses publiques.</strong> Le budget de l'État ne couvre qu'une partie de la dépense publique : la Sécurité sociale (votée dans une loi distincte) et les collectivités locales ont leurs propres budgets.</li>
+      <li><strong>Le solde de l'État</strong> (environ {fmt(Math.abs(A.solde_etat))} Md€ de déficit en 2026) est financé par l'emprunt ; le <strong>déficit public</strong> en % du PIB additionne l'État, la Sécurité sociale et les collectivités.</li>
+      <li><strong>2026 :</strong> {A.statut}</li>
+      <li><strong>2027 :</strong> {B.statut} Les montants changeront au cours du débat parlementaire.</li>
+    </ul>
+    <p class="mono src">Sources : {sources.map((s, i) => <>{i > 0 && " · "}<a href={s.url} rel="noopener">{s.titre}</a></>)}. Chiffres relevés dans les textes officiels (article liminaire, article d'équilibre, états A et B) le 7 octobre 2026.</p>
+  </section>
+</Base>
