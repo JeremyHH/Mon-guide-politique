@@ -1,0 +1,67 @@
+---
+// Camembert (anneau) : part de chaque poste dans un total.
+// Au plus 5 postes nommés + « Autres » (au-delà, un camembert devient illisible) ;
+// la liste complète figure dans le tableau qui suit chaque graphique.
+interface Props {
+  titre: string;
+  total: number;
+  postes: { nom: string; montant: number }[];
+  unite?: string;
+}
+const { titre, total, postes, unite = "Md€" } = Astro.props;
+
+const tries = [...postes].sort((a, b) => b.montant - a.montant);
+const principaux = tries.slice(0, 5);
+const reste = total - principaux.reduce((s, p) => s + p.montant, 0);
+const parts = [...principaux.map((p, i) => ({ ...p, serie: i + 1 })), ...(reste > 0.05 ? [{ nom: "Autres", montant: reste, serie: 0 }] : [])];
+
+const R = 90, r = 56, C = 110; // rayons extérieur / intérieur, centre
+const pt = (a: number, rad: number) => [C + rad * Math.sin(a), C - rad * Math.cos(a)];
+let angle = 0;
+const arcs = parts.map((p) => {
+  const a0 = angle, a1 = angle + (p.montant / total) * Math.PI * 2;
+  angle = a1;
+  const grand = a1 - a0 > Math.PI ? 1 : 0;
+  const [x0, y0] = pt(a0, R), [x1, y1] = pt(a1, R), [x2, y2] = pt(a1, r), [x3, y3] = pt(a0, r);
+  const d = `M${x0} ${y0} A${R} ${R} 0 ${grand} 1 ${x1} ${y1} L${x2} ${y2} A${r} ${r} 0 ${grand} 0 ${x3} ${y3} Z`;
+  return { ...p, d, pct: (p.montant / total) * 100 };
+});
+const fmt = (n: number) => n.toLocaleString("fr-FR", { maximumFractionDigits: 1 });
+---
+<figure class="camembert">
+  <figcaption class="camembert-titre">{titre}</figcaption>
+  <div class="camembert-corps">
+    <svg viewBox="0 0 220 220" role="img" aria-label={`${titre} : ${arcs.map((a) => `${a.nom} ${fmt(a.pct)} %`).join(", ")}`}>
+      {arcs.map((a) => (
+        <path d={a.d} class={`part serie-${a.serie}`} data-info={`${a.nom} : ${fmt(a.montant)} ${unite} (${fmt(a.pct)} %)`} tabindex="0" />
+      ))}
+      <text x="110" y="104" class="camembert-total">{fmt(total)}</text>
+      <text x="110" y="126" class="camembert-unite">{unite}</text>
+    </svg>
+    <ul class="camembert-legende">
+      {arcs.map((a) => (
+        <li><span class={`pastille serie-${a.serie}`} aria-hidden="true"></span><span class="leg-nom">{a.nom}</span><span class="leg-val">{fmt(a.montant)} {unite} · {fmt(a.pct)} %</span></li>
+      ))}
+    </ul>
+  </div>
+  <div class="camembert-bulle" role="status" aria-live="polite" hidden></div>
+</figure>
+
+<script>
+  for (const fig of document.querySelectorAll<HTMLElement>(".camembert")) {
+    const bulle = fig.querySelector<HTMLElement>(".camembert-bulle")!;
+    const montrer = (el: SVGPathElement, x: number, y: number) => {
+      const r = fig.getBoundingClientRect();
+      bulle.textContent = el.dataset.info ?? "";
+      bulle.style.left = `${x - r.left + 12}px`;
+      bulle.style.top = `${y - r.top + 12}px`;
+      bulle.hidden = false;
+    };
+    for (const p of fig.querySelectorAll<SVGPathElement>(".part")) {
+      p.addEventListener("pointermove", (e) => montrer(p, e.clientX, e.clientY));
+      p.addEventListener("pointerleave", () => (bulle.hidden = true));
+      p.addEventListener("focus", () => { const b = p.getBoundingClientRect(); montrer(p, b.left + b.width / 2, b.top + b.height / 2); });
+      p.addEventListener("blur", () => (bulle.hidden = true));
+    }
+  }
+</script>

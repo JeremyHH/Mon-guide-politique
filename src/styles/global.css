@@ -508,3 +508,24 @@ table.resultats{min-width:520px}
 .budget-chiffres dd{margin:4px 0 0;font-family:var(--f-display);font-weight:700;font-size:1.05rem}
 .budget-evals{display:grid;gap:6px;padding:10px 12px;border:1px dashed var(--line);border-radius:10px}
 .budget-evals p{margin:0}
+
+/* ---------- Camemberts (budget de l'État) : palette catégorielle validée, clair et sombre ---------- */
+.camembert{--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--s0:#a3a29b;position:relative;margin:0;display:grid;gap:10px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .camembert{--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s0:#6f6e68}}
+:root[data-theme="dark"] .camembert{--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s0:#6f6e68}
+.camembert-titre{font-family:var(--f-display);font-weight:700;color:var(--titre)}
+.camembert-corps{display:grid;grid-template-columns:220px 1fr;gap:18px;align-items:center}
+.camembert svg{width:220px;height:220px}
+.camembert .part{stroke:var(--paper);stroke-width:2;cursor:pointer;transition:opacity .15s}
+.camembert svg:hover .part:not(:hover){opacity:.55}
+.camembert .part:focus-visible{outline:none;stroke:var(--ink)}
+.serie-1{fill:var(--s1);background:var(--s1)}.serie-2{fill:var(--s2);background:var(--s2)}.serie-3{fill:var(--s3);background:var(--s3)}
+.serie-4{fill:var(--s4);background:var(--s4)}.serie-5{fill:var(--s5);background:var(--s5)}.serie-0{fill:var(--s0);background:var(--s0)}
+.camembert-total{text-anchor:middle;font-family:var(--f-display);font-weight:700;font-size:22px;fill:var(--ink)}
+.camembert-unite{text-anchor:middle;font-family:var(--f-mono);font-size:11px;fill:var(--muted)}
+.camembert-legende{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.camembert-legende li{display:grid;grid-template-columns:12px 1fr auto;gap:8px;align-items:center;font-size:.9rem}
+.pastille{width:12px;height:12px;border-radius:3px;display:inline-block}
+.leg-val{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);white-space:nowrap}
+.camembert-bulle{position:absolute;z-index:5;pointer-events:none;background:var(--ink);color:var(--paper);font-size:.8rem;padding:6px 9px;border-radius:6px;white-space:nowrap}
+@media (max-width:620px){.camembert-corps{grid-template-columns:1fr;justify-items:center}.camembert-legende{width:100%}}
