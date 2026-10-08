@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import Camembert from "../components/Camembert.astro";
+import DetailAutres from "../components/DetailAutres.astro";
 import budget from "../../data/budget-etat.json";
 import { dateFr } from "../lib/data";
 
@@ -61,10 +62,16 @@ const couleursRecettes = [...new Set([...top5(A.recettes), ...top5(B.recettes)])
 
   <section class="fiche-section budget-bloc">
     <h2 class="fiche-titre">Où va l'argent : les dépenses par mission</h2>
-    <p class="mono note-justice">Dépenses nettes du budget général, en crédits de paiement. Les cinq premières missions sont détaillées ; les autres sont regroupées (liste complète dans le tableau). La « charge de la dette » fait partie de la mission Engagements financiers de l'État.</p>
+    <p class="mono note-justice">Dépenses nettes du budget général, en crédits de paiement. Les cinq premières missions apparaissent dans le camembert ; les autres sont regroupées dans « Autres », détaillé juste en dessous (montants en Md€). La « charge de la dette » fait partie de la mission Engagements financiers de l'État.</p>
     <div class="budget-paire">
-      <Camembert titre="2026 (loi de finances)" total={A.depenses_total} postes={A.missions} couleurs={couleursMissions} />
-      <Camembert titre="2027 (projet de loi)" total={B.depenses_total} postes={B.missions} couleurs={couleursMissions} />
+      <div class="budget-colonne">
+        <Camembert titre="2026 (loi de finances)" total={A.depenses_total} postes={A.missions} couleurs={couleursMissions} />
+        <DetailAutres postes={A.missions} exclus={5} total={A.depenses_total} />
+      </div>
+      <div class="budget-colonne">
+        <Camembert titre="2027 (projet de loi)" total={B.depenses_total} postes={B.missions} couleurs={couleursMissions} />
+        <DetailAutres postes={B.missions} exclus={5} total={B.depenses_total} />
+      </div>
     </div>
     <details class="budget-tableau">
       <summary>Voir toutes les missions (tableau)</summary>

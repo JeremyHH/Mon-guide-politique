@@ -1,0 +1,26 @@
+---
+// Détail du segment « Autres » d'un camembert : barres horizontales triées (magnitude, une seule teinte,
+// celle du segment « Autres »), pour les postes hors des cinq premiers.
+interface Props {
+  postes: { nom: string; montant: number }[];
+  exclus: number; // nombre de postes déjà nommés dans le camembert
+  total: number;
+  unite?: string;
+}
+const { postes, exclus, total, unite = "Md€" } = Astro.props;
+const reste = [...postes].sort((a, b) => b.montant - a.montant).slice(exclus).filter((p) => p.montant > 0);
+const max = Math.max(...reste.map((p) => p.montant));
+const fmt = (n: number) => n.toLocaleString("fr-FR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+---
+<div class="detail-autres">
+  <span class="label">Détail de « Autres » ({fmt(reste.reduce((s, p) => s + p.montant, 0))} {unite})</span>
+  <ul>
+    {reste.map((p) => (
+      <li title={`${p.nom} : ${fmt(p.montant)} ${unite} (${fmt((p.montant / total) * 100)} % du total)`}>
+        <span class="da-nom">{p.nom}</span>
+        <span class="da-barre"><span style={`width:${Math.max(1.5, (p.montant / max) * 100)}%`}></span></span>
+        <span class="da-val">{fmt(p.montant)}</span>
+      </li>
+    ))}
+  </ul>
+</div>

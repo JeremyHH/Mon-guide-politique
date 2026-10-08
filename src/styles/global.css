@@ -546,3 +546,15 @@ table.resultats{min-width:520px}
 .budget-tableau tr.total td{font-weight:700;border-top:2px solid var(--ink)}
 .budget-note{color:var(--muted);font-size:.72rem}
 @media (max-width:620px){.budget-paire{grid-template-columns:1fr}.budget-bloc{padding:16px}.budget-tableau{overflow-x:auto}}
+
+/* Détail du segment « Autres » (barres, même gris que le segment) */
+.budget-colonne{display:grid;gap:16px;align-content:start}
+.detail-autres{--s0:#a3a29b;display:grid;gap:8px;padding-top:12px;border-top:1px dashed var(--line)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .detail-autres{--s0:#6f6e68}}
+:root[data-theme="dark"] .detail-autres{--s0:#6f6e68}
+.detail-autres ul{list-style:none;margin:0;padding:0;display:grid;gap:5px}
+.detail-autres li{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) 3.2em;gap:8px;align-items:center;font-size:.8rem;line-height:1.25}
+.da-nom{overflow-wrap:anywhere}
+.da-barre{height:10px;background:var(--ground);border-radius:0 4px 4px 0}
+.da-barre span{display:block;height:100%;background:var(--s0);border-radius:0 4px 4px 0}
+.da-val{font-family:var(--f-mono);font-size:.74rem;color:var(--muted);text-align:right}
