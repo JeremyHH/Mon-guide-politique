@@ -44,7 +44,6 @@ export async function fiches(rubrique: "institutions" | "voter") {
 export const STATUTS: Record<Candidat["data"]["statut"], string> = {
   declare: "Déclaré",
   primaire: "Primaire socialiste",
-  pressenti: "Pressenti",
   parrainages_valides: "Parrainages validés",
   retire: "Retiré",
 };
@@ -83,7 +82,6 @@ export async function compteCandidats(election: Election) {
   const liste = await candidatsDe(election);
   const autres = election.data.autres.filter((a) => !/sans déclaration officielle/i.test(a)).length;
   const primaire = liste.filter((c) => c.data.statut === "primaire").length;
-  const pressentis = liste.filter((c) => c.data.statut === "pressenti").length;
-  const declares = liste.filter((c) => !["pressenti", "retire"].includes(c.data.statut)).length;
-  return { declares, primaire, pressentis, autres, total: declares + autres };
+  const declares = liste.filter((c) => c.data.statut !== "retire").length;
+  return { declares, primaire, autres, total: declares + autres };
 }

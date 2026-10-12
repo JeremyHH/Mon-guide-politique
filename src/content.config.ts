@@ -72,7 +72,7 @@ const candidats = defineCollection({
     prenom: z.string(),
     nom: z.string(),
     parti: z.string(),
-    statut: z.enum(["declare", "primaire", "pressenti", "parrainages_valides", "retire"]),
+    statut: z.enum(["declare", "primaire", "parrainages_valides", "retire"]),
     declaration: z.coerce.date().optional(),
     bio: z.string(),
     // Investi ou soutenu par un parti disposant d'un groupe à l'Assemblée nationale ou au Sénat,

@@ -2,8 +2,9 @@
 prenom: "Xavier"
 nom: "Bertrand"
 parti: "Nous France"
-statut: pressenti
-bio: "Président de la région Hauts-de-France depuis 2016, ancien ministre de la Santé puis du Travail. A affirmé le 27 août 2026 qu'il serait candidat, sans se déclarer officiellement ; dit vouloir se présenter en candidat indépendant et refuse une primaire de la droite et du centre."
+statut: declare
+declaration: 2026-08-27
+bio: "Président de la région Hauts-de-France depuis 2016, ancien ministre de la Santé puis du Travail. A annoncé le 27 août 2026 qu'il serait candidat, en candidat indépendant, en précisant qu'il formaliserait sa déclaration plus tard ; refuse une primaire de la droite et du centre."
 # Site officiel (vérifié le 4 octobre 2026)
 site: { url: "https://www.nousfrance.fr/", type: mouvement }
 positions:

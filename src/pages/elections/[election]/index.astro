@@ -38,7 +38,7 @@ const groupes = [
       <span class="mono">jours avant le {election.data.libelleDate.split(" et ")[0]}</span>
       <span class="compte-candidats">
         <span class="compte-ligne"><strong>{compte.total}</strong> candidatures déclarées</span>
-        <span class="compte-detail">{[compte.primaire > 0 && `dont ${compte.primaire} à la primaire socialiste`, compte.pressentis > 0 && `${compte.primaire > 0 ? "et " : "plus "}${compte.pressentis} intention${compte.pressentis > 1 ? "s" : ""} de candidature non officielle${compte.pressentis > 1 ? "s" : ""}`].filter(Boolean).join(", ")}</span>
+        {compte.primaire > 0 && <span class="compte-detail">dont {compte.primaire} à la primaire socialiste</span>}
       </span>
     </div>
   </div>
@@ -57,6 +57,7 @@ const groupes = [
         <span class="label">Rechercher</span>
         <input type="search" id="f-texte" placeholder="Nom ou parti" autocomplete="off" />
       </label>
+      {[...new Set(liste.map((c) => c.data.statut))].length > 1 && (
       <label>
         <span class="label">Statut</span>
         <select id="f-statut">
@@ -64,6 +65,7 @@ const groupes = [
           {[...new Set(liste.map((c) => c.data.statut))].map((st) => <option value={st}>{STATUTS[st]}</option>)}
         </select>
       </label>
+      )}
       <label class="filtre-case"><input type="checkbox" id="f-unique" /> Seule candidature du parti</label>
       <label class="filtre-case"><input type="checkbox" id="f-deja" /> Déjà candidat·e à une présidentielle</label>
       <button type="button" class="chip" id="f-reset">Réinitialiser</button>
@@ -139,7 +141,7 @@ const groupes = [
 
   // Filtres : n'agissent que sur l'affichage (attribut hidden), compatibles avec le tri.
   const fTexte = document.getElementById("f-texte") as HTMLInputElement;
-  const fStatut = document.getElementById("f-statut") as HTMLSelectElement;
+  const fStatut = document.getElementById("f-statut") as HTMLSelectElement | null;
   const fUnique = document.getElementById("f-unique") as HTMLInputElement;
   const fDeja = document.getElementById("f-deja") as HTMLInputElement;
   const fCompte = document.getElementById("f-compte")!;
@@ -151,7 +153,7 @@ const groupes = [
     for (const el of cells) {
       const ok =
         (!q || (el.dataset.texte ?? "").includes(q)) &&
-        (!fStatut.value || el.dataset.statut === fStatut.value) &&
+        (!fStatut?.value || el.dataset.statut === fStatut.value) &&
         (!fUnique.checked || el.dataset.unique === "1") &&
         (!fDeja.checked || el.dataset.deja === "1");
       el.hidden = !ok;
@@ -162,9 +164,9 @@ const groupes = [
     }
     fCompte.textContent = n === cells.length ? `${n} fiches affichées` : `${n} fiche${n > 1 ? "s" : ""} sur ${cells.length}`;
   }
-  for (const el of [fTexte, fStatut, fUnique, fDeja]) el.addEventListener("input", filtrer);
+  for (const el of [fTexte, fStatut, fUnique, fDeja]) el?.addEventListener("input", filtrer);
   document.getElementById("f-reset")!.onclick = () => {
-    fTexte.value = ""; fStatut.value = ""; fUnique.checked = false; fDeja.checked = false; filtrer();
+    fTexte.value = ""; if (fStatut) fStatut.value = ""; fUnique.checked = false; fDeja.checked = false; filtrer();
   };
   filtrer();
 </script>
