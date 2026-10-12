@@ -1,9 +1,10 @@
+# Fiche en attente : non publiée tant que la candidature n'est pas officiellement déclarée.
+# Pour la publier : renseigner `declaration`, puis déplacer ce fichier dans ../candidats/.
 # Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
 prenom: "Xavier"
 nom: "Bertrand"
 parti: "Nous France"
 statut: declare
-declaration: 2026-08-27
 bio: "Président de la région Hauts-de-France depuis 2016, ancien ministre de la Santé puis du Travail. A annoncé le 27 août 2026 qu'il serait candidat, en candidat indépendant, en précisant qu'il formaliserait sa déclaration plus tard ; refuse une primaire de la droite et du centre."
 # Site officiel (vérifié le 4 octobre 2026)
 site: { url: "https://www.nousfrance.fr/", type: mouvement }

@@ -88,3 +88,7 @@ vainqueurPrimaire: { nom: "Primaire PS – Place publique", date: 2026-10-17, re
 ```
 
 Passer son `statut` à `declare` et celui des autres participants à `retire`. Le badge « Vainqueur de la primaire » s'affiche alors près du parti, sur la carte et sur la fiche.
+
+## Fiches en attente
+
+Une personnalité qui a seulement exprimé une intention, sans déclaration officielle, n'apparaît pas sur le site. Sa fiche peut être préparée dans `data/elections/<élection>/en-attente/` (dossier non lu par le site) puis déplacée dans `candidats/` le jour de la déclaration, avec la date dans `declaration`.
