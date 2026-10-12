@@ -2,10 +2,10 @@
 prenom: "Emmanuel"
 nom: "Maurel"
 parti: "Gauche républicaine et socialiste"
-statut: primaire
+statut: retire
 representation: true
 declaration: 2026-09-04
-bio: "Député du Val-d'Oise, animateur national de la Gauche républicaine et socialiste. Candidat à la primaire PS – Place publique."
+bio: "Député du Val-d'Oise, animateur national de la Gauche républicaine et socialiste. Candidat à la primaire PS – Place publique : 5,92 % au premier tour (4e), derrière Raphaël Glucksmann."
 # Site officiel (vérifié le 4 octobre 2026)
 site: { url: "https://emmanuel-maurel.fr/", type: campagne }
 positions:
@@ -44,6 +44,7 @@ bibliographie:
   - { titre: "Leçons de droit constitutionnel et d'institutions politiques", annee: 2010, editeur: "Ellipses", coauteurs: "avec Manuel Delamarre" }
   - { titre: "Jean Poperen, une vie à gauche", annee: 2005, editeur: "Graffic" }
 resultats:
+  - { annee: 2026, scrutin: "Primaire PS – Place publique", resultat: "5,92 % au premier tour (4e)" }
   - { annee: 2024, scrutin: "Législatives, Val-d'Oise (3e)", resultat: "Élu avec 62,54 % au second tour" }
 condamnations: []
 procedures: []
@@ -60,8 +61,7 @@ campagne:
   - { date: 2026-09-04, quand: "4 septembre 2026", type: annonce, quoi: "Annonce sa candidature à la primaire sur franceinfo.", source: { titre: "franceinfo (4 septembre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-socialiste/le-depute-emmanuel-maurel-annonce-sa-candidature-a-la-primaire-socialiste-pour-l-election-presidentielle_8176532.html" } }
   - { date: 2026-09-23, quand: "23 septembre 2026", type: debat, quoi: "Premier débat télévisé de la primaire, sur LCI.", source: { titre: "LCP (23 septembre 2026)", url: "https://lcp.fr/actualites/primaire-de-gauche-les-candidats-face-a-face-lors-d-un-premier-debat-televise-ce" } }
   - { date: 2026-10-01, quand: "1er octobre 2026", type: debat, quoi: "Deuxième débat de la primaire, sur France 2 et France Inter (1,8 million de téléspectateurs).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
-  - { date: 2026-10-10, quand: "9 et 10 octobre 2026", type: designation, quoi: "Premier tour de la primaire PS – Place publique (vote en ligne).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
-  - { date: 2026-10-17, quand: "16 et 17 octobre 2026", type: designation, quoi: "Second tour de la primaire, si aucun candidat n'obtient la majorité au premier tour.", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+  - { date: 2026-10-11, quand: "9 au 11 octobre 2026", type: designation, quoi: "Primaire PS – Place publique : 5,92 % des voix au premier tour (4e) ; Raphaël Glucksmann l'emporte dès le premier tour.", source: { titre: "franceinfo (11 octobre 2026)", url: "https://www.franceinfo.fr/politique/raphael-glucksmann/raphael-glucksmann-remporte-des-le-premier-tour-la-primaire-a-gauche_8232967.html" } }
 # Budget : pas de chiffrage global publié au 6 octobre 2026
 budget: null
 # Soutiens de personnalités : aucun recensé au 5 octobre 2026

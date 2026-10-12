@@ -2,10 +2,11 @@
 prenom: "Raphaël"
 nom: "Glucksmann"
 parti: "Place publique"
-statut: primaire
+statut: declare
 representation: true
+vainqueurPrimaire: { nom: \"Primaire PS – Place publique\", date: 2026-10-11, resultat: \"66,13 % dès le premier tour\", source: { titre: "franceinfo (11 octobre 2026)", url: "https://www.franceinfo.fr/politique/raphael-glucksmann/raphael-glucksmann-remporte-des-le-premier-tour-la-primaire-a-gauche_8232967.html" } }
 declaration: 2026-08-23
-bio: "Député européen, coprésident de Place publique. Candidat à la primaire PS – Place publique."
+bio: "Député européen, coprésident de Place publique. Vainqueur de la primaire PS – Place publique le 11 octobre 2026 (66,13 % dès le premier tour), il est le candidat soutenu par le Parti socialiste et Place publique."
 # Site officiel (vérifié le 4 octobre 2026)
 site: { url: "https://glucks2027.fr/", type: campagne }
 positions:
@@ -76,6 +77,7 @@ bibliographie:
   - { titre: "Je vous parle de liberté : entretiens de Mikheil Saakachvili", annee: 2008, editeur: "Hachette Livre", coauteurs: "avec Mikheil Saakachvili (entretiens)" }
   - { titre: "Mai 68 expliqué à Nicolas Sarkozy", annee: 2008, editeur: "Éditions Denoël", coauteurs: "avec André Glucksmann" }
 resultats:
+  - { annee: 2026, scrutin: "Primaire PS – Place publique", resultat: "Vainqueur dès le premier tour avec 66,13 %" }
   - { annee: 2024, scrutin: "Européennes (tête de liste PS – Place publique)", resultat: "13,8 %, 3e" }
   - { annee: 2019, scrutin: "Européennes (tête de liste PS – Place publique)", resultat: "6,2 %, 6e" }
 condamnations: []
@@ -93,8 +95,7 @@ campagne:
   - { date: 2026-08-23, quand: "23 août 2026", type: annonce, quoi: "Annonce sa candidature sur TF1 et présente ses premières propositions.", source: { titre: "Public Sénat, « Fiscalité, école, immigration : ce que propose Raphaël Glucksmann »", url: "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann" } }
   - { date: 2026-09-23, quand: "23 septembre 2026", type: debat, quoi: "Premier débat télévisé de la primaire, sur LCI.", source: { titre: "LCP (23 septembre 2026)", url: "https://lcp.fr/actualites/primaire-de-gauche-les-candidats-face-a-face-lors-d-un-premier-debat-televise-ce" } }
   - { date: 2026-10-01, quand: "1er octobre 2026", type: debat, quoi: "Deuxième débat de la primaire, sur France 2 et France Inter (1,8 million de téléspectateurs).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
-  - { date: 2026-10-10, quand: "9 et 10 octobre 2026", type: designation, quoi: "Premier tour de la primaire PS – Place publique (vote en ligne).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
-  - { date: 2026-10-17, quand: "16 et 17 octobre 2026", type: designation, quoi: "Second tour de la primaire, si aucun candidat n'obtient la majorité au premier tour.", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+  - { date: 2026-10-11, quand: "9 au 11 octobre 2026", type: designation, quoi: "Remporte la primaire PS – Place publique dès le premier tour, avec 66,13 % des voix ; le second tour n'a pas lieu.", source: { titre: "franceinfo (11 octobre 2026)", url: "https://www.franceinfo.fr/politique/raphael-glucksmann/raphael-glucksmann-remporte-des-le-premier-tour-la-primaire-a-gauche_8232967.html" } }
 # Budget : pas de chiffrage global publié au 6 octobre 2026
 budget: null
 # Soutiens de personnalités (déclarations publiques depuis 2025, vérifiées le 5 octobre 2026)

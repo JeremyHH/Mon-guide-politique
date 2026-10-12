@@ -2,10 +2,10 @@
 prenom: "Olivier"
 nom: "Faure"
 parti: "Parti socialiste"
-statut: primaire
+statut: retire
 representation: true
 declaration: 2026-08-30
-bio: "Premier secrétaire du Parti socialiste depuis 2018, député de Seine-et-Marne. Candidat à la primaire PS – Place publique."
+bio: "Premier secrétaire du Parti socialiste depuis 2018, député de Seine-et-Marne. Candidat à la primaire PS – Place publique : 14,48 % au premier tour (2e), derrière Raphaël Glucksmann."
 # Site officiel (vérifié le 4 octobre 2026)
 site: { url: "https://avecfaure2027.fr/", type: campagne }
 positions:
@@ -61,6 +61,7 @@ bibliographie:
   - { titre: "Ségo, François, papa et moi", annee: 2007, editeur: "Hachette Littératures" }
   - { titre: "Le Bruit du tic tac", annee: 2001, editeur: "Robert Laffont", coauteurs: "avec Lucile Schmid" }
 resultats:
+  - { annee: 2026, scrutin: "Primaire PS – Place publique", resultat: "14,48 % au premier tour (2e)" }
   - { annee: 2024, scrutin: "Législatives, Seine-et-Marne (11e)", resultat: "Réélu" }
   - { annee: 2022, scrutin: "Législatives, Seine-et-Marne (11e)", resultat: "Réélu avec 64,45 %" }
   - { annee: 2017, scrutin: "Législatives, Seine-et-Marne (11e)", resultat: "Réélu avec 61,1 %" }
@@ -80,8 +81,7 @@ campagne:
   - { date: 2026-08-30, quand: "30 août 2026", type: annonce, quoi: "Se déclare candidat à la primaire PS – Place publique.", source: { titre: "Wikipédia, « Olivier Faure »", url: "https://fr.wikipedia.org/wiki/Olivier_Faure" } }
   - { date: 2026-09-23, quand: "23 septembre 2026", type: debat, quoi: "Premier débat télévisé de la primaire, sur LCI.", source: { titre: "LCP (23 septembre 2026)", url: "https://lcp.fr/actualites/primaire-de-gauche-les-candidats-face-a-face-lors-d-un-premier-debat-televise-ce" } }
   - { date: 2026-10-01, quand: "1er octobre 2026", type: debat, quoi: "Deuxième débat de la primaire, sur France 2 et France Inter (1,8 million de téléspectateurs).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
-  - { date: 2026-10-10, quand: "9 et 10 octobre 2026", type: designation, quoi: "Premier tour de la primaire PS – Place publique (vote en ligne).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
-  - { date: 2026-10-17, quand: "16 et 17 octobre 2026", type: designation, quoi: "Second tour de la primaire, si aucun candidat n'obtient la majorité au premier tour.", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+  - { date: 2026-10-11, quand: "9 au 11 octobre 2026", type: designation, quoi: "Primaire PS – Place publique : 14,48 % des voix au premier tour (2e) ; Raphaël Glucksmann l'emporte dès le premier tour.", source: { titre: "franceinfo (11 octobre 2026)", url: "https://www.franceinfo.fr/politique/raphael-glucksmann/raphael-glucksmann-remporte-des-le-premier-tour-la-primaire-a-gauche_8232967.html" } }
 # Budget : pas de chiffrage global publié au 6 octobre 2026
 budget: null
 # Soutiens de personnalités (déclarations publiques depuis 2025, vérifiées le 5 octobre 2026)

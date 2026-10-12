@@ -2,10 +2,10 @@
 prenom: "Jérôme"
 nom: "Guedj"
 parti: "Parti socialiste"
-statut: primaire
+statut: retire
 representation: true
 declaration: 2026-02-05
-bio: "Député socialiste de l'Essonne. Candidat à la primaire PS – Place publique."
+bio: "Député socialiste de l'Essonne. Candidat à la primaire PS – Place publique : 5,83 % au premier tour (5e), derrière Raphaël Glucksmann."
 # Site officiel (vérifié le 4 octobre 2026)
 site: { url: "https://www.jeromeguedj2027.fr/", type: campagne }
 positions:
@@ -47,6 +47,7 @@ bibliographie:
   - { titre: "La République, c'est nous !", annee: 2026, editeur: "Éditions de l'Observatoire" }
   - { titre: "Plaidoyer pour les vieux", annee: 2013, editeur: "Éditions Jean-Claude Gawséwitch" }
 resultats:
+  - { annee: 2026, scrutin: "Primaire PS – Place publique", resultat: "5,83 % au premier tour (5e)" }
   - { annee: 2022, scrutin: "Législatives, Essonne (6e)", resultat: "Élu" }
   - { annee: 2017, scrutin: "Législatives, Essonne (6e)", resultat: "13,1 % au premier tour, éliminé" }
   - { annee: 2011, scrutin: "Cantonales, Massy-Est", resultat: "Réélu avec 54,44 %" }
@@ -66,8 +67,7 @@ campagne:
   - { date: 2026-08-23, quand: "Fin août 2026", type: designation, quoi: "Confirme qu'il participera à la primaire PS – Place publique.", source: { titre: "franceinfo (24 août 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/raphael-glucksmann-segolene-royal-qui-sont-a-ce-stade-les-candidats-a-la-primaire-socialiste-pour-la-presidentielle-2027_8159171.html" } }
   - { date: 2026-09-23, quand: "23 septembre 2026", type: debat, quoi: "Premier débat télévisé de la primaire, sur LCI.", source: { titre: "LCP (23 septembre 2026)", url: "https://lcp.fr/actualites/primaire-de-gauche-les-candidats-face-a-face-lors-d-un-premier-debat-televise-ce" } }
   - { date: 2026-10-01, quand: "1er octobre 2026", type: debat, quoi: "Deuxième débat de la primaire, sur France 2 et France Inter (1,8 million de téléspectateurs).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
-  - { date: 2026-10-10, quand: "9 et 10 octobre 2026", type: designation, quoi: "Premier tour de la primaire PS – Place publique (vote en ligne).", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
-  - { date: 2026-10-17, quand: "16 et 17 octobre 2026", type: designation, quoi: "Second tour de la primaire, si aucun candidat n'obtient la majorité au premier tour.", source: { titre: "franceinfo (2 octobre 2026)", url: "https://www.franceinfo.fr/politique/ps/primaire-a-gauche/votants-dates-les-chiffres-de-la-primaire-ps-place-publique-une-semaine-avant-le-premier-tour_8220427.html" } }
+  - { date: 2026-10-11, quand: "9 au 11 octobre 2026", type: designation, quoi: "Primaire PS – Place publique : 5,83 % des voix au premier tour (5e) ; Raphaël Glucksmann l'emporte dès le premier tour.", source: { titre: "franceinfo (11 octobre 2026)", url: "https://www.franceinfo.fr/politique/raphael-glucksmann/raphael-glucksmann-remporte-des-le-premier-tour-la-primaire-a-gauche_8232967.html" } }
 # Budget : pas de chiffrage global publié au 6 octobre 2026
 budget: null
 # Soutiens de personnalités : aucun recensé au 5 octobre 2026

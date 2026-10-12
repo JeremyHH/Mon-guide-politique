@@ -16,7 +16,7 @@ const compte = await compteCandidats(election);
 const groupes = [
   {
     titre: "Candidats de partis représentés au Parlement",
-    critere: "Investis ou soutenus par un parti ayant un groupe à l'Assemblée nationale ou au Sénat, ou des élus au Parlement européen (y compris la primaire PS – Place publique).",
+    critere: "Investis ou soutenus par un parti ayant un groupe à l'Assemblée nationale ou au Sénat, ou des élus au Parlement européen (dont le candidat issu de la primaire PS – Place publique).",
     liste: liste.filter((c) => c.data.representation),
   },
   {
@@ -38,7 +38,7 @@ const groupes = [
       <span class="mono">jours avant le {election.data.libelleDate.split(" et ")[0]}</span>
       <span class="compte-candidats">
         <span class="compte-ligne"><strong>{compte.total}</strong> candidatures déclarées</span>
-        <span class="compte-detail">{[compte.primaire > 0 && `dont ${compte.primaire} à la primaire socialiste`, compte.pressentis > 0 && `et ${compte.pressentis} intention${compte.pressentis > 1 ? "s" : ""} de candidature non officielle${compte.pressentis > 1 ? "s" : ""}`].filter(Boolean).join(", ")}</span>
+        <span class="compte-detail">{[compte.primaire > 0 && `dont ${compte.primaire} à la primaire socialiste`, compte.pressentis > 0 && `${compte.primaire > 0 ? "et " : "plus "}${compte.pressentis} intention${compte.pressentis > 1 ? "s" : ""} de candidature non officielle${compte.pressentis > 1 ? "s" : ""}`].filter(Boolean).join(", ")}</span>
       </span>
     </div>
   </div>
