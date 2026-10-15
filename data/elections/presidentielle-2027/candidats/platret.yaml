@@ -1,0 +1,108 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "Gilles"
+nom: "Platret"
+parti: "Divers droite"
+statut: declare
+# Pas de représentation : candidat sans étiquette (a quitté LR en juillet 2024), sans parti doté d'un groupe au Parlement ou d'élus européens.
+representation: false
+declaration: 2026-10-08
+bio: "Maire de Chalon-sur-Saône depuis 2014, ancien porte-parole puis vice-président des Républicains, qu'il a quittés en 2024. Se présente sans étiquette avec un programme centré sur l'immigration, l'islamisme, le travail et la dette."
+# Site officiel : aucun site de campagne trouvé au 15 octobre 2026
+positions:
+  retraites:
+    texte: "Abolir la loi des 35 heures et revenir aux 39 heures hebdomadaires, ce qui doit selon lui permettre de « limiter le recul de l'âge légal de départ en retraite »."
+    statut: verifie
+    source:
+      titre: "L'infoRmateur de Bourgogne, « Présidentielles 2027 – Gilles Platret : une candidature de combat, de vérité » (communiqué du candidat)"
+      url: "https://linformateurdebourgogne.com/presidentielles-2027-gilles-platret-une-candidature-de-combat-de-verite/"
+      date: 2026-10-09
+  immigration:
+    texte: "Rétablir les frontières pour juguler l'immigration irrégulière, réduire « drastiquement » la délivrance des titres de séjour et adopter une « grande loi d'assimilation » interdisant notamment le voile dans l'espace public."
+    statut: verifie
+    source:
+      titre: "L'infoRmateur de Bourgogne, « Présidentielles 2027 – Gilles Platret : une candidature de combat, de vérité » (communiqué du candidat)"
+      url: "https://linformateurdebourgogne.com/presidentielles-2027-gilles-platret-une-candidature-de-combat-de-verite/"
+      date: 2026-10-09
+  energie: null
+  fiscalite:
+    texte: "Rétablir les comptes publics en ramenant la dette sous 100 % du PIB et lutter contre la bureaucratie ministérielle."
+    statut: verifie
+    source:
+      titre: "L'infoRmateur de Bourgogne, « Présidentielles 2027 – Gilles Platret : une candidature de combat, de vérité » (communiqué du candidat)"
+      url: "https://linformateurdebourgogne.com/presidentielles-2027-gilles-platret-une-candidature-de-combat-de-verite/"
+      date: 2026-10-09
+  europe: null
+  securite:
+    texte: "Interdire en France les Frères musulmans et les mouvements islamistes, et donner aux missions de sécurité et de justice des moyens « largement supérieurs » à ceux d'aujourd'hui."
+    statut: verifie
+    source:
+      titre: "L'infoRmateur de Bourgogne, « Présidentielles 2027 – Gilles Platret : une candidature de combat, de vérité » (communiqué du candidat)"
+      url: "https://linformateurdebourgogne.com/presidentielles-2027-gilles-platret-une-candidature-de-combat-de-verite/"
+      date: 2026-10-09
+analyses: []
+# Profil (sources : voir sourcesProfil ; pas d'article sur Wikipédia en français au 15 octobre 2026)
+naissance: { date: 1973-04-19, lieu: "Saint-Rémy (Saône-et-Loire)" }
+biographie: "Diplômé de Sciences Po Paris et titulaire d'un DEA d'histoire contemporaine, il est journaliste au Journal de Saône-et-Loire puis se consacre à des publications sur l'histoire de la Bourgogne. Élu local à Saint-Désert dès 1995, il conduit la droite à Chalon-sur-Saône, dont il devient maire en 2014. Porte-parole puis vice-président de LR (2019-2023), tête de liste de la droite aux régionales de 2021, il quitte le parti en 2024."
+fonctions:
+  - { intitule: "Maire de Chalon-sur-Saône", periode: "depuis mars 2014" }
+  - { intitule: "Président délégué du Grand Chalon (sécurité et prévention de la délinquance, attractivité touristique)", periode: "depuis avril 2026" }
+  - { intitule: "Conseiller régional de Bourgogne-Franche-Comté (non-inscrit depuis septembre 2025)", periode: "depuis janvier 2016" }
+# Formation et parcours professionnel hors mandats (source : Wikimonde, voir sourcesProfil)
+cv:
+  etudes:
+    - { diplome: "Diplôme de l'Institut d'études politiques de Paris (section service public)", etablissement: "Sciences Po" }
+    - { diplome: "DEA d'histoire contemporaine", etablissement: "Université Paris-IV (Sorbonne)", annee: 1996 }
+  experiences:
+    - { poste: "Correspondant local puis journaliste (notamment à Tournus à partir de 2003)", employeur: "Le Journal de Saône-et-Loire", periode: "jusqu'en 2006" }
+    - { poste: "Activité de recherche et de publications historiques", periode: "depuis 2006" }
+    - { poste: "Rédacteur en chef", employeur: "Revue En Bourgogne" }
+    - { poste: "Président", employeur: "Société d'histoire et d'archéologie de Chalon-sur-Saône" }
+# Bibliographie : ouvrages écrits par le candidat (source : Wikimonde, liste présentée comme non exhaustive)
+bibliographie:
+  - { titre: "J'ai grandi sur la ligne de démarcation : mémoire d'une famille paysanne française des années 1930 aux années 1960", annee: 2023, coauteurs: "d'après le témoignage de sa mère, Denise Platret" }
+  - { titre: "Neuf siècles au cœur de la Bourgogne : le Cellier aux Moines et son clos", annee: 2013, editeur: "Assouline", coauteurs: "avec Philippe Pascal" }
+  - { titre: "L'Abbaye de Tournus et le vin : fondements monastiques d'un vignoble de Bourgogne", annee: 2011 }
+  - { titre: "Les Loups dans l'histoire de Bourgogne", annee: 2007 }
+  - { titre: "Tournus brûle-t-il ? Trois années d'actualité tournusienne", annee: 2007 }
+  - { titre: "La Grande Histoire des vins de Givry : de l'Antiquité à nos jours", annee: 2006 }
+  - { titre: "Le Vignoble en colère : 1944, la Libération de la Côte chalonnaise", annee: 2004 }
+resultats:
+  - { annee: 2026, scrutin: "Municipales, Chalon-sur-Saône", resultat: "Réélu dès le premier tour avec 61,48 %" }
+  - { annee: 2024, scrutin: "Législatives, Saône-et-Loire (5e)", resultat: "Battu au second tour avec 27,92 % (3e) ; élection annulée par le Conseil constitutionnel en mars 2025" }
+  - { annee: 2022, scrutin: "Législatives, Saône-et-Loire (5e)", resultat: "21,08 % au premier tour (3e), éliminé" }
+  - { annee: 2021, scrutin: "Régionales, Bourgogne-Franche-Comté", resultat: "Tête de liste de la droite et du centre : 24,23 % au second tour (2e)" }
+  - { annee: 2020, scrutin: "Municipales, Chalon-sur-Saône", resultat: "Réélu dès le premier tour avec 52,93 %" }
+  - { annee: 2017, scrutin: "Législatives, Saône-et-Loire (5e)", resultat: "Battu au second tour avec 44,91 %" }
+  - { annee: 2014, scrutin: "Municipales, Chalon-sur-Saône", resultat: "Élu dès le premier tour avec 52,38 %" }
+  - { annee: 2008, scrutin: "Municipales, Chalon-sur-Saône", resultat: "Battu au premier tour avec 36,94 %" }
+# Aucune condamnation pénale ni procédure pénale recensée. Plusieurs arrêtés et décisions municipales ont été suspendus ou annulés
+# par la juridiction administrative (menus de substitution, drapeau palestinien, stand du Planning familial) : contentieux administratifs, non pénaux.
+condamnations: []
+procedures: []
+# Photo : non incluse ici. Fichier libre repéré : File:GPlatret.jpg (Jérémy Viger, CC0, 2017).
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/platret.jpg"
+  auteur: "Jérémy Viger"
+  licence: "CC0"
+  licenceUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  source: "https://commons.wikimedia.org/wiki/File:GPlatret.jpg"
+  annee: 2017
+# Campagne : dates clés propres au candidat
+campagne:
+  - { date: 2026-10-08, quand: "8 octobre 2026", type: annonce, quoi: "Annonce sa candidature lors d'une réunion publique intitulée « Parlons de la France » à Chalon-sur-Saône, et annonce un livre pour novembre.", source: { titre: "Le Parisien (9 octobre 2026)", url: "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-la-guerre-civile-a-deja-commence-le-maire-divers-droite-de-chalon-sur-saone-gilles-platret-annonce-sa-candidature-09-10-2026-7Z4HG62GOJHTNOFLHDN7J7HZLQ.php" } }
+# Tournée : déplacements datés
+tournee:
+  - { date: 2026-10-08, quand: "8 octobre 2026", lieu: "Chalon-sur-Saône (Saône-et-Loire)", type: meeting, quoi: "Réunion publique « Parlons de la France » au Colisée.", source: { titre: "Entrevue (9 octobre 2026)", url: "https://entrevue.fr/presidentielle-2027/presidentielle-2027-gilles-platret-maire-de-chalon-sur-saone-annonce/" } }
+# Budget : pas de chiffrage publié au 15 octobre 2026
+budget: null
+# Soutiens de personnalités : aucun recensé au 15 octobre 2026
+soutiens: []
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 15 octobre 2026)
+medias:
+  - { date: 2026-10-09, media: "ICI Bourgogne (L'invité d'ICI matin)", type: interview, titre: "« Libre » et « déterminé » : Gilles Platret se déclare candidat à la présidentielle", url: "https://www.ici.fr/emissions/l-invite-d-ici-matin-ici-bourgogne/libre-et-determine-le-maire-de-chalon-sur-saone-gilles-platret-se-declare-candidat-a-la-presidentielle-6724488" }
+sourcesProfil:
+  - { titre: "Wikimonde, article « Gilles Platret » (consulté le 15 octobre 2026)", url: "https://plus.wikimonde.com/wiki/Gilles_Platret" }
+  - { titre: "Wikipédia en anglais, article « Gilles Platret » (consulté le 15 octobre 2026)", url: "https://en.wikipedia.org/wiki/Gilles_Platret" }
+  - { titre: "Le Parisien (9 octobre 2026)", url: "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-la-guerre-civile-a-deja-commence-le-maire-divers-droite-de-chalon-sur-saone-gilles-platret-annonce-sa-candidature-09-10-2026-7Z4HG62GOJHTNOFLHDN7J7HZLQ.php" }
+  - { titre: "BFMTV (9 octobre 2026)", url: "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-le-maire-divers-droite-de-chalon-sur-saone-gilles-platret-annonce-sa-candidature_AN-202610090630.html" }

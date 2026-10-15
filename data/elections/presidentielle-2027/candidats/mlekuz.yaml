@@ -1,0 +1,55 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+# Programme centré sur une assemblée constituante tirée au sort ; aucun des six thèmes n'est couvert à ce jour.
+prenom: "Manolo"
+nom: "Mlekuz"
+parti: "Trajectoire"
+statut: declare
+representation: false
+bio: "Étudiant en histoire de 20 ans, originaire de Montreuil (Seine-Saint-Denis), fondateur du mouvement Trajectoire. Il parcourt la France en camion aménagé pour réunir les 500 parrainages, avec un projet central : une assemblée constituante tirée au sort chargée de rédiger une nouvelle Constitution."
+# Site officiel (vérifié le 15 octobre 2026)
+site: { url: "https://trajectoire2027.fr/", type: campagne }
+positions:
+  retraites: null
+  immigration: null
+  energie: null
+  fiscalite: null
+  europe: null
+  securite: null
+analyses: []
+# Profil : pas d'article Wikipédia ; sources = presse régionale et nationale, site du mouvement
+biographie: "Adhérent du Parti socialiste à 15 ans, il a ensuite fait un stage à La France insoumise et milité sous l'étiquette du Nouveau Front populaire en Seine-Saint-Denis, avant de quitter les partis en se disant déçu par la politique traditionnelle. Il a mis en pause ses études d'histoire pour se consacrer à sa candidature, accompagné de son ami d'enfance et porte-parole Gaspard Geniteau. Son programme prévoit de réunir un collège de constitutionnalistes, puis une assemblée constituante formée d'un échantillon représentatif de Français tirés au sort ; la nouvelle Constitution serait soumise à référendum. Pendant cette période, de nouvelles législatives seraient organisées et le gouvernement serait issu du parti arrivé en tête. Fils du réalisateur Mathias Mlekuz, il a fait des apparitions dans des séries télévisées. Il finance sa campagne avec environ 12 000 euros issus d'un héritage et d'un emploi de serveur."
+fonctions: []
+# Formation et parcours professionnel hors mandats (sources : https://trajectoire2027.fr/equipe ; https://actu.fr/occitanie/moulis_09214/fils-d-un-celebre-realisateur-il-part-a-la-conquete-de-l-elysee-depuis-l-ariege_63785034.html ; https://www.ladepeche.fr/2026/02/02/a-19-ans-manolo-mlekuz-se-lance-a-la-conquete-de-lelysee-sans-parti-ni-reseau-je-ne-fais-pas-ca-pour-me-sacrifier-je-fais-ca-parce-que-jen-ai-envie-13199998.php)
+cv:
+  etudes:
+    - { diplome: "Études d'histoire à l'université (interrompues)" }
+  experiences:
+    - { poste: "Apparitions comme acteur dans des séries télévisées" }
+    - { poste: "Serveur" }
+bibliographie: []
+resultats: []
+condamnations: []
+procedures: []
+# Pas de photo libre de droits trouvée sur Wikimedia Commons.
+# Campagne : dates clés propres au candidat
+campagne:
+  - { date: 2026-01-23, quand: "Janvier 2026", type: annonce, quoi: "Sa candidature, portée par son mouvement Trajectoire, est présentée dans la presse régionale ; il dit avoir déjà rencontré une quarantaine de maires.", source: { titre: "Sud Ouest (25 janvier 2026)", url: "https://www.sudouest.fr/votre-region/presidentielle-2027-je-me-suis-dit-qu-il-fallait-reinventer-les-regles-a-19-ans-il-part-a-la-conquete-de-l-elysee-27495541.php" } }
+tournee:
+  - { date: 2026-01-14, quand: "14 janvier 2026", lieu: "Douville (Dordogne)", type: deplacement, quoi: "Reçu par le maire de la commune avec son porte-parole, dans le cadre de sa recherche de parrainages.", source: { titre: "Sud Ouest (25 janvier 2026)", url: "https://www.sudouest.fr/votre-region/presidentielle-2027-je-me-suis-dit-qu-il-fallait-reinventer-les-regles-a-19-ans-il-part-a-la-conquete-de-l-elysee-27495541.php" } }
+# Budget : pas de chiffrage global publié au 15 octobre 2026
+budget: null
+# Soutiens de personnalités : aucun recensé au 15 octobre 2026
+soutiens: []
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 15 octobre 2026)
+medias:
+  - { date: 2026-09-24, media: "Sqool TV (Le Grand JT de l'Éducation)", type: interview, titre: "Manolo Mlekuz : 20 ans et candidat à la présidentielle", url: "https://www.youtube.com/watch?v=3LfXo7Vffzc" }
+  - { date: 2026-08-11, media: "VL Média (Face aux jeunes)", type: interview, titre: "Candidat à la présidentielle… à 20 ans ! Manolo Mlekuz est face aux jeunes", url: "https://www.youtube.com/watch?v=LynlBWNMO2k" }
+sourcesProfil:
+  - { titre: "franceinfo, « Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? » (liste au 14 octobre 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html" }
+  - { titre: "Trajectoire, « L'équipe » (page consultée le 15 octobre 2026)", url: "https://trajectoire2027.fr/equipe" }
+  - { titre: "Trajectoire, « Programme » (page consultée le 15 octobre 2026)", url: "https://trajectoire2027.fr/programme" }
+  - { titre: "CNEWS (27 mai 2026)", url: "https://www.cnews.fr/france/2026-05-27/presidentielle-2027-qui-est-manolo-mlekuz-ce-candidat-age-de-20-ans-parti" }
+  - { titre: "Sud Ouest (25 janvier 2026)", url: "https://www.sudouest.fr/votre-region/presidentielle-2027-je-me-suis-dit-qu-il-fallait-reinventer-les-regles-a-19-ans-il-part-a-la-conquete-de-l-elysee-27495541.php" }
+  - { titre: "actu.fr (3 février 2026)", url: "https://actu.fr/occitanie/moulis_09214/fils-d-un-celebre-realisateur-il-part-a-la-conquete-de-l-elysee-depuis-l-ariege_63785034.html" }
+  - { titre: "La Dépêche du Midi (2 février 2026)", url: "https://www.ladepeche.fr/2026/02/02/a-19-ans-manolo-mlekuz-se-lance-a-la-conquete-de-lelysee-sans-parti-ni-reseau-je-ne-fais-pas-ca-pour-me-sacrifier-je-fais-ca-parce-que-jen-ai-envie-13199998.php" }
+  - { titre: "Public Sénat (14 octobre 2026)", url: "https://www.publicsenat.fr/actualites/politique/election-presidentielle-2027-qui-sont-les-candidats-declares-ou-presque" }

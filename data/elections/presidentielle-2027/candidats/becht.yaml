@@ -1,0 +1,99 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "Olivier"
+nom: "Becht"
+parti: "Projet France"
+statut: declare
+# Pas de représentation : bien qu'apparenté au groupe Ensemble pour la République à l'Assemblée nationale, il se présente
+# sans étiquette (« Mon parti, ce sont les Français »), sans investiture ni soutien de Renaissance, dont le candidat est Gabriel Attal.
+representation: false
+declaration: 2026-09-24
+bio: "Député du Haut-Rhin, apparenté au groupe Ensemble pour la République, ancien ministre délégué au Commerce extérieur (2022-2024) et ancien maire de Rixheim. Se présente sans étiquette en revendiquant « l'extrême centre » et une « refondation » du modèle français."
+# Site officiel (vérifié le 15 octobre 2026)
+site: { url: "https://becht2027.fr/", type: campagne }
+positions:
+  retraites: null
+  immigration:
+    texte: "Reprendre le contrôle de la politique migratoire avec une politique « fondée sur le mérite et les projets », remanier entièrement le code de l'entrée et du séjour et faire de l'intégration une condition du séjour."
+    statut: verifie
+    source:
+      titre: "Site de campagne d'Olivier Becht, « La sécurité » (page consultée le 15 octobre 2026)"
+      url: "https://becht2027.fr/projet-france/les-5-refondations/refondation-securite/"
+      date: 2026-10-15
+  energie:
+    texte: "Engager une « révolution énergétique » fondée sur le développement des carburants de synthèse, pour réduire la dépendance aux importations pétrolières."
+    statut: verifie
+    source:
+      titre: "Sud Radio, « Olivier Becht : \"Je suis candidat à l'élection présidentielle et j'irai jusqu'au bout !\" »"
+      url: "https://www.sudradio.fr/politique/olivier-becht-je-suis-candidat-a-lelection-presidentielle-et-jirai-jusquau-bout"
+      date: 2026-10-11
+  fiscalite: null
+  europe:
+    texte: "Lancer une nouvelle dynamique européenne autour d'un « noyau dur » de six, sept ou huit États capables de peser face aux États-Unis et à la Chine."
+    statut: verifie
+    source:
+      titre: "Sud Radio, « Olivier Becht : \"Je suis candidat à l'élection présidentielle et j'irai jusqu'au bout !\" »"
+      url: "https://www.sudradio.fr/politique/olivier-becht-je-suis-candidat-a-lelection-presidentielle-et-jirai-jusquau-bout"
+      date: 2026-10-11
+  securite:
+    texte: "Recruter 10 000 policiers, créer des centres de redressement encadrés par des militaires pour les délinquants les plus durs, ajouter des places en prison de haute sécurité et juger chaque affaire en dix-huit mois maximum."
+    statut: verifie
+    source:
+      titre: "Site de campagne d'Olivier Becht, « La sécurité » (page consultée le 15 octobre 2026)"
+      url: "https://becht2027.fr/projet-france/les-5-refondations/refondation-securite/"
+      date: 2026-10-15
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1976-04-28, lieu: "Strasbourg (Bas-Rhin)" }
+biographie: "Diplômé de Sciences Po Strasbourg et de l'ENA (promotion Léopold-Sédar-Senghor, celle d'Emmanuel Macron), magistrat administratif et enseignant à l'université de Haute-Alsace. Membre du PS de 1997 à 2005, il devient en 2008 maire de Rixheim, puis député en 2017. Cofondateur d'Agir, il préside le groupe Agir ensemble (2020-2022) avant d'être ministre délégué au Commerce extérieur dans le gouvernement Borne."
+fonctions:
+  - { intitule: "Député de la 5e circonscription du Haut-Rhin (apparenté Ensemble pour la République)", periode: "depuis février 2024 (déjà député de 2017 à 2022)" }
+  - { intitule: "Conseiller municipal de Rixheim", periode: "depuis septembre 2017" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Olivier_Becht)
+cv:
+  etudes:
+    - { diplome: "Baccalauréat ES", etablissement: "Lycée Jeanne-d'Arc (Mulhouse)", annee: 1995 }
+    - { diplome: "Diplôme de l'Institut d'études politiques de Strasbourg (section service public)", etablissement: "Sciences Po Strasbourg", annee: 1998 }
+    - { diplome: "DEA de finances publiques et fiscalité", etablissement: "Université Paris II Panthéon-Assas", annee: 2001 }
+    - { diplome: "École nationale d'administration (promotion Léopold-Sédar-Senghor, 2002-2004)", etablissement: "ENA", annee: 2004 }
+  experiences:
+    - { poste: "Conseiller puis premier conseiller", employeur: "Tribunal administratif de Nancy" }
+    - { poste: "Chargé de cours, puis professeur associé", employeur: "Université de Haute-Alsace", periode: "depuis 2008" }
+# Bibliographie : ouvrage écrit par le candidat (source : site de campagne et Sud Radio, voir sourcesProfil)
+bibliographie:
+  - { titre: "Le Projet France. Refonder ou périr", annee: 2026 }
+resultats:
+  - { annee: 2024, scrutin: "Législatives, Haut-Rhin (5e)", resultat: "Réélu au second tour avec 67,00 %" }
+  - { annee: 2022, scrutin: "Législatives, Haut-Rhin (5e)", resultat: "Réélu au second tour avec 64,63 %" }
+  - { annee: 2017, scrutin: "Législatives, Haut-Rhin (5e)", resultat: "Élu au second tour avec 57,69 %" }
+  - { annee: 2015, scrutin: "Départementales, canton de Rixheim", resultat: "Élu au second tour (binôme) avec 71,3 %" }
+  - { annee: 2008, scrutin: "Municipales, Rixheim", resultat: "Élu dès le premier tour avec 56 %" }
+condamnations: []
+procedures: []
+# Photo : non incluse ici. Fichier libre repéré (infobox Wikipédia) : File:Olivier_Becht_en_2026_(cropped).png (Dominique Giannelli, CC BY 4.0, 557 x 557 px).
+# Autre possibilité, plus grande : File:Olivier_Becht_2023_(cropped).jpg (Palácio do Planalto, CC BY 2.0).
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/becht.jpg"
+  auteur: "Dominique Giannelli"
+  licence: "CC BY 4.0"
+  licenceUrl: "https://creativecommons.org/licenses/by/4.0"
+  source: "https://commons.wikimedia.org/wiki/File:Olivier_Becht_en_2026_(cropped).png"
+  annee: 2026
+# Campagne : dates clés propres au candidat
+campagne:
+  - { date: 2026-09-24, quand: "24 septembre 2026", type: annonce, quoi: "Annonce sa candidature dans un entretien à Paris Match, puis devant la mairie de Rixheim, en défendant son « Projet France ».", source: { titre: "CNews (24 septembre 2026)", url: "https://www.cnews.fr/france/2026-09-24/presidentielle-2027-camarade-de-promo-demmanuel-macron-lena-lancien-ministre" } }
+# Tournée : déplacements datés
+tournee:
+  - { date: 2026-09-24, quand: "24 septembre 2026", lieu: "Rixheim (Haut-Rhin)", type: meeting, quoi: "Lancement de campagne devant la mairie, devant ses soutiens.", source: { titre: "Entrevue (24 septembre 2026)", url: "https://entrevue.fr/entrevue/presidentielle-2027-lancien-ministre-olivier-becht-annonce-sa-candidature/" } }
+# Budget : pas de chiffrage publié au 15 octobre 2026
+budget: null
+# Soutiens de personnalités : aucun recensé au 15 octobre 2026
+soutiens: []
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 15 octobre 2026)
+medias:
+  - { date: 2026-10-11, media: "Sud Radio (Le Grand Matin Week-End)", type: interview, titre: "« Je suis candidat à l'élection présidentielle et j'irai jusqu'au bout ! »", url: "https://www.sudradio.fr/politique/olivier-becht-je-suis-candidat-a-lelection-presidentielle-et-jirai-jusquau-bout" }
+sourcesProfil:
+  - { titre: "Wikipédia, article « Olivier Becht » (consulté le 15 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Olivier_Becht" }
+  - { titre: "Wikipédia, article « Cinquième circonscription du Haut-Rhin » (consulté le 15 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Cinqui%C3%A8me_circonscription_du_Haut-Rhin" }
+  - { titre: "Site de campagne d'Olivier Becht, « Son parcours » (page consultée le 15 octobre 2026)", url: "https://becht2027.fr/olivier-becht/son-parcours/" }
+  - { titre: "Sud Radio, « Qui est Olivier Becht, cet ancien ministre qui se lance dans la course à la Présidentielle ? » (8 octobre 2026)", url: "https://www.sudradio.fr/politique/qui-est-olivier-becht-cet-ancien-ministre-qui-se-lance-dans-la-course-a-lelysee" }

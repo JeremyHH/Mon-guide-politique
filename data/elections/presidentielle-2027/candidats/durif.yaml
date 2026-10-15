@@ -1,0 +1,61 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+# Pas de programme détaillé publié par le candidat ; seule une déclaration sur l'immigration est sourcée.
+prenom: "Sylvain Pierre"
+nom: "Durif"
+parti: "Sans étiquette"
+statut: declare
+representation: false
+declaration: 2026-08-23
+bio: "Vidéaste de 57 ans connu sur internet depuis 2012, que franceinfo décrit comme « connu pour ses vidéos complotistes ». Il a annoncé sa candidature le 23 août 2026 dans une courte vidéo, en se présentant notamment comme « le Grand monarque, le Christ cosmique, le roi et le pape Pierre »."
+# Pas de site officiel du candidat identifié : durif2027.com est animé par un compte tiers (« Ministère du Cringe »).
+positions:
+  retraites: null
+  immigration:
+    texte: "Se dit « contre les frontières », en réponse à un internaute qui l'interrogeait sur l'immigration sous sa vidéo de candidature."
+    statut: verifie
+    source:
+      titre: "RTL, « Christ cosmique, grand monarque et bientôt président de la République ? Le vidéaste complotiste Sylvain Durif se déclare candidat à l'élection de 2027 »"
+      url: "https://www.rtl.fr/actu/politique/christ-cosmique-grand-monarque-et-bientot-president-de-la-republique-le-videaste-complotiste-sylvain-durif-se-declare-candidat-a-l-election-de-2027-7900664715"
+      date: 2026-08-25
+  energie: null
+  fiscalite: null
+  europe: null
+  securite: null
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1969-08-23, lieu: "Nantua (Ain)" }
+biographie: "Originaire de Nantua (Ain), il se fait connaître en décembre 2012 à Bugarach (Aude), village alors très médiatisé à l'approche de la « fin du monde » associée au calendrier maya, où il déclare incarner le « Christ cosmique ». Il diffuse ensuite des vidéos sur les réseaux sociaux, où il évoque notamment les « reptiliens », les extraterrestres ou les « illuminati » ; Wikipédia le présente comme une personnalité de l'internet « connue pour avoir diffusé des vidéos complotistes ». Il a créé en 2004 la société Elvita et se présente comme guérisseur et ancien médium. Il vit au Sénégal depuis 2017. Candidat aux municipales de 2014 à Arques (Aude), il avait annoncé une candidature à la présidentielle de 2017 sans réunir les 500 parrainages."
+fonctions: []
+# Formation et parcours professionnel hors mandats (sources : https://fr.wikipedia.org/wiki/Sylvain_Durif ; https://www.sudradio.fr/politique/qui-est-ce-sylvain-durif-le-christ-cosmique-candidat-a-la-presidentielle-2027)
+cv:
+  etudes: []
+  experiences:
+    - { poste: "Médium et guérisseur (selon sa propre présentation)" }
+    - { poste: "Fondateur de la société Elvita (édition de logiciels applicatifs)", periode: "créée en 2004" }
+bibliographie: []
+resultats:
+  - { annee: 2017, scrutin: "Présidentielle", resultat: "Candidature annoncée, non validée (500 parrainages non réunis)" }
+  - { annee: 2014, scrutin: "Municipales, Arques (Aude)", resultat: "7 voix (5 %) au premier tour, non élu" }
+condamnations: []
+procedures: []
+# Photo libre de droits disponible sur Wikimedia Commons : File:Sylvain_Durif.jpg (ThimGui, 2014, CC0 1.0) — non intégrée.
+# Campagne : dates clés propres au candidat
+campagne:
+  - { date: 2026-08-23, quand: "23 août 2026", type: annonce, quoi: "Annonce sa candidature dans une vidéo d'une vingtaine de secondes publiée sur ses réseaux sociaux (Facebook, Instagram).", source: { titre: "RTL (25 août 2026)", url: "https://www.rtl.fr/actu/politique/christ-cosmique-grand-monarque-et-bientot-president-de-la-republique-le-videaste-complotiste-sylvain-durif-se-declare-candidat-a-l-election-de-2027-7900664715" } }
+tournee:
+  - { date: 2026-10-13, quand: "13 octobre 2026", lieu: "Paris", type: deplacement, quoi: "Participe à la manifestation lycéenne et étudiante pour davantage de moyens pour l'éducation, où il est interrogé par HugoDécrypte.", source: { titre: "HugoDécrypte (TikTok, 13 octobre 2026)", url: "https://www.tiktok.com/@hugodecrypte/video/7696555485624831264" } }
+# Budget : pas de chiffrage global publié au 15 octobre 2026
+budget: null
+# Soutiens de personnalités : aucun recensé au 15 octobre 2026
+soutiens: []
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 15 octobre 2026)
+medias:
+  - { date: 2026-10-13, media: "HugoDécrypte (TikTok)", type: interview, titre: "Interview de Sylvain Durif lors de la manifestation lycéenne et étudiante", url: "https://www.tiktok.com/@hugodecrypte/video/7696555485624831264" }
+sourcesProfil:
+  - { titre: "franceinfo, « Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? » (liste au 14 octobre 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html" }
+  - { titre: "Wikipédia, « Sylvain Durif »", url: "https://fr.wikipedia.org/wiki/Sylvain_Durif" }
+  - { titre: "RTL (25 août 2026)", url: "https://www.rtl.fr/actu/politique/christ-cosmique-grand-monarque-et-bientot-president-de-la-republique-le-videaste-complotiste-sylvain-durif-se-declare-candidat-a-l-election-de-2027-7900664715" }
+  - { titre: "20 Minutes (26 août 2026)", url: "https://www.20minutes.fr/politique/4241053-20260826-presidentielle-2027-sylvain-durif-christ-cosmique-veut-presenter" }
+  - { titre: "Le Figaro (25 août 2026)", url: "https://www.lefigaro.fr/politique/grand-monarque-et-doux-cingle-complotiste-sylvain-durif-annonce-sa-candidature-a-la-presidentielle-2027-20260825" }
+  - { titre: "Sud Radio (9 septembre 2026)", url: "https://www.sudradio.fr/politique/qui-est-ce-sylvain-durif-le-christ-cosmique-candidat-a-la-presidentielle-2027" }
+  - { titre: "Public Sénat (14 octobre 2026)", url: "https://www.publicsenat.fr/actualites/politique/election-presidentielle-2027-qui-sont-les-candidats-declares-ou-presque" }

@@ -65,6 +65,8 @@ const SITES: Record<string, string> = {
   "Les Ruches": "https://ruches.org/",
   "La France humaine et forte": "https://www.lafrancehumaineetforte.fr/",
   "Nous France": "https://www.nousfrance.fr/",
+  "À nous maintenant": "https://www.anousmaintenant.fr/",
+  "Trajectoire": "https://trajectoire2027.fr/",
 };
 
 export function siteParti(parti: string): string | undefined {

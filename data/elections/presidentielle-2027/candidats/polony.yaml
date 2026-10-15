@@ -1,0 +1,106 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+prenom: "Natacha"
+nom: "Polony"
+parti: "Nous sommes la France"
+statut: declare
+# Pas de représentation : mouvement créé en septembre 2026, sans groupe à l'Assemblée nationale ou au Sénat ni député européen.
+# Le soutien de République souveraine (8 octobre 2026) ne change rien : ce parti n'a pas non plus d'élus nationaux ou européens.
+representation: false
+declaration: 2026-10-14
+bio: "Journaliste et essayiste, ancienne directrice de la rédaction de Marianne (2018-2024) et directrice de la revue L'Audace !. Se revendique du « gaullisme social » et a lancé en septembre 2026 un mouvement destiné aux « orphelins de la politique », « Nous sommes la France »."
+# Site officiel (vérifié le 15 octobre 2026)
+site: { url: "https://www.natachapolony2027.fr/", type: campagne }
+positions:
+  retraites: null
+  immigration: null
+  energie: null
+  fiscalite:
+    texte: "Décréter un « état d'urgence de la production » avec un « pacte de production et des salaires » et une priorité à la production française dans la commande publique, pour que « l'argent des Français aille vers l'économie française »."
+    statut: verifie
+    source:
+      titre: "RTL, « \"J'en ai assez de commenter le désastre\" : sur RTL, Natacha Polony dit vouloir \"rassembler ceux qui ne sont pas représentés\" »"
+      url: "https://www.rtl.fr/actu/politique/j-en-ai-assez-de-commenter-le-desastre-sur-rtl-natacha-polony-dit-vouloir-rassembler-ceux-qui-ne-sont-pas-representes-en-se-lancant-en-politique-avant-la-presidentielle-de-2027-7900666858"
+      date: 2026-08-31
+  europe: null
+  securite: null
+analyses: []
+# Profil (sources : voir sourcesProfil)
+naissance: { date: 1975-04-15, lieu: "Paris" }
+biographie: "Agrégée de lettres modernes, brièvement professeure stagiaire, puis diplômée de Sciences Po, elle milite au Mouvement des citoyens de Jean-Pierre Chevènement en 2001-2002. Journaliste à Marianne puis au Figaro, chroniqueuse à la radio et à la télévision (On n'est pas couché, Europe 1, Canal+, Paris Première, BFMTV, France 5), elle dirige la rédaction de Marianne de 2018 à 2024 avant de cofonder la revue L'Audace !. Elle entre en politique fin août 2026."
+fonctions:
+  - { intitule: "Fondatrice du mouvement « Nous sommes la France »", periode: "depuis septembre 2026" }
+  - { intitule: "Directrice de la revue L'Audace !, qu'elle a cofondée", periode: "depuis 2025" }
+# Formation et parcours professionnel hors mandats (source : https://fr.wikipedia.org/wiki/Natacha_Polony)
+cv:
+  etudes:
+    - { diplome: "Classes préparatoires littéraires", etablissement: "Lycées Jules-Ferry et Louis-le-Grand (Paris)" }
+    - { diplome: "DEA de littérature (poésie contemporaine de langue française)" }
+    - { diplome: "Agrégation de lettres modernes", annee: 1999 }
+    - { diplome: "Diplôme de l'Institut d'études politiques de Paris", etablissement: "Sciences Po", annee: 2002 }
+  experiences:
+    - { poste: "Professeure de lettres stagiaire", employeur: "Lycée Jacques-Feyder, Épinay-sur-Seine", periode: "1999 – 2000" }
+    - { poste: "Chargée de cours de culture générale", employeur: "Institut Léonard-de-Vinci", periode: "2002 – 2011" }
+    - { poste: "Journaliste (pages Éducation)", employeur: "Marianne", periode: "2002 – 2009" }
+    - { poste: "Journaliste (rubrique Éducation), puis chroniqueuse hebdomadaire", employeur: "Le Figaro", periode: "2009 – 2018" }
+    - { poste: "Chroniqueuse de l'émission On n'est pas couché", employeur: "France 2", periode: "2011 – 2014" }
+    - { poste: "Revue de presse de la matinale", employeur: "Europe 1", periode: "2012 – 2017" }
+    - { poste: "Chroniqueuse du Grand Journal", employeur: "Canal+", periode: "2014 – 2015" }
+    - { poste: "Présentatrice de l'émission Polonium", employeur: "Paris Première", periode: "2015 – 2017" }
+    - { poste: "Fondatrice du Comité Orwell puis de la web TV Polony TV", periode: "2015 – 2020" }
+    - { poste: "Chroniqueuse des Terriens du dimanche !", employeur: "C8", periode: "2017 – 2019" }
+    - { poste: "Directrice de la rédaction", employeur: "Marianne", periode: "2018 – 2024" }
+    - { poste: "Coprésentatrice de Polonews", employeur: "BFMTV", periode: "2021 – 2022" }
+    - { poste: "Chroniqueuse de C l'hebdo", employeur: "France 5", periode: "depuis 2023" }
+    - { poste: "Cofondatrice et directrice de la revue trimestrielle L'Audace !", periode: "depuis 2025" }
+# Bibliographie : ouvrages écrits par la candidate (source : Wikipédia, voir sourcesProfil)
+bibliographie:
+  - { titre: "La France. Corps et âme", annee: 2026, editeur: "Plon" }
+  - { titre: "Sommes-nous encore en démocratie ?", annee: 2021, editeur: "L'Observatoire" }
+  - { titre: "Délivrez-nous du Bien ! Halte aux nouveaux inquisiteurs", annee: 2018, editeur: "L'Observatoire", coauteurs: "avec Jean-Michel Quatrepoint" }
+  - { titre: "Changer la vie : pour une reconquête démocratique", annee: 2017, editeur: "L'Observatoire" }
+  - { titre: "Chrétiens français ou Français chrétiens", annee: 2017, editeur: "Salvator", coauteurs: "avec Fabrice Hadjadj et Paul Préaux" }
+  - { titre: "Bienvenue dans le pire des mondes : triomphe du soft-totalitarisme", annee: 2016, editeur: "Plon", coauteurs: "ouvrage collectif du Comité Orwell (9 auteurs)" }
+  - { titre: "Nous sommes la France", annee: 2015, editeur: "Plon" }
+  - { titre: "Ce pays qu'on abat. Chroniques 2009-2014", annee: 2014, editeur: "Plon" }
+  - { titre: "Le pire est de plus en plus sûr : enquête sur l'école de demain", annee: 2011, editeur: "Mille et Une Nuits" }
+  - { titre: "L'homme est l'avenir de la femme : autopsie du féminisme contemporain", annee: 2007, editeur: "Jean-Claude Lattès" }
+  - { titre: "M(me) le président, si vous osiez… : 15 mesures pour sauver l'école", annee: 2007, editeur: "Mille et Une Nuits" }
+  - { titre: "Nos enfants gâchés : petit traité sur la fracture générationnelle", annee: 2005, editeur: "Jean-Claude Lattès" }
+resultats:
+  - { annee: 2002, scrutin: "Législatives, Paris (9e)", resultat: "2,24 % au premier tour (Pôle républicain), éliminée" }
+# Aucune condamnation pénale : poursuivie pour « contestation de l'existence de crime contre l'humanité » (propos de 2018 sur le génocide des Tutsis), elle a été relaxée par le tribunal correctionnel de Paris le 20 mai 2022 (source : Wikipédia).
+condamnations: []
+procedures: []
+# Photo : non incluse ici. Fichier libre repéré : File:Natacha_Polony_2013.jpg (Georges Biard, CC BY-SA 3.0).
+# Photo libre de droits (Wikimedia Commons), recadrée en 3:4 dans public/candidats/
+photo:
+  fichier: "candidats/polony.jpg"
+  auteur: "Georges Biard"
+  licence: "CC BY-SA 3.0"
+  licenceUrl: "https://creativecommons.org/licenses/by-sa/3.0"
+  source: "https://commons.wikimedia.org/wiki/File:Natacha_Polony_2013.jpg"
+  annee: 2013
+# Campagne : dates clés propres à la candidate
+campagne:
+  - { date: 2026-08-28, quand: "28 août 2026", type: parti, quoi: "Annonce dans Le Parisien le lancement d'un mouvement « pour tous les orphelins de la politique » et dit ne « rien exclure » pour 2027.", source: { titre: "franceinfo (31 août 2026)", url: "https://www.franceinfo.fr/politique/la-journaliste-natacha-polony-se-lance-en-politique-pour-perturber-l-entre-soi_8170427.html" } }
+  - { date: 2026-09-29, quand: "29 septembre 2026", type: parti, quoi: "Dépose les statuts d'une association de financement électoral en vue de la présidentielle.", source: { titre: "RTL (30 septembre 2026)", url: "https://www.rtl.fr/actu/politique/info-rtl-presidentielle-2027-natacha-polony-a-cree-son-association-de-financement-pour-etre-candidate-7900679085" } }
+  - { date: 2026-10-08, quand: "8 octobre 2026", type: parti, quoi: "Les adhérents de République souveraine votent à 93 % leur soutien à sa démarche et l'appellent à se présenter.", source: { titre: "République souveraine, « République Souveraine soutient Natacha Polony »", url: "https://www.republique-souveraine.fr/republique-souveraine-soutient-natacha-polony/" } }
+  - { date: 2026-10-14, quand: "14 octobre 2026", type: annonce, quoi: "Annonce sa candidature sur France Inter, avec le slogan « Nous sommes la France ».", source: { titre: "franceinfo (14 octobre 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/l-essayiste-natacha-polony-annonce-sa-candidature-a-l-election-presidentielle_8236714.html" } }
+# Tournée : déplacements datés
+tournee:
+  - { date: 2026-09-18, quand: "18 septembre 2026", lieu: "Mulhouse (Haut-Rhin)", type: deplacement, quoi: "Conférences pour les 200 ans de la Société alsacienne de constructions mécaniques, au KM0.", source: { titre: "L'Alsace (20 septembre 2026)", url: "https://www.lalsace.fr/elections/2026/09/20/natacha-polony-l-alsace-a-la-legitimite-d-avoir-une-region" } }
+  - { date: 2026-10-07, quand: "7 octobre 2026", lieu: "Mâcon (Saône-et-Loire)", type: deplacement, quoi: "Rencontre avec les habitants du quartier des Saugeraies, puis conférence sur l'école à l'invitation du Forum Mâcon-Cluny.", source: { titre: "Le Journal de Saône-et-Loire (7 octobre 2026)", url: "https://www.lejsl.com/politique/2026/10/07/natacha-polony-rencontre-les-habitants-des-saugeraies" } }
+  - { date: 2026-10-08, quand: "8 octobre 2026", lieu: "Cournon-d'Auvergne (Puy-de-Dôme)", type: salon, quoi: "Sommet de l'élevage.", source: { titre: "Site de campagne de Natacha Polony (page consultée le 15 octobre 2026)", url: "https://www.natachapolony2027.fr/" } }
+# Budget : pas de chiffrage publié au 15 octobre 2026
+budget: null
+# Soutiens de personnalités : aucun recensé au 15 octobre 2026 (soutien d'un parti, République souveraine : voir campagne)
+soutiens: []
+# Dans les médias : apparitions de la candidate depuis le 1er juillet 2026 (vérifiées le 15 octobre 2026)
+medias:
+  - { date: 2026-10-14, media: "France Inter (L'invité de 7h50)", type: interview, titre: "« Je suis candidate à l'élection présidentielle »", url: "https://www.radiofrance.fr/franceinter/podcasts/l-invite-de-7h50/l-invite-de-7h50-du-mercredi-14-octobre-2026-3340206" }
+  - { date: 2026-10-14, media: "Sud Radio", type: interview, titre: "Ses propositions pour sortir de la crise lycéenne et étudiante", url: "https://www.sudradio.fr/sud-radio/no-future-et-irresponsabilite-generalisee-les-declarations-chocs-et-les-solutions-de-natacha-polony-pour-les-lycees-et-leducation" }
+  - { date: 2026-10-09, media: "Sans détour (podcast)", type: interview, titre: "« Natacha Polony : la voix des orphelins de la politique ? »", url: "https://sans-detour.fr/episodes/natacha-polony" }
+  - { date: 2026-08-31, media: "RTL", type: interview, titre: "« J'en ai assez de commenter le désastre »", url: "https://www.rtl.fr/actu/politique/j-en-ai-assez-de-commenter-le-desastre-sur-rtl-natacha-polony-dit-vouloir-rassembler-ceux-qui-ne-sont-pas-representes-en-se-lancant-en-politique-avant-la-presidentielle-de-2027-7900666858" }
+sourcesProfil:
+  - { titre: "Wikipédia, article « Natacha Polony » (consulté le 15 octobre 2026)", url: "https://fr.wikipedia.org/wiki/Natacha_Polony" }
+  - { titre: "franceinfo, « Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? »", url: "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html" }

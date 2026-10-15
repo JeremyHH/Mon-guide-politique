@@ -1,0 +1,83 @@
+# Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
+# Positions tirées du manifeste du mouvement (document en ligne non daté, signé par le candidat et lié depuis le site officiel).
+prenom: "Jean-François"
+nom: "Legendre"
+parti: "À nous maintenant"
+statut: declare
+representation: false
+bio: "Ancien chef d'entreprise de 70 ans installé dans les Alpes-de-Haute-Provence, candidat du mouvement citoyen « À nous maintenant ». Il défend davantage de démocratie participative (référendums d'initiative citoyenne), un ministère dédié aux territoires en lien avec les maires et la sortie de l'« engrenage de la dette »."
+# Site officiel (vérifié le 15 octobre 2026)
+site: { url: "https://www.anousmaintenant.fr/", type: mouvement }
+positions:
+  retraites:
+    texte: "Juge « irresponsable » le passage de la retraite à 60 ans en 1981 et veut des budgets au minimum à l'équilibre, y compris celui des retraites ; les efforts demandés pourraient porter aussi sur le montant des pensions."
+    statut: verifie
+    source:
+      titre: "Jean-François Legendre, manifeste « 64 % – vers une alternative citoyenne en France » (À nous maintenant, document consulté le 15 octobre 2026)"
+      url: "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit?usp=sharing"
+      date: 2026-10-15
+  immigration:
+    texte: "Accueillir temporairement les réfugiés, sans accès à la nationalité ni naturalisation de leurs enfants nés en France ; n'accepter les migrants économiques que sur demande préalable auprès d'une ambassade de France ; renvoyer les étrangers en situation irrégulière, qui ne bénéficieraient d'aucune aide."
+    statut: verifie
+    source:
+      titre: "Jean-François Legendre, manifeste « 64 % – vers une alternative citoyenne en France » (À nous maintenant, document consulté le 15 octobre 2026)"
+      url: "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit?usp=sharing"
+      date: 2026-10-15
+  energie:
+    texte: "Se dit « résolument en faveur du nucléaire » et veut mettre fin au mécanisme de l'ARENH, qui oblige EDF à revendre une partie de sa production nucléaire à des concurrents."
+    statut: verifie
+    source:
+      titre: "Jean-François Legendre, manifeste « 64 % – vers une alternative citoyenne en France » (À nous maintenant, document consulté le 15 octobre 2026)"
+      url: "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit?usp=sharing"
+      date: 2026-10-15
+  fiscalite:
+    texte: "Réserver les hausses d'impôts aux hauts revenus, réduire fortement l'optimisation et l'évasion fiscales, et exonérer d'impôts les entreprises pendant leurs trois premières années d'existence."
+    statut: verifie
+    source:
+      titre: "Jean-François Legendre, manifeste « 64 % – vers une alternative citoyenne en France » (À nous maintenant, document consulté le 15 octobre 2026)"
+      url: "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit?usp=sharing"
+      date: 2026-10-15
+  europe:
+    texte: "Défendre l'Union européenne comme « union de pays démocratiques » tout en renégociant les législations jugées trop pénalisantes pour les États, comme les règles du marché de l'électricité, la privatisation des barrages ou l'accord avec le Mercosur."
+    statut: verifie
+    source:
+      titre: "Jean-François Legendre, manifeste « 64 % – vers une alternative citoyenne en France » (À nous maintenant, document consulté le 15 octobre 2026)"
+      url: "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit?usp=sharing"
+      date: 2026-10-15
+  securite:
+    texte: "Créer de nouvelles unités du RAID et du GIGN, ouvrir des commissariats là où c'est nécessaire, alourdir les peines et les faire appliquer, et conclure des accords avec des pays prêts à accueillir des détenus si les prisons sont saturées."
+    statut: verifie
+    source:
+      titre: "Jean-François Legendre, manifeste « 64 % – vers une alternative citoyenne en France » (À nous maintenant, document consulté le 15 octobre 2026)"
+      url: "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit?usp=sharing"
+      date: 2026-10-15
+analyses: []
+# Profil : pas d'article Wikipédia ; sources = franceinfo, Le Parisien, site et manifeste du mouvement
+biographie: "Né en Normandie, marié et père de quatre enfants, cet ancien chef d'entreprise vit dans les Alpes-de-Haute-Provence. Il n'a été ni ministre ni député. Il porte la candidature du mouvement « À nous maintenant », qui se présente comme une « alternative citoyenne » hors des partis, et explique son engagement par la colère et la défiance de son entourage envers les responsables politiques. Il est l'auteur du manifeste du mouvement, « 64 % – vers une alternative citoyenne en France », construit autour de quatre piliers : restaurer la démocratie (référendums d'initiative citoyenne, rôle central des maires), sortir de la dette par des budgets à l'équilibre, revitaliser les territoires ruraux et protéger l'environnement."
+fonctions: []
+# Formation et parcours professionnel hors mandats (source : https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html)
+cv:
+  etudes: []
+  experiences:
+    - { poste: "Chef d'entreprise" }
+bibliographie: []
+resultats: []
+condamnations: []
+procedures: []
+# Pas de photo libre de droits trouvée sur Wikimedia Commons.
+# Campagne : aucune date d'annonce ni événement daté trouvés au 15 octobre 2026 (candidature relevée par Le Parisien dès le 2 août 2026).
+campagne: []
+tournee: []
+# Budget : pas de chiffrage global publié au 15 octobre 2026
+budget: null
+# Soutiens de personnalités : aucun recensé au 15 octobre 2026
+soutiens: []
+# Dans les médias : apparitions du candidat depuis le 1er juillet 2026 (vérifiées le 15 octobre 2026)
+medias:
+  - { date: 2026-08-02, media: "Le Parisien", type: interview, titre: "« Marre des mêmes personnes issues de la même caste » : ces candidats citoyens qui se rêvent à l'Élysée (propos recueillis parmi plusieurs candidats)", url: "https://www.leparisien.fr/elections/presidentielle/marre-des-memes-personnes-issues-de-la-meme-caste-ces-candidats-citoyens-qui-se-revent-a-lelysee-02-08-2026-B23GI7ZE6NDNZKA3DUSZ2KOLGQ.php" }
+sourcesProfil:
+  - { titre: "franceinfo, « Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? » (liste au 14 octobre 2026)", url: "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html" }
+  - { titre: "À nous maintenant, « Le mouvement » (page consultée le 15 octobre 2026)", url: "https://www.anousmaintenant.fr/le-mouvement" }
+  - { titre: "Jean-François Legendre, manifeste « 64 % – vers une alternative citoyenne en France » (document consulté le 15 octobre 2026)", url: "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit?usp=sharing" }
+  - { titre: "Le Parisien (2 août 2026)", url: "https://www.leparisien.fr/elections/presidentielle/marre-des-memes-personnes-issues-de-la-meme-caste-ces-candidats-citoyens-qui-se-revent-a-lelysee-02-08-2026-B23GI7ZE6NDNZKA3DUSZ2KOLGQ.php" }
+  - { titre: "Public Sénat (14 octobre 2026)", url: "https://www.publicsenat.fr/actualites/politique/election-presidentielle-2027-qui-sont-les-candidats-declares-ou-presque" }
