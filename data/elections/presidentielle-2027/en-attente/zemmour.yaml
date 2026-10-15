@@ -1,10 +1,12 @@
+# Fiche en attente : non publiée tant que la candidature n'est pas officiellement déclarée
+# (annonce du 17 septembre 2026 sur BFMTV ; déclaration officielle attendue).
+# Pour la publier : renseigner `declaration`, puis déplacer ce fichier dans ../candidats/.
 # Positions avec « statut: verifie » : sourcées. Les autres restent à sourcer.
 prenom: "Éric"
 nom: "Zemmour"
 parti: "Reconquête"
 statut: declare
 representation: true
-declaration: 2026-09-17
 bio: "Président de Reconquête, candidat en 2022. A confirmé sa candidature le 17 septembre 2026 ; déclaration formelle annoncée pour l'automne."
 # Site officiel (vérifié le 4 octobre 2026)
 site: { url: "https://www.parti-reconquete.fr/", type: parti }
